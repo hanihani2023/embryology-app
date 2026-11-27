@@ -241,7 +241,7 @@ function renderModule() {
 function renderTree() {
   const chips = [[null, "전체"], ["ec", "외배엽"], ["me", "중배엽"], ["en", "내배엽"], ["ex", "배외조직"], ["mix", "여러 배엽"]]
     .map(([L, ko]) => `<button class="chip" data-layer="${L ?? ""}" aria-pressed="${state.layer === L}">${L ? `<span class="dot" style="--c:${col(L)}"></span>` : ""}${ko}</button>`).join("");
-  return `<div class="page-head"><h1>발생 계보</h1><p>접합자에서 배엽을 거쳐 각 기관까지. 항목을 누르면 자세히 볼 수 있어요.</p></div>
+  return `<div class="page-head"><h1>발생 계보</h1><p>접합자에서 배엽을 거쳐 각 기관까지. 동그란 화살표는 펼치기·접기, 이름을 누르면 자세히 볼 수 있어요.</p></div>
     <div class="toolbar"><input type="search" id="treeQ" placeholder="계보에서 찾기 (예: 흉선, 상아질)" value="${esc(state.treeQ)}" style="flex:1 1 220px"></div>
     <div class="toolbar chips">${chips}<button class="chip" id="openAll">모두 펼치기</button><button class="chip" id="closeAll">접기</button></div>
     <div class="tree" id="tree" role="tree">${db.roots.map(id => nodeHtml(id, 0)).join("")}</div>`;

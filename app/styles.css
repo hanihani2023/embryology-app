@@ -89,11 +89,14 @@ th { font-family: var(--f-mono); font-size: 11px; letter-spacing: .05em; color: 
 /* 계보 트리 */
 .toolbar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 12px; }
 .tree { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 8px 6px 12px; }
-.node > .kids { margin-left: 14px; padding-left: 10px; border-left: 1.5px solid color-mix(in srgb, var(--c) 30%, var(--line)); }
+.node > .kids { margin-left: 19px; padding-left: 8px; border-left: 1.5px solid color-mix(in srgb, var(--c) 30%, var(--line)); }
 .node.closed > .kids { display: none; }
-.row { display: flex; align-items: center; gap: 8px; width: 100%; text-align: left; background: none; border: 0; border-radius: 8px; padding: 6px 8px; cursor: pointer; min-width: 0; }
+.row { display: flex; align-items: center; gap: 6px; width: 100%; text-align: left; background: none; border: 0; border-radius: 8px; padding: 2px 8px 2px 0; cursor: pointer; min-width: 0; min-height: 44px; }
 .row:hover { background: var(--surface-2); }
-.row .chev { width: 18px; flex: 0 0 auto; color: var(--faint); transition: transform .15s; text-align: center; }
+/* 화살표: 손가락으로 누르기 쉽게 40px 원형 영역 */
+.row .chev { width: 40px; height: 40px; flex: 0 0 auto; display: grid; place-items: center; border-radius: 50%; font-size: 22px; line-height: 1; color: var(--muted); transition: transform .15s, background .15s; }
+.node:not(.leaf) > .row .chev { background: var(--surface-2); }
+.node:not(.leaf) > .row .chev:hover { background: var(--line); color: var(--ink); }
 .node:not(.closed) > .row .chev { transform: rotate(90deg); }
 .node.leaf > .row .chev { visibility: hidden; }
 .row .ko { font-weight: 500; }
