@@ -485,4 +485,15 @@ applyTheme();
 loadData().then(d => { db = d; window.__emb = d; go("home"); }).catch(err => {
   view.innerHTML = `<div class="empty"><p>데이터를 불러오지 못했어요.</p><p class="mono" style="font-size:12px">${esc(err.message)}</p><p>파일을 직접 열었다면 로컬 서버로 열어 주세요.</p></div>`;
 });
-if ("serviceWorker" in navigator && location.protocol.startsWith("http")) navigator.serviceWorker.register("sw.js").catch(() => {});
+// 새 버전의 sw.js가 설치되어 화면을 맡으면 한 번만 새로 고쳐 바로 새 화면을 보여준다(처음 설치 때는 새로 고치지 않음).
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  const hadController = !!navigator.serviceWorker.controller;
+  let reloaded = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (!hadController || reloaded) return;
+    reloaded = true; location.reload();
+  });
+  navigator.serviceWorker.register("sw.js", { updateViaCache: "none" })
+    .then(reg => { document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") reg.update().catch(() => {}); }); })
+    .catch(() => {});
+}
