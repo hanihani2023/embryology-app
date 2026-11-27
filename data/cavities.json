@@ -1,0 +1,658 @@
+{
+  "module": "cavities",
+  "title": {
+    "ko": "체강과 가로막",
+    "en": "Body cavities and diaphragm"
+  },
+  "status": "draft",
+  "priority": "P1",
+  "updated": "2026-11-20",
+  "termNote": "가슴막(흉막)·심장막(심막)·배막(복막)은 신용어를 기본으로, 구용어는 alt에 넣었다. 질환명은 임상 표기(선천성 횡격막탈장)를 쓴다. 가로막(횡격막)도 구조명은 신용어로 쓴다. 가로중격은 번역서 표기 확인 전까지 유지한다.",
+  "structures": [
+    {
+      "id": "icoel",
+      "name": {
+        "ko": "배아내 체강",
+        "en": "Intraembryonic coelom",
+        "alt": [
+          "배아내 몸공간",
+          "체강"
+        ]
+      },
+      "layer": "me",
+      "parent": "lat",
+      "days": {
+        "start": 19,
+        "end": 28,
+        "approx": true
+      },
+      "carnegie": [
+        8,
+        12
+      ],
+      "derivatives": [
+        "측판중배엽을 벽측층·장측층으로 가름",
+        "접힘 후 가슴에서 골반까지 이어진 하나의 큰 공간",
+        "나중에 심장막강, 좌우 가슴막강, 배막강으로 나뉨"
+      ],
+      "text": {
+        "public": "3주쯤 몸 안에 작은 틈들이 모여 하나의 빈 공간이 생겨요. 이 공간이 나중에 심장, 폐, 배 속 장기를 담는 세 칸으로 나뉘어요.",
+        "student": "측판중배엽 안의 작은 틈이 합쳐져 생긴다. 바깥쪽 벽측층(몸통벽 쪽)과 안쪽 장측층(장 쪽)이 각각 벽측·장측 장막이 된다. 접힘 직후에는 배꼽 부위에서 배외체강과 통한다.",
+        "clinical": "장막(가슴막, 심장막, 배막)이 모두 이 공간의 벽이다. 벽측 장막은 몸신경(통증 위치가 정확), 장측 장막은 내장신경을 받는다."
+      },
+      "anomalies": [],
+      "links": [
+        "som",
+        "spl",
+        "fold-lat"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "stsep",
+      "name": {
+        "ko": "가로중격",
+        "en": "Septum transversum",
+        "alt": [
+          "횡중격"
+        ]
+      },
+      "layer": "me",
+      "parent": "icoel",
+      "days": {
+        "start": 22,
+        "end": 56,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        23
+      ],
+      "derivatives": [
+        "가로막 중심힘줄",
+        "간의 결합조직·피막 (간세포 끈이 그 안으로 자람)",
+        "배쪽 창자간막 (작은그물막, 낫인대)"
+      ],
+      "text": {
+        "public": "심장과 배 속 장기 사이에 생기는 두꺼운 칸막이로, 가로막(횡격막)의 가운데 힘줄과 간의 틀이 돼요.",
+        "student": "머리 접힘으로 심장 아래, 배꼽창자관 위에 놓이는 중배엽판. 처음에는 목 높이(C3–5 체절 옆)에 있다가 몸이 자라며 아래로 내려간다. 완전한 칸막이가 아니어서 뒤쪽에 심장막배막관이 남는다.",
+        "clinical": "가로중격이 목 높이에서 생길 때 C3–5 신경이 들어오므로, 가로막이 아래로 내려간 뒤에도 가로막신경은 목에서 길게 내려온다. 가로막 자극 통증이 어깨로 퍼지는(연관통) 이유."
+      },
+      "anomalies": [
+        "morgagni"
+      ],
+      "links": [
+        "liv",
+        "fold-cc"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true,
+      "verifyNote": "번역서 표기 (가로중격 / 횡중격)"
+    },
+    {
+      "id": "ppcf",
+      "name": {
+        "ko": "가슴막심장막주름",
+        "en": "Pleuropericardial folds",
+        "alt": [
+          "흉막심막주름"
+        ]
+      },
+      "layer": "me",
+      "parent": "icoel",
+      "days": {
+        "start": 28,
+        "end": 42,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        17
+      ],
+      "derivatives": [
+        "섬유심장막",
+        "심장막강과 가슴막강을 나눔",
+        "주름 안에 가로막신경과 온주정맥이 지나감"
+      ],
+      "text": {
+        "public": "심장 칸과 폐 칸을 나누는 벽이 양옆에서 자라 나와요.",
+        "student": "폐싹이 심장막배막관으로 자라 들어가 옆으로 커지면서, 몸통벽에서 주름이 떨어져 나온다. 주름이 정중선에서 만나 심장막강과 가슴막강을 나누고 섬유심장막이 된다. 처음에는 온주정맥이 주름을 끌고 나가는 모양.",
+        "clinical": "가로막신경이 심장막 옆을 따라 내려가는 이유는 이 주름 속을 지나왔기 때문이다 (심장 수술 때 주의)."
+      },
+      "anomalies": [],
+      "links": [
+        "rsp",
+        "veins"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ppm",
+      "name": {
+        "ko": "가슴막배막",
+        "en": "Pleuroperitoneal membranes (folds)",
+        "alt": [
+          "흉막복막막",
+          "가슴막배막주름"
+        ]
+      },
+      "layer": "me",
+      "parent": "icoel",
+      "days": {
+        "start": 35,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        15,
+        19
+      ],
+      "derivatives": [
+        "심장막배막관(가슴막강–배막강 연결)을 닫음",
+        "가로막의 뒤가쪽 부분",
+        "가로막 근육모세포가 이 막 안으로 들어옴"
+      ],
+      "text": {
+        "public": "폐 칸과 배 칸 사이 뒤쪽에 남은 구멍을 막는 막이에요. 이게 덜 막히면 배 속 장기가 가슴으로 올라가요.",
+        "student": "뒤쪽 몸통벽에서 자라 나와 가로중격, 식도 창자간막과 합쳐지며 심장막배막관을 닫는다(7주). 오른쪽이 왼쪽보다 먼저 닫힌다. 목 체절(C3–5)에서 온 근육모세포가 이 막 안으로 들어가 가로막 근육을 만든다.",
+        "clinical": "닫힘 실패가 선천성 횡격막탈장(보흐달렉, 뒤가쪽)이며, 왼쪽이 더 늦게 닫혀 왼쪽 탈장이 약 80–90%."
+      },
+      "anomalies": [
+        "cdh",
+        "eventration"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "dia",
+      "name": {
+        "ko": "가로막",
+        "en": "Diaphragm",
+        "alt": [
+          "횡격막"
+        ]
+      },
+      "layer": "me",
+      "parent": "icoel",
+      "days": {
+        "start": 28,
+        "end": 63,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        23
+      ],
+      "composition": [
+        {
+          "layer": "me",
+          "part": "가로중격 → 중심힘줄",
+          "ref": "stsep"
+        },
+        {
+          "layer": "me",
+          "part": "가슴막배막 → 뒤가쪽 부분 (근육모세포가 들어옴)",
+          "ref": "ppm"
+        },
+        {
+          "layer": "me",
+          "part": "식도 등쪽 창자간막 → 다리(각)",
+          "ref": "mesn"
+        },
+        {
+          "layer": "me",
+          "part": "몸통벽 근육 → 가장자리 근육",
+          "ref": "bwall"
+        }
+      ],
+      "derivatives": [
+        "중심힘줄",
+        "근육 부분",
+        "오른·왼다리"
+      ],
+      "text": {
+        "public": "가슴과 배를 나누는 숨쉬기 근육이에요. 네 군데에서 온 조각이 합쳐져 만들어져요.",
+        "student": "네 구성요소: 가로중격(중심힘줄), 가슴막배막, 식도 등쪽 창자간막(다리), 몸통벽 근육(가장자리). 근육은 목 체절(C3–5)에서 이주하며 가로막신경(C3–5)이 따라온다. 몸통이 길어지며 상대적으로 아래로 내려가, 6주 말에는 가슴 체절 높이에 있고 3개월 초(9주쯤)에는 일부 등쪽 다발이 첫째 허리뼈 높이에서 시작한다.",
+        "clinical": "‘C3, 4, 5 keeps the diaphragm alive’. 목 높은 부위 척수손상은 가로막 호흡까지 잃는다."
+      },
+      "anomalies": [
+        "cdh",
+        "morgagni",
+        "hiatal-hernia-congenital",
+        "eventration"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true,
+      "verifyNote": "가로막 하강 시기 (6주 말 가슴 체절 높이, 3개월 초 L1)"
+    },
+    {
+      "id": "mesn",
+      "name": {
+        "ko": "창자간막",
+        "en": "Mesenteries",
+        "alt": [
+          "장간막"
+        ]
+      },
+      "layer": "me",
+      "parent": "icoel",
+      "days": {
+        "start": 28,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        23
+      ],
+      "derivatives": [
+        "등쪽 창자간막: 아래식도 ~ 총배설강 (큰그물막, 작은창자간막, 결장간막 등)",
+        "배쪽 창자간막: 전장 끝(아래식도·위·십이지장 윗부분)에만 있음 → 작은그물막, 낫인대",
+        "창자간막 안으로 혈관·신경·림프관이 지나감"
+      ],
+      "text": {
+        "public": "장을 배 뒤쪽 벽에 매달아 주는 두 겹의 얇은 막이에요. 혈관과 신경이 이 막을 따라 장으로 가요.",
+        "student": "배막이 두 겹으로 겹친 매달림 구조. 등쪽 창자간막은 장관 전체에 있고, 배쪽 창자간막은 가로중격에서 유래해 전장 끝부분에만 있다. 간이 배쪽 창자간막 속에서 자라 작은그물막(간–위·십이지장)과 낫인대(간–앞배벽)로 나뉜다.",
+        "clinical": "장 회전 후 일부 창자간막은 뒤배벽에 붙어 배막뒤 장기(십이지장 대부분, 오름·내림결장)가 된다 (장 모듈과 연결)."
+      },
+      "anomalies": [],
+      "links": [
+        "fg",
+        "mg",
+        "hg",
+        "liv",
+        "spn"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "diaphragm-components",
+      "title": "가로막의 네 구성요소",
+      "columns": [
+        "구성요소",
+        "만드는 부분",
+        "결함이 생기면"
+      ],
+      "rows": [
+        {
+          "ref": "stsep",
+          "cells": [
+            "가로중격",
+            "중심힘줄",
+            "앞쪽 결손 (모르가니, 칸트렐 오징의 일부)"
+          ]
+        },
+        {
+          "ref": "ppm",
+          "cells": [
+            "가슴막배막",
+            "뒤가쪽 부분, 근육이 들어오는 틀",
+            "보흐달렉 탈장 (가장 흔함), 내번"
+          ]
+        },
+        {
+          "ref": "mesn",
+          "cells": [
+            "식도 등쪽 창자간막",
+            "오른·왼다리",
+            "- (선천성 열공탈장은 다리 결함이 아니라 짧은 식도 때문)"
+          ]
+        },
+        {
+          "ref": "bwall",
+          "cells": [
+            "몸통벽 근육",
+            "가장자리 근육",
+            "-"
+          ]
+        }
+      ],
+      "verify": true
+    },
+    {
+      "id": "cavity-separation",
+      "title": "체강이 셋으로 나뉘는 과정",
+      "columns": [
+        "칸막이",
+        "나누는 공간",
+        "시기",
+        "남는 구조"
+      ],
+      "rows": [
+        {
+          "ref": "stsep",
+          "cells": [
+            "가로중격",
+            "가슴 쪽과 배 쪽 (불완전, 뒤에 심장막배막관이 남음)",
+            "4주",
+            "중심힘줄"
+          ]
+        },
+        {
+          "ref": "ppcf",
+          "cells": [
+            "가슴막심장막주름",
+            "심장막강 ↔ 가슴막강",
+            "5주",
+            "섬유심장막"
+          ]
+        },
+        {
+          "ref": "ppm",
+          "cells": [
+            "가슴막배막",
+            "가슴막강 ↔ 배막강 (심장막배막관 닫음)",
+            "6–7주, 오른쪽이 먼저",
+            "가로막 뒤가쪽 부분"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mesentery-derivatives",
+      "title": "창자간막이 되는 구조",
+      "columns": [
+        "창자간막",
+        "부위",
+        "성인 구조"
+      ],
+      "rows": [
+        {
+          "ref": "mesn",
+          "cells": [
+            "배쪽 창자간막",
+            "간 ↔ 위·십이지장",
+            "작은그물막 (간위인대, 간십이지장인대)"
+          ]
+        },
+        {
+          "ref": "mesn",
+          "cells": [
+            "배쪽 창자간막",
+            "간 ↔ 앞배벽",
+            "낫인대 (자유모서리에 간원인대)"
+          ]
+        },
+        {
+          "ref": "mesn",
+          "cells": [
+            "등쪽 창자간막",
+            "위",
+            "큰그물막, 위비장인대, 비장콩팥인대"
+          ]
+        },
+        {
+          "ref": "mesn",
+          "cells": [
+            "등쪽 창자간막",
+            "작은창자",
+            "작은창자간막 (창자간막)"
+          ]
+        },
+        {
+          "ref": "mesn",
+          "cells": [
+            "등쪽 창자간막",
+            "가로·구불결장",
+            "가로결장간막, 구불결장간막"
+          ]
+        }
+      ],
+      "note": "오름·내림결장, 십이지장 대부분의 창자간막은 뒤배벽에 붙어 사라진다(배막뒤 장기)."
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "cdh",
+      "name": {
+        "ko": "선천성 횡격막탈장",
+        "en": "Congenital diaphragmatic hernia (Bochdalek)",
+        "alt": [
+          "보흐달렉 탈장",
+          "뒤가쪽 횡격막탈장"
+        ]
+      },
+      "cause": [
+        "ppm",
+        "dia"
+      ],
+      "period": {
+        "start": 35,
+        "end": 56
+      },
+      "mechanism": "가슴막배막이 심장막배막관을 닫지 못해, 배 속 장기가 가슴으로 올라감. 대부분 왼쪽.",
+      "findings": [
+        "출생 직후 호흡곤란, 배가 꺼져 보임(주상복부)",
+        "가슴에서 장음",
+        "양쪽 폐형성저하(같은 쪽이 더 심함)와 폐고혈압이 예후를 결정",
+        "왼쪽 약 80–90%"
+      ],
+      "genes": [
+        "단독이 많으나 염색체 이상·증후군 동반 가능"
+      ],
+      "public": "가로막에 구멍이 있어 배 속 장기가 가슴으로 올라간 채 태어나는 것이에요. 폐가 덜 자라 있는 것이 가장 큰 문제여서, 산전에 발견되면 신생아 집중치료와 수술이 가능한 병원에서 출산을 준비해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "morgagni",
+      "name": {
+        "ko": "모르가니 탈장",
+        "en": "Morgagni hernia (parasternal)",
+        "alt": [
+          "앞쪽 횡격막탈장",
+          "복장뼈옆 탈장"
+        ]
+      },
+      "cause": [
+        "stsep",
+        "dia"
+      ],
+      "period": {
+        "start": 35,
+        "end": 56
+      },
+      "mechanism": "복장뼈 뒤 앞쪽 근육 부분(복장갈비삼각)이 생기지 않아 작은 틈이 남음.",
+      "findings": [
+        "작고 앞쪽, 오른쪽에 더 많음",
+        "어릴 때 무증상으로 늦게 발견되기도 함",
+        "가로결장·그물막이 들어감"
+      ],
+      "genes": [],
+      "public": "가로막 앞쪽에 작은 틈이 있는 경우로, 증상이 없어 늦게 발견되기도 해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "hiatal-hernia-congenital",
+      "name": {
+        "ko": "선천성 식도열공탈장",
+        "en": "Congenital hiatal hernia",
+        "alt": []
+      },
+      "cause": [
+        "mesn",
+        "dia"
+      ],
+      "period": {
+        "start": 35,
+        "end": 70
+      },
+      "mechanism": "식도가 충분히 길어지지 않아(짧은 식도) 위 윗부분이 식도열공을 지나 가슴으로 끌려 올라감.",
+      "findings": [
+        "구토, 역류",
+        "성인 열공탈장 대부분은 후천성"
+      ],
+      "genes": [],
+      "public": "식도가 짧아 위 일부가 가슴 쪽으로 올라가 있는 드문 선천 이상이에요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "eventration",
+      "name": {
+        "ko": "횡격막 내번",
+        "en": "Eventration of the diaphragm",
+        "alt": [
+          "횡격막 거상증",
+          "횡격막 이완증"
+        ]
+      },
+      "cause": [
+        "ppm",
+        "dia"
+      ],
+      "period": {
+        "start": 35,
+        "end": 70
+      },
+      "mechanism": "근육모세포가 가슴막배막 일부로 들어가지 못해 그 부분이 얇은 막으로만 남아 위로 불룩해짐.",
+      "findings": [
+        "한쪽 가로막이 높음",
+        "구멍은 없어 탈장과 구별",
+        "심하면 호흡곤란"
+      ],
+      "genes": [],
+      "public": "가로막 일부가 근육 없이 얇아 위로 불룩 올라간 상태예요. 구멍이 있는 탈장과 달리 대개 가볍지만, 숨쉬기가 힘들면 수술해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "day": 19,
+      "label": "배아내 체강 형성",
+      "refs": [
+        "icoel"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 22,
+      "label": "가로중격이 심장 아래에 놓임",
+      "refs": [
+        "stsep"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 35,
+      "label": "심장막강 분리",
+      "refs": [
+        "ppcf"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 49,
+      "label": "가슴막배막이 심장막배막관을 닫음",
+      "refs": [
+        "ppm",
+        "dia"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 63,
+      "label": "가로막 등쪽 다발이 첫째 허리뼈 높이로",
+      "refs": [
+        "dia"
+      ],
+      "major": false,
+      "approx": true
+    }
+  ],
+  "epidemiology": [
+    {
+      "item": "선천성 횡격막탈장",
+      "value": "출생아 약 2,000–4,000명 중 1명 (보고마다 다름)",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "선천성 횡격막탈장 중 왼쪽",
+      "value": "약 80–90%",
+      "ref": "langman",
+      "verify": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "langman",
+      "title": "Langman's Medical Embryology",
+      "chapter": "Body Cavities (체강)",
+      "edition": "15판 (한국어 번역서)",
+      "role": "기준",
+      "note": "쪽수는 번역서 15판 기준으로 검수 때 채운다"
+    },
+    {
+      "id": "moore",
+      "title": "The Developing Human (Moore)",
+      "chapter": "Body Cavities, Mesenteries, and Diaphragm",
+      "edition": null,
+      "role": "보조"
+    }
+  ]
+}

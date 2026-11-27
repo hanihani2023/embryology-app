@@ -1,0 +1,4262 @@
+{
+  "module": "lineage",
+  "title": {
+    "ko": "배엽 계보",
+    "en": "Germ layer lineage"
+  },
+  "status": "draft",
+  "priority": "P1",
+  "updated": "2026-11-20",
+  "termNote": "기존 페이지의 배엽 계보 노드를 옮겼다. 갑상선 → 갑상샘으로 통일. 인두낭(pharyngeal.json)과 중간중배엽 계열(urogenital.json)은 다른 모듈이 맡는다.",
+  "structures": [
+    {
+      "id": "ec",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "외배엽",
+        "en": "Ectoderm",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "gas",
+      "days": {
+        "start": 16,
+        "end": null,
+        "approx": true
+      },
+      "when": "3주",
+      "carnegie": [],
+      "derivatives": [
+        "바깥 세계와 닿는 구조",
+        "신경계 전체",
+        "감각기관의 상피"
+      ],
+      "text": {
+        "public": "몸 바깥과 신경계를 만드는 층이에요: 피부, 뇌, 신경, 눈·귀의 감각 부분.",
+        "student": "외배엽은 표면외배엽, 신경관(신경외배엽), 신경능선 셋으로 나뉜다. 척삭이 BMP를 막는 신호(노긴·코딘)로 위쪽 외배엽을 신경판으로 유도하는 것이 갈림의 시작이다.",
+        "clinical": "외배엽 이상은 신경관결손, 신경능선병증, 외배엽형성이상증(털·치아·땀샘 결손)으로 나타난다."
+      },
+      "anomalies": [
+        "ntd"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "sur",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "표면외배엽",
+        "en": "Surface ectoderm",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "ec",
+      "days": {
+        "start": 22,
+        "end": null,
+        "approx": true
+      },
+      "when": "3–4주",
+      "carnegie": [],
+      "derivatives": [
+        "몸 표면 상피와 그 부속기",
+        "두부 감각판(placodes)"
+      ],
+      "text": {
+        "public": "피부 겉면과 털·손발톱, 입 안 앞쪽, 눈의 수정체 등을 만드는 층이에요.",
+        "student": "신경판 바깥에 남은 외배엽. 표피와 부속기, 구강·항문 상피 일부, 수정체, 감각판, 라트케낭을 만든다.",
+        "clinical": "표피 부속기 이상(외배엽형성이상증)은 털·치아·땀샘을 함께 침범한다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "epd",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "표피와 부속기",
+        "en": "Epidermis & appendages",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "sur",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~",
+      "carnegie": [],
+      "derivatives": [
+        "표피(각질형성세포)",
+        "모발, 손발톱",
+        "피지샘, 에크린·아포크린 땀샘",
+        "유선 (7주 배아에서 유선능선이 뚜렷)"
+      ],
+      "text": {
+        "public": "피부 겉층과 털, 손발톱, 땀샘, 젖샘이 여기서 생겨요.",
+        "student": "표피는 4주 한 층(+주피) → 11주 여러 층. 털·땀샘·젖샘은 표피가 진피로 파고들어 생긴다. 진피는 중배엽, 멜라닌세포는 신경능선 기원.",
+        "clinical": "다유두증 — 겨드랑이~서혜부를 잇는 유선능선이 남은 것."
+      },
+      "anomalies": [
+        "polythelia"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "note": "진피는 중배엽, 멜라닌세포는 신경능선입니다.",
+      "verify": true
+    },
+    {
+      "id": "stm",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "구강·항문 상피",
+        "en": "Stomodeum & proctodeum",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "sur",
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주",
+      "carnegie": [],
+      "derivatives": [
+        "구강 앞부분 상피, 입술",
+        "치아 법랑질 (사기질모세포)",
+        "이하선(귀밑샘)",
+        "항문관 하부 1/3 (빗살선 아래)"
+      ],
+      "text": {
+        "public": "입술과 입 안 앞부분, 이의 법랑질, 귀밑샘, 항문 끝부분을 만들어요.",
+        "student": "입구멍(구강와)과 항문구멍(항문와)의 외배엽. 입인두막·항문막이 터지면서 내배엽 장관과 이어진다. 빗살선 위는 내배엽(후장)이라 혈관·신경·림프 배액이 다르다.",
+        "clinical": "빗살선 위는 내장신경·문맥계, 아래는 체성신경·전신순환으로 배액되어 치핵 통증과 암 전이 경로가 다르다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "note": "빗살선 위는 내배엽(후장)이라 혈관·신경·림프 배액이 다릅니다.",
+      "links": [
+        "opm"
+      ]
+    },
+    {
+      "id": "eye",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "눈의 표면 구조",
+        "en": "Lens & corneal epithelium",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "sur",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주 수정체판",
+      "carnegie": [],
+      "derivatives": [
+        "수정체",
+        "각막 상피",
+        "결막, 눈물샘 상피"
+      ],
+      "text": {
+        "public": "수정체와 각막 겉층은 피부와 같은 층에서 생겨요.",
+        "student": "간뇌의 눈소포가 표면외배엽을 유도해 수정체판 → 수정체소포를 만든다. 각막 상피도 표면외배엽.",
+        "clinical": "선천성 백내장 — 원인 중 하나가 임신 4–7주 풍진 감염."
+      },
+      "anomalies": [
+        "congenital-cataract"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "plc",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "두부 감각판",
+        "en": "Cranial placodes",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "sur",
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주",
+      "carnegie": [],
+      "derivatives": [
+        "귀판 → 내이 막미로(달팽이관, 반고리관, 전정)",
+        "후각판 → 후각상피, 후각신경",
+        "일부 뇌신경 감각신경절 (V, VII, VIII, IX, X)"
+      ],
+      "text": {
+        "public": "머리 쪽 피부가 두꺼워진 자리들로, 속귀와 냄새 맡는 상피, 일부 감각신경이 생겨요.",
+        "student": "두부 감각판: 수정체판, 귀판, 코(후각)판, 뇌신경 신경절판(V, VII–X). 신경능선과 함께 뇌신경 감각신경절을 만든다.",
+        "clinical": "귀판 이상은 선천 감각신경성 난청, 후각판 경로 이상은 칼만 증후군과 연결된다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "rat",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "라트케낭",
+        "en": "Rathke's pouch",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "sur",
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주",
+      "carnegie": [],
+      "derivatives": [
+        "뇌하수체 전엽(선뇌하수체)",
+        "중간부(pars intermedia)"
+      ],
+      "text": {
+        "public": "입이 될 오목(입구멍)의 천장이 위로 솟아올라 뇌하수체 앞쪽(호르몬을 만드는 부분)이 돼요.",
+        "student": "입구멍(구강와) 천장의 외배엽이 위로 올라가 신경외배엽(후엽)과 만납니다.",
+        "clinical": "두개인두종 — 라트케낭 잔존물에서 생기는 종양. 시야 장애(양측두 반맹)를 일으킵니다."
+      },
+      "anomalies": [
+        "craniopharyngioma"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "nt",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "신경관",
+        "en": "Neural tube (neuroectoderm)",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "ec",
+      "days": {
+        "start": 22,
+        "end": null,
+        "approx": true
+      },
+      "when": "22일 융합 시작 · 25일 앞신경구멍 · 28일 뒤신경구멍 폐쇄",
+      "carnegie": [],
+      "derivatives": [
+        "중추신경계 전체",
+        "망막과 시신경",
+        "뇌하수체 후엽, 송과체"
+      ],
+      "text": {
+        "public": "등 쪽 바깥층(외배엽)이 말려 관이 되고, 이 관이 뇌와 척수가 돼요. 4주에 양쪽 끝이 닫혀요.",
+        "student": "18일 신경판 → 신경주름·신경고랑 → 22일 목 부위부터 양방향으로 융합 → 25일 앞신경구멍, 28일 뒤신경구멍 폐쇄. 엉치 아래 척수는 꼬리싹에서 이차 신경관형성으로 생긴다.",
+        "clinical": "신경관결손 — 앞쪽 폐쇄 실패는 무뇌증, 뒤쪽은 이분척추. 임신 전 엽산 복용으로 예방, 산모 혈청·양수 AFP가 높아집니다."
+      },
+      "anomalies": [
+        "ntd"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "이차 신경관형성 서술"
+    },
+    {
+      "id": "pro",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "전뇌",
+        "en": "Prosencephalon",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "nt",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주 → 5주에 둘로 나뉨",
+      "carnegie": [],
+      "derivatives": [
+        "5주에 종뇌와 간뇌로 분리"
+      ],
+      "text": {
+        "public": "뇌의 맨 앞 부분으로, 5주에 대뇌와 사이뇌로 나뉘어요.",
+        "student": "전뇌는 5주에 종뇌(대뇌반구)와 간뇌로 나뉜다. 정중선의 SHH 신호가 좌우 반구 분리를 이끈다.",
+        "clinical": "전뇌무분할증 — 반구가 나뉘지 않음. SHH 경로 이상, 단안증·구순구개열 동반."
+      },
+      "anomalies": [
+        "holoprosencephaly",
+        "median-cleft-lip"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "tel",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "종뇌",
+        "en": "Telencephalon",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "pro",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "when": "5주~",
+      "carnegie": [],
+      "derivatives": [
+        "대뇌반구와 대뇌피질",
+        "기저핵, 해마, 편도체",
+        "후각망울",
+        "측뇌실"
+      ],
+      "text": {
+        "public": "대뇌가 되는 부분으로, 생각·기억·감정을 맡는 뇌가 여기서 생겨요.",
+        "student": "종뇌 소포가 커져 대뇌반구가 된다. 신경원은 뇌실 주위에서 생겨 방사아교세포를 따라 바깥으로 이주(안쪽에서 바깥쪽 순)해 6층 피질을 만든다.",
+        "clinical": "신경원 이주 장애 → 민뇌증(뇌이랑없음증), 다소뇌회증. 뇌전증·발달지연의 원인."
+      },
+      "anomalies": [
+        "neuronal-migration"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "die",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "간뇌",
+        "en": "Diencephalon",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "pro",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "when": "5주~",
+      "carnegie": [],
+      "derivatives": [
+        "시상, 시상하부",
+        "시상상부 → 송과체",
+        "눈술잔 → 망막, 시신경",
+        "누두 → 뇌하수체 후엽(신경뇌하수체)",
+        "제3뇌실"
+      ],
+      "text": {
+        "public": "뇌 가운데 부분으로, 시상·시상하부와 함께 눈의 망막이 여기서 나와요.",
+        "student": "간뇌의 날개판이 시상·시상하부를, 지붕이 송과체를, 바닥이 누두(뇌하수체 후엽)를 만든다. 옆으로 나온 눈소포가 눈술잔 → 망막이 된다. 망막은 뇌의 일부다.",
+        "clinical": "시상하부–뇌하수체 축 이상은 선천 뇌하수체저하증. 시신경은 중추신경이라 수초를 희소돌기교세포가 만든다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "note": "망막은 뇌의 일부가 밖으로 나온 것입니다."
+    },
+    {
+      "id": "mes",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "중뇌",
+        "en": "Mesencephalon",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "nt",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~",
+      "carnegie": [],
+      "derivatives": [
+        "상구(시각 반사), 하구(청각)",
+        "대뇌각, 흑질, 적핵",
+        "중뇌수도"
+      ],
+      "text": {
+        "public": "뇌 가운데 짧은 부분으로, 눈·귀 반사와 움직임 조절을 맡아요.",
+        "student": "중뇌는 나뉘지 않고 남는다. 날개판 → 위·아래둔덕, 기저판(basal plate) → 동안·도르래신경핵, 흑질·적핵. 내강이 좁아져 중뇌수도가 된다.",
+        "clinical": "중뇌수도 협착 — 선천성 수두증의 흔한 원인."
+      },
+      "anomalies": [
+        "aqueductal-stenosis"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "rho",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "능뇌",
+        "en": "Rhombencephalon",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "nt",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주 → 5주에 둘로 나뉨",
+      "carnegie": [],
+      "derivatives": [
+        "후뇌 → 소뇌, 교뇌",
+        "수뇌 → 연수",
+        "제4뇌실",
+        "능뇌분절(rhombomere)이 인두궁 신경능선 이동을 조직"
+      ],
+      "text": {
+        "public": "뇌 뒤쪽 부분으로, 소뇌·다리뇌·숨뇌가 되어 균형과 숨쉬기를 맡아요.",
+        "student": "5주에 후뇌(소뇌, 교뇌)와 수뇌(연수)로 나뉜다. HOX 유전자로 구획된 능뇌분절이 뇌신경핵과 인두궁 신경능선 이주를 조직한다.",
+        "clinical": "키아리 1형: 소뇌편도가 큰구멍 아래로 빠짐, 흔히 청소년·성인 두통으로 발견. 키아리 2형(아놀드–키아리): 소뇌충부와 뇌간이 빠지고 거의 항상 척수수막류·수두증 동반. 단디–워커: 소뇌충부 결손과 제4뇌실 낭성 확장."
+      },
+      "anomalies": [
+        "chiari-1",
+        "chiari-2",
+        "dandy-walker"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "spc",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "척수",
+        "en": "Spinal cord",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "nt",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~",
+      "carnegie": [],
+      "derivatives": [
+        "날개판(alar plate) → 뒤뿔(dorsal horn, 감각)",
+        "기저판(basal plate) → 앞뿔(ventral horn, 운동신경원)",
+        "중간외측각 → 자율신경 절전 신경원",
+        "성상교세포, 희소돌기교세포, 뇌실막세포"
+      ],
+      "text": {
+        "public": "척수는 신경관의 뒤쪽 부분이에요. 감각은 뒤쪽, 운동은 앞쪽 신경세포가 맡아요.",
+        "student": "신경관 벽은 뇌실층·외투층·변연층으로 나뉜다. 경계고랑을 기준으로 날개판(alar plate; 감각, 뒤)과 기저판(basal plate; 운동, 앞). 미세아교세포는 예외로 난황낭 대식세포(중배엽)에서 온다.",
+        "clinical": "3개월 이후 척추가 더 빨리 자라 척수 끝이 출생 때 L3 부근, 성인 L2–L3 부근에 온다(교재에 따라 L1–L2로 서술). 허리천자는 그 아래에서 한다. 척수 끝이 아래에 묶이면 척수견인증후군."
+      },
+      "anomalies": [
+        "ntd"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "note": "미세아교세포는 예외로 난황낭 대식세포(중배엽)에서 옵니다.",
+      "verifyNote": "출생 시 척수 끝 높이",
+      "verify": true
+    },
+    {
+      "id": "nc",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "신경능선",
+        "en": "Neural crest",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "ec",
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "when": "3–4주 이주 시작",
+      "carnegie": [],
+      "derivatives": [
+        "신경관 융합부에서 떨어져 나와 몸 전체로 이주",
+        "'제4의 배엽'으로 불릴 만큼 다양한 세포를 만듦"
+      ],
+      "text": {
+        "public": "신경관이 닫힐 때 가장자리에서 떨어져 나와 온몸으로 흩어지는 세포예요. 얼굴뼈, 말초신경, 색소세포 등 아주 많은 것을 만들어요.",
+        "student": "신경판 가장자리 세포가 상피–중간엽 전환으로 떨어져 나와 이주한다. 위치(두부·심장·몸통·미주·엉치)에 따라 운명이 다르다. '제4배엽'으로 불린다.",
+        "clinical": "신경능선병증 — 22q11.2 결실(디조지), 트리처 콜린스, CHARGE 증후군, 히르슈스프룽병."
+      },
+      "anomalies": [
+        "digeorge",
+        "treacher-collins",
+        "hirschsprung"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ncc",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "두부 신경능선",
+        "en": "Cranial neural crest",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "nc",
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~",
+      "carnegie": [],
+      "derivatives": [
+        "얼굴뼈와 머리뼈 앞쪽 대부분, 인두궁 연골",
+        "망치뼈, 모루뼈, 하악, 설골",
+        "상아질과 치수 (치아유두)",
+        "연막, 지주막",
+        "각막 기질·내피, 홍채 기질",
+        "뇌신경 V, VII, IX, X의 감각·부교감 신경절 일부"
+      ],
+      "text": {
+        "public": "얼굴뼈 대부분과 이의 상아질, 뇌막 일부를 만드는 신경능선 세포예요.",
+        "student": "인두궁으로 들어가 얼굴·앞머리뼈, 이소골, 목뿔뼈, 상아질을 만든다. 몸통 뼈와 달리 얼굴뼈는 외배엽(신경능선) 기원이다.",
+        "clinical": "트리처 콜린스 증후군 — 제1인두궁 신경능선 결함, 하악·광대뼈 저형성."
+      },
+      "anomalies": [
+        "treacher-collins",
+        "cleft-lip",
+        "pierre-robin"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ncd",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "심장 신경능선",
+        "en": "Cardiac neural crest",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "nc",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "when": "5주~",
+      "carnegie": [],
+      "derivatives": [
+        "대동맥폐동맥 중격 (원추동맥간 중격)",
+        "대동맥궁 동맥의 평활근"
+      ],
+      "text": {
+        "public": "심장에서 나가는 큰 혈관 둘을 나누는 벽을 만드는 신경능선 세포예요.",
+        "student": "3·4·6 인두궁을 지나 유출로로 들어가 원추동맥간 능선을 만든다. 세부는 심혈관 모듈.",
+        "clinical": "원추동맥간 기형 — 총동맥간증(지속 동맥간), 대혈관전위, 팔로4징. 디조지 증후군에서 흔합니다."
+      },
+      "anomalies": [
+        "tof",
+        "tga",
+        "truncus",
+        "digeorge",
+        "iaa"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "links": [
+        "oft"
+      ]
+    },
+    {
+      "id": "nct",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "몸통 신경능선",
+        "en": "Trunk neural crest",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "nc",
+      "days": {
+        "start": 26,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~",
+      "carnegie": [],
+      "derivatives": [
+        "척수후근 신경절 (가성단극 감각신경원)",
+        "교감신경절 사슬",
+        "부신수질 크롬친화세포",
+        "슈반세포",
+        "멜라닌세포"
+      ],
+      "text": {
+        "public": "감각신경절, 교감신경, 부신 속질, 피부 색소세포를 만드는 신경능선 세포예요.",
+        "student": "몸통 신경능선의 두 경로: 배쪽 경로(감각·교감신경절, 부신수질, 슈반세포), 등가쪽 경로(멜라닌세포).",
+        "clinical": "갈색세포종, 신경모세포종(소아), 신경섬유종증(슈반세포 기원 종양), 흑색종, 얼룩무늬증·와르덴부르크 증후군(멜라닌세포 이주 결함)."
+      },
+      "anomalies": [
+        "neuroblastoma",
+        "pheochromocytoma",
+        "piebaldism"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ncv",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "미주·천골 신경능선",
+        "en": "Vagal & sacral crest",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "nc",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4–7주 장 이주",
+      "carnegie": [],
+      "derivatives": [
+        "장신경계 (마이스너, 아우어바흐 신경총)",
+        "장의 부교감 신경절"
+      ],
+      "text": {
+        "public": "장 벽의 신경(장신경계)을 만드는 신경능선 세포예요. 입 쪽에서 항문 쪽으로 이동해요.",
+        "student": "미주 신경능선이 4–7주에 장을 따라 머리 → 꼬리로 이주하고, 엉치 신경능선이 일부 보탠다. 이주가 멈춘 아래쪽은 신경절이 없다.",
+        "clinical": "히르슈스프룽병 — 이주가 원위 결장까지 닿지 못해 무신경절 분절 발생. RET 돌연변이."
+      },
+      "anomalies": [
+        "hirschsprung"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ncth",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "갑상샘 C세포",
+        "en": "Parafollicular C cells",
+        "alt": []
+      },
+      "layer": "ec",
+      "parent": "nc",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "when": "5–7주",
+      "carnegie": [],
+      "derivatives": [
+        "칼시토닌 분비 (제4인두낭 → 초후새체 경유)"
+      ],
+      "text": {
+        "public": "갑상샘에서 칼슘을 낮추는 호르몬(칼시토닌)을 만드는 세포예요.",
+        "student": "최신 관점: 교과서는 신경능선으로 적지만, 2015년 이후 생쥐 계보추적 연구(Johansson 등)에서는 내배엽 기원이 보고되었습니다. 시험은 보통 신경능선을 정답으로 봅니다.",
+        "clinical": "수질성 갑상샘암 — C세포 기원, MEN2와 연관."
+      },
+      "anomalies": [
+        "medullary-thyroid-ca"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "links": [
+        "pp4"
+      ],
+      "verifyNote": "C세포 기원 (신경능선 vs 내배엽)"
+    },
+    {
+      "id": "me",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "중배엽",
+        "en": "Mesoderm",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "gas",
+      "days": {
+        "start": 16,
+        "end": null,
+        "approx": true
+      },
+      "when": "3주",
+      "carnegie": [],
+      "derivatives": [
+        "몸의 '채움과 지지' 조직",
+        "근육, 뼈, 결합조직, 심혈관, 혈액, 비뇨생식계"
+      ],
+      "text": {
+        "public": "근육, 뼈, 심장, 혈관, 혈액, 콩팥, 생식샘 등 몸을 채우고 받치는 조직을 만드는 층이에요.",
+        "student": "정중선에서 바깥으로 축(척삭)·근축·중간·측판 중배엽으로 나뉜다. 바깥으로 갈수록 높아지는 BMP 농도가 운명을 정한다.",
+        "clinical": "중배엽 결함은 근골격·심혈관·비뇨생식 기형으로 나타나며, 여러 계통이 함께 침범되는 연합(VACTERL 등)이 흔하다."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ntc",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "척삭",
+        "en": "Notochord (axial mesoderm)",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "me",
+      "days": {
+        "start": 17,
+        "end": null,
+        "approx": true
+      },
+      "when": "17–20일",
+      "carnegie": [],
+      "derivatives": [
+        "신경관과 척추 형성을 유도하는 신호원(SHH)",
+        "퇴화 후 추간판 수핵으로만 남음"
+      ],
+      "text": {
+        "public": "몸 중심을 따라 생기는 막대로, 척추와 신경관이 제자리에 생기게 신호를 줘요. 나중엔 추간판 가운데만 남아요.",
+        "student": "원시결절에서 들어간 세포가 척삭돌기 → 척삭관 → (내배엽에 잠시 끼어든 척삭판) → 다시 접혀 단단한 척삭이 된다(17–21일). SHH로 신경관 바닥판(floor plate)과 경절판을 유도한다. 척삭앞판은 입인두막과 머리 형성에 관여한다.",
+        "clinical": "척삭종 — 척삭 잔존물의 종양, 사대(clivus)·천골에 호발."
+      },
+      "anomalies": [
+        "chordoma"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "note": "척삭앞판(prechordal plate)은 입인두막과 머리 형성에 관여합니다.",
+      "verifyNote": "척삭 형성 단계 서술"
+    },
+    {
+      "id": "par",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "근축중배엽",
+        "en": "Paraxial mesoderm",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "me",
+      "days": {
+        "start": 20,
+        "end": null,
+        "approx": true
+      },
+      "when": "20일 첫 체절 → 5주까지 42–44쌍",
+      "carnegie": [],
+      "derivatives": [
+        "체절: 뒤통수 4, 목 8, 가슴 12, 허리 5, 엉치 5, 꼬리 8–10쌍",
+        "체절 수는 이 시기 배아 나이 추정에 쓰임"
+      ],
+      "text": {
+        "public": "척수 양옆의 중배엽으로, 마디(체절)로 나뉘어 척추·등 근육·등 피부의 진피가 돼요.",
+        "student": "20일경 첫 체절이 생기고 하루 약 3쌍씩 늘어 5주 말 42–44쌍. 체절은 경절판(뼈), 근절판(근육), 피절판(진피), 힘줄판으로 나뉜다. 분절 시계(Notch·Wnt 주기)와 FGF8 기울기가 간격을 정한다.",
+        "clinical": "체절 수로 이 시기 배아 나이를 추정한다. 분절 이상(척추늑골형성이상, Notch 경로)은 반척추·늑골 융합을 만든다."
+      },
+      "anomalies": [
+        "hemivertebra"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "분절 시계 서술"
+    },
+    {
+      "id": "scl",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "경절판",
+        "en": "Sclerotome",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "par",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주",
+      "carnegie": [],
+      "derivatives": [
+        "척추뼈 (인접 두 경절판이 재분절해 하나의 척추 형성)",
+        "늑골",
+        "추간판 섬유륜",
+        "후두골 일부"
+      ],
+      "text": {
+        "public": "체절 중 뼈가 되는 부분으로, 척추뼈와 갈비뼈를 만들어요.",
+        "student": "경절판 세포가 척삭과 신경관을 둘러싼다. 재분절: 한 경절판의 아래 절반과 다음 경절판의 위 절반이 합쳐 척추뼈 하나가 되므로, 분절 근육이 두 척추뼈를 잇고 척수신경이 척추뼈 사이로 나온다.",
+        "clinical": "반척추 → 선천성 척추측만. 클리펠–파일 증후군 — 경추 유합."
+      },
+      "anomalies": [
+        "hemivertebra",
+        "klippel-feil"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "myo",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "근절판",
+        "en": "Myotome",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "par",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~",
+      "carnegie": [],
+      "derivatives": [
+        "축상근(epaxial) → 척주세움근 등 등 깊은 근육",
+        "축하근(hypaxial) → 체벽 근육, 사지 근육(사지싹으로 이주), 횡격막 근육",
+        "뒤통수 체절 → 혀 근육"
+      ],
+      "text": {
+        "public": "체절 중 근육이 되는 부분으로, 등·가슴·배·팔다리 근육을 만들어요.",
+        "student": "사지의 근육은 체절, 사지의 뼈·힘줄은 측판중배엽입니다.",
+        "clinical": "근육모세포 이주 장애로 특정 근육이 없을 수 있다(폴란드 증후군: 큰가슴근 결손). 프룬벨리 증후군의 배벽 근육 결손은 이와 별개로, 요로 폐쇄와 함께 나타나며 기전은 논란이 있다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "폴란드·프룬벨리 기전"
+    },
+    {
+      "id": "der",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "피절판",
+        "en": "Dermatome",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "par",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~",
+      "carnegie": [],
+      "derivatives": [
+        "등의 진피와 피하조직",
+        "피부분절(dermatome) 신경분포 패턴의 근거"
+      ],
+      "text": {
+        "public": "등 피부 아래 진피가 되는 부분이에요.",
+        "student": "피절판은 등의 진피를 만들고, 같은 분절의 척수신경이 그 피부를 담당해 피부분절 지도가 생긴다.",
+        "clinical": "대상포진 발진이 피부분절을 따라 띠 모양으로 나타납니다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "syd",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "힘줄판",
+        "en": "Syndetome",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "par",
+      "days": {
+        "start": 32,
+        "end": null,
+        "approx": true
+      },
+      "when": "4–5주",
+      "carnegie": [],
+      "derivatives": [
+        "축근의 힘줄 (Scleraxis 발현)"
+      ],
+      "text": {
+        "public": "체절 중 힘줄이 되는 작은 부분이에요.",
+        "student": "비교적 최근(2000년대) 정의된 체절 구획으로, 구판 교과서에는 없는 경우가 많습니다.",
+        "clinical": "임상적 의미는 아직 제한적이다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "hdm",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "두부 중배엽",
+        "en": "Head mesoderm",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "par",
+      "days": {
+        "start": 22,
+        "end": null,
+        "approx": true
+      },
+      "when": "3–4주",
+      "carnegie": [],
+      "derivatives": [
+        "외안근",
+        "인두궁 근육: 1궁 저작근, 2궁 표정근, 3궁 경돌인두근, 4–6궁 인두·후두근",
+        "머리뼈 뒤쪽 일부, 수막 일부"
+      ],
+      "text": {
+        "public": "머리 쪽 중배엽으로, 눈을 움직이는 근육, 씹는 근육, 표정 근육, 목·인두 근육이 생겨요.",
+        "student": "인두궁의 근육은 중배엽, 뼈·연골은 신경능선입니다.",
+        "clinical": "인두궁 근육은 궁의 신경을 따라간다: 1궁 V3, 2궁 VII, 3궁 IX, 4·6궁 X."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "links": [
+        "pa"
+      ]
+    },
+    {
+      "id": "lat",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "측판중배엽",
+        "en": "Lateral plate mesoderm",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "me",
+      "days": {
+        "start": 19,
+        "end": null,
+        "approx": true
+      },
+      "when": "3주 말 → 체강으로 벽측·장측 분리",
+      "carnegie": [],
+      "derivatives": [
+        "배아내 체강 형성 → 흉막강, 심막강, 복막강"
+      ],
+      "text": {
+        "public": "몸 옆쪽 중배엽으로, 두 장으로 갈라지고 그 사이가 가슴·배 공간이 돼요.",
+        "student": "측판중배엽이 벽측(체벽 쪽)과 장측(내장 쪽)으로 갈라지고 그 사이에 배아내체강이 생긴다. 접힘 뒤 체강은 심막강·흉막강·복막강으로 나뉜다.",
+        "clinical": "체강 분리 이상은 선천성 횡격막탈장으로 이어진다."
+      },
+      "anomalies": [
+        "cdh"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "links": [
+        "icoel"
+      ]
+    },
+    {
+      "id": "som",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "벽측 중배엽",
+        "en": "Somatic (parietal) layer",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "lat",
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~",
+      "carnegie": [],
+      "derivatives": [
+        "사지의 뼈, 연골, 인대, 힘줄",
+        "흉골",
+        "체벽 진피와 결합조직",
+        "벽측 흉막·심막·복막"
+      ],
+      "text": {
+        "public": "몸통 벽과 팔다리의 뼈·연골·힘줄을 만드는 층이에요.",
+        "student": "벽측 중배엽은 외배엽과 함께 체벽을 만든다. 사지싹: 26–28일 팔싹, 이틀 뒤 다리싹. AER(FGF)은 길이, ZPA(SHH)는 앞뒤(엄지–새끼), 등쪽 외배엽 WNT7a는 등–배 축을 정한다.",
+        "clinical": "다지증 — ZPA의 SHH 신호 이상. 합지증 — 손발가락 사이 세포자멸사 실패. 탈리도마이드 — 사지 결손."
+      },
+      "anomalies": [
+        "polydactyly",
+        "syndactyly"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "spl",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "장측 중배엽",
+        "en": "Splanchnic (visceral) layer",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "lat",
+      "days": {
+        "start": 19,
+        "end": null,
+        "approx": true
+      },
+      "when": "3주~",
+      "carnegie": [],
+      "derivatives": [
+        "장관벽 평활근, 고유판·점막하 결합조직",
+        "장측 장막 (내장 쪽 복막·흉막)",
+        "내장 혈관"
+      ],
+      "text": {
+        "public": "장, 심장, 폐 같은 내장의 벽(근육, 결합조직)과 혈관을 만드는 층이에요.",
+        "student": "장측 중배엽은 내배엽과 함께 내장벽을 만든다. 내배엽 상피 + 장측 중배엽 벽 = 거의 모든 내장의 기본 구조.",
+        "clinical": "장관 벽 근육 이상의 예: 비후성 유문협착(유문 근육층 비후)."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "hrt",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "심장",
+        "en": "Heart (cardiac fields)",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "spl",
+      "days": {
+        "start": 19,
+        "end": null,
+        "approx": true
+      },
+      "when": "19일 심장발생구역 · 21–22일 심장관 · 22일 박동 시작 · 8주 4방 완성",
+      "carnegie": [],
+      "derivatives": [
+        "일차심장장 → 좌심실 대부분",
+        "이차심장장 → 우심실, 유출로, 심방 일부",
+        "심외막전구체(proepicardium) → 심외막, 관상혈관",
+        "심내막쿠션 → 방실판막, 중격"
+      ],
+      "text": {
+        "public": "심장은 장측 중배엽에서 생기고, 22일쯤 뛰기 시작하는 첫 번째 기관이에요.",
+        "student": "심장은 배아에서 처음으로 기능하는 기관이다. 심장관 → 고리 형성 → 중격 형성의 세부는 심혈관 모듈.",
+        "clinical": "심실중격결손이 가장 흔한 선천 심장병. 심내막쿠션 결손은 다운증후군에서 흔합니다."
+      },
+      "anomalies": [
+        "vsd",
+        "avsd",
+        "tof"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "note": "심장은 배아에서 처음으로 기능하는 기관입니다.",
+      "links": [
+        "htube",
+        "fcirc"
+      ]
+    },
+    {
+      "id": "bld",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "혈액과 혈관",
+        "en": "Blood & vessels",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "spl",
+      "days": {
+        "start": 17,
+        "end": null,
+        "approx": true
+      },
+      "when": "17일 난황낭 혈도 → 5주 AGM → 6주 간 → 10주~ 골수",
+      "carnegie": [],
+      "derivatives": [
+        "원시 조혈: 난황낭 혈도 (원시 적혈구, 대식세포)",
+        "확정 조혈: 대동맥–생식선–중신(AGM)의 조혈내피 → 조혈모세포",
+        "태아 간 → 비장 → 골수로 조혈 장소 이동",
+        "혈관 내피, 혈관 평활근 일부"
+      ],
+      "text": {
+        "public": "첫 혈구는 난황 주머니 벽에서, 평생 쓸 조혈모세포는 대동맥 주변에서 생겨 간을 거쳐 뼛속으로 옮겨가요.",
+        "student": "뇌의 미세아교세포, 간의 쿠퍼세포 일부는 난황낭 대식세포에서 출생 전에 자리 잡습니다.",
+        "clinical": "조혈 장소 순서(난황낭 → AGM → 간 → 비장 → 골수)는 태아 간비대, 골수외조혈 해석의 근거. 태아 헤모글로빈(HbF)은 출생 후 몇 달에 걸쳐 성인형으로 바뀐다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "spn",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "비장",
+        "en": "Spleen",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "spl",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "when": "5주",
+      "carnegie": [],
+      "derivatives": [
+        "등쪽위창자간막의 중간엽 응집"
+      ],
+      "text": {
+        "public": "비장은 위 뒤쪽 막 사이의 중배엽에서 생겨요. 소화관 옆이지만 소화관 세포에서 생기지 않아요.",
+        "student": "등쪽위창자간막 속 중간엽이 5주에 모여 생기며, 위가 회전할 때 왼쪽으로 옮겨간다. 위비장인대·비장콩팥인대가 이 창자간막의 흔적이다.",
+        "clinical": "부비장 — 위비장인대 등에 흔함. 소화관 옆이지만 내배엽이 아닙니다."
+      },
+      "anomalies": [
+        "accessory-spleen"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "lym",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "림프계",
+        "en": "Lymphatics",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "spl",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "when": "5주 말–6주",
+      "carnegie": [],
+      "derivatives": [
+        "정맥 내피에서 싹튼 림프주머니",
+        "림프관, 림프절 기질",
+        "흉관"
+      ],
+      "text": {
+        "public": "림프관은 정맥에서 싹터 나와요. 목에 있는 림프 주머니가 대표적이에요.",
+        "student": "5주 말–6주에 정맥 내피에서 림프주머니(목 2, 엉덩 2, 후복막 1, 가슴림프관팽대 1)가 생기고 서로 이어져 가슴관이 된다. 림프절은 림프구가 들어오며 완성된다.",
+        "clinical": "낭성 림프관종(낭성 히그로마) — 터너 증후군과 연관."
+      },
+      "anomalies": [
+        "cystic-hygroma",
+        "turner"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "림프주머니 6개 서술",
+      "verify": true
+    },
+    {
+      "id": "en",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "내배엽",
+        "en": "Endoderm",
+        "alt": []
+      },
+      "layer": "en",
+      "parent": "gas",
+      "days": {
+        "start": 16,
+        "end": null,
+        "approx": true
+      },
+      "when": "3주",
+      "carnegie": [],
+      "derivatives": [
+        "원시장관 → 소화관과 그 부속샘의 상피",
+        "호흡기 상피",
+        "인두낭 유래 기관"
+      ],
+      "text": {
+        "public": "소화관과 폐의 안쪽 표면, 간·췌장·갑상샘 같은 샘을 만드는 층이에요.",
+        "student": "내배엽이 만드는 것은 대부분 상피와 실질이고, 근육·결합조직은 장측 중배엽이다. 접힘으로 원시장관(전장·중장·후장)이 생기고 각 부분은 동맥 영역(복강·위창자간막·아래창자간막동맥)으로 나뉜다.",
+        "clinical": "내배엽 결함은 장폐쇄, 기관식도루 같은 관 구조 이상으로 나타난다."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "note": "내배엽이 만드는 것은 대부분 상피와 실질이고, 근육·결합조직은 장측 중배엽입니다."
+    },
+    {
+      "id": "fg",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "전장",
+        "en": "Foregut",
+        "alt": []
+      },
+      "layer": "en",
+      "parent": "en",
+      "days": {
+        "start": 22,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~ · 복강동맥 영역",
+      "carnegie": [],
+      "derivatives": [
+        "인두 ~ 큰십이지장유두(온쓸개관 개구부) 바로 위까지의 십이지장",
+        "간, 담낭, 췌장, 호흡기의 싹"
+      ],
+      "text": {
+        "public": "입 뒤쪽부터 십이지장 앞부분까지의 장으로, 식도·위·간·췌장·폐가 여기서 생겨요.",
+        "student": "전장 = 인두~큰십이지장유두(온쓸개관 개구부) 바로 위. 복부 전장은 복강동맥 영역. 앞벽에서 호흡게실, 십이지장 부근에서 간·췌장싹이 나온다.",
+        "clinical": "전장 기관의 내장통은 명치(상복부)에서 느껴진다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "thy",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "갑상샘",
+        "en": "Thyroid gland",
+        "alt": []
+      },
+      "layer": "en",
+      "parent": "fg",
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "when": "24일 설맹공 → 7주 목 앞 도달",
+      "carnegie": [],
+      "derivatives": [
+        "갑상샘 여포세포 (T3, T4)",
+        "갑상샘설관을 따라 하강"
+      ],
+      "text": {
+        "public": "갑상샘은 혀뿌리에서 생겨 목 앞으로 내려와요. 내려온 길이 남으면 목 가운데 혹이 생길 수 있어요.",
+        "student": "24일 혀뿌리 막구멍에서 게실 → 갑상설관을 따라 목뿔뼈 앞을 지나 7주 기관 앞 도착 → 10–12주 호르몬 생산. 갑상설관은 대개 사라지고 아래 끝이 피라미드엽으로 남기도 한다.",
+        "clinical": "갑상설관낭종 — 목 정중앙, 혀를 내밀면 움직임. 설갑상샘 — 하강 실패."
+      },
+      "anomalies": [
+        "thyroglossal-cyst",
+        "lingual-thyroid"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "rsp",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "호흡기",
+        "en": "Respiratory diverticulum",
+        "alt": []
+      },
+      "layer": "en",
+      "parent": "fg",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주 싹 · 24–26주 계면활성제 · 출생 후 8세까지 폐포 증가",
+      "carnegie": [],
+      "derivatives": [
+        "후두, 기관, 기관지의 상피와 샘",
+        "1형·2형 폐포세포",
+        "단계: 배아기 → 가성선기 → 소관기 → 종말주머니기 → 폐포기"
+      ],
+      "text": {
+        "public": "폐는 4주에 식도 앞벽의 작은 주머니에서 시작해 가지를 치며 자라요. 출생 직전까지 숨쉴 준비가 계속돼요.",
+        "student": "연골·평활근·결합조직은 장측 중배엽입니다.",
+        "clinical": "기관식도루 — 기관식도중격 이상, 양수과다. 신생아 호흡곤란증후군 — 미숙아 계면활성제 부족."
+      },
+      "anomalies": [
+        "tef",
+        "nrds"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true
+    },
+    {
+      "id": "stm2",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "식도·위·십이지장 상부",
+        "en": "Esophagus, stomach, proximal duodenum",
+        "alt": []
+      },
+      "layer": "en",
+      "parent": "fg",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~ · 위 90° 회전",
+      "carnegie": [],
+      "derivatives": [
+        "점막 상피와 위샘 (벽세포, 주세포)",
+        "위의 시계 방향 90° 회전 → 미주신경 위치 변화"
+      ],
+      "text": {
+        "public": "식도·위·십이지장 윗부분의 안쪽 점막이 전장에서 생겨요.",
+        "student": "식도는 기관식도중격으로 기관과 나뉜 뒤 길어진다. 위는 세로축 시계방향 90° 회전(왼미주신경이 앞으로) + 앞뒤축 회전. 십이지장은 내강이 막혔다 다시 뚫린다(재소관화).",
+        "clinical": "식도폐쇄(양수과다), 비후성 유문협착(분출성 구토, 근육은 중배엽), 십이지장 폐쇄(재소관화 실패, 다운증후군·이중 기포 징후)."
+      },
+      "anomalies": [
+        "tef",
+        "pyloric-stenosis",
+        "duodenal-atresia",
+        "trisomy21"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "liv",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "간과 담도",
+        "en": "Hepatic diverticulum",
+        "alt": []
+      },
+      "layer": "en",
+      "parent": "fg",
+      "days": {
+        "start": 26,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주 간게실",
+      "carnegie": [],
+      "derivatives": [
+        "간세포",
+        "간내·간외 담관 상피",
+        "담낭"
+      ],
+      "text": {
+        "public": "간은 4주에 십이지장 근처 장에서 싹터 나오고, 태아기에는 피를 만드는 일도 해요.",
+        "student": "간의 결합조직은 가로중격 중배엽이다. 조혈세포는 AGM에서 온 조혈모세포가 자리 잡은 것이고, 쿠퍼세포는 난황낭 대식세포 유래다(구판 교과서는 가로중격 기원으로 서술).",
+        "clinical": "담도폐쇄 — 신생아 황달 지속, 간이식의 흔한 소아 원인."
+      },
+      "anomalies": [
+        "biliary-atresia"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true
+    },
+    {
+      "id": "pan",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "췌장",
+        "en": "Pancreas",
+        "alt": []
+      },
+      "layer": "en",
+      "parent": "fg",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주 두 싹 · 7주 융합",
+      "carnegie": [],
+      "derivatives": [
+        "등쪽 췌장싹 → 머리 위쪽, 몸통, 꼬리, 부췌관",
+        "배쪽 췌장싹 → 머리 아래쪽, 갈고리돌기, 주췌관의 가까운 쪽",
+        "외분비 선방세포, 췌관, 랑게르한스섬"
+      ],
+      "text": {
+        "public": "췌장은 십이지장 앞뒤에서 생긴 두 싹이 돌아서 합쳐진 거예요.",
+        "student": "배쪽 싹이 십이지장 뒤로 돌아 등쪽 싹 아래에 붙는다(7주). 주췌관 = 배쪽 싹의 관 + 등쪽 싹 관의 먼 쪽, 부췌관 = 등쪽 싹 관의 가까운 쪽. 인슐린 분비는 약 5개월부터.",
+        "clinical": "윤상췌장 — 배쪽 싹이 십이지장을 감쌈. 췌장분리증 — 두 관이 융합하지 못함."
+      },
+      "anomalies": [
+        "annular-pancreas",
+        "pancreas-divisum"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "인슐린 분비 시작 시기"
+    },
+    {
+      "id": "mg",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "중장",
+        "en": "Midgut",
+        "alt": []
+      },
+      "layer": "en",
+      "parent": "en",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "6주 생리적 탈장 → 반시계 270° 회전 → 10주 복귀",
+      "carnegie": [],
+      "derivatives": [
+        "큰십이지장유두 아래 십이지장 ~ 횡행결장 근위 2/3 상피",
+        "상장간막동맥 영역"
+      ],
+      "text": {
+        "public": "십이지장 아래부터 대장 앞부분까지로, 6주에 탯줄 안으로 잠시 나갔다가 돌면서 돌아와요.",
+        "student": "중장고리가 위창자간막동맥을 축으로 반시계 270° 회전한다(탈장 중 90°, 복귀하며 180°). 고리 꼭지에 난황관이 붙어 있다.",
+        "clinical": "장회전이상·중장염전, 메켈게실(난황관 잔존, '2의 법칙'), 배꼽내장탈출증(제대류; 복귀 실패, 양막·복막으로 덮임), 복벽갈림증(복막 없이 탈출)."
+      },
+      "anomalies": [
+        "malrotation",
+        "meckel",
+        "omphalocele",
+        "gastroschisis"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "links": [
+        "vitd"
+      ]
+    },
+    {
+      "id": "hg",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "후장",
+        "en": "Hindgut",
+        "alt": []
+      },
+      "layer": "en",
+      "parent": "en",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "when": "4주~ · 7주 총배설강 분리",
+      "carnegie": [],
+      "derivatives": [
+        "횡행결장 원위 1/3 ~ 직장 상피",
+        "항문관 상부 2/3 (빗살선 위)",
+        "하장간막동맥 영역"
+      ],
+      "text": {
+        "public": "대장 뒷부분부터 직장, 항문 위쪽까지가 생겨요.",
+        "student": "후장 끝 총배설강이 요직장중격으로 앞(비뇨생식동)과 뒤(항문직장관)로 나뉜다(7주). 항문막은 7주 말에 터진다.",
+        "clinical": "쇄항 — 요직장중격 이상, 누공 동반."
+      },
+      "anomalies": [
+        "imperforate-anus"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "mix",
+      "title": "한 기관, 여러 배엽",
+      "columns": [
+        "기관",
+        "외배엽·신경능선",
+        "중배엽",
+        "내배엽"
+      ],
+      "rows": [
+        {
+          "ref": "mg",
+          "cells": [
+            "소화관",
+            "장신경계 (신경능선)",
+            "평활근, 결합조직, 장막",
+            "점막 상피, 샘"
+          ]
+        },
+        {
+          "ref": "rsp",
+          "cells": [
+            "폐",
+            "자율신경 (신경능선)",
+            "연골, 평활근, 혈관",
+            "기도·폐포 상피"
+          ]
+        },
+        {
+          "ref": "epd",
+          "cells": [
+            "피부",
+            "표피, 털, 샘, 멜라닌세포 (신경능선)",
+            "진피 (등은 체절, 그 외 측판)",
+            "-"
+          ]
+        },
+        {
+          "ref": "stm",
+          "cells": [
+            "치아",
+            "법랑질 (표면외배엽), 상아질, 치수, 백악질 (신경능선)",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "ref": "adc",
+          "cells": [
+            "부신",
+            "수질 (신경능선)",
+            "피질 (체강상피)",
+            "-"
+          ]
+        },
+        {
+          "ref": "rat",
+          "cells": [
+            "뇌하수체",
+            "전엽 (라트케낭, 표면외배엽), 후엽 (간뇌 누두, 신경외배엽)",
+            "-",
+            "-"
+          ]
+        },
+        {
+          "ref": "thy",
+          "cells": [
+            "갑상샘",
+            "C세포 (신경능선, 최근 내배엽설)",
+            "기질",
+            "여포세포 (설맹공)"
+          ]
+        },
+        {
+          "ref": "pp3",
+          "cells": [
+            "흉선",
+            "피막·기질 (신경능선)",
+            "T림프구 (조혈모세포)",
+            "상피세포 (제3인두낭)"
+          ]
+        },
+        {
+          "ref": "eye",
+          "cells": [
+            "눈",
+            "망막, 시신경 (신경외배엽), 수정체, 각막 상피 (표면외배엽), 각막 기질, 홍채 기질 (신경능선)",
+            "외안근, 공막 일부",
+            "-"
+          ]
+        },
+        {
+          "ref": "plc",
+          "cells": [
+            "귀",
+            "내이 막미로 (귀판), 이소골 (신경능선), 외이도 (제1인두열)",
+            "-",
+            "중이강, 이관 (제1인두낭)"
+          ]
+        },
+        {
+          "ref": "hrt",
+          "cells": [
+            "심장",
+            "유출로 중격 (신경능선)",
+            "심근, 심내막, 심외막",
+            "-"
+          ]
+        },
+        {
+          "ref": "ugs",
+          "cells": [
+            "방광",
+            "-",
+            "삼각부 (중신관), 배뇨근",
+            "상피 (비뇨생식동)"
+          ]
+        },
+        {
+          "ref": "ncc",
+          "cells": [
+            "얼굴과 머리뼈",
+            "얼굴뼈, 앞쪽 머리뼈 (신경능선)",
+            "뒤쪽 머리뼈, 두개저 일부 (근축중배엽)",
+            "-"
+          ]
+        }
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "polythelia",
+      "name": {
+        "ko": "다유두증",
+        "en": "Polythelia",
+        "alt": [
+          "덧젖꼭지"
+        ]
+      },
+      "cause": [
+        "epd"
+      ],
+      "period": {
+        "start": 28,
+        "end": 42
+      },
+      "mechanism": "유선능선(겨드랑이~샅)이 일부 남음.",
+      "findings": [
+        "유선능선을 따라 생긴 작은 젖꼭지",
+        "대개 무해"
+      ],
+      "genes": [],
+      "public": "젖꼭지가 하나 더 있는 흔한 변이로, 보통 치료가 필요 없어요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "congenital-cataract",
+      "name": {
+        "ko": "선천 백내장",
+        "en": "Congenital cataract",
+        "alt": []
+      },
+      "cause": [
+        "eye"
+      ],
+      "period": {
+        "start": 28,
+        "end": 49
+      },
+      "mechanism": "수정체 형성기에 수정체 섬유가 혼탁해짐.",
+      "findings": [
+        "임신 4–7주 풍진 감염",
+        "갈락토스혈증 등 대사질환, 유전"
+      ],
+      "genes": [],
+      "public": "태어날 때부터 눈의 수정체가 뿌옇게 된 상태로, 시력 발달을 위해 일찍 치료해야 해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "craniopharyngioma",
+      "name": {
+        "ko": "두개인두종",
+        "en": "Craniopharyngioma",
+        "alt": []
+      },
+      "cause": [
+        "rat"
+      ],
+      "period": {
+        "start": 24,
+        "end": 56
+      },
+      "mechanism": "라트케낭 잔존 상피에서 종양이 생김.",
+      "findings": [
+        "양측두 반맹(시신경교차 압박)",
+        "성장 지연, 요붕증",
+        "석회화된 낭종"
+      ],
+      "genes": [],
+      "public": "뇌하수체 근처에 생기는 양성 종양으로, 시야나 성장에 영향을 줄 수 있어요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "holoprosencephaly",
+      "name": {
+        "ko": "전뇌무분할증",
+        "en": "Holoprosencephaly",
+        "alt": []
+      },
+      "cause": [
+        "pro",
+        "fnp"
+      ],
+      "period": {
+        "start": 23,
+        "end": 35
+      },
+      "mechanism": "전뇌가 좌우 반구로 나뉘지 않음. SHH 경로 이상.",
+      "findings": [
+        "단안증, 코 결손, 정중 구순열",
+        "13번 삼염색체와 연관",
+        "산모 당뇨, 알코올과 연관"
+      ],
+      "genes": [
+        "SHH",
+        "13번 삼염색체"
+      ],
+      "public": "뇌가 좌우로 나뉘지 못한 심한 기형으로, 얼굴 가운데 기형이 함께 나타나요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "neuronal-migration",
+      "name": {
+        "ko": "신경원 이주 장애",
+        "en": "Neuronal migration disorders",
+        "alt": [
+          "민뇌증",
+          "뇌이랑없음증",
+          "다소뇌회증"
+        ]
+      },
+      "cause": [
+        "tel"
+      ],
+      "period": {
+        "start": 42,
+        "end": 140
+      },
+      "mechanism": "피질로 가는 신경원 이주가 멈추거나 흐트러짐.",
+      "findings": [
+        "뇌전증, 발달지연",
+        "LIS1, DCX 등 유전자, 태아 감염(CMV)"
+      ],
+      "genes": [
+        "LIS1 (PAFAH1B1)",
+        "DCX"
+      ],
+      "public": "뇌세포가 제자리로 이동하지 못해 뇌 주름이 적거나 비정상인 상태예요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "시기 범위"
+    },
+    {
+      "id": "aqueductal-stenosis",
+      "name": {
+        "ko": "중뇌수도 협착",
+        "en": "Aqueductal stenosis",
+        "alt": []
+      },
+      "cause": [
+        "mes"
+      ],
+      "period": {
+        "start": 35,
+        "end": 266
+      },
+      "mechanism": "중뇌수도가 좁거나 막힘.",
+      "findings": [
+        "선천 수두증의 흔한 원인",
+        "X연관형(L1CAM), 태아 감염"
+      ],
+      "genes": [
+        "L1CAM"
+      ],
+      "public": "뇌척수액이 지나는 좁은 길이 막혀 머리에 물이 차는 상태예요. 관을 넣는 수술로 치료해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "chiari-1",
+      "name": {
+        "ko": "키아리 1형 기형",
+        "en": "Chiari type I malformation",
+        "alt": []
+      },
+      "cause": [
+        "rho",
+        "scl"
+      ],
+      "period": {
+        "start": 28,
+        "end": 266
+      },
+      "mechanism": "뒤머리뼈우묵이 작아 소뇌편도가 큰구멍 아래로 빠짐.",
+      "findings": [
+        "청소년·성인에서 뒤통수 두통, 기침할 때 악화",
+        "척수공동증 동반 가능",
+        "이분척추와 무관"
+      ],
+      "genes": [],
+      "public": "소뇌 아랫부분이 머리뼈 아래로 약간 내려온 상태로, 증상이 있을 때만 치료해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "chiari-2",
+      "name": {
+        "ko": "키아리 2형 기형",
+        "en": "Chiari type II (Arnold–Chiari) malformation",
+        "alt": [
+          "아놀드–키아리 기형"
+        ]
+      },
+      "cause": [
+        "rho",
+        "nt"
+      ],
+      "period": {
+        "start": 22,
+        "end": 266
+      },
+      "mechanism": "척수수막류로 뇌척수액이 새어 뒤머리뼈우묵이 작게 자라고, 소뇌충부·뇌간이 아래로 빠짐.",
+      "findings": [
+        "거의 항상 척수수막류 동반",
+        "수두증",
+        "삼킴·호흡 문제"
+      ],
+      "genes": [],
+      "public": "척추가 덜 닫힌 아기(척수수막류)에서 소뇌와 뇌줄기가 아래로 빠지는 기형으로, 수두증 치료가 함께 필요해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "dandy-walker",
+      "name": {
+        "ko": "단디–워커 기형",
+        "en": "Dandy–Walker malformation",
+        "alt": []
+      },
+      "cause": [
+        "rho"
+      ],
+      "period": {
+        "start": 35,
+        "end": 266
+      },
+      "mechanism": "소뇌충부가 없거나 덜 형성되고 제4뇌실이 낭성으로 커짐.",
+      "findings": [
+        "뒤머리뼈우묵 확장",
+        "수두증"
+      ],
+      "genes": [],
+      "public": "소뇌 가운데 부분이 없거나 작고 뇌 뒤쪽에 물주머니가 생기는 기형이에요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "hirschsprung",
+      "name": {
+        "ko": "히르슈스프룽병",
+        "en": "Hirschsprung disease",
+        "alt": [
+          "선천거대결장"
+        ]
+      },
+      "cause": [
+        "ncv",
+        "hg"
+      ],
+      "period": {
+        "start": 35,
+        "end": 84
+      },
+      "mechanism": "미주 신경능선 이주가 원위 결장까지 닿지 못해 신경절 없는 분절이 생김.",
+      "findings": [
+        "태변 배출 지연(48시간 이후)",
+        "복부 팽만, 무신경절 분절 위쪽 결장 확장",
+        "직장 생검으로 진단",
+        "다운증후군과 연관"
+      ],
+      "genes": [
+        "RET",
+        "EDNRB"
+      ],
+      "public": "장 끝부분에 신경세포가 없어 변이 나오지 못하는 병이에요. 수술로 그 부분을 잘라내요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "neuroblastoma",
+      "name": {
+        "ko": "신경모세포종",
+        "en": "Neuroblastoma",
+        "alt": []
+      },
+      "cause": [
+        "nct"
+      ],
+      "period": {
+        "start": 28,
+        "end": 266
+      },
+      "mechanism": "교감신경계·부신수질로 가는 신경능선 세포에서 생긴 종양.",
+      "findings": [
+        "소아 고형 종양 중 흔함 (영유아)",
+        "부신에 호발, 소변 카테콜아민 대사물 증가",
+        "MYCN 증폭은 나쁜 예후"
+      ],
+      "genes": [
+        "MYCN"
+      ],
+      "public": "아이의 부신이나 신경 줄기에 생기는 암이에요. 나이와 단계에 따라 치료가 달라요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pheochromocytoma",
+      "name": {
+        "ko": "갈색세포종",
+        "en": "Pheochromocytoma",
+        "alt": []
+      },
+      "cause": [
+        "nct"
+      ],
+      "period": {
+        "start": 35,
+        "end": 266
+      },
+      "mechanism": "부신수질 크롬친화세포(신경능선 기원)의 종양.",
+      "findings": [
+        "발작성 고혈압, 두통, 발한, 두근거림",
+        "MEN2, VHL, 신경섬유종증 1형과 연관"
+      ],
+      "genes": [
+        "RET",
+        "VHL",
+        "NF1"
+      ],
+      "public": "부신에서 혈압을 올리는 호르몬을 지나치게 만드는 종양이에요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "piebaldism",
+      "name": {
+        "ko": "얼룩무늬증·와르덴부르크 증후군",
+        "en": "Piebaldism and Waardenburg syndrome",
+        "alt": []
+      },
+      "cause": [
+        "nct"
+      ],
+      "period": {
+        "start": 28,
+        "end": 84
+      },
+      "mechanism": "멜라닌세포 이주·생존 결함.",
+      "findings": [
+        "이마의 흰 머리털, 피부 탈색 반점",
+        "와르덴부르크: 감각신경성 난청, 홍채 이색 동반"
+      ],
+      "genes": [
+        "KIT (얼룩무늬증)",
+        "PAX3 등 (와르덴부르크)"
+      ],
+      "public": "색소세포가 피부 일부에 도착하지 못해 흰 반점이 생기는 유전 질환이에요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "medullary-thyroid-ca",
+      "name": {
+        "ko": "갑상샘 수질암",
+        "en": "Medullary thyroid carcinoma",
+        "alt": []
+      },
+      "cause": [
+        "ncth"
+      ],
+      "period": {
+        "start": 35,
+        "end": 266
+      },
+      "mechanism": "C세포 기원 악성 종양.",
+      "findings": [
+        "칼시토닌 상승",
+        "MEN2A·2B(RET)에서 가족성"
+      ],
+      "genes": [
+        "RET"
+      ],
+      "public": "갑상샘의 칼시토닌 세포에서 생기는 암으로, 유전되는 형태가 있어 가족 검사가 중요해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "chordoma",
+      "name": {
+        "ko": "척삭종",
+        "en": "Chordoma",
+        "alt": []
+      },
+      "cause": [
+        "ntc"
+      ],
+      "period": {
+        "start": 17,
+        "end": 266
+      },
+      "mechanism": "척삭 잔존물에서 생긴 종양.",
+      "findings": [
+        "머리뼈 비탈(사대)과 엉치뼈에 호발",
+        "천천히 자라지만 국소 재발이 많음"
+      ],
+      "genes": [],
+      "public": "태아 때 척추 중심을 이루던 조직이 남아 생기는 드문 뼈 종양이에요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "hemivertebra",
+      "name": {
+        "ko": "반척추",
+        "en": "Hemivertebra",
+        "alt": []
+      },
+      "cause": [
+        "scl",
+        "par"
+      ],
+      "period": {
+        "start": 28,
+        "end": 49
+      },
+      "mechanism": "척추뼈 한쪽 절반이 생기지 않음.",
+      "findings": [
+        "선천성 척추옆굽음",
+        "VACTERL 연합과 동반 가능"
+      ],
+      "genes": [],
+      "public": "척추뼈 한쪽이 덜 생겨 척추가 휘는 상태예요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "klippel-feil",
+      "name": {
+        "ko": "클리펠–파일 증후군",
+        "en": "Klippel–Feil syndrome",
+        "alt": []
+      },
+      "cause": [
+        "scl"
+      ],
+      "period": {
+        "start": 28,
+        "end": 49
+      },
+      "mechanism": "목뼈 분절이 나뉘지 않아 둘 이상 붙음.",
+      "findings": [
+        "짧은 목, 낮은 뒤 머리털선, 목 움직임 제한"
+      ],
+      "genes": [],
+      "public": "목뼈가 서로 붙어 태어나 목이 짧고 덜 움직이는 상태예요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "polydactyly",
+      "name": {
+        "ko": "다지증",
+        "en": "Polydactyly",
+        "alt": [
+          "덧손가락증"
+        ]
+      },
+      "cause": [
+        "som"
+      ],
+      "period": {
+        "start": 33,
+        "end": 56
+      },
+      "mechanism": "사지싹 신호중심(ZPA의 SHH) 이상으로 손발가락이 더 생김.",
+      "findings": [
+        "전체로는 새끼 쪽(축후) 다지증이 흔하지만, 동아시아인의 손에서는 엄지 쪽(축전) 다지증이 더 흔함",
+        "13번 삼염색체 등 증후군 동반 가능"
+      ],
+      "genes": [
+        "SHH 조절부위(ZRS)",
+        "GLI3"
+      ],
+      "public": "손가락이나 발가락이 하나 더 있는 흔한 기형으로, 필요하면 수술로 정리해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "syndactyly",
+      "name": {
+        "ko": "합지증",
+        "en": "Syndactyly",
+        "alt": [
+          "붙은손가락증"
+        ]
+      },
+      "cause": [
+        "som"
+      ],
+      "period": {
+        "start": 42,
+        "end": 56
+      },
+      "mechanism": "손발가락 사이 세포자멸사가 일어나지 않음.",
+      "findings": [
+        "피부만 붙은 경우와 뼈까지 붙은 경우"
+      ],
+      "genes": [],
+      "public": "손가락이나 발가락이 붙어 태어나는 경우로, 수술로 나눠줘요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "accessory-spleen",
+      "name": {
+        "ko": "부비장",
+        "en": "Accessory spleen",
+        "alt": [
+          "덧비장"
+        ]
+      },
+      "cause": [
+        "spn"
+      ],
+      "period": {
+        "start": 35,
+        "end": 84
+      },
+      "mechanism": "비장 조직이 본 비장과 따로 뭉침.",
+      "findings": [
+        "인구의 약 10%",
+        "비장문, 위비장인대 근처",
+        "비장 절제 후 남으면 재발 원인"
+      ],
+      "genes": [],
+      "public": "작은 비장 조직이 하나 더 있는 흔한 변이로, 대개 문제가 없어요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "빈도"
+    },
+    {
+      "id": "cystic-hygroma",
+      "name": {
+        "ko": "낭성 림프관종",
+        "en": "Cystic hygroma (lymphatic malformation)",
+        "alt": [
+          "낭성 히그로마"
+        ]
+      },
+      "cause": [
+        "lym"
+      ],
+      "period": {
+        "start": 42,
+        "end": 266
+      },
+      "mechanism": "목 림프주머니가 정맥계와 이어지지 못하고 커짐.",
+      "findings": [
+        "목 뒤쪽 큰 물혹",
+        "터너 증후군, 다운증후군과 연관",
+        "태아 수종 동반 시 예후 나쁨"
+      ],
+      "genes": [],
+      "public": "목에 림프액이 고인 물혹이에요. 염색체 검사가 함께 권유돼요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "thyroglossal-cyst",
+      "name": {
+        "ko": "갑상설관낭종",
+        "en": "Thyroglossal duct cyst",
+        "alt": []
+      },
+      "cause": [
+        "thy"
+      ],
+      "period": {
+        "start": 24,
+        "end": 49
+      },
+      "mechanism": "갑상샘이 내려온 길(갑상설관)이 남아 낭종이 됨.",
+      "findings": [
+        "목 정중선 혹, 혀를 내밀거나 삼킬 때 위로 움직임",
+        "목뿔뼈 근처",
+        "수술 시 목뿔뼈 가운데를 함께 제거(시스트렁크 수술)"
+      ],
+      "genes": [],
+      "public": "갑상샘이 내려온 길이 남아 목 가운데 생기는 물혹이에요. 수술로 제거해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "lingual-thyroid",
+      "name": {
+        "ko": "혀갑상샘",
+        "en": "Lingual thyroid",
+        "alt": [
+          "이소성 갑상샘"
+        ]
+      },
+      "cause": [
+        "thy"
+      ],
+      "period": {
+        "start": 24,
+        "end": 49
+      },
+      "mechanism": "갑상샘이 내려가지 않고 혀뿌리에 남음.",
+      "findings": [
+        "혀뿌리 덩이, 삼킴·호흡 곤란 가능",
+        "유일한 갑상샘 조직인 경우가 많음 → 제거 전 확인"
+      ],
+      "genes": [],
+      "public": "갑상샘이 혀 뒤쪽에 그대로 남은 경우예요. 제거 전 다른 갑상샘이 있는지 꼭 확인해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "tef",
+      "name": {
+        "ko": "식도폐쇄·기관식도루",
+        "en": "Esophageal atresia and tracheoesophageal fistula",
+        "alt": []
+      },
+      "cause": [
+        "rsp",
+        "stm2"
+      ],
+      "period": {
+        "start": 28,
+        "end": 42
+      },
+      "mechanism": "기관식도중격이 기관과 식도를 제대로 나누지 못함.",
+      "findings": [
+        "가장 흔한 형: 위쪽 식도 막힘 + 아래쪽 식도가 기관과 연결",
+        "양수과다",
+        "첫 수유 때 기침·청색증, 침 흘림",
+        "VACTERL 연합 동반"
+      ],
+      "genes": [],
+      "public": "식도가 막히거나 기도와 이어져 태어나는 기형으로, 신생아기에 수술해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "nrds",
+      "name": {
+        "ko": "신생아 호흡곤란증후군",
+        "en": "Neonatal respiratory distress syndrome",
+        "alt": [
+          "유리질막병"
+        ]
+      },
+      "cause": [
+        "rsp"
+      ],
+      "period": {
+        "start": 168,
+        "end": 266
+      },
+      "mechanism": "2형 폐포세포의 계면활성제가 부족해 폐포가 쭈그러짐.",
+      "findings": [
+        "미숙아(특히 28주 이전), 산모 당뇨에서 위험 증가",
+        "산전 스테로이드로 예방, 계면활성제 투여로 치료"
+      ],
+      "genes": [],
+      "public": "일찍 태어난 아기의 폐에 숨을 쉬게 돕는 물질이 부족해 생기는 호흡곤란이에요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pyloric-stenosis",
+      "name": {
+        "ko": "비후유문협착증",
+        "en": "Hypertrophic pyloric stenosis",
+        "alt": []
+      },
+      "cause": [
+        "stm2",
+        "spl"
+      ],
+      "period": {
+        "start": 266,
+        "end": 400
+      },
+      "mechanism": "유문 돌림근육층이 두꺼워짐 (내배엽 아닌 중배엽 근육 문제).",
+      "findings": [
+        "생후 2–8주 분출성 비담즙성 구토",
+        "올리브 모양 덩이",
+        "첫째 남아에 많음"
+      ],
+      "genes": [],
+      "public": "아기 위 출구 근육이 두꺼워져 젖을 뿜듯이 토하는 병으로, 간단한 수술로 치료해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "duodenal-atresia",
+      "name": {
+        "ko": "십이지장폐쇄",
+        "en": "Duodenal atresia",
+        "alt": []
+      },
+      "cause": [
+        "stm2"
+      ],
+      "period": {
+        "start": 42,
+        "end": 70
+      },
+      "mechanism": "십이지장 내강이 다시 뚫리지 않음(재소관화 실패).",
+      "findings": [
+        "이중 기포 징후",
+        "담즙성 구토",
+        "양수과다",
+        "다운증후군과 연관"
+      ],
+      "genes": [],
+      "public": "십이지장이 막혀 태어나는 기형으로, 출생 후 수술해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "biliary-atresia",
+      "name": {
+        "ko": "담도폐쇄",
+        "en": "Biliary atresia",
+        "alt": []
+      },
+      "cause": [
+        "liv"
+      ],
+      "period": {
+        "start": 28,
+        "end": 266
+      },
+      "mechanism": "간외 담관이 막히거나 없어짐(태아기·출생 전후 염증성 파괴설이 유력. Langman은 재소관화 실패나 늦은 감염 가능성으로 서술).",
+      "findings": [
+        "생후 2주 넘게 지속되는 황달, 회색 변",
+        "카사이 수술, 소아 간이식의 흔한 원인"
+      ],
+      "genes": [],
+      "public": "담즙이 나가는 관이 막힌 병으로, 일찍 발견해 수술하는 것이 중요해요. 변 색깔 카드로 조기 발견해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "기전 서술"
+    },
+    {
+      "id": "annular-pancreas",
+      "name": {
+        "ko": "고리췌장",
+        "en": "Annular pancreas",
+        "alt": [
+          "윤상췌장"
+        ]
+      },
+      "cause": [
+        "pan"
+      ],
+      "period": {
+        "start": 35,
+        "end": 49
+      },
+      "mechanism": "배쪽 췌장싹이 갈라져 십이지장을 양쪽에서 감쌈.",
+      "findings": [
+        "십이지장 막힘, 구토",
+        "다운증후군과 연관"
+      ],
+      "genes": [],
+      "public": "췌장이 십이지장을 고리처럼 감싸 장이 좁아지는 기형이에요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pancreas-divisum",
+      "name": {
+        "ko": "췌장분리증",
+        "en": "Pancreas divisum",
+        "alt": []
+      },
+      "cause": [
+        "pan"
+      ],
+      "period": {
+        "start": 42,
+        "end": 56
+      },
+      "mechanism": "배쪽·등쪽 췌관이 합쳐지지 않아 대부분의 췌액이 부췌관으로 나감.",
+      "findings": [
+        "가장 흔한 췌장 변이",
+        "대개 무증상, 일부 재발 췌장염"
+      ],
+      "genes": [],
+      "public": "췌장의 두 관이 합쳐지지 않은 흔한 변이로, 대부분 증상이 없어요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "malrotation",
+      "name": {
+        "ko": "장회전이상",
+        "en": "Intestinal malrotation (and midgut volvulus)",
+        "alt": [
+          "중장꼬임"
+        ]
+      },
+      "cause": [
+        "mg"
+      ],
+      "period": {
+        "start": 42,
+        "end": 70
+      },
+      "mechanism": "중장이 270° 정상 회전을 마치지 못함.",
+      "findings": [
+        "맹장이 위쪽·가운데에 위치, 래드띠",
+        "중장꼬임: 담즙성 구토 → 장 괴사 위험, 응급 수술"
+      ],
+      "genes": [],
+      "public": "장이 제자리로 돌지 못한 상태로, 장이 꼬이면 응급 수술이 필요해요. 아기가 초록색 토를 하면 바로 병원에 가야 해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "imperforate-anus",
+      "name": {
+        "ko": "쇄항",
+        "en": "Imperforate anus (anorectal malformation)",
+        "alt": [
+          "항문막힘증"
+        ]
+      },
+      "cause": [
+        "hg",
+        "clm"
+      ],
+      "period": {
+        "start": 42,
+        "end": 63
+      },
+      "mechanism": "요직장중격·총배설강막 이상으로 항문이 열리지 않음.",
+      "findings": [
+        "직장–요도·질·회음 누공 동반 흔함",
+        "VACTERL 연합"
+      ],
+      "genes": [],
+      "public": "항문이 막혀 태어나는 기형으로, 출생 직후 확인해 수술해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "day": 17,
+      "label": "혈도",
+      "refs": [
+        "bld"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 20,
+      "label": "첫 체절",
+      "refs": [
+        "par"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 22,
+      "label": "심장 박동",
+      "refs": [
+        "hrt"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 22,
+      "label": "인두궁 출현 (22–29일)",
+      "refs": [
+        "pa"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 26,
+      "label": "팔싹 (이틀 뒤 다리싹)",
+      "refs": [
+        "som"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 28,
+      "label": "신경관 폐쇄",
+      "refs": [
+        "nt"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 42,
+      "label": "생리적 탈장",
+      "refs": [
+        "mg"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 49,
+      "label": "성 분화",
+      "refs": [
+        "gon"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 56,
+      "label": "배아기 끝 (9주부터 태아기)",
+      "refs": [
+        "gas"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 70,
+      "label": "장 복귀",
+      "refs": [
+        "mg"
+      ],
+      "major": false,
+      "approx": true
+    }
+  ],
+  "organs": [
+    {
+      "id": "brain",
+      "ko": "뇌",
+      "sys": "신경계",
+      "summary": "척삭의 유도를 받은 외배엽이 신경판 → 신경관이 되고, 앞쪽 끝이 부풀어 뇌가 됩니다.",
+      "origins": [
+        {
+          "layer": "ec",
+          "label": "신경관 (신경외배엽)",
+          "result": "뉴런, 성상·희소돌기교세포",
+          "ref": "nt"
+        },
+        {
+          "layer": "ec",
+          "label": "전뇌 → 종뇌",
+          "result": "대뇌피질, 기저핵, 해마",
+          "ref": "tel"
+        },
+        {
+          "layer": "ec",
+          "label": "능뇌",
+          "result": "소뇌, 교뇌, 연수",
+          "ref": "rho"
+        },
+        {
+          "layer": "me",
+          "label": "난황낭 대식세포",
+          "result": "미세아교세포",
+          "ref": "bld"
+        },
+        {
+          "layer": "ec",
+          "label": "두부 신경능선",
+          "result": "연막, 지주막",
+          "ref": "ncc"
+        }
+      ],
+      "steps": [
+        {
+          "when": "18일",
+          "text": "척삭이 위쪽 외배엽을 신경판으로 유도"
+        },
+        {
+          "when": "22–28일",
+          "text": "신경주름이 융합해 신경관 형성, 앞·뒤 신경구멍 폐쇄"
+        },
+        {
+          "when": "4주",
+          "text": "세 개의 일차 뇌포: 전뇌, 중뇌, 능뇌"
+        },
+        {
+          "when": "5주",
+          "text": "다섯 개의 이차 뇌포: 종뇌, 간뇌, 중뇌, 후뇌, 수뇌"
+        },
+        {
+          "when": "6–20주",
+          "text": "뇌실 주변에서 신경원 생성 후 피질로 이주 (안쪽에서 바깥쪽 순서)"
+        },
+        {
+          "when": "출생 후",
+          "text": "시냅스 가지치기와 수초화가 청소년기까지 계속"
+        }
+      ],
+      "bodyPos": [
+        445,
+        52
+      ]
+    },
+    {
+      "id": "eye",
+      "ko": "눈",
+      "sys": "감각기",
+      "summary": "간뇌가 밖으로 내민 눈소포가 표면외배엽을 유도해 수정체를 만들고, 신경능선이 앞쪽 구조를 채웁니다.",
+      "origins": [
+        {
+          "layer": "ec",
+          "label": "간뇌 → 눈술잔",
+          "result": "망막, 시신경, 홍채·섬모체 상피",
+          "ref": "die"
+        },
+        {
+          "layer": "ec",
+          "label": "표면외배엽",
+          "result": "수정체, 각막 상피",
+          "ref": "eye"
+        },
+        {
+          "layer": "ec",
+          "label": "두부 신경능선",
+          "result": "각막 기질·내피, 홍채 기질",
+          "ref": "ncc"
+        },
+        {
+          "layer": "me",
+          "label": "두부 중배엽",
+          "result": "외안근",
+          "ref": "hdm"
+        }
+      ],
+      "steps": [
+        {
+          "when": "22일",
+          "text": "전뇌 양쪽에 시각고랑 출현"
+        },
+        {
+          "when": "4주",
+          "text": "눈소포가 표면외배엽에 닿아 수정체판 유도"
+        },
+        {
+          "when": "5주",
+          "text": "눈소포가 함입해 두 층의 눈술잔 → 망막 신경층·색소층"
+        },
+        {
+          "when": "6–7주",
+          "text": "신경능선이 이주해 각막·홍채 기질 형성, 맥락막틈새 닫힘"
+        },
+        {
+          "when": "10주–26주",
+          "text": "눈꺼풀이 붙었다가 다시 열림"
+        }
+      ],
+      "bodyPos": [
+        412,
+        108
+      ]
+    },
+    {
+      "id": "ear",
+      "ko": "귀",
+      "sys": "감각기",
+      "summary": "속귀·가운데귀·바깥귀가 각각 다른 곳에서 생겨 하나로 합쳐집니다.",
+      "origins": [
+        {
+          "layer": "ec",
+          "label": "귀판 (표면외배엽)",
+          "result": "속귀: 달팽이관, 반고리관, 전정",
+          "ref": "plc"
+        },
+        {
+          "layer": "en",
+          "label": "제1인두낭",
+          "result": "가운데귀강, 이관",
+          "ref": "pp1"
+        },
+        {
+          "layer": "ec",
+          "label": "1·2 인두궁 신경능선",
+          "result": "망치뼈, 모루뼈, 등자뼈",
+          "ref": "ncc"
+        },
+        {
+          "layer": "ec",
+          "label": "제1인두열",
+          "result": "바깥귀길, 고막 바깥층",
+          "ref": "pc1"
+        }
+      ],
+      "steps": [
+        {
+          "when": "22일",
+          "text": "능뇌 옆 표면외배엽이 두꺼워져 귀판 형성"
+        },
+        {
+          "when": "4주",
+          "text": "귀판 함입 → 귀소포"
+        },
+        {
+          "when": "5–8주",
+          "text": "귀소포가 달팽이관과 반고리관으로 분화"
+        },
+        {
+          "when": "6주",
+          "text": "1·2 인두궁의 귓바퀴결절 6개가 귓바퀴를 만듦"
+        },
+        {
+          "when": "9주 이후",
+          "text": "이소골 골화, 가운데귀강 확장"
+        }
+      ],
+      "bodyPos": [
+        514,
+        112
+      ]
+    },
+    {
+      "id": "face",
+      "ko": "얼굴뼈",
+      "sys": "골격계",
+      "summary": "신경능선 세포가 채운 다섯 개의 얼굴 융기가 4–10주에 서로 융합해 얼굴을 만듭니다.",
+      "origins": [
+        {
+          "layer": "ec",
+          "label": "두부 신경능선",
+          "result": "얼굴뼈, 하악, 앞쪽 머리뼈",
+          "ref": "ncc"
+        },
+        {
+          "layer": "me",
+          "label": "근축중배엽",
+          "result": "뒤쪽 머리뼈, 두개저 일부",
+          "ref": "hdm"
+        },
+        {
+          "layer": "me",
+          "label": "두부 중배엽",
+          "result": "저작근, 표정근",
+          "ref": "hdm"
+        }
+      ],
+      "steps": [
+        {
+          "when": "4주",
+          "text": "구강 주위에 전두비융기, 좌우 상악융기, 좌우 하악융기"
+        },
+        {
+          "when": "5주",
+          "text": "코판 → 내측·외측 코융기"
+        },
+        {
+          "when": "6–7주",
+          "text": "상악융기와 내측 코융기가 융합해 윗입술 형성"
+        },
+        {
+          "when": "7–10주",
+          "text": "구개돌기가 수평으로 돌아 정중선에서 융합 → 이차 구개"
+        }
+      ],
+      "bodyPos": [
+        392,
+        160
+      ]
+    },
+    {
+      "id": "teeth",
+      "ko": "치아",
+      "sys": "소화계",
+      "summary": "구강 외배엽과 그 아래 신경능선 중간엽이 서로 신호를 주고받으며 만듭니다.",
+      "origins": [
+        {
+          "layer": "ec",
+          "label": "구강 표면외배엽",
+          "result": "법랑질 (사기질모세포)",
+          "ref": "stm"
+        },
+        {
+          "layer": "ec",
+          "label": "두부 신경능선",
+          "result": "상아질, 치수, 백악질",
+          "ref": "ncc"
+        }
+      ],
+      "steps": [
+        {
+          "when": "6주",
+          "text": "구강 상피가 두꺼워져 치판 형성"
+        },
+        {
+          "when": "8주",
+          "text": "봉오리기"
+        },
+        {
+          "when": "9–10주",
+          "text": "모자기: 법랑기관과 치아유두"
+        },
+        {
+          "when": "11–14주",
+          "text": "종기: 사기질모세포·상아질모세포 분화"
+        },
+        {
+          "when": "생후 6개월~",
+          "text": "젖니 맹출"
+        }
+      ],
+      "bodyPos": [
+        445,
+        170
+      ]
+    },
+    {
+      "id": "pit",
+      "ko": "뇌하수체",
+      "sys": "내분비계",
+      "summary": "입이 될 오목(입구멍)의 천장에서 올라온 주머니와 뇌에서 내려온 돌기가 만나 하나의 샘이 됩니다.",
+      "origins": [
+        {
+          "layer": "ec",
+          "label": "라트케낭 (구강 외배엽)",
+          "result": "전엽: GH, ACTH, TSH, FSH·LH, 프로락틴",
+          "ref": "rat"
+        },
+        {
+          "layer": "ec",
+          "label": "간뇌 누두 (신경외배엽)",
+          "result": "후엽: 옥시토신, 바소프레신 저장",
+          "ref": "die"
+        }
+      ],
+      "steps": [
+        {
+          "when": "3–4주",
+          "text": "입구멍(구강와) 천장이 위로 튀어나와 라트케낭"
+        },
+        {
+          "when": "4주",
+          "text": "간뇌 바닥에서 누두가 아래로 자람"
+        },
+        {
+          "when": "6주",
+          "text": "라트케낭이 구강과의 연결을 잃음"
+        },
+        {
+          "when": "8주 이후",
+          "text": "전엽 세포가 분화해 호르몬 분비 시작"
+        }
+      ],
+      "bodyPos": [
+        445,
+        98
+      ]
+    },
+    {
+      "id": "thyroid",
+      "ko": "갑상샘",
+      "sys": "내분비계",
+      "summary": "혀뿌리에서 시작해 목 앞으로 내려가는 샘입니다.",
+      "origins": [
+        {
+          "layer": "en",
+          "label": "인두 바닥 (설맹공)",
+          "result": "여포세포: T3, T4",
+          "ref": "thy"
+        },
+        {
+          "layer": "ec",
+          "label": "신경능선 (최근 내배엽설)",
+          "result": "C세포: 칼시토닌",
+          "ref": "ncth"
+        }
+      ],
+      "steps": [
+        {
+          "when": "24일",
+          "text": "혀뿌리 정중선의 설맹공에서 게실 형성"
+        },
+        {
+          "when": "4–7주",
+          "text": "갑상샘설관을 따라 목 앞으로 하강"
+        },
+        {
+          "when": "7주",
+          "text": "기관 앞 최종 위치, 두 엽 형성"
+        },
+        {
+          "when": "10–12주",
+          "text": "갑상샘호르몬 생산 시작"
+        }
+      ],
+      "bodyPos": [
+        445,
+        232
+      ]
+    },
+    {
+      "id": "thymus",
+      "ko": "흉선",
+      "sys": "면역계",
+      "summary": "내배엽 상피로 된 틀에 조혈모세포에서 온 림프구 전구세포(태아기에는 주로 간 유래)가 들어와 완성됩니다.",
+      "origins": [
+        {
+          "layer": "en",
+          "label": "제3인두낭 배쪽",
+          "result": "흉선 상피세포",
+          "ref": "pp3"
+        },
+        {
+          "layer": "me",
+          "label": "조혈모세포",
+          "result": "T림프구",
+          "ref": "bld"
+        },
+        {
+          "layer": "ec",
+          "label": "신경능선",
+          "result": "피막, 결합조직",
+          "ref": "ncc"
+        }
+      ],
+      "steps": [
+        {
+          "when": "6주",
+          "text": "제3인두낭에서 흉선 원기 출현"
+        },
+        {
+          "when": "7–8주",
+          "text": "하부 부갑상샘과 함께 종격동으로 하강"
+        },
+        {
+          "when": "9주",
+          "text": "림프구 전구세포가 들어옴"
+        },
+        {
+          "when": "사춘기 이후",
+          "text": "점차 지방으로 대체(퇴축)"
+        }
+      ],
+      "bodyPos": [
+        445,
+        290
+      ]
+    },
+    {
+      "id": "lung",
+      "ko": "폐",
+      "sys": "호흡계",
+      "summary": "전장 앞벽의 작은 주머니가 장측 중배엽 속으로 가지를 치며 자랍니다.",
+      "origins": [
+        {
+          "layer": "en",
+          "label": "호흡게실 (전장)",
+          "result": "기도와 폐포 상피, 1·2형 폐포세포",
+          "ref": "rsp"
+        },
+        {
+          "layer": "me",
+          "label": "장측 중배엽",
+          "result": "연골, 평활근, 혈관, 결합조직",
+          "ref": "spl"
+        }
+      ],
+      "steps": [
+        {
+          "when": "4주",
+          "text": "전장 앞벽에 호흡게실, 기관식도중격으로 분리"
+        },
+        {
+          "when": "5–16주",
+          "text": "가성선기: 기관지 가지치기"
+        },
+        {
+          "when": "16–26주",
+          "text": "소관기: 호흡세기관지, 모세혈관 증가"
+        },
+        {
+          "when": "26주~출생",
+          "text": "종말주머니기: 1·2형 폐포세포 분화, 계면활성제 생산"
+        },
+        {
+          "when": "8개월~소아기",
+          "text": "폐포기: 폐포 수 증가"
+        }
+      ],
+      "bodyPos": [
+        362,
+        335
+      ]
+    },
+    {
+      "id": "heart",
+      "ko": "심장",
+      "sys": "순환계",
+      "summary": "장측 중배엽의 말발굽 모양 세포 무리가 관을 이루고, 접히고, 칸이 나뉘어 생깁니다.",
+      "origins": [
+        {
+          "layer": "me",
+          "label": "일차·이차 심장장 (장측 중배엽)",
+          "result": "심근, 심내막",
+          "ref": "hrt"
+        },
+        {
+          "layer": "me",
+          "label": "심외막전구체 (proepicardium)",
+          "result": "심외막, 관상혈관",
+          "ref": "hrt"
+        },
+        {
+          "layer": "ec",
+          "label": "심장 신경능선",
+          "result": "대동맥폐동맥 중격",
+          "ref": "ncd"
+        }
+      ],
+      "steps": [
+        {
+          "when": "18–19일",
+          "text": "머리 쪽 장측 중배엽에 심장발생구역"
+        },
+        {
+          "when": "21일",
+          "text": "좌우 심내막관이 융합해 하나의 심장관"
+        },
+        {
+          "when": "22일",
+          "text": "박동 시작 (배아에서 처음 기능하는 기관)"
+        },
+        {
+          "when": "23–28일",
+          "text": "심장관이 오른쪽으로 고리를 만듦"
+        },
+        {
+          "when": "4–7주",
+          "text": "심방·심실·유출로 중격 형성"
+        },
+        {
+          "when": "8주",
+          "text": "네 개의 방 완성"
+        }
+      ],
+      "bodyPos": [
+        458,
+        362
+      ]
+    },
+    {
+      "id": "spine",
+      "ko": "척추·척수",
+      "sys": "신경·골격계",
+      "summary": "척수는 신경관의 뒤쪽, 척추는 그 주위의 체절에서 생깁니다.",
+      "origins": [
+        {
+          "layer": "ec",
+          "label": "신경관 뒤쪽",
+          "result": "척수",
+          "ref": "spc"
+        },
+        {
+          "layer": "me",
+          "label": "경절판 (체절)",
+          "result": "척추뼈, 늑골, 섬유륜",
+          "ref": "scl"
+        },
+        {
+          "layer": "me",
+          "label": "척삭",
+          "result": "추간판 수핵",
+          "ref": "ntc"
+        },
+        {
+          "layer": "ec",
+          "label": "몸통 신경능선",
+          "result": "척수후근 신경절",
+          "ref": "nct"
+        }
+      ],
+      "steps": [
+        {
+          "when": "20일",
+          "text": "첫 체절 형성, 이후 하루 3쌍씩"
+        },
+        {
+          "when": "28일",
+          "text": "뒤신경구멍 폐쇄"
+        },
+        {
+          "when": "4주",
+          "text": "경절판이 신경관과 척삭을 둘러쌈"
+        },
+        {
+          "when": "5–6주",
+          "text": "재분절: 인접한 두 경절판이 하나의 척추뼈"
+        },
+        {
+          "when": "3개월 이후",
+          "text": "척추가 척수보다 빨리 자라 척수 끝이 위로 올라감 (성인 L2–L3 부근)"
+        }
+      ],
+      "bodyPos": [
+        445,
+        640
+      ]
+    },
+    {
+      "id": "liver",
+      "ko": "간",
+      "sys": "소화계",
+      "summary": "전장의 싹이 가로중격 안으로 자라 들어가 간세포 끈을 만듭니다.",
+      "origins": [
+        {
+          "layer": "en",
+          "label": "간게실 (전장)",
+          "result": "간세포, 담관 상피, 담낭",
+          "ref": "liv"
+        },
+        {
+          "layer": "me",
+          "label": "가로중격 (장측 중배엽)",
+          "result": "결합조직, 피막",
+          "ref": "spl"
+        },
+        {
+          "layer": "me",
+          "label": "조혈모세포(AGM)·쿠퍼세포(난황낭 대식세포)",
+          "result": "태아 조혈, 대식세포",
+          "ref": "bld"
+        }
+      ],
+      "steps": [
+        {
+          "when": "4주",
+          "text": "십이지장 부근 전장에서 간게실"
+        },
+        {
+          "when": "5주",
+          "text": "가로중격 안으로 간세포 끈이 자라 들어감"
+        },
+        {
+          "when": "6주",
+          "text": "조혈 시작 (태아기 주 조혈 장소)"
+        },
+        {
+          "when": "12주",
+          "text": "담즙 생산 시작"
+        }
+      ],
+      "bodyPos": [
+        372,
+        452
+      ]
+    },
+    {
+      "id": "stomach",
+      "ko": "위",
+      "sys": "소화계",
+      "summary": "전장의 한 부분이 부풀고 회전해 위가 됩니다.",
+      "origins": [
+        {
+          "layer": "en",
+          "label": "전장",
+          "result": "점막 상피, 위샘",
+          "ref": "stm2"
+        },
+        {
+          "layer": "me",
+          "label": "장측 중배엽",
+          "result": "평활근, 장막",
+          "ref": "spl"
+        },
+        {
+          "layer": "ec",
+          "label": "미주 신경능선",
+          "result": "장신경계",
+          "ref": "ncv"
+        }
+      ],
+      "steps": [
+        {
+          "when": "4주",
+          "text": "전장이 방추형으로 확장"
+        },
+        {
+          "when": "5–7주",
+          "text": "등쪽 벽이 빨리 자라 큰굽이 형성"
+        },
+        {
+          "when": "7주",
+          "text": "세로축으로 시계 방향 90° 회전 → 왼쪽 미주신경이 앞으로"
+        },
+        {
+          "when": "이후",
+          "text": "앞뒤축 회전으로 유문이 오른쪽 위로"
+        }
+      ],
+      "bodyPos": [
+        482,
+        450
+      ]
+    },
+    {
+      "id": "spleen",
+      "ko": "비장",
+      "sys": "면역계",
+      "summary": "소화관 옆에 있지만 중배엽에서 생깁니다.",
+      "origins": [
+        {
+          "layer": "me",
+          "label": "등쪽위창자간막 중간엽",
+          "result": "비장 기질, 피막",
+          "ref": "spn"
+        },
+        {
+          "layer": "me",
+          "label": "조혈모세포",
+          "result": "림프구, 대식세포",
+          "ref": "bld"
+        }
+      ],
+      "steps": [
+        {
+          "when": "5주",
+          "text": "등쪽위창자간막에 중간엽 응집"
+        },
+        {
+          "when": "위 회전과 함께",
+          "text": "왼쪽 위로 이동"
+        },
+        {
+          "when": "태아기",
+          "text": "일시적 조혈"
+        }
+      ],
+      "bodyPos": [
+        538,
+        456
+      ]
+    },
+    {
+      "id": "pancreas",
+      "ko": "췌장",
+      "sys": "소화·내분비계",
+      "summary": "두 개의 싹이 생겨 회전한 뒤 하나로 합쳐집니다.",
+      "origins": [
+        {
+          "layer": "en",
+          "label": "등쪽·배쪽 췌장싹 (전장)",
+          "result": "선방세포, 췌관, 랑게르한스섬",
+          "ref": "pan"
+        },
+        {
+          "layer": "me",
+          "label": "장측 중배엽",
+          "result": "결합조직",
+          "ref": "spl"
+        }
+      ],
+      "steps": [
+        {
+          "when": "4주",
+          "text": "십이지장 등쪽과 배쪽에 두 싹"
+        },
+        {
+          "when": "5–6주",
+          "text": "배쪽 싹이 십이지장 뒤로 돌아감"
+        },
+        {
+          "when": "7주",
+          "text": "두 싹 융합, 주췌관 형성"
+        },
+        {
+          "when": "5개월경",
+          "text": "인슐린 분비 시작"
+        }
+      ],
+      "bodyPos": [
+        472,
+        506
+      ]
+    },
+    {
+      "id": "adrenal",
+      "ko": "부신",
+      "sys": "내분비계",
+      "summary": "피질과 수질이 서로 다른 배엽에서 와서 합쳐집니다.",
+      "origins": [
+        {
+          "layer": "me",
+          "label": "체강상피 (부신생식원기)",
+          "result": "피질: 알도스테론, 코르티솔, 안드로겐",
+          "ref": "adc"
+        },
+        {
+          "layer": "ec",
+          "label": "몸통 신경능선",
+          "result": "수질: 아드레날린, 노르아드레날린",
+          "ref": "nct"
+        }
+      ],
+      "steps": [
+        {
+          "when": "5–6주",
+          "text": "체강상피 세포가 증식해 태아 피질"
+        },
+        {
+          "when": "7주",
+          "text": "신경능선 세포가 피질 안으로 들어가 수질"
+        },
+        {
+          "when": "태아기",
+          "text": "태아 피질이 커서 신장만큼 큼 (DHEA-S 생산)"
+        },
+        {
+          "when": "출생 후",
+          "text": "태아 피질 퇴화, 성인 3층 구조 완성 (3세경)"
+        }
+      ],
+      "bodyPos": [
+        358,
+        506
+      ]
+    },
+    {
+      "id": "kidney",
+      "ko": "신장",
+      "sys": "비뇨계",
+      "summary": "요관싹과 후신중배엽이 서로를 유도하며 만들어집니다.",
+      "origins": [
+        {
+          "layer": "me",
+          "label": "후신중배엽 (중간중배엽)",
+          "result": "네프론: 사구체, 세관",
+          "ref": "mtn"
+        },
+        {
+          "layer": "me",
+          "label": "요관싹 (중신관)",
+          "result": "요관, 신우, 신배, 집합관",
+          "ref": "ub"
+        }
+      ],
+      "steps": [
+        {
+          "when": "4주",
+          "text": "전신 → 중신이 차례로 생김"
+        },
+        {
+          "when": "5주",
+          "text": "중신관에서 요관싹이 나와 후신중배엽으로 들어감"
+        },
+        {
+          "when": "6–9주",
+          "text": "골반에서 허리로 상승, 90° 안쪽 회전"
+        },
+        {
+          "when": "10–12주",
+          "text": "소변 생산 시작 (양수의 주 공급원)"
+        },
+        {
+          "when": "34–36주",
+          "text": "네프론 생성 완료"
+        }
+      ],
+      "bodyPos": [
+        536,
+        540
+      ]
+    },
+    {
+      "id": "si",
+      "ko": "소장",
+      "sys": "소화계",
+      "summary": "중장이 빠르게 길어지며 탯줄 안으로 나갔다가 회전하며 돌아옵니다.",
+      "origins": [
+        {
+          "layer": "en",
+          "label": "중장 (+ 전장 끝)",
+          "result": "점막 상피, 융모",
+          "ref": "mg"
+        },
+        {
+          "layer": "me",
+          "label": "장측 중배엽",
+          "result": "평활근, 장간막",
+          "ref": "spl"
+        },
+        {
+          "layer": "ec",
+          "label": "미주 신경능선",
+          "result": "장신경계",
+          "ref": "ncv"
+        }
+      ],
+      "steps": [
+        {
+          "when": "5주",
+          "text": "중장고리 형성 (상장간막동맥 축)"
+        },
+        {
+          "when": "6주",
+          "text": "간이 커서 자리가 부족해 탯줄로 생리적 탈장"
+        },
+        {
+          "when": "6–8주",
+          "text": "반시계 90° 회전, 내강이 막혔다 다시 열림(재소관화)"
+        },
+        {
+          "when": "10주",
+          "text": "복강으로 돌아오며 180° 추가 회전 (총 270°)"
+        }
+      ],
+      "bodyPos": [
+        440,
+        578
+      ]
+    },
+    {
+      "id": "li",
+      "ko": "대장",
+      "sys": "소화계",
+      "summary": "앞부분은 중장, 뒷부분은 후장에서 생기며 경계는 횡행결장입니다.",
+      "origins": [
+        {
+          "layer": "en",
+          "label": "중장",
+          "result": "맹장, 상행결장, 횡행결장 앞 2/3",
+          "ref": "mg"
+        },
+        {
+          "layer": "en",
+          "label": "후장",
+          "result": "횡행결장 뒤 1/3 ~ 직장",
+          "ref": "hg"
+        },
+        {
+          "layer": "ec",
+          "label": "미주·천골 신경능선",
+          "result": "장신경계",
+          "ref": "ncv"
+        }
+      ],
+      "steps": [
+        {
+          "when": "6주",
+          "text": "맹장 싹 출현"
+        },
+        {
+          "when": "7주",
+          "text": "요직장중격이 총배설강을 직장과 비뇨생식동으로 분리"
+        },
+        {
+          "when": "7주 말",
+          "text": "항문막 파열"
+        },
+        {
+          "when": "10주",
+          "text": "중장 복귀 후 맹장이 오른쪽 아래로 내려감"
+        }
+      ],
+      "bodyPos": [
+        378,
+        610
+      ]
+    },
+    {
+      "id": "bladder",
+      "ko": "방광",
+      "sys": "비뇨계",
+      "summary": "총배설강 앞부분에 중신관이 흡수되어 만들어집니다.",
+      "origins": [
+        {
+          "layer": "en",
+          "label": "비뇨생식동",
+          "result": "방광·요도 상피",
+          "ref": "ugs"
+        },
+        {
+          "layer": "me",
+          "label": "중신관",
+          "result": "방광삼각",
+          "ref": "msn"
+        },
+        {
+          "layer": "me",
+          "label": "장측 중배엽",
+          "result": "배뇨근",
+          "ref": "spl"
+        },
+        {
+          "layer": "en",
+          "label": "요막",
+          "result": "요막관 → 정중배꼽인대",
+          "ref": "all"
+        }
+      ],
+      "steps": [
+        {
+          "when": "7주",
+          "text": "요직장중격으로 비뇨생식동 분리"
+        },
+        {
+          "when": "7–8주",
+          "text": "중신관 끝이 방광 벽에 흡수돼 삼각부 형성"
+        },
+        {
+          "when": "이후",
+          "text": "요막관이 섬유화되어 정중배꼽인대"
+        }
+      ],
+      "bodyPos": [
+        440,
+        684
+      ]
+    },
+    {
+      "id": "gonad",
+      "ko": "생식기관",
+      "sys": "생식계",
+      "summary": "성선 틀은 중간중배엽, 생식세포는 멀리서 이주해 오고, SRY 유무로 방향이 갈립니다.",
+      "origins": [
+        {
+          "layer": "me",
+          "label": "생식능선",
+          "result": "세르톨리·라이디히 / 과립막·난포막세포",
+          "ref": "gon"
+        },
+        {
+          "layer": "root",
+          "label": "원시생식세포 (배반엽상층 유래, 난황낭 벽을 거쳐 이주)",
+          "result": "정자, 난자",
+          "ref": "pgc"
+        },
+        {
+          "layer": "me",
+          "label": "중신관 (볼프관)",
+          "result": "부고환, 정관, 정낭",
+          "ref": "msn"
+        },
+        {
+          "layer": "me",
+          "label": "중신곁관 (뮐러관)",
+          "result": "난관, 자궁, 질 상부",
+          "ref": "pmd"
+        },
+        {
+          "layer": "en",
+          "label": "비뇨생식동",
+          "result": "질 하부, 전립선",
+          "ref": "ugs"
+        }
+      ],
+      "steps": [
+        {
+          "when": "3주",
+          "text": "원시생식세포가 난황낭 벽에 나타남"
+        },
+        {
+          "when": "5–6주",
+          "text": "생식능선 형성, 생식세포 도착 (미분화 성선)"
+        },
+        {
+          "when": "7주",
+          "text": "SRY → 고환 분화 / 없으면 난소"
+        },
+        {
+          "when": "8–12주",
+          "text": "테스토스테론·AMH가 관 계통과 외생식기 결정"
+        },
+        {
+          "when": "7개월~출생",
+          "text": "고환이 음낭으로 하강"
+        }
+      ],
+      "bodyPos": [
+        445,
+        732
+      ]
+    },
+    {
+      "id": "skin",
+      "ko": "피부",
+      "sys": "외피계",
+      "summary": "표피는 외배엽, 진피는 중배엽, 색소세포는 신경능선입니다.",
+      "origins": [
+        {
+          "layer": "ec",
+          "label": "표면외배엽",
+          "result": "표피, 털, 손발톱, 땀샘",
+          "ref": "epd"
+        },
+        {
+          "layer": "me",
+          "label": "피절판 (체절)",
+          "result": "등의 진피",
+          "ref": "der"
+        },
+        {
+          "layer": "me",
+          "label": "벽측 측판중배엽",
+          "result": "몸통·팔다리 진피",
+          "ref": "som"
+        },
+        {
+          "layer": "ec",
+          "label": "몸통 신경능선",
+          "result": "멜라닌세포",
+          "ref": "nct"
+        }
+      ],
+      "steps": [
+        {
+          "when": "4주",
+          "text": "한 층의 외배엽 + 주피"
+        },
+        {
+          "when": "11주",
+          "text": "표피 여러 층으로 분화"
+        },
+        {
+          "when": "12주",
+          "text": "모낭 싹, 이후 피지샘"
+        },
+        {
+          "when": "20주",
+          "text": "태지가 피부를 덮음"
+        }
+      ],
+      "bodyPos": [
+        230,
+        520
+      ]
+    },
+    {
+      "id": "muscle",
+      "ko": "골격근",
+      "sys": "근육계",
+      "summary": "몸통과 팔다리의 근육은 체절에서, 머리 근육은 두부 중배엽에서 옵니다.",
+      "origins": [
+        {
+          "layer": "me",
+          "label": "근절판 (체절)",
+          "result": "몸통, 팔다리, 횡격막 근육",
+          "ref": "myo"
+        },
+        {
+          "layer": "me",
+          "label": "두부 중배엽",
+          "result": "외안근, 인두궁 근육",
+          "ref": "hdm"
+        },
+        {
+          "layer": "me",
+          "label": "뒤통수 체절",
+          "result": "혀 근육",
+          "ref": "myo"
+        }
+      ],
+      "steps": [
+        {
+          "when": "4주",
+          "text": "체절이 경절판과 피부근절판으로 나뉨"
+        },
+        {
+          "when": "5주",
+          "text": "근육모세포가 사지싹으로 이주"
+        },
+        {
+          "when": "6–8주",
+          "text": "근육모세포 융합 → 근관 → 근섬유"
+        },
+        {
+          "when": "출생 후",
+          "text": "근섬유 수는 거의 고정, 크기만 증가"
+        }
+      ],
+      "bodyPos": [
+        352,
+        822
+      ]
+    },
+    {
+      "id": "limb",
+      "ko": "팔다리 뼈",
+      "sys": "골격계",
+      "summary": "측판중배엽의 사지싹이 신호 중심의 지시로 자라고, 대부분 연골이 뼈로 바뀝니다.",
+      "origins": [
+        {
+          "layer": "me",
+          "label": "벽측 측판중배엽",
+          "result": "뼈, 연골, 힘줄, 인대",
+          "ref": "som"
+        },
+        {
+          "layer": "me",
+          "label": "체절 근절판",
+          "result": "팔다리 근육 (이주)",
+          "ref": "myo"
+        },
+        {
+          "layer": "ec",
+          "label": "표면외배엽 (AER)",
+          "result": "길이 성장 신호",
+          "ref": "epd"
+        }
+      ],
+      "steps": [
+        {
+          "when": "26–28일",
+          "text": "팔싹, 이틀 뒤 다리싹"
+        },
+        {
+          "when": "5주",
+          "text": "AER(FGF)과 ZPA(SHH)가 축과 손가락 순서 결정"
+        },
+        {
+          "when": "6주",
+          "text": "손판·발판, 연골 모형"
+        },
+        {
+          "when": "7주",
+          "text": "손가락 사이 세포자멸사, 팔은 바깥·다리는 안쪽으로 회전"
+        },
+        {
+          "when": "8주 이후",
+          "text": "일차 골화중심 출현"
+        }
+      ],
+      "bodyPos": [
+        520,
+        1080
+      ]
+    },
+    {
+      "id": "blood",
+      "ko": "혈액",
+      "sys": "순환계",
+      "summary": "조혈 장소가 난황낭 → 대동맥 주변 → 간 → 골수로 옮겨 갑니다.",
+      "origins": [
+        {
+          "layer": "me",
+          "label": "난황낭 혈도 (배외중배엽)",
+          "result": "원시 적혈구, 대식세포",
+          "ref": "exm"
+        },
+        {
+          "layer": "me",
+          "label": "AGM 조혈내피 (장측 중배엽)",
+          "result": "조혈모세포",
+          "ref": "bld"
+        }
+      ],
+      "steps": [
+        {
+          "when": "17일",
+          "text": "난황낭 벽의 혈도에서 첫 혈구"
+        },
+        {
+          "when": "4–5주",
+          "text": "등대동맥 주변(AGM)에서 조혈모세포 생성"
+        },
+        {
+          "when": "6주–7개월",
+          "text": "간이 주 조혈 장소"
+        },
+        {
+          "when": "10주 이후",
+          "text": "골수 조혈 시작, 출생 무렵 주 장소"
+        }
+      ],
+      "bodyPos": [
+        662,
+        520
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "layer": "외배엽",
+      "q": "얼굴뼈는 중배엽일까?",
+      "a": "대부분 신경능선(외배엽)입니다. 몸통의 뼈가 중배엽인 것과 다릅니다."
+    },
+    {
+      "layer": "중배엽",
+      "q": "비장은 소화관 옆이니 내배엽?",
+      "a": "등쪽위창자간막의 중배엽에서 생깁니다."
+    },
+    {
+      "layer": "외배엽",
+      "q": "부신은 한 기관이니 한 배엽?",
+      "a": "피질은 중배엽, 수질은 신경능선입니다."
+    },
+    {
+      "layer": "배반엽상층 (난황낭 벽을 거침)",
+      "q": "정자·난자는 생식선에서 생길까?",
+      "a": "원시생식세포는 배반엽상층에서 생겨 난황낭 벽을 거쳐 생식능선으로 이주합니다."
+    },
+    {
+      "layer": "중배엽",
+      "q": "척삭은 척추가 될까?",
+      "a": "척추는 경절판에서 생기고, 척삭은 추간판 수핵으로만 남습니다."
+    },
+    {
+      "layer": "외배엽",
+      "q": "치아는 전부 같은 기원?",
+      "a": "법랑질만 표면외배엽, 상아질·치수는 신경능선입니다."
+    },
+    {
+      "layer": "중배엽",
+      "q": "미세아교세포도 신경관 유래?",
+      "a": "난황낭 대식세포(중배엽)에서 와서 뇌에 정착합니다."
+    },
+    {
+      "layer": "중배엽",
+      "q": "팔다리 근육은 사지싹 자체에서?",
+      "a": "근육은 체절 근절판에서 이주해 오고, 뼈와 힘줄은 측판중배엽입니다."
+    },
+    {
+      "layer": "내배엽",
+      "q": "하부 부갑상샘은 제4인두낭?",
+      "a": "제3인두낭입니다. 흉선과 함께 더 아래로 내려가서 '하부'가 됩니다."
+    },
+    {
+      "layer": "외배엽",
+      "q": "항문관 전체가 내배엽?",
+      "a": "빗살선 위는 내배엽(후장), 아래는 외배엽입니다. 통증 감각과 림프 배액이 다릅니다."
+    }
+  ],
+  "sources": [
+    {
+      "id": "langman",
+      "title": "Langman's Medical Embryology",
+      "chapter": null,
+      "edition": "15판 (한국어 번역서)",
+      "role": "기준",
+      "note": "쪽수는 번역서 15판 기준으로 검수 때 채운다"
+    },
+    {
+      "id": "moore",
+      "title": "The Developing Human (Moore)",
+      "chapter": null,
+      "edition": null,
+      "role": "보조"
+    }
+  ]
+}

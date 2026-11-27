@@ -1,0 +1,1558 @@
+{
+  "module": "pharyngeal",
+  "title": {
+    "ko": "인두궁·인두낭·인두열과 혀",
+    "en": "Pharyngeal apparatus and tongue"
+  },
+  "status": "draft",
+  "priority": "P1",
+  "updated": "2026-11-20",
+  "termNote": "용어 기준(2026-11-20 결정): 인두궁·인두낭·인두열을 기본으로 쓴다. 신용어 후보(인두활·인두주머니·인두틈새)는 검색용으로 alt에 둔다. 경부동도 같은 원칙으로 기본 표기로 두고, 신용어 후보 목굴은 alt에 둔다 (번역서 표기 확인 필요).",
+  "layers": {
+    "ec": "외배엽(신경능선 포함)",
+    "me": "중배엽",
+    "en": "내배엽",
+    "mix": "여러 배엽이 함께 만드는 구조"
+  },
+  "structures": [
+    {
+      "id": "pa",
+      "name": {
+        "ko": "인두 기관",
+        "en": "Pharyngeal apparatus",
+        "alt": [
+          "새궁 기관",
+          "아가미 기관(branchial apparatus)"
+        ]
+      },
+      "layer": "mix",
+      "parent": null,
+      "attachTo": [
+        "ncc",
+        "hdm",
+        "sur",
+        "fg"
+      ],
+      "days": {
+        "start": 22,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        19
+      ],
+      "composition": [
+        {
+          "layer": "ec",
+          "part": "바깥 표면: 인두열",
+          "ref": "sur"
+        },
+        {
+          "layer": "en",
+          "part": "안쪽 표면: 인두낭",
+          "ref": "pp"
+        },
+        {
+          "layer": "ec",
+          "part": "속 중간엽 중 뼈·연골·결합조직 (신경능선, 단 후두연골은 예외: 측판중배엽)",
+          "ref": "ncc"
+        },
+        {
+          "layer": "me",
+          "part": "속 중간엽 중 근육·혈관 내피 (근축중배엽)",
+          "ref": "hdm"
+        }
+      ],
+      "derivatives": [
+        "얼굴 아래쪽과 목의 뼈·근육·신경·혈관",
+        "가운데귀와 바깥귀",
+        "흉선, 부갑상샘, 편도",
+        "혀"
+      ],
+      "text": {
+        "public": "4주쯤 아기 목 양옆에 물고기 아가미처럼 생긴 줄무늬가 생겨요. 이 줄무늬들이 턱, 귀, 목, 혀를 만들어요.",
+        "student": "바깥은 외배엽 인두열, 안쪽은 내배엽 인두낭, 그 사이 궁 하나하나에 신경능선(뼈·연골, 단 후두연골은 측판중배엽)과 근축중배엽(근육)이 차 있다. 궁마다 고유한 뇌신경·동맥·연골이 한 세트로 배정된다.",
+        "clinical": "궁 단위로 신경·근육·뼈가 묶여 있어서, 한 궁의 결함은 같은 세트(예: 1궁 = 하악·저작근·V3)를 함께 침범한다."
+      },
+      "anomalies": [
+        "digeorge",
+        "treacher-collins",
+        "branchial-cyst"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pa1",
+      "name": {
+        "ko": "제1인두궁",
+        "en": "1st pharyngeal arch (mandibular arch)",
+        "alt": [
+          "하악궁",
+          "제1인두활"
+        ]
+      },
+      "layer": "mix",
+      "parent": "pa",
+      "days": {
+        "start": 22,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        10
+      ],
+      "arch": {
+        "nerve": [
+          "삼차신경 위턱신경(V2)",
+          "삼차신경 아래턱신경(V3, 운동 포함)"
+        ],
+        "muscles": [
+          "씹기근육: 관자근, 깨물근, 안쪽·가쪽날개근",
+          "턱목뿔근",
+          "두힘살근 앞힘살",
+          "고막긴장근",
+          "입천장긴장근"
+        ],
+        "skeleton": [
+          "위턱뼈, 광대뼈, 관자뼈 비늘부분 (막속뼈되기)",
+          "아래턱뼈 (메켈연골 주위 막속뼈되기)",
+          "메켈연골 → 망치뼈, 모루뼈",
+          "나비아래턱인대, 망치뼈 앞인대"
+        ],
+        "artery": [
+          "대부분 사라짐, 남은 부분이 위턱동맥 일부"
+        ]
+      },
+      "derivatives": [
+        "위턱융기 → 위턱, 광대뼈",
+        "아래턱융기 → 아래턱",
+        "망치뼈, 모루뼈",
+        "씹기근육",
+        "혀 앞 2/3의 점막"
+      ],
+      "text": {
+        "public": "첫 번째 줄무늬는 위턱과 아래턱, 씹는 근육, 귓속 작은 뼈 두 개를 만들어요.",
+        "student": "위턱융기와 아래턱융기로 나뉜다. 신경 V(V2·V3, 운동은 V3), 근육은 씹기근육 + 턱목뿔근·두힘살근 앞힘살·고막긴장근·입천장긴장근(‘긴장근 둘’). 메켈연골은 망치뼈·모루뼈만 남기고 사라지고, 아래턱뼈는 그 주위에서 막속뼈되기로 생긴다.",
+        "clinical": "1궁 신경능선 결함은 트리처 콜린스 증후군, 피에르 로뱅 연속증, 반얼굴왜소증으로 나타난다. 이소골 기형이 동반되면 전음성 난청."
+      },
+      "anomalies": [
+        "treacher-collins",
+        "pierre-robin",
+        "hemifacial-microsomia"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pa2",
+      "name": {
+        "ko": "제2인두궁",
+        "en": "2nd pharyngeal arch (hyoid arch)",
+        "alt": [
+          "설골궁",
+          "목뿔궁",
+          "제2인두활"
+        ]
+      },
+      "layer": "mix",
+      "parent": "pa",
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        11
+      ],
+      "arch": {
+        "nerve": [
+          "얼굴신경(VII)"
+        ],
+        "muscles": [
+          "얼굴표정근: 입둘레근, 눈둘레근, 볼근, 이마근, 귓바퀴근, 넓은목근",
+          "등자근",
+          "붓목뿔근",
+          "두힘살근 뒤힘살"
+        ],
+        "skeleton": [
+          "라이헤르트연골 → 등자뼈",
+          "붓돌기",
+          "붓목뿔인대",
+          "목뿔뼈 작은뿔, 몸통 위쪽"
+        ],
+        "artery": [
+          "목뿔동맥",
+          "등자동맥 (대부분 퇴화)"
+        ]
+      },
+      "derivatives": [
+        "얼굴표정근",
+        "등자뼈, 붓돌기",
+        "목뿔뼈 위쪽",
+        "목 옆을 덮으며 아래로 자라 경부동을 덮음"
+      ],
+      "text": {
+        "public": "두 번째 줄무늬는 표정을 짓는 근육과 귓속 등자뼈를 만들어요.",
+        "student": "신경 VII. 근육은 표정근 + 등자근·붓목뿔근·두힘살근 뒤힘살. 연골(라이헤르트)은 ‘S’로 시작하는 것들: Stapes, Styloid, Stylohyoid ligament, Smaller horn. 2궁이 아래로 빠르게 자라 3·4궁을 덮어 경부동을 만든다.",
+        "clinical": "2궁이 경부동을 덮지 못하거나 경부동이 남으면 측경부낭종·샛길. 얼굴신경마비 시 표정근과 함께 등자근도 마비되어 소리가 크게 들린다(청각과민)."
+      },
+      "anomalies": [
+        "branchial-cyst",
+        "branchial-fistula"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pa3",
+      "name": {
+        "ko": "제3인두궁",
+        "en": "3rd pharyngeal arch",
+        "alt": [
+          "제3인두활"
+        ]
+      },
+      "layer": "mix",
+      "parent": "pa",
+      "days": {
+        "start": 26,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        12
+      ],
+      "arch": {
+        "nerve": [
+          "혀인두신경(IX)"
+        ],
+        "muscles": [
+          "붓인두근"
+        ],
+        "skeleton": [
+          "목뿔뼈 큰뿔, 몸통 아래쪽"
+        ],
+        "artery": [
+          "온목동맥",
+          "속목동맥 처음 부분"
+        ]
+      },
+      "derivatives": [
+        "붓인두근",
+        "목뿔뼈 아래쪽",
+        "온목동맥, 속목동맥 처음 부분",
+        "혀 뒤 1/3 점막 (2궁보다 크게 자라 덮음)"
+      ],
+      "text": {
+        "public": "세 번째 줄무늬는 삼키는 근육 하나와 목의 큰 동맥을 만들어요.",
+        "student": "신경 IX, 근육은 붓인두근 하나. 목뿔뼈 큰뿔과 몸통 아래쪽. 3궁 동맥은 온목동맥과 속목동맥 처음 부분이 된다.",
+        "clinical": "혀 뒤 1/3의 일반감각과 미각이 모두 IX인 이유는 그 점막이 3궁에서 오기 때문이다."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pa4",
+      "name": {
+        "ko": "제4인두궁",
+        "en": "4th pharyngeal arch",
+        "alt": [
+          "제4인두활"
+        ]
+      },
+      "layer": "mix",
+      "parent": "pa",
+      "days": {
+        "start": 29,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        13
+      ],
+      "arch": {
+        "nerve": [
+          "미주신경 위후두가지(X)"
+        ],
+        "muscles": [
+          "반지방패근",
+          "입천장올림근",
+          "인두수축근"
+        ],
+        "skeleton": [
+          "후두연골: 방패연골, 반지연골, 모뿔연골, 잔뿔연골, 쐐기연골 (4·6궁 공동, 측판중배엽 기원)"
+        ],
+        "artery": [
+          "왼쪽 → 대동맥활 일부 (왼온목동맥과 왼빗장밑동맥 사이)",
+          "오른쪽 → 오른빗장밑동맥 처음 부분"
+        ]
+      },
+      "derivatives": [
+        "반지방패근, 인두수축근, 입천장올림근",
+        "후두연골 (6궁과 함께, 측판중배엽 기원)",
+        "대동맥활 일부, 오른빗장밑동맥 처음 부분",
+        "후두덮개"
+      ],
+      "text": {
+        "public": "네 번째 줄무늬는 삼키고 목소리를 내는 근육과 큰 혈관 일부를 만들어요.",
+        "student": "신경 X 위후두가지. 근육은 반지방패근·인두수축근·입천장올림근. 동맥은 왼쪽이 대동맥활, 오른쪽이 오른빗장밑동맥 처음 부분. 후두연골은 Langman 기준 측판중배엽에서 오며, 인두궁 뼈대 중 신경능선이 아닌 예외다(시험 답). 최근 계보추적 연구에서는 방패연골 대부분이 신경능선에서 온다는 보고도 있다.",
+        "clinical": "오른 4궁 동맥이 잘못 퇴화하면 이상 오른빗장밑동맥이 생겨 식도 뒤를 지난다. 대개 무증상이고 일부에서 삼킴곤란이 생긴다. 이때 오른되돌이후두신경은 되돌아가지 않는다."
+      },
+      "anomalies": [
+        "aberrant-right-subclavian",
+        "digeorge"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pa5",
+      "name": {
+        "ko": "제5인두궁",
+        "en": "5th pharyngeal arch",
+        "alt": []
+      },
+      "layer": "mix",
+      "parent": "pa",
+      "days": {
+        "start": null,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [],
+      "arch": {
+        "nerve": [],
+        "muscles": [],
+        "skeleton": [],
+        "artery": [
+          "생기지 않거나 곧 사라짐"
+        ]
+      },
+      "derivatives": [
+        "사람에서는 흔적만 남거나 생기지 않음"
+      ],
+      "text": {
+        "public": "다섯 번째 줄무늬는 사람에게선 거의 생기지 않아요.",
+        "student": "사람에서 5궁은 없거나 흔적뿐이다. 그래서 궁 번호가 4에서 6으로 건너뛴다.",
+        "clinical": "임상적 의미는 거의 없다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pa6",
+      "name": {
+        "ko": "제6인두궁",
+        "en": "6th pharyngeal arch",
+        "alt": [
+          "제6인두활"
+        ]
+      },
+      "layer": "mix",
+      "parent": "pa",
+      "days": {
+        "start": 29,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        13
+      ],
+      "arch": {
+        "nerve": [
+          "미주신경 되돌이후두가지(X)"
+        ],
+        "muscles": [
+          "반지방패근을 뺀 후두 내재근"
+        ],
+        "skeleton": [
+          "후두연골 (4궁과 공동, 측판중배엽 기원)"
+        ],
+        "artery": [
+          "왼쪽 → 왼폐동맥 처음 부분, 동맥관",
+          "오른쪽 → 오른폐동맥 처음 부분 (먼 쪽은 사라짐)"
+        ]
+      },
+      "derivatives": [
+        "후두 내재근 (반지방패근 제외)",
+        "후두연골 (4궁과 함께, 측판중배엽 기원)",
+        "폐동맥 처음 부분, 동맥관"
+      ],
+      "text": {
+        "public": "여섯 번째 줄무늬는 목소리를 내는 근육과 아기 때만 쓰는 혈관(동맥관)을 만들어요.",
+        "student": "신경 X 되돌이후두가지. 반지방패근 외 후두 내재근. 동맥은 폐동맥 처음 부분과 왼쪽 동맥관.",
+        "clinical": "되돌이후두신경이 좌우로 다르게 도는 이유: 오른쪽은 6궁 동맥 먼 쪽이 사라져 빗장밑동맥(4궁)에 걸리고, 왼쪽은 동맥관(→ 동맥관인대)에 걸린다. 왼쪽이 길어서 대동맥류·종격동 종양에 더 잘 다친다."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pc",
+      "name": {
+        "ko": "인두열",
+        "en": "Pharyngeal clefts (grooves)",
+        "alt": [
+          "인두고랑",
+          "인두틈새",
+          "새열"
+        ]
+      },
+      "layer": "ec",
+      "parent": "pa",
+      "days": {
+        "start": 24,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        11,
+        19
+      ],
+      "derivatives": [
+        "제1인두열 → 바깥귀길",
+        "제2–4인두열 → 경부동 → 정상에서는 사라짐"
+      ],
+      "text": {
+        "public": "줄무늬 사이 바깥쪽 홈이에요. 첫 번째 홈만 귓구멍으로 남고 나머지는 사라져요.",
+        "student": "외배엽으로 덮인 바깥 홈 4쌍. 1열만 바깥귀길로 남고, 2–4열은 2궁에 덮여 경부동이 되었다가 없어진다.",
+        "clinical": "남은 인두열은 목 옆 낭종·굴·샛길의 원인이 된다."
+      },
+      "anomalies": [
+        "branchial-cyst",
+        "branchial-fistula",
+        "first-cleft-anomaly"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pc1",
+      "name": {
+        "ko": "제1인두열",
+        "en": "1st pharyngeal cleft",
+        "alt": [
+          "제1인두고랑"
+        ]
+      },
+      "layer": "ec",
+      "parent": "pc",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        12
+      ],
+      "derivatives": [
+        "바깥귀길 상피",
+        "고막 바깥층 (외배엽)"
+      ],
+      "text": {
+        "public": "첫 번째 홈은 귓구멍(바깥귀길)이 돼요.",
+        "student": "1열 바닥의 상피가 증식해 귀길마개를 만들고, 7개월쯤 다시 뚫려 바깥귀길이 된다.",
+        "clinical": "귀길마개가 다시 뚫리지 않으면 선천성 바깥귀길폐쇄(전음성 난청)."
+      },
+      "anomalies": [
+        "first-cleft-anomaly"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "cs",
+      "name": {
+        "ko": "경부동",
+        "en": "Cervical sinus",
+        "alt": [
+          "목굴"
+        ]
+      },
+      "layer": "ec",
+      "parent": "pc",
+      "days": {
+        "start": 35,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        15,
+        19
+      ],
+      "derivatives": [
+        "정상에서는 완전히 사라짐"
+      ],
+      "text": {
+        "public": "2–4번째 홈은 위에서 덮개처럼 자라 내려온 피부 아래 잠깐 주머니로 남았다가 사라져요.",
+        "student": "2궁이 아래로 자라 2–4열을 덮으면 그 안에 갇힌 공간이 경부동이다. 7주쯤 사라진다.",
+        "clinical": "경부동이 남으면 측경부낭종. 목빗근 앞 가장자리, 아래턱각 아래에 생긴다."
+      },
+      "anomalies": [
+        "branchial-cyst",
+        "branchial-fistula"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pm1",
+      "name": {
+        "ko": "제1인두막",
+        "en": "1st pharyngeal membrane",
+        "alt": []
+      },
+      "layer": "mix",
+      "parent": "pa",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        12
+      ],
+      "composition": [
+        {
+          "layer": "ec",
+          "part": "바깥층 (제1인두열)",
+          "ref": "pc1"
+        },
+        {
+          "layer": "me",
+          "part": "가운데 결합조직층 (중간엽: 신경능선·중배엽 기원)",
+          "ref": "pa1",
+          "verify": true
+        },
+        {
+          "layer": "en",
+          "part": "안쪽층 (제1인두낭)",
+          "ref": "pp1"
+        }
+      ],
+      "derivatives": [
+        "고막"
+      ],
+      "text": {
+        "public": "첫 번째 홈과 안쪽 주머니가 맞닿은 얇은 막이 고막이 돼요.",
+        "student": "세 배엽이 모두 들어가는 구조: 바깥 외배엽(1열), 가운데 중간엽, 안쪽 내배엽(1낭).",
+        "clinical": "‘세 배엽이 모두 만드는 구조’ 문제의 단골 정답."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "aur",
+      "name": {
+        "ko": "귓바퀴",
+        "en": "Auricle",
+        "alt": [
+          "이개"
+        ]
+      },
+      "layer": "mix",
+      "parent": "pa",
+      "days": {
+        "start": 42,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        16,
+        17
+      ],
+      "derivatives": [
+        "귓바퀴결절 6개 중 1–3번은 1궁, 4–6번은 2궁에서",
+        "결절이 합쳐져 귓바퀴가 됨"
+      ],
+      "text": {
+        "public": "6주쯤 첫 번째 홈 둘레에 작은 혹 6개가 생겨 합쳐지면서 귓바퀴가 돼요. 처음엔 목 아래쪽에 있다가 턱이 자라며 위로 올라가요.",
+        "student": "1열 주위의 귓바퀴결절 6개 (1–3: 1궁, 4–6: 2궁). 처음엔 목 아래에 있다가 아래턱이 자라면서 위로 올라간다.",
+        "clinical": "귓바퀴가 낮게 붙거나(낮은 귀) 모양이 이상하면 염색체 이상 등 다른 기형을 찾아보는 단서가 된다. 귓바퀴앞 샛길·덧귀는 흔하고 대개 단독이다."
+      },
+      "anomalies": [
+        "preauricular"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pp",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "인두낭",
+        "en": "Pharyngeal pouches",
+        "alt": [
+          "인두주머니"
+        ]
+      },
+      "layer": "en",
+      "parent": "fg",
+      "days": {
+        "start": 28,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        19
+      ],
+      "derivatives": [
+        "인두궁 사이 안쪽 주머니 4쌍 (5번째는 4낭의 일부로 봄)"
+      ],
+      "text": {
+        "public": "목 안쪽에 생기는 작은 주머니 네 쌍이에요. 가운데귀, 편도, 흉선, 부갑상샘이 여기서 생겨요.",
+        "student": "내배엽으로 덮인 안쪽 주머니. 1낭 → 가운데귀, 2낭 → 편도, 3낭 → 아래 부갑상샘·흉선, 4낭 → 위 부갑상샘·초후새체.",
+        "clinical": "3·4낭 결함은 디조지 증후군(흉선·부갑상샘 저형성)."
+      },
+      "anomalies": [
+        "digeorge",
+        "ectopic-parathyroid"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pp1",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "제1인두낭",
+        "en": "1st pharyngeal pouch",
+        "alt": [
+          "제1인두주머니",
+          "관고실오목"
+        ]
+      },
+      "layer": "en",
+      "parent": "pp",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        12
+      ],
+      "derivatives": [
+        "관고실오목 → 고실(가운데귀안)",
+        "귀관(유스타키오관)",
+        "꼭지굴안",
+        "고막 안쪽층"
+      ],
+      "text": {
+        "public": "첫 번째 주머니는 가운데귀와 코 뒤로 이어지는 귀관이 돼요.",
+        "student": "길게 늘어난 관고실오목이 먼 쪽은 고실, 가까운 쪽은 귀관이 된다. 고실이 넓어지며 이소골을 감싼다.",
+        "clinical": "아이 귀관은 짧고 수평이라 중이염이 잘 생긴다."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pp2",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "제2인두낭",
+        "en": "2nd pharyngeal pouch",
+        "alt": [
+          "제2인두주머니"
+        ]
+      },
+      "layer": "en",
+      "parent": "pp",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        12
+      ],
+      "derivatives": [
+        "입천장편도(구개편도) 상피",
+        "편도오목 (편도와)"
+      ],
+      "text": {
+        "public": "두 번째 주머니는 목구멍 양옆 벽의 편도가 있는 자리가 돼요.",
+        "student": "상피가 편도오목을 만들고, 3–5개월에 림프조직이 들어와 입천장편도가 된다.",
+        "clinical": "측경부샛길의 안쪽 구멍은 이 편도오목에 열린다."
+      },
+      "anomalies": [
+        "branchial-fistula"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pp3",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "제3인두낭",
+        "en": "3rd pharyngeal pouch",
+        "alt": [
+          "제3인두주머니"
+        ]
+      },
+      "layer": "en",
+      "parent": "pp",
+      "days": {
+        "start": 35,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        15,
+        19
+      ],
+      "derivatives": [
+        "등쪽 → 아래 부갑상샘",
+        "배쪽 → 흉선 상피"
+      ],
+      "text": {
+        "public": "세 번째 주머니에서 면역 기관인 흉선과 칼슘을 조절하는 부갑상샘이 생겨요.",
+        "student": "등쪽 날개 → 아래 부갑상샘, 배쪽 날개 → 흉선. 흉선이 가슴으로 내려가면서 부갑상샘을 끌고 가 4낭 것보다 더 아래에 자리 잡는다. 그래서 3낭이 ‘아래’ 부갑상샘이다.",
+        "clinical": "아래 부갑상샘은 하강 경로 어디든 남을 수 있어(흉선 안, 종격동) 부갑상샘 수술 때 찾기 어렵다. 22q11.2 결실에서 저칼슘혈증·T세포 결핍."
+      },
+      "anomalies": [
+        "digeorge",
+        "ectopic-parathyroid"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pp4",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "제4인두낭",
+        "en": "4th pharyngeal pouch",
+        "alt": [
+          "제4인두주머니"
+        ]
+      },
+      "layer": "en",
+      "parent": "pp",
+      "days": {
+        "start": 35,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        15,
+        19
+      ],
+      "derivatives": [
+        "등쪽 → 위 부갑상샘",
+        "배쪽 → 초후새체 (갑상샘 C세포가 들어가는 구조, 5낭으로 보기도 함)"
+      ],
+      "text": {
+        "public": "네 번째 주머니에서 위쪽 부갑상샘이 생겨요.",
+        "student": "위 부갑상샘은 갑상샘 뒤쪽 위에 머문다. 초후새체는 갑상샘에 합쳐져 C세포(칼시토닌)를 넣는다.",
+        "clinical": "C세포 기원은 교과서상 신경능선이지만 최근 내배엽설이 있다 (ncth 항목 참고)."
+      },
+      "anomalies": [
+        "digeorge"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "tng",
+      "name": {
+        "ko": "혀",
+        "en": "Tongue",
+        "alt": []
+      },
+      "layer": "mix",
+      "parent": "pa",
+      "days": {
+        "start": 28,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        14
+      ],
+      "composition": [
+        {
+          "layer": "ec",
+          "part": "혀 앞 2/3 점막 (1궁): 가쪽혀융기 2개 + 무쌍결절. 상피는 외배엽 (뒤 1/3 상피는 내배엽)",
+          "ref": "pa1"
+        },
+        {
+          "layer": "en",
+          "part": "혀 뒤 1/3 점막 (2·3·4궁 아래가지융기, 주로 3궁)",
+          "ref": "pa3"
+        },
+        {
+          "layer": "me",
+          "part": "혀 근육 (뒤통수 체절)",
+          "ref": "myo"
+        }
+      ],
+      "innervation": [
+        {
+          "region": "앞 2/3",
+          "general": "V3 혀신경",
+          "taste": "VII 고실끈신경",
+          "origin": "1궁"
+        },
+        {
+          "region": "뒤 1/3",
+          "general": "IX",
+          "taste": "IX",
+          "origin": "3궁 (2궁 점막은 덮여 사라짐)"
+        },
+        {
+          "region": "혀뿌리·후두덮개",
+          "general": "X 위후두신경",
+          "taste": "X",
+          "origin": "4궁"
+        },
+        {
+          "region": "근육",
+          "general": "-",
+          "taste": "-",
+          "origin": "XII (입천장혀근만 X)"
+        }
+      ],
+      "derivatives": [
+        "앞 2/3: 가쪽혀융기 + 무쌍결절 (1궁)",
+        "뒤 1/3: 아래가지융기 (주로 3궁)",
+        "분계고랑이 두 부분의 경계, 막구멍은 갑상샘의 출발점",
+        "혀 근육: 뒤통수 체절 근육모세포가 이주"
+      ],
+      "text": {
+        "public": "혀는 4주쯤 입 바닥의 작은 혹 몇 개가 합쳐져 생겨요. 앞부분과 뒷부분이 다른 곳에서 와서 맛을 느끼는 신경도 달라요.",
+        "student": "앞 2/3는 1궁(가쪽혀융기 2 + 무쌍결절), 뒤 1/3는 2·3·4궁의 아래가지융기에서 오지만 3궁이 2궁을 덮어 IX가 담당한다. 근육은 뒤통수 체절에서 와서 XII. 신경은 ‘점막은 궁, 근육은 체절’로 정리된다. 점막 상피는 앞 2/3가 외배엽, 뒤 1/3이 내배엽이다.",
+        "clinical": "막구멍은 갑상샘이 내려가기 시작한 자리(갑상설관낭종과 연결). 혀유착증은 혀주름띠가 퇴화하지 않은 것."
+      },
+      "anomalies": [
+        "ankyloglossia"
+      ],
+      "links": [
+        "thy"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "arch-table",
+      "title": "인두궁별 신경·근육·뼈·동맥",
+      "columns": [
+        "궁",
+        "신경",
+        "근육",
+        "뼈·연골",
+        "동맥"
+      ],
+      "rows": [
+        {
+          "ref": "pa1",
+          "cells": [
+            "1 (하악궁)",
+            "V2·V3",
+            "씹기근육, 턱목뿔근, 두힘살근 앞힘살, 고막긴장근, 입천장긴장근",
+            "망치뼈, 모루뼈, 아래턱뼈, 위턱뼈, 광대뼈, 나비아래턱인대",
+            "위턱동맥 일부"
+          ]
+        },
+        {
+          "ref": "pa2",
+          "cells": [
+            "2 (설골궁)",
+            "VII",
+            "얼굴표정근, 등자근, 붓목뿔근, 두힘살근 뒤힘살",
+            "등자뼈, 붓돌기, 붓목뿔인대, 목뿔뼈 작은뿔·몸통 위",
+            "목뿔동맥, 등자동맥"
+          ]
+        },
+        {
+          "ref": "pa3",
+          "cells": [
+            "3",
+            "IX",
+            "붓인두근",
+            "목뿔뼈 큰뿔·몸통 아래",
+            "온목동맥, 속목동맥 처음 부분"
+          ]
+        },
+        {
+          "ref": "pa4",
+          "cells": [
+            "4",
+            "X 위후두가지",
+            "반지방패근, 인두수축근, 입천장올림근",
+            "후두연골 (6궁과 공동, 측판중배엽)",
+            "왼: 대동맥활 일부 / 오른: 오른빗장밑동맥 처음 부분"
+          ]
+        },
+        {
+          "ref": "pa6",
+          "cells": [
+            "6",
+            "X 되돌이후두가지",
+            "후두 내재근 (반지방패근 제외)",
+            "후두연골 (4궁과 공동, 측판중배엽)",
+            "폐동맥 처음 부분, 왼쪽 동맥관"
+          ]
+        }
+      ],
+      "note": "5궁은 사람에서 흔적뿐이라 표에서 뺀다."
+    },
+    {
+      "id": "outside-inside",
+      "title": "바깥(인두열) · 막 · 안쪽(인두낭) 한눈에",
+      "columns": [
+        "번호",
+        "인두열 (외배엽)",
+        "인두막",
+        "인두낭 (내배엽)"
+      ],
+      "rows": [
+        {
+          "ref": "pc1",
+          "cells": [
+            "1",
+            "바깥귀길",
+            "고막",
+            "고실, 귀관"
+          ]
+        },
+        {
+          "ref": "pp2",
+          "cells": [
+            "2",
+            "경부동 → 사라짐",
+            "-",
+            "입천장편도 상피"
+          ]
+        },
+        {
+          "ref": "pp3",
+          "cells": [
+            "3",
+            "경부동 → 사라짐",
+            "-",
+            "아래 부갑상샘, 흉선"
+          ]
+        },
+        {
+          "ref": "pp4",
+          "cells": [
+            "4",
+            "경부동 → 사라짐",
+            "-",
+            "위 부갑상샘, 초후새체"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tongue-innervation",
+      "title": "혀의 부위별 신경",
+      "columns": [
+        "부위",
+        "일반감각",
+        "미각",
+        "기원"
+      ],
+      "rows": [
+        {
+          "ref": "tng",
+          "cells": [
+            "앞 2/3",
+            "V3 혀신경",
+            "VII 고실끈신경",
+            "1궁"
+          ]
+        },
+        {
+          "ref": "tng",
+          "cells": [
+            "뒤 1/3",
+            "IX",
+            "IX",
+            "3궁"
+          ]
+        },
+        {
+          "ref": "tng",
+          "cells": [
+            "혀뿌리·후두덮개",
+            "X",
+            "X",
+            "4궁"
+          ]
+        },
+        {
+          "ref": "tng",
+          "cells": [
+            "근육 (운동)",
+            "XII, 입천장혀근만 X",
+            "-",
+            "뒤통수 체절"
+          ]
+        }
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "branchial-cyst",
+      "name": {
+        "ko": "측경부낭종",
+        "en": "Lateral cervical (branchial) cyst",
+        "alt": [
+          "새열낭종",
+          "아가미틈새낭종"
+        ]
+      },
+      "cause": [
+        "cs",
+        "pc",
+        "pa2"
+      ],
+      "period": {
+        "start": 35,
+        "end": 49
+      },
+      "mechanism": "경부동(2–4 인두열)이 완전히 사라지지 않고 남음. 2열 기원이 가장 흔하다.",
+      "findings": [
+        "목빗근 앞 가장자리, 아래턱각 아래의 무통성 종괴",
+        "감염되면 커지고 아픔",
+        "청소년·젊은 성인에서 처음 발견되는 경우가 많음"
+      ],
+      "genes": [],
+      "public": "목 옆에 생기는 물혹으로, 태아 때 사라져야 할 홈이 남은 것이에요. 수술로 치료하며 대개 예후가 좋아요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "branchial-fistula",
+      "name": {
+        "ko": "측경부샛길",
+        "en": "Branchial fistula",
+        "alt": [
+          "새열누공",
+          "측경부누공"
+        ]
+      },
+      "cause": [
+        "cs",
+        "pp2",
+        "pc"
+      ],
+      "period": {
+        "start": 35,
+        "end": 49
+      },
+      "mechanism": "2인두열과 2인두낭 사이 막이 터져 피부에서 인두까지 관이 이어짐.",
+      "findings": [
+        "바깥 구멍: 목빗근 앞 가장자리 아래쪽",
+        "안쪽 구멍: 편도오목",
+        "점액성 분비물"
+      ],
+      "genes": [],
+      "public": "목 옆 피부에 작은 구멍이 있고 목 안쪽까지 이어진 관이에요. 분비물이나 염증이 반복되면 수술해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "first-cleft-anomaly",
+      "name": {
+        "ko": "제1인두열 기형",
+        "en": "First branchial cleft anomaly",
+        "alt": [
+          "제1새열 기형"
+        ]
+      },
+      "cause": [
+        "pc1"
+      ],
+      "period": {
+        "start": 28,
+        "end": 56
+      },
+      "mechanism": "1인두열이 바깥귀길 외의 자리에 남음.",
+      "findings": [
+        "귀 주위·귀밑샘 부위·아래턱각 근처의 낭종이나 샛길",
+        "얼굴신경과 가까워 수술이 까다로움"
+      ],
+      "genes": [],
+      "public": "귀 근처나 턱 아래에 생기는 드문 물혹이나 구멍이에요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "preauricular",
+      "name": {
+        "ko": "귓바퀴앞 샛길·덧귀",
+        "en": "Preauricular sinus and tags",
+        "alt": [
+          "이개전방누공",
+          "선천성 이루공"
+        ]
+      },
+      "cause": [
+        "aur"
+      ],
+      "period": {
+        "start": 42,
+        "end": 56
+      },
+      "mechanism": "귓바퀴결절이 합쳐질 때 틈이 남거나 결절이 따로 남음.",
+      "findings": [
+        "귓바퀴 앞의 작은 구멍 또는 피부 돌기",
+        "대개 단독, 감염 시 고름"
+      ],
+      "genes": [
+        "EYA1 (아가미귀콩팥 증후군, 동반 시)"
+      ],
+      "public": "귀 앞의 작은 구멍이나 살점이에요. 흔하고 대개 문제가 없지만, 청력이나 콩팥 이상이 함께 있는지 확인하기도 해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "treacher-collins",
+      "name": {
+        "ko": "트리처 콜린스 증후군",
+        "en": "Treacher Collins syndrome",
+        "alt": [
+          "하악안면이골증"
+        ]
+      },
+      "cause": [
+        "pa1",
+        "ncc"
+      ],
+      "period": {
+        "start": 22,
+        "end": 56
+      },
+      "mechanism": "1궁(일부 2궁)으로 가는 신경능선 세포가 부족함.",
+      "findings": [
+        "광대뼈·아래턱 저형성",
+        "아래로 처진 눈꼬리, 아래눈꺼풀 결손",
+        "바깥귀 기형, 전음성 난청",
+        "지능은 대개 정상"
+      ],
+      "genes": [
+        "TCOF1 (상염색체 우성)",
+        "POLR1D (상염색체 우성 또는 열성)",
+        "POLR1C (상염색체 열성)"
+      ],
+      "public": "광대뼈와 턱이 작게 자라는 유전 질환이에요. 얼굴과 귀 모양, 청력에 영향을 주지만 지능은 대개 정상이에요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pierre-robin",
+      "name": {
+        "ko": "피에르 로뱅 연속증",
+        "en": "Pierre Robin sequence",
+        "alt": [
+          "로뱅 연속증"
+        ]
+      },
+      "cause": [
+        "pa1"
+      ],
+      "period": {
+        "start": 35,
+        "end": 70
+      },
+      "mechanism": "아래턱이 작음 → 혀가 뒤로 밀림 → 구개돌기가 합쳐지지 못함. 하나가 다음을 일으키는 ‘연속증’.",
+      "findings": [
+        "작은 아래턱",
+        "혀뒤처짐 → 기도 폐쇄",
+        "U자형 구개열"
+      ],
+      "genes": [
+        "단독 또는 스티클러 증후군 등에 동반"
+      ],
+      "public": "턱이 작아 혀가 목 쪽으로 밀리면서 입천장이 갈라지는 상태예요. 신생아 때 숨쉬기와 먹기를 잘 살펴야 해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "hemifacial-microsomia",
+      "name": {
+        "ko": "반얼굴왜소증",
+        "en": "Hemifacial microsomia",
+        "alt": [
+          "골덴하 증후군 (눈귀척추 스펙트럼)"
+        ]
+      },
+      "cause": [
+        "pa1",
+        "pa2"
+      ],
+      "period": {
+        "start": 28,
+        "end": 56
+      },
+      "mechanism": "한쪽 1·2궁 구조가 덜 자람.",
+      "findings": [
+        "한쪽 아래턱·광대뼈 저형성",
+        "귀 기형, 귓바퀴앞 덧귀",
+        "골덴하형: 눈의 유피종, 척추 기형 동반"
+      ],
+      "genes": [],
+      "public": "얼굴 한쪽이 덜 자라는 상태예요. 귀 모양이 다르거나 턱이 비대칭일 수 있어요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "digeorge",
+      "name": {
+        "ko": "디조지 증후군",
+        "en": "DiGeorge syndrome (22q11.2 deletion)",
+        "alt": [
+          "22q11.2 결실 증후군",
+          "CATCH-22"
+        ]
+      },
+      "cause": [
+        "pp3",
+        "pp4",
+        "ncd",
+        "pa"
+      ],
+      "period": {
+        "start": 28,
+        "end": 56
+      },
+      "mechanism": "3·4인두낭과 그 주변 신경능선의 발달 장애.",
+      "findings": [
+        "흉선 저형성 → T세포 결핍, 반복 감염",
+        "부갑상샘 저형성 → 저칼슘혈증, 신생아 테타니",
+        "원추동맥간 기형(동맥간개존, 팔로4징), 대동맥활 단절 B형(4궁 동맥 이상)",
+        "구개열, 특징적 얼굴"
+      ],
+      "genes": [
+        "22q11.2 결실 (TBX1)"
+      ],
+      "public": "염색체 일부가 빠져 면역·칼슘·심장에 함께 문제가 생기는 질환이에요. 증상의 폭이 넓어 전문 진료가 필요해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ectopic-parathyroid",
+      "name": {
+        "ko": "이소성 부갑상샘·흉선",
+        "en": "Ectopic parathyroid and thymic tissue",
+        "alt": []
+      },
+      "cause": [
+        "pp3",
+        "pp4"
+      ],
+      "period": {
+        "start": 42,
+        "end": 56
+      },
+      "mechanism": "흉선과 부갑상샘이 내려가는 길에 조직이 남거나 너무 멀리 내려감.",
+      "findings": [
+        "아래 부갑상샘이 흉선 안이나 종격동에 위치",
+        "목 안 흉선 조직"
+      ],
+      "genes": [],
+      "public": "부갑상샘이나 흉선이 원래 자리가 아닌 곳에 있는 경우예요. 대개 증상이 없고 수술 전 검사에서 중요해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "aberrant-right-subclavian",
+      "name": {
+        "ko": "이상 오른빗장밑동맥",
+        "en": "Aberrant right subclavian artery",
+        "alt": [
+          "루소리아동맥(arteria lusoria)"
+        ]
+      },
+      "cause": [
+        "pa4"
+      ],
+      "period": {
+        "start": 42,
+        "end": 56
+      },
+      "mechanism": "오른쪽 4궁 동맥이 사라지고 오른등대동맥 먼 쪽이 남아, 오른빗장밑동맥이 대동맥활 끝에서 나와 식도 뒤를 지남.",
+      "findings": [
+        "대개 무증상",
+        "일부에서 식도를 눌러 삼킴곤란 (dysphagia lusoria)",
+        "오른쪽 되돌이후두신경이 되돌아가지 않음"
+      ],
+      "genes": [],
+      "public": "오른팔로 가는 동맥이 평소와 다른 길로 식도 뒤를 지나는 경우예요. 대부분 증상이 없어요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ankyloglossia",
+      "name": {
+        "ko": "혀유착증",
+        "en": "Ankyloglossia",
+        "alt": [
+          "설소대 단축증",
+          "혀짧은증"
+        ]
+      },
+      "cause": [
+        "tng"
+      ],
+      "period": {
+        "start": 35,
+        "end": 70
+      },
+      "mechanism": "혀를 입 바닥에 붙이고 있던 혀주름띠가 충분히 퇴화하지 않음.",
+      "findings": [
+        "혀를 내밀기 어려움, 혀끝이 하트 모양",
+        "수유 곤란이나 발음 문제가 있을 때만 치료"
+      ],
+      "genes": [],
+      "public": "혀 밑의 끈(설소대)이 짧아 혀 움직임이 제한되는 상태예요. 수유나 발음에 문제가 있을 때만 간단한 시술을 해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "day": 22,
+      "label": "제1인두궁 출현",
+      "refs": [
+        "pa1"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 24,
+      "label": "제2인두궁 출현",
+      "refs": [
+        "pa2"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 26,
+      "label": "제3인두궁 출현",
+      "refs": [
+        "pa3"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 28,
+      "label": "혀 융기·인두낭 출현",
+      "refs": [
+        "tng",
+        "pp"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 29,
+      "label": "제4·6인두궁 출현",
+      "refs": [
+        "pa4",
+        "pa6"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 42,
+      "label": "귓바퀴결절 6개",
+      "refs": [
+        "aur"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 49,
+      "label": "경부동 소실, 흉선·부갑상샘 하강",
+      "refs": [
+        "cs",
+        "pp3"
+      ],
+      "major": true,
+      "approx": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "langman",
+      "title": "Langman's Medical Embryology",
+      "chapter": "Head and Neck (머리와 목)",
+      "edition": "15판 (한국어 번역서)",
+      "role": "기준",
+      "note": "쪽수는 번역서 15판 기준으로 검수 때 채운다"
+    },
+    {
+      "id": "moore",
+      "title": "The Developing Human (Moore)",
+      "chapter": "Pharyngeal Apparatus, Face, and Neck",
+      "edition": null,
+      "role": "보조"
+    }
+  ]
+}

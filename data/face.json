@@ -1,0 +1,1062 @@
+{
+  "module": "face",
+  "title": {
+    "ko": "얼굴·코·입천장",
+    "en": "Face, nose and palate"
+  },
+  "status": "draft",
+  "priority": "P1",
+  "updated": "2026-11-20",
+  "termNote": "구순열·구개열은 임상에서 가장 흔한 표기라 기본으로 쓰고, 신용어(입술갈림증·입천장갈림증)는 alt에 넣었다. 입천장은 구개와 함께 쓴다. 전두비융기는 다른 모듈(lineage)과 맞춰 기본으로 두고 신용어 이마코융기는 alt에 둔다 (번역서 표기 확인 필요). 뒤콧구멍은 구조명으로, 후비공폐쇄는 질환명으로 쓴다.",
+  "structures": [
+    {
+      "id": "face",
+      "name": {
+        "ko": "얼굴 발생",
+        "en": "Development of the face",
+        "alt": []
+      },
+      "layer": "mix",
+      "parent": null,
+      "attachTo": [
+        "ncc",
+        "sur",
+        "pa1"
+      ],
+      "days": {
+        "start": 24,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        11,
+        23
+      ],
+      "composition": [
+        {
+          "layer": "ec",
+          "part": "융기 속 중간엽: 신경능선 (뼈·연골·결합조직)",
+          "ref": "ncc"
+        },
+        {
+          "layer": "ec",
+          "part": "융기 표면: 표면외배엽 (피부, 코판)",
+          "ref": "sur"
+        },
+        {
+          "layer": "me",
+          "part": "얼굴 근육: 1·2궁의 근축중배엽",
+          "ref": "hdm"
+        }
+      ],
+      "derivatives": [
+        "이마, 코, 뺨, 윗입술, 아랫입술, 턱",
+        "입천장과 코안"
+      ],
+      "text": {
+        "public": "4주쯤 입 둘레에 작은 혹 다섯 개가 생기고, 4–10주에 걸쳐 이 혹들이 자라고 합쳐지면서 얼굴이 만들어져요.",
+        "student": "입구멍(구강와)을 둘러싼 다섯 융기(전두비융기 1, 위턱융기 2, 아래턱융기 2)가 4주에 나타나고, 5주에 코판이 안쪽·가쪽 코융기를 만든다. 얼굴의 대부분은 6–7주에, 입천장은 7–10주에 완성된다.",
+        "clinical": "얼굴 갈림증은 ‘어느 융기 둘이 합쳐지지 못했나’로 이해한다. 윗입술 = 위턱융기 + 안쪽코융기, 입천장 = 두 구개돌기 + 일차입천장."
+      },
+      "anomalies": [
+        "cleft-lip",
+        "cleft-palate",
+        "oblique-facial-cleft",
+        "macrostomia"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true,
+      "verifyNote": "얼굴 융기 출현 시기 (Langman '4주 말' 서술, 이벤트 24일)"
+    },
+    {
+      "id": "fnp",
+      "name": {
+        "ko": "전두비융기",
+        "en": "Frontonasal prominence",
+        "alt": [
+          "이마코융기"
+        ]
+      },
+      "layer": "ec",
+      "parent": "face",
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        11
+      ],
+      "derivatives": [
+        "이마",
+        "콧등",
+        "안쪽·가쪽 코융기가 여기서 생김",
+        "코사이막 앞부분"
+      ],
+      "text": {
+        "public": "얼굴 맨 위 가운데 혹으로, 이마와 콧등이 돼요.",
+        "student": "앞뇌를 덮는 중간엽 융기. 아래쪽 양옆에 코판이 생겨 코융기들이 갈라져 나온다.",
+        "clinical": "전뇌 발달(SHH)이 전두비융기 성장을 이끈다. 전뇌무분할증에서 얼굴 가운데 구조가 함께 줄어드는 이유."
+      },
+      "anomalies": [
+        "median-cleft-lip"
+      ],
+      "links": [
+        "pro"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true,
+      "verifyNote": "번역서 표기 (전두비융기 / 이마코융기)"
+    },
+    {
+      "id": "mxp",
+      "name": {
+        "ko": "위턱융기",
+        "en": "Maxillary prominence",
+        "alt": [
+          "상악융기"
+        ]
+      },
+      "layer": "ec",
+      "parent": "face",
+      "attachTo": [
+        "pa1"
+      ],
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        11
+      ],
+      "derivatives": [
+        "뺨",
+        "윗입술 가쪽 부분",
+        "위턱뼈, 광대뼈",
+        "구개돌기 → 이차입천장"
+      ],
+      "text": {
+        "public": "얼굴 양옆 위쪽 혹으로, 뺨과 윗입술 양옆, 입천장 대부분이 돼요.",
+        "student": "제1인두궁의 위쪽 부분. 안쪽으로 자라며 안쪽코융기를 가운데로 밀고, 그와 합쳐져 윗입술을 만든다. 안쪽 면에서 구개돌기가 나온다.",
+        "clinical": "위턱융기와 안쪽코융기가 합쳐지지 못하면 구순열, 가쪽코융기와 합쳐지지 못하면 빗얼굴갈림증, 아래턱융기와 합쳐지지 못하면 큰입증."
+      },
+      "anomalies": [
+        "cleft-lip",
+        "oblique-facial-cleft",
+        "macrostomia"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "mdp",
+      "name": {
+        "ko": "아래턱융기",
+        "en": "Mandibular prominence",
+        "alt": [
+          "하악융기"
+        ]
+      },
+      "layer": "ec",
+      "parent": "face",
+      "attachTo": [
+        "pa1"
+      ],
+      "days": {
+        "start": 24,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        11
+      ],
+      "derivatives": [
+        "아랫입술",
+        "턱 (아래턱뼈)",
+        "혀 앞 2/3의 바탕 (가쪽혀융기)"
+      ],
+      "text": {
+        "public": "얼굴 아래쪽 혹 두 개가 가운데서 만나 아랫입술과 턱이 돼요.",
+        "student": "좌우 아래턱융기가 일찍(5주 전후) 가운데서 합쳐진다. 아래턱 갈림증은 매우 드물다.",
+        "clinical": "아래턱융기 성장이 부족하면 작은 아래턱 → 피에르 로뱅 연속증의 출발점."
+      },
+      "anomalies": [
+        "pierre-robin",
+        "macrostomia"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "npl",
+      "name": {
+        "ko": "코판",
+        "en": "Nasal (olfactory) placode",
+        "alt": [
+          "후각판"
+        ]
+      },
+      "layer": "ec",
+      "parent": "face",
+      "attachTo": [
+        "plc"
+      ],
+      "days": {
+        "start": 28,
+        "end": 35,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        15
+      ],
+      "derivatives": [
+        "코오목 → 코안",
+        "후각상피, 후각신경"
+      ],
+      "text": {
+        "public": "얼굴 가운데 아래 양쪽에 두꺼워진 피부 두 곳이 생기고, 안으로 파여 콧구멍이 돼요.",
+        "student": "전두비융기 아래 양쪽의 표면외배엽이 두꺼워진 것. 5주에 함입해 코오목이 되고, 그 둘레가 솟아 안쪽·가쪽 코융기가 된다.",
+        "clinical": "후각상피와 함께 GnRH 신경세포도 이 경로로 뇌로 이주한다 (칼만 증후군: 후각 상실 + 성선기능저하)."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "mnp",
+      "name": {
+        "ko": "안쪽코융기",
+        "en": "Medial nasal prominence",
+        "alt": [
+          "내측비융기"
+        ]
+      },
+      "layer": "ec",
+      "parent": "fnp",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        15
+      ],
+      "derivatives": [
+        "윗입술 인중",
+        "코끝, 코기둥, 콧마루 능선",
+        "좌우가 합쳐져 위턱사이분절"
+      ],
+      "text": {
+        "public": "콧구멍 안쪽 혹으로, 코끝과 인중이 돼요.",
+        "student": "좌우 안쪽코융기가 표면과 깊은 곳에서 합쳐져 위턱사이분절을 만든다. 위턱융기와 합쳐져 윗입술을 완성한다.",
+        "clinical": "구순열은 이 융기와 위턱융기 사이의 결함이라 인중 옆(가쪽)에 생긴다. 정중 구순열은 드물고 전뇌무분할증과 연관."
+      },
+      "anomalies": [
+        "cleft-lip",
+        "median-cleft-lip"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true,
+      "verifyNote": "코 부위 배정 (콧마루 능선·코끝 = 안쪽코융기, 콧등 = 전두비융기)"
+    },
+    {
+      "id": "lnp",
+      "name": {
+        "ko": "가쪽코융기",
+        "en": "Lateral nasal prominence",
+        "alt": [
+          "외측비융기"
+        ]
+      },
+      "layer": "ec",
+      "parent": "fnp",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        15
+      ],
+      "derivatives": [
+        "콧방울"
+      ],
+      "text": {
+        "public": "콧구멍 바깥쪽 혹으로, 콧방울이 돼요.",
+        "student": "콧방울만 만든다. 위턱융기와의 사이에 코눈물고랑이 생긴다.",
+        "clinical": "윗입술 형성에는 참여하지 않는다 (자주 나오는 함정)."
+      },
+      "anomalies": [
+        "oblique-facial-cleft"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "nlg",
+      "name": {
+        "ko": "코눈물고랑",
+        "en": "Nasolacrimal groove",
+        "alt": [
+          "비루구"
+        ]
+      },
+      "layer": "ec",
+      "parent": "face",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        15,
+        18
+      ],
+      "derivatives": [
+        "코눈물관",
+        "눈물주머니"
+      ],
+      "text": {
+        "public": "눈과 코 사이 홈이 관으로 바뀌어, 눈물이 코로 빠지는 길이 돼요.",
+        "student": "가쪽코융기와 위턱융기 사이 고랑의 외배엽이 속으로 들어가 단단한 줄이 되었다가 다시 뚫려 코눈물관이 된다.",
+        "clinical": "아래 끝이 늦게 뚫리면 신생아 눈물흘림(선천성 코눈물관폐쇄). 대부분 첫 돌 전에 저절로 좋아진다."
+      },
+      "anomalies": [
+        "oblique-facial-cleft"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ims",
+      "name": {
+        "ko": "위턱사이분절",
+        "en": "Intermaxillary segment",
+        "alt": [
+          "상악간분절",
+          "앞위턱"
+        ]
+      },
+      "layer": "ec",
+      "parent": "mnp",
+      "days": {
+        "start": 42,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        17,
+        19
+      ],
+      "derivatives": [
+        "입술 부분 → 인중",
+        "위턱 부분 → 앞니 4개가 박히는 위턱 앞부분",
+        "입천장 부분 → 일차입천장 (삼각형)"
+      ],
+      "text": {
+        "public": "코 아래 가운데 조각으로, 인중과 앞니 네 개 자리, 입천장 맨 앞부분이 돼요.",
+        "student": "좌우 안쪽코융기가 합쳐진 덩어리. 입술·위턱·입천장 세 부분으로 나뉜다. 위로는 코사이막(전두비융기)과 이어진다.",
+        "clinical": "앞쪽 갈림(구순열 ± 잇몸 갈림)은 이 분절과 위턱 사이에서 생긴다. 그래서 갈림선이 옆앞니와 송곳니 사이를 지난다."
+      },
+      "anomalies": [
+        "cleft-lip"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "lip",
+      "name": {
+        "ko": "윗입술",
+        "en": "Upper lip",
+        "alt": []
+      },
+      "layer": "mix",
+      "parent": "face",
+      "days": {
+        "start": 42,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        17,
+        19
+      ],
+      "composition": [
+        {
+          "layer": "ec",
+          "part": "가운데 인중: 안쪽코융기",
+          "ref": "mnp"
+        },
+        {
+          "layer": "ec",
+          "part": "양옆: 위턱융기",
+          "ref": "mxp"
+        },
+        {
+          "layer": "me",
+          "part": "입둘레근: 2궁 근축중배엽 (얼굴신경)",
+          "ref": "pa2"
+        }
+      ],
+      "derivatives": [
+        "인중과 윗입술 전체"
+      ],
+      "text": {
+        "public": "윗입술은 가운데(인중)와 양옆이 따로 생겨 6–7주에 합쳐져요. 이게 덜 합쳐지면 구순열이에요.",
+        "student": "인중 = 안쪽코융기, 가쪽 = 위턱융기. 가쪽코융기는 참여하지 않는다. 입술 근육은 2궁(VII)에서 이주.",
+        "clinical": "얇은 윗입술과 밋밋한 인중은 태아알코올증후군의 얼굴 소견."
+      },
+      "anomalies": [
+        "cleft-lip",
+        "fas-face"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ppal",
+      "name": {
+        "ko": "일차입천장",
+        "en": "Primary palate",
+        "alt": [
+          "일차구개",
+          "정중입천장돌기"
+        ]
+      },
+      "layer": "ec",
+      "parent": "ims",
+      "days": {
+        "start": 42,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        17,
+        19
+      ],
+      "derivatives": [
+        "앞니구멍 앞쪽의 단단입천장 (삼각형 조각)"
+      ],
+      "text": {
+        "public": "입천장 맨 앞 작은 삼각형 부분이에요. 앞니 뒤쪽에 있어요.",
+        "student": "위턱사이분절의 입천장 부분. 앞니구멍이 일차·이차입천장의 경계이자 갈림증 분류의 기준점이다.",
+        "clinical": "앞니구멍 앞쪽 갈림 = 앞쪽 갈림(구순열 계열)."
+      },
+      "anomalies": [
+        "cleft-lip"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "spal",
+      "name": {
+        "ko": "이차입천장",
+        "en": "Secondary palate",
+        "alt": [
+          "이차구개",
+          "구개돌기 (palatine shelves)"
+        ]
+      },
+      "layer": "ec",
+      "parent": "mxp",
+      "days": {
+        "start": 42,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        17,
+        23
+      ],
+      "derivatives": [
+        "단단입천장 대부분 (앞니구멍 뒤)",
+        "물렁입천장",
+        "목젖"
+      ],
+      "text": {
+        "public": "입천장 대부분은 양쪽에서 자라 나온 판 두 개가 가운데서 만나 생겨요. 처음엔 혀 양옆에 세로로 있다가, 혀가 내려가면 수평으로 눕혀져 합쳐져요.",
+        "student": "6주 위턱융기 안쪽에서 구개돌기가 혀 양옆으로 비스듬히 아래로 자란다. 7주에 혀 위로 올라가 수평이 되고 정중선에서 합쳐진다. 앞쪽은 일차입천장, 위쪽은 코사이막과 붙는다. 물렁입천장과 목젖이 가장 늦다.",
+        "clinical": "구개돌기가 올라가지 못하거나(혀가 막음, 작은 아래턱), 너무 작거나, 합쳐진 뒤 다시 갈라지면 구개열. 여자에서 합쳐지는 시기가 약 1주 늦어 단독 구개열이 여자에 더 흔하다."
+      },
+      "anomalies": [
+        "cleft-palate",
+        "pierre-robin"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "nsc",
+      "name": {
+        "ko": "코안과 뒤콧구멍",
+        "en": "Nasal cavities and choanae",
+        "alt": [
+          "비강",
+          "후비공"
+        ]
+      },
+      "layer": "ec",
+      "parent": "face",
+      "days": {
+        "start": 35,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        15,
+        23
+      ],
+      "derivatives": [
+        "코안",
+        "일차 뒤콧구멍 → 이차입천장 형성 후 최종 뒤콧구멍 (코안과 인두의 연결)",
+        "코선반",
+        "코곁굴 (대부분 출생 후 자람)"
+      ],
+      "text": {
+        "public": "콧구멍이 안으로 깊어지다가 입 쪽과 연결되고, 입천장이 생기면서 코와 입이 나뉘어요.",
+        "student": "코오목이 깊어지며 코입막만 남기고, 6주에 이 막이 터져 일차 뒤콧구멍이 생긴다. 이차입천장이 생기면 뒤콧구멍은 코안과 인두의 경계로 옮겨진다.",
+        "clinical": "신생아는 주로 코로 숨쉬므로 양쪽 후비공폐쇄는 출생 직후 호흡곤란(울 때만 좋아지는 청색증). CHARGE 증후군과 연관."
+      },
+      "anomalies": [
+        "choanal-atresia"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "prominence-table",
+      "title": "얼굴 융기가 만드는 구조",
+      "columns": [
+        "융기",
+        "만드는 구조",
+        "갈림이 생기면"
+      ],
+      "rows": [
+        {
+          "ref": "fnp",
+          "cells": [
+            "전두비융기",
+            "이마, 콧등, 코융기의 출발점",
+            "정중 갈림 (드묾, 전뇌무분할증과 연관)"
+          ]
+        },
+        {
+          "ref": "mxp",
+          "cells": [
+            "위턱융기 (1궁)",
+            "뺨, 윗입술 가쪽, 위턱·광대뼈, 이차입천장",
+            "구순열, 빗얼굴갈림증, 큰입증, 구개열"
+          ]
+        },
+        {
+          "ref": "mnp",
+          "cells": [
+            "안쪽코융기",
+            "인중, 코끝·코기둥·콧마루 능선, 일차입천장, 앞니 4개 자리",
+            "구순열 (위턱융기와의 사이)"
+          ]
+        },
+        {
+          "ref": "lnp",
+          "cells": [
+            "가쪽코융기",
+            "콧방울",
+            "빗얼굴갈림증 (위턱융기와의 사이)"
+          ]
+        },
+        {
+          "ref": "mdp",
+          "cells": [
+            "아래턱융기 (1궁)",
+            "아랫입술, 턱",
+            "아래턱 갈림 (매우 드묾)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "palate-table",
+      "title": "일차입천장과 이차입천장",
+      "columns": [
+        "",
+        "일차입천장",
+        "이차입천장"
+      ],
+      "rows": [
+        {
+          "ref": "ppal",
+          "cells": [
+            "기원",
+            "위턱사이분절 (좌우 안쪽코융기)",
+            "구개돌기 (좌우 위턱융기)"
+          ]
+        },
+        {
+          "ref": "spal",
+          "cells": [
+            "시기",
+            "6주",
+            "6주 출현 → 7주 수평 → 7–10주 융합 (물렁입천장·목젖이 마지막)"
+          ]
+        },
+        {
+          "ref": "spal",
+          "cells": [
+            "만드는 부분",
+            "앞니구멍 앞의 삼각형",
+            "앞니구멍 뒤 단단입천장, 물렁입천장, 목젖"
+          ]
+        },
+        {
+          "ref": "ppal",
+          "cells": [
+            "갈림 유형",
+            "앞쪽 갈림 (구순열 ± 잇몸 갈림)",
+            "뒤쪽 갈림 (구개열)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cleft-classification",
+      "title": "갈림증 분류: 기준은 앞니구멍",
+      "columns": [
+        "유형",
+        "위치",
+        "합쳐지지 못한 것",
+        "역학"
+      ],
+      "rows": [
+        {
+          "ref": "lip",
+          "cells": [
+            "앞쪽 갈림",
+            "앞니구멍 앞: 입술 ± 잇몸 (한쪽 또는 양쪽)",
+            "위턱융기 ↔ 안쪽코융기(위턱사이분절)",
+            "구순열 ± 구개열 약 1/1000, 남자에 많음"
+          ]
+        },
+        {
+          "ref": "spal",
+          "cells": [
+            "뒤쪽 갈림",
+            "앞니구멍 뒤: 단단·물렁입천장, 목젖",
+            "좌우 구개돌기, 또는 구개돌기 ↔ 일차입천장·코사이막",
+            "단독 구개열 약 1/2500, 여자에 많음"
+          ]
+        },
+        {
+          "ref": "ims",
+          "cells": [
+            "앞뒤 모두",
+            "입술부터 목젖까지",
+            "위 둘 모두",
+            "앞쪽 갈림에 구개열이 함께 있는 경우가 흔함"
+          ]
+        }
+      ],
+      "note": "역학 수치는 Langman 기준 값으로 넣었으며 인종·지역에 따라 다르다. 검수 때 확인."
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "cleft-lip",
+      "name": {
+        "ko": "구순열",
+        "en": "Cleft lip (± cleft palate)",
+        "alt": [
+          "입술갈림증",
+          "구순구개열 (구순열에 구개열이 동반된 형태)"
+        ]
+      },
+      "cause": [
+        "mxp",
+        "mnp",
+        "ims",
+        "lip"
+      ],
+      "period": {
+        "start": 35,
+        "end": 49
+      },
+      "mechanism": "위턱융기와 안쪽코융기가 한쪽 또는 양쪽에서 합쳐지지 못함. 잇몸·일차입천장까지 갈라질 수 있음.",
+      "findings": [
+        "인중 옆(가쪽)의 입술 갈림",
+        "한쪽이 양쪽보다 흔하고 왼쪽에 많음",
+        "구개열 동반이 흔함",
+        "수유 곤란, 이후 치아·발음 문제"
+      ],
+      "genes": [
+        "다인자 (IRF6 등)"
+      ],
+      "public": "윗입술이 갈라져 태어나는 것으로, 가장 흔한 얼굴 기형 중 하나예요. 생후 몇 달 안에 수술하고, 성형외과·치과·언어치료가 함께하는 팀 치료로 대부분 좋은 결과를 얻어요. 임신 중 초음파로 미리 알 수 있는 경우가 많아요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "cleft-palate",
+      "name": {
+        "ko": "구개열",
+        "en": "Cleft palate",
+        "alt": [
+          "입천장갈림증"
+        ]
+      },
+      "cause": [
+        "spal"
+      ],
+      "period": {
+        "start": 49,
+        "end": 84
+      },
+      "mechanism": "구개돌기가 수평으로 올라가지 못하거나, 크기가 작거나, 합쳐지지 못함.",
+      "findings": [
+        "입천장 갈림, 목젖 갈림(가장 가벼운 형태)",
+        "점막하 구개열은 겉으로 안 보일 수 있음",
+        "수유 곤란, 콧소리, 중이염 반복 (귀관 기능 이상)"
+      ],
+      "genes": [
+        "단독 또는 증후군 동반 (피에르 로뱅, 22q11.2 결실, 스티클러 등)"
+      ],
+      "public": "입천장이 갈라져 태어나는 것이에요. 초음파로는 잘 안 보일 수 있어 출생 후 발견되기도 해요. 보통 돌 전후에 수술하고, 말하기와 귀 관리를 함께 해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "oblique-facial-cleft",
+      "name": {
+        "ko": "빗얼굴갈림증",
+        "en": "Oblique facial cleft",
+        "alt": [
+          "사안열"
+        ]
+      },
+      "cause": [
+        "mxp",
+        "lnp",
+        "nlg"
+      ],
+      "period": {
+        "start": 35,
+        "end": 49
+      },
+      "mechanism": "위턱융기와 가쪽코융기가 합쳐지지 못함. 코눈물관이 열린 고랑으로 남음.",
+      "findings": [
+        "윗입술에서 눈 안쪽까지 비스듬한 갈림",
+        "코눈물관 노출"
+      ],
+      "genes": [],
+      "public": "입술에서 눈 쪽으로 비스듬히 갈라지는 아주 드문 얼굴 기형이에요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "macrostomia",
+      "name": {
+        "ko": "큰입증",
+        "en": "Macrostomia (lateral facial cleft)",
+        "alt": [
+          "가로얼굴갈림증"
+        ]
+      },
+      "cause": [
+        "mxp",
+        "mdp"
+      ],
+      "period": {
+        "start": 35,
+        "end": 56
+      },
+      "mechanism": "위턱융기와 아래턱융기가 입꼬리 쪽에서 충분히 합쳐지지 못함.",
+      "findings": [
+        "입이 귀 쪽으로 넓게 벌어짐",
+        "반얼굴왜소증과 동반 가능"
+      ],
+      "genes": [],
+      "public": "입꼬리가 옆으로 길게 벌어진 상태로, 드물어요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "median-cleft-lip",
+      "name": {
+        "ko": "정중 구순열",
+        "en": "Median cleft lip",
+        "alt": []
+      },
+      "cause": [
+        "mnp",
+        "fnp"
+      ],
+      "period": {
+        "start": 35,
+        "end": 49
+      },
+      "mechanism": "좌우 안쪽코융기가 합쳐지지 못하거나, 얼굴 가운데 조직 자체가 부족함.",
+      "findings": [
+        "윗입술 가운데 갈림",
+        "전뇌무분할증, 코 가운데 결손과 동반될 수 있음"
+      ],
+      "genes": [
+        "SHH 경로 이상 (전뇌무분할증 동반 시)"
+      ],
+      "public": "윗입술 정가운데가 갈라진 매우 드문 경우로, 뇌 발달 검사가 함께 필요해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "choanal-atresia",
+      "name": {
+        "ko": "후비공폐쇄",
+        "en": "Choanal atresia",
+        "alt": [
+          "뒤콧구멍막힘증"
+        ]
+      },
+      "cause": [
+        "nsc"
+      ],
+      "period": {
+        "start": 35,
+        "end": 49
+      },
+      "mechanism": "코입막이 터지지 않거나 뼈·막으로 후비공이 막힘.",
+      "findings": [
+        "양쪽: 출생 직후 호흡곤란, 울면 좋아지는 청색증",
+        "한쪽: 한쪽 콧물이 계속됨",
+        "코로 관이 들어가지 않음"
+      ],
+      "genes": [
+        "CHD7 (CHARGE 증후군 동반 시)"
+      ],
+      "public": "코 뒤쪽이 막혀 태어나는 경우예요. 양쪽이 막히면 출생 직후 숨쉬기를 도와야 하고 수술로 뚫어줘요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "fas-face",
+      "name": {
+        "ko": "태아알코올증후군 얼굴 소견",
+        "en": "Facial features of fetal alcohol syndrome",
+        "alt": [
+          "FAS"
+        ]
+      },
+      "cause": [
+        "lip",
+        "face"
+      ],
+      "period": {
+        "start": 18,
+        "end": 56
+      },
+      "mechanism": "임신 초기 알코올이 신경능선 세포 생존과 얼굴 가운데 발달을 방해함.",
+      "findings": [
+        "밋밋한 인중",
+        "얇은 윗입술 붉은 부분",
+        "짧은 눈꺼풀틈새",
+        "성장 지연, 소두증, 지적장애 동반"
+      ],
+      "genes": [],
+      "public": "임신 중 음주로 생길 수 있는 얼굴 특징이에요. 안전한 음주량은 알려져 있지 않아 임신 중에는 금주를 권해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "day": 24,
+      "label": "얼굴 융기 5개 출현",
+      "refs": [
+        "fnp",
+        "mxp",
+        "mdp"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 28,
+      "label": "코판 출현",
+      "refs": [
+        "npl"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 35,
+      "label": "안쪽·가쪽 코융기",
+      "refs": [
+        "mnp",
+        "lnp"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 42,
+      "label": "코입막 파열, 구개돌기 출현",
+      "refs": [
+        "nsc",
+        "spal"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 49,
+      "label": "윗입술 완성, 구개돌기 수평으로",
+      "refs": [
+        "lip",
+        "spal"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 70,
+      "label": "단단입천장 융합 완료",
+      "refs": [
+        "spal"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 84,
+      "label": "물렁입천장·목젖 완성",
+      "refs": [
+        "spal"
+      ],
+      "major": false,
+      "approx": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "langman",
+      "title": "Langman's Medical Embryology",
+      "chapter": "Head and Neck (머리와 목)",
+      "edition": "15판 (한국어 번역서)",
+      "role": "기준",
+      "note": "쪽수는 번역서 15판 기준으로 검수 때 채운다"
+    },
+    {
+      "id": "moore",
+      "title": "The Developing Human (Moore)",
+      "chapter": "Pharyngeal Apparatus, Face, and Neck",
+      "edition": null,
+      "role": "보조"
+    }
+  ]
+}

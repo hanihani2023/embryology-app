@@ -1,0 +1,1786 @@
+{
+  "module": "urogenital",
+  "title": {
+    "ko": "비뇨생식계",
+    "en": "Urogenital system"
+  },
+  "status": "draft",
+  "priority": "P1",
+  "updated": "2026-11-20",
+  "termNote": "콩팥/신장, 샘/선은 신용어(콩팥, 부신, 전립샘)를 기본으로 하되 임상에서 굳은 질환명(신장무형성, 다낭신, 말굽신장)은 그대로 쓴다. 중신관=볼프관, 중신곁관=뮐러관을 alt에 넣었다.",
+  "structures": [
+    {
+      "id": "int",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "중간중배엽",
+        "en": "Intermediate mesoderm",
+        "alt": [
+          "콩팥발생삭"
+        ]
+      },
+      "layer": "me",
+      "parent": "me",
+      "days": {
+        "start": 22,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        10
+      ],
+      "derivatives": [
+        "콩팥 (전신 → 중신 → 후신)",
+        "생식샘의 체세포",
+        "남녀 생식관 (중신관, 중신곁관)",
+        "부신피질 (인접 체강상피)"
+      ],
+      "text": {
+        "public": "몸통 양옆의 길쭉한 세포 띠로, 콩팥과 생식기관 대부분이 여기서 생겨요.",
+        "student": "근축중배엽과 측판중배엽 사이의 띠. 머리 쪽은 분절(신절), 꼬리 쪽은 분절 없는 콩팥발생삭(nephrogenic cord)이 된다. 이 삭이 만든 융기가 비뇨생식능선이다. 콩팥은 머리에서 꼬리 방향으로 전신·중신·후신이 차례로 생긴다.",
+        "clinical": "콩팥과 생식관이 같은 띠에서 생기므로 콩팥 기형과 생식관 기형이 함께 오는 경우가 많다 (예: 한쪽 신장무형성 + 같은 쪽 자궁 이상)."
+      },
+      "anomalies": [
+        "renal-agenesis",
+        "mullerian"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "prn",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "전신",
+        "en": "Pronephros",
+        "alt": [
+          "앞콩팥"
+        ]
+      },
+      "layer": "me",
+      "parent": "int",
+      "days": {
+        "start": 22,
+        "end": 28,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        12
+      ],
+      "derivatives": [
+        "사람에서는 기능 없이 4주 말 사라짐"
+      ],
+      "text": {
+        "public": "첫 번째 콩팥 원기로, 사람에게선 일하지 않고 곧 사라져요.",
+        "student": "4주 초 목 부위에 7–10개의 세포 덩어리로 나타났다가 4주 말 모두 퇴화한다.",
+        "clinical": "임상적 의미는 없다. 진화의 흔적(물고기 유생의 콩팥)."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "msn",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "중신과 중신관",
+        "en": "Mesonephros and mesonephric (Wolffian) duct",
+        "alt": [
+          "가운데콩팥",
+          "볼프관"
+        ]
+      },
+      "layer": "me",
+      "parent": "int",
+      "days": {
+        "start": 26,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        11,
+        23
+      ],
+      "derivatives": [
+        "태아기 초 일시적 소변 생성",
+        "남: 중신관 → 부고환관, 정관, 정낭, 사정관 / 중신세관 일부 → 고환날세관",
+        "여: 대부분 퇴화 → 난소곁체·난소옆체, 가트너관",
+        "방광삼각 (중신관 끝이 방광 벽에 흡수)",
+        "요관싹이 여기서 나옴"
+      ],
+      "text": {
+        "public": "두 번째 콩팥 원기로, 잠깐 소변을 만들다가 사라지고 그 관은 남자 아기의 정자 통로가 돼요.",
+        "student": "4주 초, 전신이 퇴화하는 동안 첫 중신세관이 나타나 2개월 말까지 소변을 만든다. 중신관은 테스토스테론이 있으면 남아 부고환·정관·정낭·사정관이 되고, 없으면 퇴화한다. 중신세관 일부는 고환날세관이 된다.",
+        "clinical": "여성에서 남은 가트너관은 질 앞가쪽 벽의 낭종으로 나타날 수 있다. 부고환부속기는 중신관 흔적이다."
+      },
+      "anomalies": [
+        "duplicated-ureter"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ub",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "요관싹",
+        "en": "Ureteric bud",
+        "alt": [
+          "요관눈",
+          "후신게실"
+        ]
+      },
+      "layer": "me",
+      "parent": "msn",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        14
+      ],
+      "derivatives": [
+        "요관",
+        "신우",
+        "큰·작은 신배",
+        "집합관"
+      ],
+      "text": {
+        "public": "정자 통로가 될 관 끝에서 싹이 나와 콩팥 쪽으로 자라, 소변이 모이고 빠져나가는 길이 돼요.",
+        "student": "5주 중신관 끝 근처에서 나온 싹이 후신중배엽으로 들어가 반복해서 갈라진다(약 15세대). 처음 갈래들이 신우·신배가 되고, 나머지가 집합관이 된다. 요관싹과 후신중배엽은 서로를 유도한다(GDNF–RET).",
+        "clinical": "요관싹이 일찍 갈라지면 부분 또는 완전 중복요관이 된다. 드물게 싹이 두 개 나오면 완전 중복이 되고, 그중 하나가 질·요도 등에 이소 개구할 수 있다(이소요관). 요관싹이 없거나 후신중배엽에 닿지 못하면 신장무형성."
+      },
+      "anomalies": [
+        "duplicated-ureter",
+        "renal-agenesis"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "mtn",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "후신중배엽",
+        "en": "Metanephric mesenchyme (blastema)",
+        "alt": [
+          "후신조직",
+          "후신모체"
+        ]
+      },
+      "layer": "me",
+      "parent": "int",
+      "days": {
+        "start": 35,
+        "end": 238,
+        "approx": true
+      },
+      "carnegie": [
+        14,
+        23
+      ],
+      "derivatives": [
+        "네프론: 보먼주머니, 근위세관, 헨레고리, 원위세관 (출생 때 콩팥 하나당 약 100만 개, 개인차가 커서 수십만–200만 이상)",
+        "콩팥 기질"
+      ],
+      "text": {
+        "public": "세 번째이자 진짜 콩팥이에요. 10–12주쯤부터 소변을 만들어 양수를 채워요.",
+        "student": "집합관 끝마다 덮인 후신중배엽 모자가 세관을 만들고, 원위 끝이 집합관과 이어진다. 사구체는 혈관이 세관 끝으로 들어와 생긴다. 네프론은 출생 무렵까지 계속 생기고(흔히 인용되는 34–36주는 임신 주수이며, 수정 후로는 약 32–34주) 이후 새로 생기지 않는다.",
+        "clinical": "양수의 대부분이 태아 소변이라 콩팥이 없으면 양수과소가 된다. 후신 조직이 남으면 윌름스 종양의 바탕이 된다."
+      },
+      "anomalies": [
+        "renal-agenesis",
+        "pkd",
+        "wilms"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true
+    },
+    {
+      "id": "kasc",
+      "name": {
+        "ko": "콩팥 상승과 회전",
+        "en": "Ascent and rotation of the kidney",
+        "alt": [
+          "신장 상승"
+        ]
+      },
+      "layer": "me",
+      "parent": "mtn",
+      "days": {
+        "start": 42,
+        "end": 63,
+        "approx": true
+      },
+      "carnegie": [
+        17,
+        23
+      ],
+      "derivatives": [
+        "골반에서 허리(T12–L3)로 올라감",
+        "콩팥문이 앞쪽에서 안쪽으로 90° 회전",
+        "혈액 공급이 차례로 바뀜: 온엉덩동맥 가지 → 대동맥 높은 가지",
+        "아래 가지가 남으면 덧콩팥동맥"
+      ],
+      "text": {
+        "public": "콩팥은 골반 깊은 곳에서 생겨 허리 높이로 올라가요. 올라가면서 혈관도 계속 새것으로 바뀌어요.",
+        "student": "몸통 꼬리 부분이 길어지면서 콩팥이 상대적으로 위로 올라간다. 오르는 동안 낮은 동맥은 사라지고 높은 동맥이 새로 생긴다. 콩팥문은 앞을 보다가 안쪽으로 돈다.",
+        "clinical": "덧콩팥동맥은 흔하며(약 25%) 끝동맥이라 수술 때 묶으면 그 부분이 괴사한다. 아래극이 붙으면 아래창자간막동맥에 걸려 말굽신장, 상승이 멈추면 골반신장."
+      },
+      "anomalies": [
+        "horseshoe",
+        "pelvic-kidney"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ugs",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "비뇨생식동",
+        "en": "Urogenital sinus",
+        "alt": [
+          "요생식굴"
+        ]
+      },
+      "layer": "en",
+      "parent": "hg",
+      "days": {
+        "start": 42,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        17,
+        23
+      ],
+      "derivatives": [
+        "위 방광 부분 → 방광",
+        "골반 부분 → 남: 전립샘·막요도 / 여: 요도 전체",
+        "음경(남근) 부분 → 남: 해면체요도 / 여: 질전정",
+        "질 하부 (동질구 → 질판)",
+        "전립샘, 요도구샘 / 요도샘, 질전정샘"
+      ],
+      "text": {
+        "public": "배설강이 앞뒤로 나뉠 때 앞쪽 부분으로, 방광과 요도가 돼요.",
+        "student": "4–7주 요직장중격이 배설강을 앞쪽 비뇨생식동과 뒤쪽 항문직장관으로 나눈다. 비뇨생식동은 위에서 아래로 방광 부분, 골반 부분, 음경 부분 세 구역으로 나뉜다.",
+        "clinical": "요직장중격 이상은 직장–요도, 직장–질 샛길을 동반한 쇄항을 만든다."
+      },
+      "anomalies": [
+        "hypospadias"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "blad",
+      "name": {
+        "ko": "방광",
+        "en": "Urinary bladder",
+        "alt": []
+      },
+      "layer": "mix",
+      "parent": "ugs",
+      "days": {
+        "start": 49,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        19,
+        23
+      ],
+      "composition": [
+        {
+          "layer": "en",
+          "part": "방광 상피: 비뇨생식동 방광 부분",
+          "ref": "ugs"
+        },
+        {
+          "layer": "me",
+          "part": "방광삼각: 흡수된 중신관 끝 (상피는 나중에 내배엽으로 대체)",
+          "ref": "msn"
+        },
+        {
+          "layer": "me",
+          "part": "배뇨근, 결합조직: 장측 중배엽",
+          "ref": "spl"
+        }
+      ],
+      "derivatives": [
+        "방광",
+        "방광삼각",
+        "요막관 → 정중배꼽인대"
+      ],
+      "text": {
+        "public": "방광은 아래 장 끝이 나뉘어 생긴 주머니예요. 꼭대기는 탯줄 쪽 관(요막관)과 이어져 있다가 끈으로 바뀌어요.",
+        "student": "방광 부분 위로 요막이 이어진다. 중신관 끝이 방광 뒤벽에 흡수되면서 요관은 방광에 따로 열리고, 중신관 입구는 아래로 옮겨 전립샘요도로 열린다(사정관). 두 요관구멍과 속요도구멍 사이가 방광삼각이다. 삼각부 상피는 처음 중배엽이었다가 내배엽 상피로 덮인다.",
+        "clinical": "방광꼭대기와 배꼽 사이 요막관이 남으면 배꼽으로 소변이 새는 요막관 개존."
+      },
+      "anomalies": [
+        "urachal",
+        "epispadias"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "all",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "요막",
+        "en": "Allantois",
+        "alt": [
+          "요막관"
+        ]
+      },
+      "layer": "en",
+      "parent": "hg",
+      "days": {
+        "start": 16,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        7,
+        23
+      ],
+      "derivatives": [
+        "요막관 → 출생 후 정중배꼽인대",
+        "요막 혈관 → 배꼽동맥·배꼽정맥"
+      ],
+      "text": {
+        "public": "배아 초기에 생기는 작은 관으로, 나중에 방광과 배꼽을 잇는 끈이 돼요.",
+        "student": "16일경 난황낭 뒤벽에서 연결줄기로 뻗는 게실. 방광 부분과 이어져 있다가 좁아져 요막관이 되고, 섬유화되어 정중배꼽인대가 된다.",
+        "clinical": "완전히 남으면 요막관 개존(배꼽에서 소변), 가운데만 남으면 요막관 낭종, 한쪽 끝만 열리면 요막관 굴."
+      },
+      "anomalies": [
+        "urachal"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ureth",
+      "name": {
+        "ko": "요도와 부속샘",
+        "en": "Urethra and accessory glands",
+        "alt": []
+      },
+      "layer": "en",
+      "parent": "ugs",
+      "days": {
+        "start": 49,
+        "end": 126,
+        "approx": true
+      },
+      "carnegie": [
+        19,
+        23
+      ],
+      "derivatives": [
+        "여: 요도 전체 (골반 부분), 요도샘·요도곁샘",
+        "남: 전립샘·막요도 (골반 부분), 해면체요도 (음경 부분)",
+        "남: 귀두 끝 요도는 외배엽 귀두판에서",
+        "전립샘: 요도 상피(내배엽)가 싹을 내고 주위 중간엽(중배엽)이 기질·근육"
+      ],
+      "text": {
+        "public": "방광에서 몸 밖으로 나가는 길이에요. 남자는 길고 부분마다 생기는 곳이 달라요.",
+        "student": "요도 상피는 내배엽(비뇨생식동), 결합조직·평활근은 장측 중배엽. 교재는 남자 요도 끝(귀두 부분)만 외배엽이라고 설명한다(최근 연구는 귀두 요도도 내배엽 요도판에서 온다는 근거가 많다). 전립샘은 3개월경 전립샘요도 상피에서 싹이 나와 생긴다(DHT 의존).",
+        "clinical": "5α-환원효소 결핍에서는 DHT가 없어 전립샘이 작고 외생식기가 남성화되지 않는다."
+      },
+      "anomalies": [
+        "hypospadias",
+        "five-ard"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "gon",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "생식능선과 미분화 생식샘",
+        "en": "Gonadal ridge and indifferent gonad",
+        "alt": [
+          "생식샘능선"
+        ]
+      },
+      "layer": "me",
+      "parent": "int",
+      "attachTo": [
+        "pgc"
+      ],
+      "days": {
+        "start": 35,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        15,
+        19
+      ],
+      "derivatives": [
+        "체강상피 + 아래 중간엽 → 일차성삭 (생식샘의 체세포)",
+        "남: 세르톨리세포, 라이디히세포 / 여: 과립막세포, 난포막세포",
+        "생식세포는 원시생식세포가 이주해 옴"
+      ],
+      "text": {
+        "public": "처음 7주까지는 남자 아기와 여자 아기의 생식샘이 똑같이 생겼어요. 그 뒤 Y염색체의 신호에 따라 고환이나 난소로 갈라져요.",
+        "student": "5주 중신 안쪽에 생식능선이 생기고, 6주에 원시생식세포가 도착한다. 7주까지는 고환·난소를 구별할 수 없는 미분화 생식샘이다. 원시생식세포가 오지 않으면 생식샘이 생기지 않는다.",
+        "clinical": "성 발달 차이(DSD)는 핵형, 생식샘, 관 계통, 외생식기의 네 층으로 나눠 이해한다 (DSD 표 참고)."
+      },
+      "anomalies": [
+        "ais",
+        "cah-dsd",
+        "five-ard"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "sexdiff",
+      "name": {
+        "ko": "성 분화의 신호",
+        "en": "Sex determination and differentiation",
+        "alt": [
+          "성 결정"
+        ]
+      },
+      "layer": "me",
+      "parent": "gon",
+      "days": {
+        "start": 42,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        17,
+        23
+      ],
+      "derivatives": [
+        "Y염색체 SRY → SOX9 → 세르톨리세포 → 고환",
+        "세르톨리세포 AMH → 중신곁관 퇴화",
+        "라이디히세포 테스토스테론 → 중신관 유지",
+        "테스토스테론 → (5α-환원효소) → DHT → 외생식기·전립샘 남성화",
+        "SRY 없음 → WNT4·RSPO1·FOXL2 → 난소"
+      ],
+      "text": {
+        "public": "Y염색체에 있는 유전자 하나(SRY)가 생식샘을 고환으로 만들고, 고환에서 나온 호르몬들이 몸의 나머지를 남성 쪽으로 바꿔요. 이 신호가 없으면 여성 쪽으로 자라요.",
+        "student": "SRY가 SOX9을 켜 세르톨리세포를 만든다. 세르톨리세포의 AMH가 뮐러관을 없애고, 라이디히세포의 테스토스테론(8주~)이 볼프관을 남긴다. 외생식기와 전립샘은 테스토스테론이 아니라 DHT에 반응한다. 여성 쪽은 ‘기본값’이 아니라 WNT4·RSPO1·FOXL2가 능동적으로 유지한다.",
+        "clinical": "호르몬 단계별 결함이 각기 다른 DSD를 만든다: 수용체 결함(안드로겐 무감응), DHT 생성 결함(5α-환원효소 결핍), 태아 부신 안드로겐 과다(선천성 부신과형성)."
+      },
+      "anomalies": [
+        "ais",
+        "five-ard",
+        "cah-dsd"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "testis",
+      "name": {
+        "ko": "고환",
+        "en": "Testis",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "gon",
+      "days": {
+        "start": 49,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        19
+      ],
+      "derivatives": [
+        "고환삭 → 정세관 (사춘기에 내강이 생김)",
+        "고환그물",
+        "백막",
+        "세르톨리세포, 라이디히세포",
+        "고환날세관 (중신세관 기원)"
+      ],
+      "text": {
+        "public": "7주부터 고환이 만들어지고, 8주쯤부터 남성 호르몬을 만들어요.",
+        "student": "일차성삭이 수질 쪽으로 깊이 들어가 고환삭이 되고, 피질과는 두꺼운 백막으로 분리된다. 고환삭은 사춘기까지 속이 차 있다가 정세관이 된다.",
+        "clinical": "태아 라이디히세포의 테스토스테론은 태반 hCG의 자극을 받는다."
+      },
+      "anomalies": [
+        "cryptorchidism"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ovary",
+      "name": {
+        "ko": "난소",
+        "en": "Ovary",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "gon",
+      "days": {
+        "start": 49,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        19
+      ],
+      "derivatives": [
+        "피질삭 → 원시난포의 과립막세포",
+        "난조세포 → 일차난모세포 (제1감수분열 앞기에서 멈춤)",
+        "난소 수질 결합조직"
+      ],
+      "text": {
+        "public": "여자 아기는 태어나기 전에 평생 쓸 난자의 씨앗을 모두 갖고 태어나요. 그 수는 태아 때 가장 많고 이후 계속 줄어요.",
+        "student": "일차성삭은 퇴화하고 피질삭이 생겨 난모세포를 둘러싼다. 난조세포는 5개월경 약 700만 개로 정점을 찍고, 출생 시 일차난모세포는 수십만 개만 남는다. 모두 제1감수분열 앞기에서 사춘기까지 멈춰 있다.",
+        "clinical": "난모세포가 수십 년간 감수분열 중간에 멈춰 있는 것이 산모 나이에 따라 비분리(다운증후군 등)가 늘어나는 배경으로 설명된다."
+      },
+      "anomalies": [],
+      "verify": [
+        "난조세포 정점 약 700만(5개월), 출생 시 수십만 개 — Langman 수치 확인"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pmd",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "중신곁관",
+        "en": "Paramesonephric (Müllerian) duct",
+        "alt": [
+          "뮐러관",
+          "중신옆관"
+        ]
+      },
+      "layer": "me",
+      "parent": "int",
+      "days": {
+        "start": 42,
+        "end": 140,
+        "approx": true
+      },
+      "carnegie": [
+        17,
+        23
+      ],
+      "derivatives": [
+        "머리 쪽 → 난관 (끝은 배안으로 열림)",
+        "좌우 꼬리 쪽 융합 → 자궁질원기 → 자궁 몸통·자궁목",
+        "질 위쪽 (질 아래쪽은 비뇨생식동)",
+        "남: AMH로 퇴화 → 고환부속기, 전립샘소실"
+      ],
+      "text": {
+        "public": "여자 아기에게서 난관과 자궁이 되는 관이에요. 남자 아기에게서는 호르몬 신호로 사라져요.",
+        "student": "6주 체강상피가 함입해 중신관 옆을 따라 내려간다. 꼬리 쪽에서 좌우가 만나 합쳐지고, 가운데 벽이 흡수되어 하나의 자궁강이 된다. 질은 자궁질원기 끝과 비뇨생식동의 동질구가 만든 질판에서 생긴다.",
+        "clinical": "합쳐지지 못하면 중복자궁·쌍각자궁, 가운데 벽이 흡수되지 않으면 중격자궁, 한쪽만 자라면 단각자궁, 아예 안 생기면 MRKH."
+      },
+      "anomalies": [
+        "mullerian",
+        "mrkh"
+      ],
+      "verify": [
+        "질 위쪽의 기원 (중신곁관 대 비뇨생식동) — 교재마다 서술이 다름"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "extg",
+      "name": {
+        "ko": "외생식기",
+        "en": "External genitalia",
+        "alt": [
+          "바깥생식기관"
+        ]
+      },
+      "layer": "mix",
+      "parent": "ugs",
+      "days": {
+        "start": 28,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        23
+      ],
+      "composition": [
+        {
+          "layer": "me",
+          "part": "생식결절, 요도주름, 음순음낭융기의 중간엽",
+          "ref": "lat"
+        },
+        {
+          "layer": "ec",
+          "part": "표면 피부, 귀두판",
+          "ref": "sur"
+        },
+        {
+          "layer": "en",
+          "part": "요도판 (비뇨생식동)",
+          "ref": "ugs"
+        }
+      ],
+      "derivatives": [
+        "생식결절 → 귀두·음경해면체 / 음핵",
+        "요도주름 → 음경 아래면(해면체요도 둘레) / 소음순",
+        "음순음낭융기 → 음낭 / 대음순"
+      ],
+      "text": {
+        "public": "외생식기도 처음엔 남녀가 같은 모양이에요. 9주쯤부터 달라지기 시작해 12주쯤이면 초음파로 구별할 수 있어요.",
+        "student": "배설강막 주위에 생식결절, 요도주름, 음순음낭융기가 생긴다(미분화기). DHT가 있으면 생식결절이 길어지고 요도주름이 아래면에서 합쳐져 해면체요도를 감싸며, 음순음낭융기가 합쳐져 음낭이 된다. DHT가 없으면 각각 음핵·소음순·대음순이 된다.",
+        "clinical": "요도주름이 끝까지 합쳐지지 못하면 요도밑열림. 생식결절 위치 이상은 요도위열림·방광외번."
+      },
+      "anomalies": [
+        "hypospadias",
+        "epispadias",
+        "five-ard",
+        "cah-dsd",
+        "ais"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "tdesc",
+      "name": {
+        "ko": "고환 하강과 샅굴",
+        "en": "Descent of the testis and inguinal canal",
+        "alt": [
+          "서혜관"
+        ]
+      },
+      "layer": "me",
+      "parent": "testis",
+      "days": {
+        "start": 56,
+        "end": 266,
+        "approx": true
+      },
+      "carnegie": [
+        23
+      ],
+      "derivatives": [
+        "고환길잡이가 고환을 아래로 이끎",
+        "질돌기(복막 주머니)가 샅굴을 따라 음낭으로 내려감",
+        "질돌기 위쪽은 닫히고 아래쪽은 고환집막",
+        "배벽 층이 샅굴과 정삭의 막이 됨"
+      ],
+      "text": {
+        "public": "고환은 콩팥 근처에서 생겨 아래로 내려와, 태어날 무렵 음낭에 자리 잡아요.",
+        "student": "두 단계: 배 안 단계(고환길잡이가 짧아지고 굵어짐, INSL3)로 샅굴 근처까지, 샅굴–음낭 단계(안드로겐 의존)로 음낭까지. 12주 샅굴 부근, 28주경 샅굴 통과, 33주경 음낭 도달. 질돌기가 함께 내려가며 배벽 층을 끌고 가 정삭의 막을 만든다.",
+        "clinical": "질돌기가 열려 있으면 간접 샅굴탈장이나 음낭수종. 하강이 멈추면 잠복고환 (미숙아에 흔함)."
+      },
+      "anomalies": [
+        "cryptorchidism",
+        "inguinal-hernia"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "odesc",
+      "name": {
+        "ko": "난소 하강",
+        "en": "Descent of the ovary",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "ovary",
+      "days": {
+        "start": 56,
+        "end": 140,
+        "approx": true
+      },
+      "carnegie": [
+        23
+      ],
+      "derivatives": [
+        "난소가 골반 가장자리 아래로 내려감",
+        "고환길잡이 위쪽 → 고유난소인대",
+        "고환길잡이 아래쪽 → 자궁원인대 (샅굴을 지나 대음순으로)"
+      ],
+      "text": {
+        "public": "난소도 조금 아래로 내려오지만 배 밖으로 나가지는 않고 골반 안에 머물러요.",
+        "student": "여성의 고환길잡이는 자궁에 붙어 두 인대로 나뉜다. 여성에도 질돌기(누크관)가 생겼다가 보통 닫힌다.",
+        "clinical": "누크관이 열려 있으면 여아 샅굴탈장·누크관 낭종."
+      },
+      "anomalies": [
+        "inguinal-hernia"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "adc",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "부신피질",
+        "en": "Adrenal cortex",
+        "alt": [
+          "콩팥위샘 겉질"
+        ]
+      },
+      "layer": "me",
+      "parent": "int",
+      "days": {
+        "start": 35,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [
+        15
+      ],
+      "derivatives": [
+        "태아 피질 (DHEA-S 생산, 출생 후 퇴화)",
+        "영구 피질: 사구대, 다발대, 그물대 (3세경 완성)",
+        "수질은 신경능선 기원 (nct)"
+      ],
+      "text": {
+        "public": "콩팥 위 호르몬 샘의 바깥 부분으로, 태아 때는 콩팥만큼 커요.",
+        "student": "5–6주 체강상피(생식능선 바로 앞쪽)에서 생긴다. 큰 태아 피질이 DHEA-S를 만들어 태반 에스트로겐의 원료가 된다. 7주 신경능선 세포가 들어가 수질이 된다.",
+        "clinical": "21-수산화효소 결핍(선천성 부신과형성)은 태아기 안드로겐 과다로 46,XX 여아 외생식기를 남성화한다."
+      },
+      "anomalies": [
+        "cah-dsd"
+      ],
+      "links": [
+        "nct"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "kidney-stages",
+      "title": "콩팥의 세 세대",
+      "columns": [
+        "",
+        "전신",
+        "중신",
+        "후신"
+      ],
+      "rows": [
+        {
+          "ref": "prn",
+          "cells": [
+            "출현",
+            "4주 초",
+            "4주 초 (전신이 퇴화하는 동안)",
+            "5주"
+          ]
+        },
+        {
+          "ref": "msn",
+          "cells": [
+            "기능",
+            "없음",
+            "일시적 소변 생성 (2개월 말까지)",
+            "10–12주부터 소변 생성"
+          ]
+        },
+        {
+          "ref": "mtn",
+          "cells": [
+            "운명",
+            "4주 말 퇴화",
+            "대부분 퇴화, 중신관은 남성 생식관",
+            "영구 콩팥"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "homologues",
+      "title": "남녀 상동기관",
+      "columns": [
+        "원기",
+        "남자",
+        "여자"
+      ],
+      "rows": [
+        {
+          "ref": "gon",
+          "cells": [
+            "미분화 생식샘",
+            "고환",
+            "난소"
+          ]
+        },
+        {
+          "ref": "msn",
+          "cells": [
+            "중신관 (볼프관)",
+            "부고환관, 정관, 정낭, 사정관",
+            "흔적: 난소곁체 세로관, 가트너관"
+          ]
+        },
+        {
+          "ref": "msn",
+          "cells": [
+            "중신세관",
+            "고환날세관",
+            "흔적: 난소곁체, 난소옆체"
+          ]
+        },
+        {
+          "ref": "pmd",
+          "cells": [
+            "중신곁관 (뮐러관)",
+            "흔적: 고환부속기, 전립샘소실",
+            "난관, 자궁, 질 위쪽"
+          ]
+        },
+        {
+          "ref": "ugs",
+          "cells": [
+            "비뇨생식동",
+            "전립샘, 요도구샘, 전립샘·막요도",
+            "요도샘·요도곁샘, 질전정샘(바르톨린샘), 질 아래쪽, 요도"
+          ]
+        },
+        {
+          "ref": "extg",
+          "cells": [
+            "생식결절",
+            "귀두, 음경해면체",
+            "음핵"
+          ]
+        },
+        {
+          "ref": "extg",
+          "cells": [
+            "요도주름",
+            "음경 아래면 (해면체요도 둘레)",
+            "소음순"
+          ]
+        },
+        {
+          "ref": "extg",
+          "cells": [
+            "음순음낭융기",
+            "음낭",
+            "대음순"
+          ]
+        },
+        {
+          "ref": "tdesc",
+          "cells": [
+            "고환길잡이",
+            "고환길잡이 (음낭 인대)",
+            "고유난소인대, 자궁원인대"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sex-hormones",
+      "title": "성 분화를 이끄는 신호",
+      "columns": [
+        "신호",
+        "만드는 곳",
+        "시기",
+        "작용"
+      ],
+      "rows": [
+        {
+          "ref": "sexdiff",
+          "cells": [
+            "SRY → SOX9",
+            "생식샘 체세포",
+            "7주",
+            "세르톨리세포 분화 → 고환"
+          ]
+        },
+        {
+          "ref": "sexdiff",
+          "cells": [
+            "AMH",
+            "세르톨리세포",
+            "7–8주~",
+            "중신곁관 퇴화"
+          ]
+        },
+        {
+          "ref": "sexdiff",
+          "cells": [
+            "테스토스테론",
+            "라이디히세포 (hCG 자극)",
+            "8주~",
+            "중신관 유지 → 부고환·정관·정낭"
+          ]
+        },
+        {
+          "ref": "sexdiff",
+          "cells": [
+            "DHT",
+            "표적 조직의 5α-환원효소",
+            "9–12주",
+            "외생식기·전립샘 남성화"
+          ]
+        },
+        {
+          "ref": "sexdiff",
+          "cells": [
+            "WNT4, RSPO1, FOXL2",
+            "생식샘 체세포",
+            "7주~",
+            "난소 분화 유지"
+          ]
+        },
+        {
+          "ref": "tdesc",
+          "cells": [
+            "INSL3, 안드로겐",
+            "라이디히세포",
+            "8주~출생",
+            "고환길잡이 → 고환 하강"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dsd-table",
+      "title": "성 발달 차이 한눈에",
+      "columns": [
+        "상태",
+        "핵형",
+        "생식샘",
+        "내부 관",
+        "외생식기"
+      ],
+      "rows": [
+        {
+          "ref": "sexdiff",
+          "cells": [
+            "안드로겐 무감응 (완전형)",
+            "46,XY",
+            "고환",
+            "볼프관·뮐러관 모두 없음 (AMH는 작동)",
+            "여성형, 짧은 맹관 질"
+          ]
+        },
+        {
+          "ref": "sexdiff",
+          "cells": [
+            "5α-환원효소 결핍",
+            "46,XY",
+            "고환",
+            "볼프관 정상, 뮐러관 없음",
+            "출생 시 모호, 사춘기 남성화"
+          ]
+        },
+        {
+          "ref": "adc",
+          "cells": [
+            "선천성 부신과형성 (21-수산화효소)",
+            "46,XX",
+            "난소",
+            "뮐러관 정상, 볼프관 없음",
+            "남성화 (음핵 비대, 음순 융합)"
+          ]
+        }
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "renal-agenesis",
+      "name": {
+        "ko": "신장무형성",
+        "en": "Renal agenesis (Potter sequence)",
+        "alt": [
+          "콩팥무발생",
+          "포터 연쇄"
+        ]
+      },
+      "cause": [
+        "ub",
+        "mtn",
+        "int"
+      ],
+      "period": {
+        "start": 28,
+        "end": 42
+      },
+      "mechanism": "요관싹이 생기지 않거나 후신중배엽을 유도하지 못함. 양쪽이면 소변이 없어 양수과소 → 포터 연쇄.",
+      "findings": [
+        "한쪽: 흔하고 대개 무증상 (반대쪽 보상 비대), 남자에 많음, 같은 쪽 생식관 이상 동반",
+        "양쪽: 양수과소 → 폐 형성저하, 납작한 얼굴, 사지 변형 → 출생 직후 호흡부전"
+      ],
+      "genes": [
+        "RET, GDNF 등 (대개 다인자)"
+      ],
+      "public": "콩팥이 생기지 않은 경우예요. 한쪽만 없으면 대개 건강하게 살지만, 양쪽이 없으면 양수가 부족해 폐가 자라지 못하는 심각한 상태가 돼요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pkd",
+      "name": {
+        "ko": "다낭신과 낭성 콩팥질환",
+        "en": "Polycystic and cystic kidney disease",
+        "alt": [
+          "다낭콩팥병"
+        ]
+      },
+      "cause": [
+        "mtn",
+        "ub"
+      ],
+      "period": {
+        "start": 35,
+        "end": 266
+      },
+      "mechanism": "상염색체 열성형(ARPKD): 집합관이 낭으로 늘어남. 상염색체 우성형(ADPKD): 네프론 전체에 낭, 주로 성인에서 나타남. 다낭성 이형성 콩팥: 요관싹–후신 상호작용 실패로 생긴 기능 없는 낭 덩어리.",
+      "findings": [
+        "ARPKD: 신생아기 양쪽 큰 콩팥, 간섬유화, 양수과소",
+        "ADPKD: 성인기 고혈압·콩팥기능저하, 간낭종, 뇌동맥류",
+        "다낭성 이형성 콩팥: 대개 한쪽, 산전 초음파로 발견"
+      ],
+      "genes": [
+        "PKHD1 (ARPKD)",
+        "PKD1, PKD2 (ADPKD)"
+      ],
+      "public": "콩팥에 물주머니가 많이 생기는 병들이에요. 종류에 따라 아기 때 나타나기도, 어른이 되어 나타나기도 해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "horseshoe",
+      "name": {
+        "ko": "말굽신장",
+        "en": "Horseshoe kidney",
+        "alt": [
+          "말굽콩팥"
+        ]
+      },
+      "cause": [
+        "kasc"
+      ],
+      "period": {
+        "start": 42,
+        "end": 63
+      },
+      "mechanism": "좌우 콩팥 아래극이 붙어 오르다가 아래창자간막동맥에 걸려 상승이 멈춤.",
+      "findings": [
+        "약 1/600",
+        "대개 무증상, 요로감염·결석·수신증 위험",
+        "터너 증후군과 연관"
+      ],
+      "genes": [
+        "45,X에서 흔함"
+      ],
+      "public": "두 콩팥의 아래쪽이 붙어 말굽 모양이 된 경우로, 대부분 평생 문제없이 지내요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pelvic-kidney",
+      "name": {
+        "ko": "골반신장",
+        "en": "Pelvic kidney",
+        "alt": [
+          "이소콩팥"
+        ]
+      },
+      "cause": [
+        "kasc"
+      ],
+      "period": {
+        "start": 42,
+        "end": 63
+      },
+      "mechanism": "콩팥이 위로 오르지 못하고 골반에 머묾. 대개 온엉덩동맥 가까이의 혈관을 받음.",
+      "findings": [
+        "대개 무증상",
+        "골반 종괴로 오인될 수 있음",
+        "회전 이상 동반"
+      ],
+      "genes": [],
+      "public": "콩팥이 위로 올라가지 못하고 골반에 남은 경우로, 대개 기능은 정상이에요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "duplicated-ureter",
+      "name": {
+        "ko": "중복요관과 이소요관",
+        "en": "Duplicated and ectopic ureter",
+        "alt": [
+          "두갈래요관"
+        ]
+      },
+      "cause": [
+        "ub",
+        "msn"
+      ],
+      "period": {
+        "start": 35,
+        "end": 49
+      },
+      "mechanism": "요관싹이 일찍 갈라지면 부분 또는 완전 중복요관. 드물게 싹이 두 개 나오면 완전 중복이 되고, 그중 하나가 질·요도 등에 이소 개구할 수 있음(이소요관). 위쪽 콩팥 부분의 요관이 더 아래쪽·안쪽에 열린다(바이게르트–마이어 법칙).",
+      "findings": [
+        "대개 무증상",
+        "여아에서 이소요관이 요도·질에 열리면 정상 배뇨 사이에도 계속 소변이 샘",
+        "역류, 요관류"
+      ],
+      "genes": [],
+      "public": "콩팥에서 방광으로 가는 관이 두 줄인 경우예요. 대개 문제가 없지만 여아가 늘 속옷이 젖어 있으면 찾아보기도 해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "wilms",
+      "name": {
+        "ko": "윌름스 종양",
+        "en": "Wilms tumor (nephroblastoma)",
+        "alt": [
+          "콩팥모세포종"
+        ]
+      },
+      "cause": [
+        "mtn"
+      ],
+      "period": {
+        "start": 35,
+        "end": 266
+      },
+      "mechanism": "후신 조직(네프론 생성 잔존물)에서 생기는 종양.",
+      "findings": [
+        "소아 콩팥 종양 중 가장 흔함, 대개 5세 이전",
+        "배에서 만져지는 덩어리",
+        "WAGR(윌름스, 무홍채증, 비뇨생식 이상, 지적장애), 데니스–드래시, 베크위스–비데만 증후군 동반"
+      ],
+      "genes": [
+        "WT1 (11p13)",
+        "WT2 영역 (11p15)"
+      ],
+      "public": "아이에게 생기는 콩팥 종양으로, 치료 성적이 좋은 편이에요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "urachal",
+      "name": {
+        "ko": "요막관 개존과 낭종",
+        "en": "Urachal fistula, cyst and sinus",
+        "alt": [
+          "요막관 누공"
+        ]
+      },
+      "cause": [
+        "all",
+        "blad"
+      ],
+      "period": {
+        "start": 42,
+        "end": 266
+      },
+      "mechanism": "요막관이 섬유화되지 않고 남음: 전체(개존), 가운데(낭종), 한쪽 끝(굴).",
+      "findings": [
+        "배꼽에서 소변이 샘 (개존)",
+        "배꼽 아래 정중선 종괴, 감염 (낭종)",
+        "요도 막힘이 있으면 개존이 더 흔함"
+      ],
+      "genes": [],
+      "public": "방광과 배꼽을 잇던 관이 남아 배꼽에서 액체가 나오거나 혹이 생기는 경우로, 수술로 치료해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "hypospadias",
+      "name": {
+        "ko": "요도밑열림",
+        "en": "Hypospadias",
+        "alt": [
+          "요도하열"
+        ]
+      },
+      "cause": [
+        "extg",
+        "ureth",
+        "ugs"
+      ],
+      "period": {
+        "start": 56,
+        "end": 112
+      },
+      "mechanism": "요도주름이 아래면에서 끝까지 합쳐지지 못해 요도구가 음경 아래면에 열림. 안드로겐 작용 부족과 연관. 산모 프로게스틴·환경 내분비교란물질과의 연관을 본 연구가 있음.",
+      "findings": [
+        "약 1/300 남아 (지역 차 큼)",
+        "음경 아래로 휨(음경만곡)",
+        "잠복고환 동반 시 성 발달 차이 검사",
+        "포경수술 전 진단 중요 (포피를 교정에 씀)"
+      ],
+      "genes": [
+        "다인자"
+      ],
+      "public": "소변 나오는 구멍이 음경 끝이 아니라 아래쪽에 있는 경우예요. 보통 돌 전후에 수술하며, 그 전에 포경수술을 하지 않아요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "epispadias",
+      "name": {
+        "ko": "요도위열림과 방광외번",
+        "en": "Epispadias and bladder exstrophy",
+        "alt": [
+          "요도상열",
+          "방광외반"
+        ]
+      },
+      "cause": [
+        "extg",
+        "blad"
+      ],
+      "period": {
+        "start": 28,
+        "end": 56
+      },
+      "mechanism": "생식결절이 비뇨생식동 앞이 아니라 꼬리 쪽에 생겨 요도가 등쪽에 열림. 아래 배벽이 닫히지 않으면 방광이 밖으로 드러나는 방광외번이 함께 옴. 배아 접힘 모듈의 방광외번(bladder-exstrophy)은 총배설강막이 너무 커서 중간엽이 들어오지 못한다는 설명을 쓰며, 두 설명 모두 교재에 나온다.",
+      "findings": [
+        "요도구가 음경 등쪽",
+        "방광외번 동반이 흔함",
+        "두덩결합이 벌어짐"
+      ],
+      "genes": [],
+      "public": "소변 구멍이 음경 위쪽에 있거나, 방광이 배 밖으로 드러난 상태로 태어나는 드문 기형이에요. 단계적 수술이 필요해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "cryptorchidism",
+      "name": {
+        "ko": "잠복고환",
+        "en": "Cryptorchidism (undescended testis)",
+        "alt": [
+          "정류고환"
+        ]
+      },
+      "cause": [
+        "tdesc",
+        "testis"
+      ],
+      "period": {
+        "start": 56,
+        "end": 266
+      },
+      "mechanism": "고환이 음낭까지 내려오지 못함 (배 안, 샅굴, 음낭 위).",
+      "findings": [
+        "만삭아 약 3%, 미숙아 약 30%",
+        "상당수는 생후 몇 달 안에 저절로 내려옴",
+        "불임과 고환암 위험 증가 → 생후 6–18개월 사이 고환고정술"
+      ],
+      "genes": [
+        "안드로겐·INSL3 이상과 연관"
+      ],
+      "public": "고환이 음낭으로 내려오지 않은 상태예요. 미숙아에 흔하고 저절로 내려오기도 하지만, 돌 전후까지 안 내려오면 수술해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "inguinal-hernia",
+      "name": {
+        "ko": "선천 샅굴탈장과 음낭수종",
+        "en": "Congenital inguinal hernia and hydrocele",
+        "alt": [
+          "서혜부 탈장",
+          "고환초막 수종"
+        ]
+      },
+      "cause": [
+        "tdesc",
+        "odesc"
+      ],
+      "period": {
+        "start": 196,
+        "end": 365
+      },
+      "mechanism": "질돌기가 닫히지 않아 장이 내려오거나(간접 샅굴탈장), 좁게 열려 복수만 내려오거나 일부에 액체가 고임(음낭수종).",
+      "findings": [
+        "간접 샅굴탈장: 울 때 커지는 샅굴·음낭 부종, 미숙아·남아에 흔함",
+        "음낭수종: 빛 투과, 대개 돌 전후 저절로 없어짐",
+        "감돈 위험 → 탈장은 수술"
+      ],
+      "genes": [],
+      "public": "배 안 막이 사타구니로 내려온 통로가 닫히지 않아 생기는 탈장이나 물주머니예요. 탈장은 수술하고, 물주머니는 대부분 저절로 좋아져요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "mullerian",
+      "name": {
+        "ko": "자궁 기형 (뮐러관 이상)",
+        "en": "Müllerian duct anomalies",
+        "alt": [
+          "쌍각자궁",
+          "중복자궁",
+          "중격자궁",
+          "단각자궁"
+        ]
+      },
+      "cause": [
+        "pmd"
+      ],
+      "period": {
+        "start": 49,
+        "end": 140
+      },
+      "mechanism": "좌우 중신곁관이 합쳐지지 못하거나(중복·쌍각), 가운데 벽이 흡수되지 않거나(중격), 한쪽만 발달함(단각).",
+      "findings": [
+        "중격자궁이 가장 흔하다고 보고됨",
+        "반복 유산, 조산, 태위 이상",
+        "같은 쪽 콩팥 이상 동반 확인",
+        "T자형 자궁: 산모 DES 노출과 연관"
+      ],
+      "genes": [],
+      "public": "자궁 모양이 둘로 나뉘거나 가운데 벽이 남은 경우예요. 증상이 없는 경우가 많고, 임신 문제가 있을 때 발견되기도 해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "mrkh",
+      "name": {
+        "ko": "MRKH 증후군",
+        "en": "Mayer–Rokitansky–Küster–Hauser syndrome",
+        "alt": [
+          "뮐러관 무형성",
+          "질 무형성"
+        ]
+      },
+      "cause": [
+        "pmd"
+      ],
+      "period": {
+        "start": 42,
+        "end": 70
+      },
+      "mechanism": "중신곁관이 생기지 않거나 발달하지 않아 자궁과 질 위쪽이 없음. 난소는 정상.",
+      "findings": [
+        "46,XX, 이차성징 정상",
+        "원발 무월경",
+        "콩팥·뼈 기형 동반 가능"
+      ],
+      "genes": [],
+      "public": "자궁과 질 윗부분이 생기지 않은 상태로, 사춘기에 월경이 없어 발견돼요. 난소는 정상이라 여성 호르몬은 정상이에요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ais",
+      "name": {
+        "ko": "안드로겐 무감응 증후군",
+        "en": "Androgen insensitivity syndrome",
+        "alt": [
+          "고환여성화 증후군 (옛 용어, 쓰지 않음)"
+        ]
+      },
+      "cause": [
+        "sexdiff",
+        "gon"
+      ],
+      "period": {
+        "start": 56,
+        "end": 112
+      },
+      "mechanism": "안드로겐 수용체 이상으로 테스토스테론·DHT에 반응하지 못함. AMH는 정상이라 뮐러관도 없음.",
+      "findings": [
+        "46,XY, 고환은 배 안·샅굴·대음순에",
+        "여성형 외생식기, 짧은 맹관 질, 자궁 없음",
+        "사춘기 유방 발달(에스트로겐 전환), 원발 무월경, 겨드랑이·음모 적음"
+      ],
+      "genes": [
+        "AR (X염색체 연관)"
+      ],
+      "public": "XY 염색체를 가졌지만 몸이 남성 호르몬에 반응하지 않는 상태예요. 완전형에서는 겉모습이 여성으로 자라고, 부분형은 정도가 다양해요. 사춘기에 월경이 없어 발견되는 경우가 많아요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "cah-dsd",
+      "name": {
+        "ko": "선천성 부신과형성 (성 발달)",
+        "en": "Congenital adrenal hyperplasia (46,XX DSD)",
+        "alt": [
+          "21-수산화효소 결핍"
+        ]
+      },
+      "cause": [
+        "adc",
+        "sexdiff"
+      ],
+      "period": {
+        "start": 56,
+        "end": 266
+      },
+      "mechanism": "코르티솔 합성 효소(대개 21-수산화효소) 결핍 → ACTH 증가 → 태아 부신 안드로겐 과다.",
+      "findings": [
+        "46,XX 여아 외생식기 남성화, 내부 생식기는 정상",
+        "염분소실형: 생후 1–2주 저나트륨·고칼륨·탈수 (응급)",
+        "신생아 선별검사(17-OHP)"
+      ],
+      "genes": [
+        "CYP21A2 (상염색체 열성)"
+      ],
+      "public": "부신 효소가 부족해 남성 호르몬이 많이 만들어지는 유전 질환이에요. 신생아 선별검사로 찾고, 호르몬 약으로 치료해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "five-ard",
+      "name": {
+        "ko": "5α-환원효소 결핍",
+        "en": "5α-reductase type 2 deficiency",
+        "alt": []
+      },
+      "cause": [
+        "sexdiff",
+        "extg",
+        "ureth"
+      ],
+      "period": {
+        "start": 63,
+        "end": 112
+      },
+      "mechanism": "테스토스테론을 DHT로 바꾸지 못함. 볼프관(테스토스테론 의존)은 정상, 외생식기·전립샘(DHT 의존)은 남성화되지 않음.",
+      "findings": [
+        "46,XY, 출생 시 모호한 외생식기",
+        "사춘기 테스토스테론 증가로 남성화",
+        "작은 전립샘"
+      ],
+      "genes": [
+        "SRD5A2 (상염색체 열성)"
+      ],
+      "public": "남성 호르몬을 몸에서 쓰는 형태로 바꾸는 효소가 부족한 상태예요. 태어날 때는 외생식기 모양이 분명하지 않다가 사춘기에 남성화가 일어나요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "day": 22,
+      "label": "전신 출현",
+      "refs": [
+        "prn"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 26,
+      "label": "중신 출현",
+      "refs": [
+        "msn"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 35,
+      "label": "요관싹·후신, 생식능선",
+      "refs": [
+        "ub",
+        "mtn",
+        "gon"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 42,
+      "label": "중신곁관, 콩팥 상승 시작",
+      "refs": [
+        "pmd",
+        "kasc"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 49,
+      "label": "SRY: 고환 분화, 비뇨생식동 분리",
+      "refs": [
+        "sexdiff",
+        "testis",
+        "ugs"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 56,
+      "label": "테스토스테론 분비 시작",
+      "refs": [
+        "sexdiff"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 77,
+      "label": "소변 생성 시작",
+      "refs": [
+        "mtn"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 84,
+      "label": "외생식기 남녀 구별",
+      "refs": [
+        "extg"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 196,
+      "label": "고환 샅굴 통과",
+      "refs": [
+        "tdesc"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 231,
+      "label": "고환 음낭 도달",
+      "refs": [
+        "tdesc"
+      ],
+      "major": false,
+      "approx": true
+    }
+  ],
+  "epidemiology": [
+    {
+      "item": "말굽신장",
+      "value": "약 1/600",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "요도밑열림",
+      "value": "남아 약 1/300",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "잠복고환",
+      "value": "만삭아 약 3%, 미숙아 약 30%",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "덧콩팥동맥",
+      "value": "약 25%",
+      "ref": "langman",
+      "verify": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "langman",
+      "title": "Langman's Medical Embryology",
+      "chapter": "Urogenital System (비뇨생식계)",
+      "edition": "15판 (한국어 번역서)",
+      "role": "기준",
+      "note": "쪽수는 번역서 15판 기준으로 검수 때 채운다"
+    },
+    {
+      "id": "moore",
+      "title": "The Developing Human (Moore)",
+      "chapter": "Urogenital System",
+      "edition": null,
+      "role": "보조"
+    }
+  ]
+}

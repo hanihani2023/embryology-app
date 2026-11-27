@@ -1,0 +1,934 @@
+{
+  "module": "folding",
+  "title": {
+    "ko": "배아 접힘과 몸통벽",
+    "en": "Embryonic folding and body wall"
+  },
+  "status": "draft",
+  "priority": "P1",
+  "updated": "2026-11-20",
+  "termNote": "배꼽창자관(난황관), 입인두막(구인두막), 총배설강막 등은 신용어를 기본으로 하고 구용어는 alt에 넣었다.",
+  "structures": [
+    {
+      "id": "fold",
+      "name": {
+        "ko": "배아 접힘",
+        "en": "Embryonic folding",
+        "alt": [
+          "배아 굽힘",
+          "몸 접힘"
+        ]
+      },
+      "layer": "mix",
+      "parent": null,
+      "attachTo": [
+        "gas",
+        "ec",
+        "me",
+        "en"
+      ],
+      "days": {
+        "start": 21,
+        "end": 28,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        12
+      ],
+      "composition": [
+        {
+          "layer": "ec",
+          "part": "신경관의 빠른 성장 → 머리–꼬리 접힘",
+          "ref": "nt"
+        },
+        {
+          "layer": "me",
+          "part": "체절의 성장 → 옆 접힘",
+          "ref": "par"
+        },
+        {
+          "layer": "en",
+          "part": "안쪽으로 말려 들어가 원시장관이 됨",
+          "ref": "en"
+        }
+      ],
+      "derivatives": [
+        "납작한 삼층배반 → 원통 모양 몸",
+        "원시장관 (전장·중장·후장)",
+        "배쪽 몸통벽과 배꼽",
+        "탯줄"
+      ],
+      "text": {
+        "public": "4주에 납작한 판 모양이던 배아가 앞뒤와 양옆으로 말리면서 둥근 몸통 모양이 돼요. 이때 안쪽에 장이 될 관이 생기고 탯줄도 만들어져요.",
+        "student": "신경관이 빨리 자라 머리·꼬리 쪽이 배쪽으로 굽고(머리–꼬리 접힘), 체절이 자라 양옆이 배쪽으로 말린다(옆 접힘). 내배엽이 관으로 말려 원시장관이 되고, 난황낭과는 배꼽창자관으로만 이어진다. 양막이 배아를 둘러싼다.",
+        "clinical": "옆 접힘이나 몸통벽 닫힘이 실패하면 배쪽 몸통벽 결손(복벽갈림증, 심장이소증, 방광외번)이 생긴다."
+      },
+      "anomalies": [
+        "gastroschisis",
+        "ectopia-cordis",
+        "bladder-exstrophy"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "fold-cc",
+      "name": {
+        "ko": "머리–꼬리 접힘",
+        "en": "Cephalocaudal folding",
+        "alt": [
+          "머리 접힘",
+          "꼬리 접힘"
+        ]
+      },
+      "layer": "mix",
+      "parent": "fold",
+      "days": {
+        "start": 21,
+        "end": 28,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        12
+      ],
+      "derivatives": [
+        "머리 접힘: 심장 구역과 가로중격이 목·가슴 쪽 배쪽으로 옴",
+        "머리 접힘: 입인두막이 입구멍 바닥으로 옴 → 전장 형성",
+        "꼬리 접힘: 연결줄기(요막 포함)와 총배설강막이 배쪽으로 옴 → 후장 형성"
+      ],
+      "text": {
+        "public": "머리와 꼬리 쪽이 배 쪽으로 굽으면서, 처음엔 머리 앞에 있던 심장이 가슴 자리로 오게 돼요.",
+        "student": "머리 접힘으로 원래 신경판 앞에 있던 심장발생구역과 가로중격이 뒤집혀 가슴 쪽으로 오고, 입인두막이 입구멍 바닥에 놓인다. 꼬리 접힘으로 연결줄기와 요막이 배쪽으로 와 탯줄 자리에 모이고, 총배설강막이 꼬리 쪽 배면에 놓인다.",
+        "clinical": "가로중격이 처음 목 높이에 있다가 내려가기 때문에 가로막신경이 C3–5에서 온다 (체강·횡격막 모듈 참고)."
+      },
+      "anomalies": [
+        "ectopia-cordis"
+      ],
+      "links": [
+        "hrt",
+        "stsep",
+        "all"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "fold-lat",
+      "name": {
+        "ko": "옆 접힘",
+        "en": "Lateral folding",
+        "alt": [
+          "가쪽 접힘"
+        ]
+      },
+      "layer": "mix",
+      "parent": "fold",
+      "days": {
+        "start": 22,
+        "end": 28,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        12
+      ],
+      "derivatives": [
+        "양옆 몸통벽이 배쪽 정중선으로 만나 배쪽 몸통벽을 닫음 (배꼽 부위만 남김)",
+        "내배엽이 관으로 말림 → 원시장관",
+        "배아내 체강이 배쪽으로 와 몸통을 둘러쌈"
+      ],
+      "text": {
+        "public": "양옆이 배 쪽으로 말려 가운데서 만나면서 배가 닫히고, 배꼽 자리만 탯줄로 열려 있게 돼요.",
+        "student": "체절과 측판중배엽 벽측층이 자라 몸통벽이 배쪽으로 말린다. 정중선에서 만나 닫히고, 배꼽 부위만 남아 배꼽창자관과 연결줄기가 지나간다.",
+        "clinical": "가슴 부위 닫힘 실패 → 심장이소증, 배 부위 → 복벽갈림증, 골반 부위 → 방광외번·총배설강외번."
+      },
+      "anomalies": [
+        "gastroschisis",
+        "ectopia-cordis",
+        "bladder-exstrophy"
+      ],
+      "links": [
+        "som",
+        "lat",
+        "icoel"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "gut",
+      "name": {
+        "ko": "원시장관",
+        "en": "Primitive gut tube",
+        "alt": [
+          "원시창자"
+        ]
+      },
+      "layer": "en",
+      "parent": "en",
+      "days": {
+        "start": 22,
+        "end": 28,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        12
+      ],
+      "composition": [
+        {
+          "layer": "en",
+          "part": "상피와 샘",
+          "ref": "en"
+        },
+        {
+          "layer": "me",
+          "part": "벽의 근육·결합조직·장막 (장측 중배엽)",
+          "ref": "spl"
+        }
+      ],
+      "derivatives": [
+        "전장: 앞쪽, 입인두막으로 막혀 있음",
+        "중장: 가운데, 배꼽창자관으로 난황낭과 연결",
+        "후장: 뒤쪽, 총배설강막으로 막혀 있음"
+      ],
+      "text": {
+        "public": "접히면서 안쪽에 생긴 관이 입부터 항문까지 이어지는 소화관이 돼요.",
+        "student": "앞에서 뒤로 전장–중장–후장. 앞끝은 입인두막, 뒤끝은 총배설강막으로 막혀 있고, 중장만 배꼽창자관으로 난황낭과 통한다. 세 부분은 각각 복강동맥, 위창자간막동맥, 아래창자간막동맥이 담당한다.",
+        "clinical": "부위별 동맥·신경·통증 위치가 나뉘는 근거: 전장 통증은 명치, 중장은 배꼽 주위, 후장은 아랫배."
+      },
+      "anomalies": [],
+      "links": [
+        "fg",
+        "mg",
+        "hg",
+        "dao"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "opm",
+      "name": {
+        "ko": "입인두막",
+        "en": "Oropharyngeal membrane",
+        "alt": [
+          "구인두막",
+          "볼인두막"
+        ]
+      },
+      "layer": "mix",
+      "parent": "fold-cc",
+      "days": {
+        "start": 16,
+        "end": 26,
+        "approx": true
+      },
+      "carnegie": [
+        7,
+        11
+      ],
+      "composition": [
+        {
+          "layer": "ec",
+          "part": "바깥: 입구멍 외배엽",
+          "ref": "stm"
+        },
+        {
+          "layer": "en",
+          "part": "안쪽: 전장 내배엽",
+          "ref": "fg"
+        }
+      ],
+      "derivatives": [
+        "터진 뒤 입구멍과 전장(인두)이 통함"
+      ],
+      "text": {
+        "public": "입이 될 자리와 목 안쪽을 잠깐 막고 있던 얇은 막이에요. 4주에 터져서 입과 목이 이어져요.",
+        "student": "외배엽과 내배엽이 중배엽 없이 맞붙은 곳. 4주 말 터져 입구멍과 전장이 통한다. 터진 자리는 대략 구강 외배엽과 내배엽의 경계가 된다.",
+        "clinical": "외배엽 기원(입술, 법랑질, 귀밑샘)과 내배엽 기원(혀 뒤쪽, 인두)의 경계를 이해하는 기준점."
+      },
+      "anomalies": [],
+      "verify": true,
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "clm",
+      "name": {
+        "ko": "총배설강막",
+        "en": "Cloacal membrane",
+        "alt": [
+          "배설강막"
+        ]
+      },
+      "layer": "mix",
+      "parent": "fold-cc",
+      "days": {
+        "start": 16,
+        "end": 56,
+        "approx": true
+      },
+      "carnegie": [
+        7,
+        23
+      ],
+      "composition": [
+        {
+          "layer": "ec",
+          "part": "바깥: 항문오목 외배엽",
+          "ref": "sur"
+        },
+        {
+          "layer": "en",
+          "part": "안쪽: 후장(총배설강) 내배엽",
+          "ref": "hg"
+        }
+      ],
+      "derivatives": [
+        "요직장중격이 내려와 비뇨생식막과 항문막으로 나뉨",
+        "항문막은 7주 말 터짐 → 빗살선 근처"
+      ],
+      "text": {
+        "public": "꼬리 쪽 끝을 막고 있던 막으로, 나중에 소변길과 항문 쪽으로 나뉘어 열려요.",
+        "student": "외배엽과 내배엽이 맞붙은 꼬리 쪽 막. 꼬리 접힘으로 배쪽에 놓이고, 요직장중격에 의해 앞쪽 비뇨생식막, 뒤쪽 항문막으로 나뉜다. 항문막은 7주 말에 터진다.",
+        "clinical": "총배설강막이 너무 크면 아래 몸통벽 중간엽이 들어오지 못해 방광외번·총배설강외번이 생긴다. 항문막이 안 터지면 쇄항(막형)."
+      },
+      "anomalies": [
+        "bladder-exstrophy"
+      ],
+      "links": [
+        "ugs"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "vitd",
+      "name": {
+        "ko": "배꼽창자관",
+        "en": "Vitelline duct (omphalomesenteric duct)",
+        "alt": [
+          "난황관",
+          "난황줄기",
+          "배꼽장간막관"
+        ]
+      },
+      "layer": "en",
+      "parent": "gut",
+      "days": {
+        "start": 22,
+        "end": 70,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        23
+      ],
+      "derivatives": [
+        "정상에서는 막히고 사라짐",
+        "남으면 메켈게실, 난황관 낭종, 배꼽–회장 샛길, 섬유띠"
+      ],
+      "text": {
+        "public": "아기 장과 난황주머니를 잇는 가는 관이에요. 보통 사라지는데, 일부가 남으면 메켈게실이 돼요.",
+        "student": "옆 접힘으로 난황낭과 중장의 연결이 좁아져 생긴 관. 탯줄 안을 지난다. 정상에서는 막혀 없어진다.",
+        "clinical": "메켈게실이 가장 흔한 잔존 형태. 위 점막이 섞여 있으면 궤양·출혈, 섬유띠가 남으면 장꼬임·장폐쇄의 원인."
+      },
+      "anomalies": [
+        "meckel",
+        "vitelline-fistula"
+      ],
+      "links": [
+        "mg"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "umbc",
+      "name": {
+        "ko": "탯줄",
+        "en": "Umbilical cord",
+        "alt": [
+          "제대"
+        ]
+      },
+      "layer": "mix",
+      "parent": "fold",
+      "days": {
+        "start": 28,
+        "end": 266,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        23
+      ],
+      "composition": [
+        {
+          "layer": "ex",
+          "part": "겉면: 양막",
+          "ref": "amn"
+        },
+        {
+          "layer": "ex",
+          "part": "와튼젤리: 배외중배엽",
+          "ref": "exm"
+        },
+        {
+          "layer": "ex",
+          "part": "배꼽동맥 2, 배꼽정맥 1 (연결줄기 배외중배엽에서 생김)",
+          "ref": "fcirc",
+          "verify": true
+        },
+        {
+          "layer": "en",
+          "part": "요막, 배꼽창자관 (점차 사라짐)",
+          "ref": "all"
+        }
+      ],
+      "derivatives": [
+        "배꼽동맥 2개 + 배꼽정맥 1개",
+        "와튼젤리",
+        "6–10주에는 중장이 탯줄 안으로 나와 있음 (생리적 탈장)"
+      ],
+      "text": {
+        "public": "접힘으로 연결줄기와 난황관이 한데 모여 양막에 싸이면서 탯줄이 돼요. 동맥 두 개와 정맥 하나가 들어 있어요.",
+        "student": "양막이 배꼽 고리 부위에서 연결줄기(요막, 배꼽혈관)와 배꼽창자관(난황혈관)을 감싸 탯줄이 된다. 처음에는 배외체강 일부가 남아 중장 고리가 들어가 있다(생리적 탈장).",
+        "clinical": "단일 배꼽동맥은 출생아의 약 1%로, 심장·콩팥 기형 위험이 높아 추가 검사의 단서가 된다."
+      },
+      "anomalies": [
+        "omphalocele"
+      ],
+      "links": [
+        "mg"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "bwall",
+      "name": {
+        "ko": "몸통벽",
+        "en": "Body wall",
+        "alt": [
+          "체벽",
+          "배쪽 몸통벽"
+        ]
+      },
+      "layer": "mix",
+      "parent": "fold-lat",
+      "days": {
+        "start": 22,
+        "end": 84,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        23
+      ],
+      "composition": [
+        {
+          "layer": "ec",
+          "part": "표피",
+          "ref": "sur"
+        },
+        {
+          "layer": "me",
+          "part": "진피·결합조직·복장뼈 (벽측 측판중배엽)",
+          "ref": "som"
+        },
+        {
+          "layer": "me",
+          "part": "갈비뼈 (체절 경절판)",
+          "ref": "scl"
+        },
+        {
+          "layer": "me",
+          "part": "근육 (체절 근절판 축하부분이 이주)",
+          "ref": "myo"
+        }
+      ],
+      "derivatives": [
+        "가슴벽: 갈비사이근, 복장뼈",
+        "배벽: 배곧은근, 바깥·속빗근, 배가로근",
+        "배꼽 고리"
+      ],
+      "text": {
+        "public": "몸 양옆에서 자라 나온 벽이 가운데서 만나 가슴과 배를 덮어요.",
+        "student": "복장뼈·결합조직은 벽측 측판중배엽, 갈비뼈는 체절 경절판, 근육은 체절에서 이주. 근육은 바깥빗근–속빗근–가로근의 세 층으로 나뉜다. 복장뼈는 좌우 띠가 정중선에서 합쳐져 생긴다.",
+        "clinical": "복장뼈 띠가 덜 합쳐지면 복장뼈 갈림증, 가슴 부위 닫힘 실패는 심장이소증(가슴배 부위까지 결손되면 칸트렐 오징의 일부)."
+      },
+      "anomalies": [
+        "gastroschisis",
+        "ectopia-cordis",
+        "bladder-exstrophy"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "fold-results",
+      "title": "접힘이 만드는 변화",
+      "columns": [
+        "접힘",
+        "옮겨지는 것",
+        "결과"
+      ],
+      "rows": [
+        {
+          "ref": "fold-cc",
+          "cells": [
+            "머리 접힘",
+            "심장발생구역, 가로중격, 입인두막",
+            "심장이 가슴으로, 가로중격이 심장과 배꼽창자관 사이로, 전장 형성"
+          ]
+        },
+        {
+          "ref": "fold-cc",
+          "cells": [
+            "꼬리 접힘",
+            "연결줄기(요막), 총배설강막",
+            "후장 형성, 요막이 탯줄 자리로"
+          ]
+        },
+        {
+          "ref": "fold-lat",
+          "cells": [
+            "옆 접힘",
+            "양옆 몸통벽, 내배엽",
+            "배쪽 몸통벽 닫힘, 원시장관, 체강이 배쪽으로"
+          ]
+        },
+        {
+          "ref": "vitd",
+          "cells": [
+            "옆 접힘의 결과",
+            "난황낭 연결",
+            "배꼽창자관으로 좁아짐"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gut-regions",
+      "title": "원시장관 세 부분",
+      "columns": [
+        "부분",
+        "범위 (성인)",
+        "동맥",
+        "통증 위치"
+      ],
+      "rows": [
+        {
+          "ref": "fg",
+          "cells": [
+            "전장",
+            "인두 ~ 큰십이지장유두(온쓸개관 개구부) 바로 위 (+ 간·쓸개·췌장·호흡기 싹)",
+            "복강동맥 (인두·식도 윗부분 제외)",
+            "명치"
+          ]
+        },
+        {
+          "ref": "mg",
+          "cells": [
+            "중장",
+            "큰십이지장유두 아래 ~ 가로결장 앞 2/3",
+            "위창자간막동맥",
+            "배꼽 주위"
+          ]
+        },
+        {
+          "ref": "hg",
+          "cells": [
+            "후장",
+            "가로결장 뒤 1/3 ~ 항문관 위쪽 (빗살선 위)",
+            "아래창자간막동맥",
+            "아랫배 (두덩위)"
+          ]
+        }
+      ],
+      "note": "통증 위치 열은 임상 보충 내용으로 Langman 본문에는 없다(출처: Moore)."
+    },
+    {
+      "id": "cord-contents",
+      "title": "탯줄 안에 있는 것",
+      "columns": [
+        "구조",
+        "기원",
+        "출생 후"
+      ],
+      "rows": [
+        {
+          "ref": "umbc",
+          "cells": [
+            "배꼽동맥 2개",
+            "배꼽동맥 (등대동맥 가지)",
+            "안쪽배꼽인대, 위방광동맥"
+          ]
+        },
+        {
+          "ref": "umbc",
+          "cells": [
+            "배꼽정맥 1개 (왼쪽만 남음)",
+            "배꼽정맥",
+            "간원인대"
+          ]
+        },
+        {
+          "ref": "all",
+          "cells": [
+            "요막",
+            "후장 (총배설강)",
+            "정중배꼽인대"
+          ]
+        },
+        {
+          "ref": "vitd",
+          "cells": [
+            "배꼽창자관",
+            "중장–난황낭 연결",
+            "사라짐 (남으면 메켈게실)"
+          ]
+        },
+        {
+          "ref": "umbc",
+          "cells": [
+            "와튼젤리",
+            "배외중배엽",
+            "-"
+          ]
+        }
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "gastroschisis",
+      "name": {
+        "ko": "복벽갈림증",
+        "en": "Gastroschisis",
+        "alt": [
+          "배벽갈림증",
+          "복벽파열(증)"
+        ]
+      },
+      "cause": [
+        "fold-lat",
+        "bwall"
+      ],
+      "period": {
+        "start": 22,
+        "end": 35
+      },
+      "mechanism": "배쪽 몸통벽이 배꼽 옆에서 닫히지 않아 장이 막 없이 양수로 나옴.",
+      "findings": [
+        "대개 배꼽 오른쪽 결손",
+        "장을 덮는 막이 없음 → 양수에 노출돼 장이 붓고 상함",
+        "젊은 산모와 연관, 다른 기형 동반은 적음",
+        "산모 혈청 AFP 상승"
+      ],
+      "genes": [],
+      "public": "배꼽 옆 배벽이 열려 장이 밖으로 나온 채 태어나는 것이에요. 출생 직후 수술로 넣어주며, 다른 기형이 함께 있는 경우가 적어 대부분 잘 회복해요. 다만 장 기능이 돌아오기까지 입원이 길어질 수 있어요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "omphalocele",
+      "name": {
+        "ko": "배꼽내장탈출증",
+        "en": "Omphalocele",
+        "alt": [
+          "제대류",
+          "omphalocele",
+          "배꼽탈장·제대탈장 (옛 표기. 영아에 흔하고 대개 저절로 낫는 배꼽탈장(umbilical hernia)과는 다른 질환)"
+        ]
+      },
+      "cause": [
+        "umbc",
+        "mg"
+      ],
+      "period": {
+        "start": 42,
+        "end": 70
+      },
+      "mechanism": "생리적 탈장으로 탯줄에 나갔던 장이 10주쯤 배 안으로 돌아오지 못함.",
+      "findings": [
+        "배꼽 정중앙, 양막과 복막(사이에 와튼젤리)으로 덮인 주머니",
+        "장 외에 간이 들어 있기도 함",
+        "염색체 이상(13·18번 삼염색체), 심장 기형, 베크위스–비더만 증후군 동반이 많음",
+        "산모 혈청 AFP 상승"
+      ],
+      "genes": [
+        "베크위스–비더만 증후군 (11p15)"
+      ],
+      "public": "탯줄 자리로 나갔던 장이 배 안으로 돌아오지 못한 채 막에 싸여 태어나는 것이에요. 다른 기형이 함께 있는지 꼭 검사해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "meckel",
+      "name": {
+        "ko": "메켈게실",
+        "en": "Meckel diverticulum",
+        "alt": [
+          "회장게실"
+        ]
+      },
+      "cause": [
+        "vitd"
+      ],
+      "period": {
+        "start": 42,
+        "end": 70
+      },
+      "mechanism": "배꼽창자관의 장 쪽 일부가 없어지지 않고 회장에 주머니로 남음.",
+      "findings": [
+        "‘2의 법칙’: 인구의 약 2%, 회맹판에서 약 2피트(60cm), 길이 약 2인치, 증상은 대개 2세 전, 남자가 약 2배",
+        "위·췌장 점막이 섞여 있으면 궤양과 통증 없는 직장 출혈",
+        "충수염과 비슷한 통증, 장겹침의 선두점"
+      ],
+      "genes": [],
+      "public": "장에 작은 주머니가 하나 남은 것으로, 사람 50명 중 한 명꼴로 있어요. 대부분 평생 모르고 지내지만 출혈이나 염증이 생기면 수술해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "vitelline-fistula",
+      "name": {
+        "ko": "배꼽창자관 샛길·낭종",
+        "en": "Vitelline fistula and cyst",
+        "alt": [
+          "난황관 누공",
+          "배꼽–회장 샛길"
+        ]
+      },
+      "cause": [
+        "vitd"
+      ],
+      "period": {
+        "start": 42,
+        "end": 70
+      },
+      "mechanism": "배꼽창자관 전체가 열린 채 남거나(샛길), 양끝만 막혀 가운데가 주머니로 남거나(낭종), 섬유띠로 남음.",
+      "findings": [
+        "샛길: 배꼽으로 장 내용물이 나옴",
+        "낭종·섬유띠: 장이 띠 주위로 꼬여 장폐쇄"
+      ],
+      "genes": [],
+      "public": "장과 배꼽 사이 관이 남아 배꼽으로 분비물이 나오거나, 관이 끈처럼 남아 장이 꼬일 수 있어요. 수술로 치료해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ectopia-cordis",
+      "name": {
+        "ko": "심장이소증",
+        "en": "Ectopia cordis",
+        "alt": [
+          "칸트렐 오징 (가슴배 결손 동반 시)"
+        ]
+      },
+      "cause": [
+        "fold-lat",
+        "fold-cc",
+        "bwall"
+      ],
+      "period": {
+        "start": 22,
+        "end": 35
+      },
+      "mechanism": "가슴 부위 옆 몸통벽이 정중선에서 닫히지 않아 심장이 가슴 밖에 놓임.",
+      "findings": [
+        "심장이 몸 밖에 노출",
+        "복장뼈 결손",
+        "칸트렐 오징: 복장뼈 아래 결손, 가로막 앞부분 결손, 심장막 결손, 배꼽내장탈출증, 심장 기형"
+      ],
+      "genes": [],
+      "public": "심장이 가슴 밖으로 나와 있는 매우 드문 기형으로, 예후가 좋지 않은 경우가 많아요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "bladder-exstrophy",
+      "name": {
+        "ko": "방광외번",
+        "en": "Bladder exstrophy",
+        "alt": [
+          "방광외반증",
+          "총배설강외번 (더 심한 형태)"
+        ]
+      },
+      "cause": [
+        "clm",
+        "bwall",
+        "fold-lat"
+      ],
+      "period": {
+        "start": 28,
+        "end": 56
+      },
+      "mechanism": "골반 부위 배쪽 몸통벽이 닫히지 않아 방광 뒤벽이 겉으로 드러남. 총배설강막이 너무 커서 중간엽이 들어오지 못한다는 설명.",
+      "findings": [
+        "아랫배에 방광 점막 노출",
+        "요도상열 동반",
+        "두덩결합 벌어짐",
+        "더 심하면 총배설강외번 (장도 함께 노출)"
+      ],
+      "genes": [],
+      "public": "아랫배 벽이 열려 방광 안쪽이 밖으로 드러난 채 태어나는 드문 기형이에요. 여러 단계 수술로 치료해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "day": 21,
+      "label": "배아 접힘 시작",
+      "refs": [
+        "fold"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 26,
+      "label": "입인두막 파열",
+      "refs": [
+        "opm"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 28,
+      "label": "접힘 완료, 탯줄 형성",
+      "refs": [
+        "fold",
+        "umbc",
+        "gut"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 49,
+      "label": "항문막 파열",
+      "refs": [
+        "clm"
+      ],
+      "major": false,
+      "approx": true
+    }
+  ],
+  "epidemiology": [
+    {
+      "item": "메켈게실",
+      "value": "인구의 약 2% (교재에 따라 2–4%)",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "단일 배꼽동맥",
+      "value": "출생아의 약 1%",
+      "ref": "langman",
+      "verify": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "langman",
+      "title": "Langman's Medical Embryology",
+      "chapter": "Third to Eighth Weeks: The Embryonic Period / Body Wall (셋째~여덟째 주, 몸통벽)",
+      "edition": "15판 (한국어 번역서)",
+      "role": "기준",
+      "note": "쪽수는 번역서 15판 기준으로 검수 때 채운다"
+    },
+    {
+      "id": "moore",
+      "title": "The Developing Human (Moore)",
+      "chapter": "Fourth to Eighth Weeks of Human Development",
+      "edition": null,
+      "role": "보조"
+    }
+  ]
+}

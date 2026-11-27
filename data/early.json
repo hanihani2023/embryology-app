@@ -1,0 +1,1294 @@
+{
+  "module": "early",
+  "title": {
+    "ko": "초기 발생 (1–3주)",
+    "en": "Early development (weeks 1–3)"
+  },
+  "status": "draft",
+  "priority": "P1",
+  "updated": "2026-11-20",
+  "termNote": "기존 페이지 노드 13개를 옮기고(replacesLegacy), 착상·이층배반·난황낭·융모·원시선·원시결절을 새로 넣었다.",
+  "structures": [
+    {
+      "id": "zyg",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "접합자",
+        "en": "Zygote",
+        "alt": []
+      },
+      "layer": "root",
+      "parent": null,
+      "days": {
+        "start": 0,
+        "end": null,
+        "approx": true
+      },
+      "when": "0일 · CS 1",
+      "carnegie": [],
+      "derivatives": [
+        "정자와 난자의 전핵 융합으로 이배체(46,XX 또는 46,XY) 형성",
+        "전능성(totipotent) 세포 — 배아와 태반을 모두 만듦"
+      ],
+      "text": {
+        "public": "정자와 난자가 만나 생긴 첫 세포예요. 이 세포 하나가 아기 몸 전체와 태반을 모두 만들어요.",
+        "student": "수정은 보통 난관 팽대부에서 일어납니다.",
+        "clinical": "수정 때 염색체 수 이상(삼배체 등)이 생기면 대부분 초기에 유산된다. 쌍둥이 유형은 쌍둥이 표 참고."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "mor",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "상실배",
+        "en": "Morula",
+        "alt": []
+      },
+      "layer": "root",
+      "parent": "zyg",
+      "days": {
+        "start": 3,
+        "end": null,
+        "approx": true
+      },
+      "when": "3–4일 · CS 2",
+      "carnegie": [],
+      "derivatives": [
+        "난할로 16–32개 할구",
+        "치밀화(compaction) 후 바깥 세포와 안쪽 세포로 분극"
+      ],
+      "text": {
+        "public": "수정 3–4일째, 세포가 16–32개로 늘어 오디 모양이 돼요.",
+        "student": "투명대 안에서 크기 변화 없이 세포 수만 늘어납니다.",
+        "clinical": "일란성 쌍둥이가 상실배 단계까지(약 3일 이내) 나뉘면 태반과 양막을 각각 따로 가진다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "bla",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "포배",
+        "en": "Blastocyst",
+        "alt": []
+      },
+      "layer": "root",
+      "parent": "mor",
+      "days": {
+        "start": 5,
+        "end": null,
+        "approx": true
+      },
+      "when": "5–6일 · CS 3",
+      "carnegie": [],
+      "derivatives": [
+        "포배강(blastocoel) 형성",
+        "바깥의 영양배엽, 안쪽의 내세포괴로 처음 계통이 갈림"
+      ],
+      "text": {
+        "public": "5일째 속이 빈 공 모양이 돼요. 바깥 세포는 태반이, 안쪽 세포 덩어리는 아기가 돼요.",
+        "student": "포배강이 생기며 영양배엽(바깥)과 내세포괴(안쪽)로 처음 계통이 갈린다. 5일경 투명대에서 빠져나와(부화) 6일경 착상을 시작한다.",
+        "clinical": "자궁외 임신 — 6일경 착상이 난관 등 자궁 밖에서 일어나는 경우. 난관 팽대부가 가장 흔합니다."
+      },
+      "anomalies": [
+        "ectopic-pregnancy"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "tro",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "영양배엽",
+        "en": "Trophoblast",
+        "alt": []
+      },
+      "layer": "ex",
+      "parent": "bla",
+      "days": {
+        "start": 5,
+        "end": null,
+        "approx": true
+      },
+      "when": "5일~",
+      "carnegie": [],
+      "derivatives": [
+        "태반의 태아 측 구성 요소",
+        "착상과 모체 혈관 침습 담당"
+      ],
+      "text": {
+        "public": "태반의 아기 쪽 부분을 만드는 바깥 세포층이에요.",
+        "student": "착상하면서 안쪽 세포영양막(분열하는 줄기층)과 바깥 합포체영양막(침습·호르몬)으로 나뉜다.",
+        "clinical": "영양막이 비정상적으로 자라면 임신영양막질환(포상기태, 융모막암종)."
+      },
+      "anomalies": [
+        "gtd"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "cyt",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "세포영양막",
+        "en": "Cytotrophoblast",
+        "alt": []
+      },
+      "layer": "ex",
+      "parent": "tro",
+      "days": {
+        "start": 8,
+        "end": null,
+        "approx": true
+      },
+      "when": "8일~",
+      "carnegie": [],
+      "derivatives": [
+        "일차 → 이차 → 삼차 융모",
+        "융모막 융모, 태반 융모 상피의 줄기세포층",
+        "세포영양막 껍질 → 나선동맥 재형성"
+      ],
+      "text": {
+        "public": "태반 융모를 만들고 자궁 혈관을 넓히는 세포층이에요.",
+        "student": "분열하는 줄기세포층. 융모의 바깥 껍질과 세포영양막 껍질을 만들고, 일부는 자궁 나선동맥으로 들어가 혈관을 넓힌다.",
+        "clinical": "임신영양막질환 — 포상기태, 융모막암종. hCG가 비정상적으로 높습니다."
+      },
+      "anomalies": [
+        "gtd"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "syn",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "합포체영양막",
+        "en": "Syncytiotrophoblast",
+        "alt": []
+      },
+      "layer": "ex",
+      "parent": "tro",
+      "days": {
+        "start": 7,
+        "end": null,
+        "approx": true
+      },
+      "when": "7–9일",
+      "carnegie": [],
+      "derivatives": [
+        "자궁내막 침습, 열공(lacunae) 형성 → 자궁태반 순환",
+        "hCG 분비 (임신검사의 근거)",
+        "hPL, 프로게스테론, 에스트로겐 생산"
+      ],
+      "text": {
+        "public": "자궁 벽을 파고들고 임신 호르몬(hCG)을 만드는 층이에요.",
+        "student": "세포영양막이 융합해 만들어지며, 스스로 분열하지 않습니다.",
+        "clinical": "hCG는 수정 후 약 8–10일부터 혈액에서 잡혀 임신검사의 근거가 된다. 포상기태에서 비정상적으로 높다."
+      },
+      "anomalies": [
+        "gtd"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "hCG 검출 시작 시기"
+    },
+    {
+      "id": "icm",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "내세포괴",
+        "en": "Inner cell mass / embryoblast",
+        "alt": []
+      },
+      "layer": "root",
+      "parent": "bla",
+      "days": {
+        "start": 5,
+        "end": null,
+        "approx": true
+      },
+      "when": "5–8일",
+      "carnegie": [],
+      "derivatives": [
+        "배아 본체와 양막·난황낭을 만듦",
+        "8일경 이층배반(bilaminar disc)으로 분리"
+      ],
+      "text": {
+        "public": "포배 안쪽 세포 덩어리로, 아기 몸 전체가 여기서 생겨요.",
+        "student": "배아줄기세포(ES cell)가 유래하는 곳입니다.",
+        "clinical": "일란성 쌍둥이의 대부분은 이 시기(4–8일)에 내세포괴가 나뉘어 생기며, 태반(융모막)은 하나, 양막은 둘이다."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "hyp",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "배반엽하층",
+        "en": "Hypoblast",
+        "alt": []
+      },
+      "layer": "ex",
+      "parent": "icm",
+      "days": {
+        "start": 8,
+        "end": null,
+        "approx": true
+      },
+      "when": "8–12일",
+      "carnegie": [],
+      "derivatives": [
+        "일차 난황낭(호이저막)",
+        "이차(확정) 난황낭"
+      ],
+      "text": {
+        "public": "2주째 배아의 아래쪽 세포층으로, 난황 주머니를 만들어요.",
+        "student": "배아 본체에는 거의 기여하지 않고, 낭배형성 때 확정 내배엽으로 대체됩니다.",
+        "clinical": "배아 본체에는 거의 남지 않으므로 이 층의 문제는 주로 초기 유산과 연결된다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "exm",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "배외중배엽",
+        "en": "Extraembryonic mesoderm",
+        "alt": []
+      },
+      "layer": "ex",
+      "parent": "hyp",
+      "days": {
+        "start": 12,
+        "end": null,
+        "approx": true
+      },
+      "when": "12–14일",
+      "carnegie": [],
+      "derivatives": [
+        "융모막판, 융모의 결합조직 심",
+        "연결줄기 → 탯줄 결합조직(와튼젤리)",
+        "난황낭 벽의 혈도 → 최초의 혈구와 혈관"
+      ],
+      "text": {
+        "public": "배아 바깥의 결합조직으로, 탯줄과 태반 융모의 심이 되고 첫 혈구도 만들어요.",
+        "student": "기원은 배반엽하층설과 배반엽상층(원시선)설이 함께 보고됩니다.",
+        "clinical": "탯줄 결합조직(와튼젤리)이 여기서 온다. 난황낭 혈도가 첫 혈구의 출처."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "epi",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "배반엽상층",
+        "en": "Epiblast",
+        "alt": []
+      },
+      "layer": "root",
+      "parent": "icm",
+      "days": {
+        "start": 8,
+        "end": null,
+        "approx": true
+      },
+      "when": "8일~",
+      "carnegie": [],
+      "derivatives": [
+        "배아 본체의 모든 세포(삼배엽)의 근원",
+        "양막과 원시생식세포도 여기서 나옴"
+      ],
+      "text": {
+        "public": "2주째 배아의 위쪽 세포층으로, 아기 몸의 모든 세포가 여기서 나와요.",
+        "student": "배반엽상층은 낭배형성으로 세 배엽을 모두 만들고, 양막 상피와 원시생식세포도 낸다. 그래서 배아 본체의 근원이다.",
+        "clinical": "이 시기(수정 후 2주까지) 손상은 대개 '전부 아니면 전무'로, 회복되거나 유산된다."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "'전부 아니면 전무' 서술"
+    },
+    {
+      "id": "amn",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "양막",
+        "en": "Amnion",
+        "alt": []
+      },
+      "layer": "ex",
+      "parent": "epi",
+      "days": {
+        "start": 8,
+        "end": null,
+        "approx": true
+      },
+      "when": "8일~",
+      "carnegie": [],
+      "derivatives": [
+        "양막 상피",
+        "양수 공간 형성 → 태아 보호, 움직임 공간"
+      ],
+      "text": {
+        "public": "아기를 감싸는 얇은 막과 그 안의 양수 주머니예요.",
+        "student": "8일경 배반엽상층과 영양막 사이에 양막강이 생긴다. 접힘 뒤 배아 전체를 감싸고 탯줄을 덮는다.",
+        "clinical": "양막띠 증후군 — 찢어진 양막이 사지를 조여 절단·협착을 일으킵니다."
+      },
+      "anomalies": [
+        "amniotic-band"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pgc",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "원시생식세포",
+        "en": "Primordial germ cells",
+        "alt": []
+      },
+      "layer": "root",
+      "parent": "epi",
+      "days": {
+        "start": 21,
+        "end": null,
+        "approx": true
+      },
+      "when": "3주 출현 → 5–6주 생식능선 도달",
+      "carnegie": [],
+      "derivatives": [
+        "난황낭 벽(요막 근처)에서 관찰",
+        "후장 등쪽창자간막을 따라 이동",
+        "생식능선에서 정조세포·난조세포로 분화"
+      ],
+      "text": {
+        "public": "정자나 난자가 될 세포는 처음엔 난황 주머니 근처에 있다가 생식샘까지 이동해 와요.",
+        "student": "배반엽상층에서 생겨 원시선을 지나 난황낭 벽(배외 위치)으로 갔다가 생식능선으로 돌아온다. 기원은 배아 쪽(배반엽상층)이고, 생식선 자체에서 생기지 않는다는 점이 핵심입니다.",
+        "clinical": "성선외 생식세포종양 — 이동 경로에 남은 세포에서 생깁니다(종격동, 송과체 부위 등)."
+      },
+      "anomalies": [
+        "extragonadal-gct"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "gas",
+      "replacesLegacy": true,
+      "name": {
+        "ko": "낭배형성",
+        "en": "Gastrulation",
+        "alt": []
+      },
+      "layer": "root",
+      "parent": "epi",
+      "days": {
+        "start": 15,
+        "end": null,
+        "approx": true
+      },
+      "when": "15–21일 · CS 6–9",
+      "carnegie": [],
+      "derivatives": [
+        "원시선·원시결절 출현으로 몸의 축(머리–꼬리, 좌–우) 결정",
+        "배반엽상층 세포가 함입해 내배엽, 중배엽 형성",
+        "남은 배반엽상층이 외배엽이 됨"
+      ],
+      "text": {
+        "public": "3주째, 두 층이던 배아가 세 층(외배엽·중배엽·내배엽)이 되는 과정이에요.",
+        "student": "원시선에서 배반엽상층 세포가 함입해 먼저 내배엽(배반엽하층을 대체), 다음 중배엽을 만들고, 남은 배반엽상층이 외배엽이 된다. 머리–꼬리, 등–배, 좌–우 축이 이때 정해진다.",
+        "clinical": "천미부 기형종 — 원시선 잔존. 꼬리 퇴행 증후군 — 꼬리 쪽 중배엽 부족(산모 당뇨와 연관)."
+      },
+      "anomalies": [
+        "sacrococcygeal-teratoma",
+        "caudal-regression"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "note": "Lewis Wolpert: “인생에서 가장 중요한 순간은 출생도 결혼도 죽음도 아닌 낭배형성이다.”"
+    },
+    {
+      "id": "impl",
+      "name": {
+        "ko": "착상",
+        "en": "Implantation",
+        "alt": []
+      },
+      "layer": "root",
+      "parent": "bla",
+      "days": {
+        "start": 6,
+        "end": 12,
+        "approx": true
+      },
+      "carnegie": [
+        4,
+        5
+      ],
+      "derivatives": [
+        "6일경 포배가 자궁내막(보통 자궁몸통 앞·뒤벽 위쪽)에 붙음",
+        "합포체영양막이 내막을 파고들어 9–12일 열공·자궁태반순환 시작",
+        "탈락막반응: 내막 세포가 커지고 영양분 저장"
+      ],
+      "text": {
+        "public": "6일쯤 배아가 자궁 벽에 붙어 파고 들어가요. 이때 약간의 출혈(착상혈)이 있을 수 있어요.",
+        "student": "6–7일 부착, 10–11일쯤 내막 속에 완전히 묻히고 표면이 닫힌다(간질 착상). 합포체영양막이 모체 모세혈관을 터 열공에 모체 혈액이 들어오며 자궁태반순환이 시작된다.",
+        "clinical": "자궁 밖 착상 = 자궁외 임신(난관 팽대부가 가장 흔함). 자궁 아래쪽 착상은 전치태반으로 이어질 수 있다."
+      },
+      "anomalies": [
+        "ectopic-pregnancy"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "bil",
+      "name": {
+        "ko": "이층배반",
+        "en": "Bilaminar germ disc",
+        "alt": [
+          "이배엽배반"
+        ]
+      },
+      "layer": "root",
+      "parent": "icm",
+      "days": {
+        "start": 8,
+        "end": 14,
+        "approx": true
+      },
+      "carnegie": [
+        5,
+        6
+      ],
+      "derivatives": [
+        "배반엽상층(위)과 배반엽하층(아래) 두 층의 원판",
+        "위로 양막강, 아래로 난황낭"
+      ],
+      "text": {
+        "public": "2주째 배아는 두 겹짜리 작은 원판이에요. 위로는 양수 주머니, 아래로는 난황 주머니가 붙어 있어요.",
+        "student": "2주는 \"둘의 주\": 배엽 두 층(배반엽상층·하층), 공간 둘(양막강·난황낭), 영양막 두 층(세포·합포체), 배외중배엽 두 층(벽측·장측).",
+        "clinical": "이 시기 손상은 대개 유산되거나 영향 없이 회복된다(전부 아니면 전무)."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ys1",
+      "name": {
+        "ko": "일차난황낭",
+        "en": "Primary yolk sac (exocoelomic cavity)",
+        "alt": [
+          "외체강(exocoelomic cavity)"
+        ]
+      },
+      "layer": "ex",
+      "parent": "hyp",
+      "days": {
+        "start": 9,
+        "end": 12,
+        "approx": true
+      },
+      "carnegie": [],
+      "derivatives": [
+        "호이저막(외체강막)으로 둘러싸인 공간"
+      ],
+      "text": {
+        "public": "처음 생기는 큰 난황 주머니로, 곧 작아지며 모양이 바뀌어요.",
+        "student": "배반엽하층에서 나온 세포가 호이저막을 만들어 일차난황낭(외체강, exocoelomic cavity)을 둘러싼다. 12–13일경 배외중배엽 안에 생긴 배외체강(융모막강 — 외체강과는 다른 공간)이 커지면서 일차난황낭은 밀려나 작아진다.",
+        "clinical": "임상적 의미는 적다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ys2",
+      "name": {
+        "ko": "이차난황낭",
+        "en": "Secondary (definitive) yolk sac",
+        "alt": [
+          "확정난황낭"
+        ]
+      },
+      "layer": "ex",
+      "parent": "hyp",
+      "days": {
+        "start": 12,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [],
+      "derivatives": [
+        "벽의 혈도 → 첫 혈구와 혈관",
+        "원시생식세포가 처음 관찰되는 곳",
+        "접힘 후 일부는 원시장관, 나머지는 난황관으로 연결"
+      ],
+      "text": {
+        "public": "초음파에서 일찍 보이는 동그란 주머니로, 첫 혈구와 생식세포가 여기서 나타나요.",
+        "student": "배반엽하층 세포가 일차난황낭 안쪽에 더 작은 이차난황낭을 만든다. 벽의 배외중배엽에서 혈도가 생긴다. 4주 접힘으로 위쪽이 원시장관으로 들어가고, 장과는 난황관으로 이어진다.",
+        "clinical": "임신낭 안의 난황낭은 자궁 내 임신의 초기 초음파 소견(마지막 생리일 기준 약 5주). 난황관이 남으면 메켈게실."
+      },
+      "anomalies": [
+        "meckel"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "links": [
+        "bld",
+        "mg",
+        "pgc",
+        "vitd"
+      ],
+      "verifyNote": "초음파 난황낭 확인 시기"
+    },
+    {
+      "id": "chor",
+      "name": {
+        "ko": "융모막과 융모",
+        "en": "Chorion and chorionic villi",
+        "alt": []
+      },
+      "layer": "ex",
+      "parent": "tro",
+      "days": {
+        "start": 13,
+        "end": 21,
+        "approx": true
+      },
+      "carnegie": [],
+      "derivatives": [
+        "일차융모(13일경): 세포영양막 심",
+        "이차융모(16일경): 배외중배엽 심",
+        "삼차융모(3주 말): 심 속 혈관",
+        "우거진융모막 → 태반의 태아 쪽, 민융모막 → 태반이 아닌 막"
+      ],
+      "text": {
+        "public": "태반이 될 손가락 모양 돌기(융모)가 생기고, 3주 말엔 그 안에 혈관이 들어와 엄마 피에서 영양을 받기 시작해요.",
+        "student": "융모 단계: 일차(세포영양막) → 이차(중배엽 심) → 삼차(혈관). 바닥탈락막 쪽 융모가 자라 우거진융모막(태반)이 되고, 반대쪽은 민융모막이 된다.",
+        "clinical": "융모막융모생검(CVS)은 이 융모로 염색체를 검사한다(보통 임신 10–13주)."
+      },
+      "anomalies": [
+        "ttts"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "composition": [
+        {
+          "layer": "ex",
+          "part": "융모 겉면: 합포체영양막",
+          "ref": "syn"
+        },
+        {
+          "layer": "ex",
+          "part": "그 안쪽: 세포영양막",
+          "ref": "cyt"
+        },
+        {
+          "layer": "ex",
+          "part": "융모 심: 배외중배엽",
+          "ref": "exm"
+        }
+      ],
+      "verifyNote": "융모 단계별 날짜, CVS 시기"
+    },
+    {
+      "id": "ps",
+      "name": {
+        "ko": "원시선",
+        "en": "Primitive streak",
+        "alt": []
+      },
+      "layer": "root",
+      "parent": "gas",
+      "days": {
+        "start": 15,
+        "end": 28,
+        "approx": true
+      },
+      "carnegie": [
+        6,
+        9
+      ],
+      "derivatives": [
+        "원시고랑으로 들어간 세포 → 내배엽, 중배엽",
+        "머리–꼬리, 좌–우 축 결정",
+        "4주 말 줄어들어 엉치꼬리 부위에서 사라짐"
+      ],
+      "text": {
+        "public": "3주째 배아 위쪽 면 가운데에 생기는 줄로, 몸의 머리–꼬리 방향을 정해요.",
+        "student": "15일경 꼬리 쪽 정중선에 나타나 머리 쪽으로 자란다. 배반엽상층 세포가 원시고랑으로 들어가(상피–중간엽 전환) 내배엽·중배엽이 된다. 4주 말 작아져 사라진다.",
+        "clinical": "원시선이 남으면 천미부기형종, 꼬리 쪽 중배엽이 부족하면 꼬리퇴행증후군."
+      },
+      "anomalies": [
+        "sacrococcygeal-teratoma",
+        "caudal-regression",
+        "conjoined-twins"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pn",
+      "name": {
+        "ko": "원시결절",
+        "en": "Primitive node",
+        "alt": [
+          "헨젠결절"
+        ]
+      },
+      "layer": "root",
+      "parent": "ps",
+      "days": {
+        "start": 16,
+        "end": null,
+        "approx": true
+      },
+      "carnegie": [],
+      "derivatives": [
+        "척삭과 척삭앞판 세포의 출발점",
+        "결절 섬모 → 왼쪽에 NODAL·LEFTY·PITX2 발현"
+      ],
+      "text": {
+        "public": "원시선 머리 쪽 끝의 작은 혹으로, 몸의 왼쪽·오른쪽을 정하는 신호를 내요.",
+        "student": "원시오목으로 들어간 세포가 척삭을 만든다. 결절의 섬모가 액체를 왼쪽으로 흘려 왼쪽에만 NODAL·LEFTY·PITX2가 켜지고, 이것이 심장 고리 방향과 내장 배치를 정한다.",
+        "clinical": "좌우 신호 이상 → 내장역위, 우심증, 다비장·무비장 증후군(내장이소증). 내장이소증에서는 심장 기형 동반이 흔하지만, 완전 내장역위는 심장 기형이 드물다."
+      },
+      "anomalies": [
+        "dextrocardia"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "links": [
+        "ntc",
+        "loop"
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "twins",
+      "title": "쌍둥이 유형: 언제 나뉘었나",
+      "columns": [
+        "분리 시기",
+        "단계",
+        "융모막·양막",
+        "일란성 중 비율"
+      ],
+      "rows": [
+        {
+          "ref": "mor",
+          "cells": [
+            "0–3일",
+            "2세포기~상실배 (할구 분리)",
+            "이융모막 이양막 (태반 둘 또는 붙음)",
+            "약 1/3"
+          ]
+        },
+        {
+          "ref": "icm",
+          "cells": [
+            "4–8일",
+            "내세포괴 분리",
+            "단일융모막 이양막",
+            "약 2/3"
+          ]
+        },
+        {
+          "ref": "bil",
+          "cells": [
+            "8–13일",
+            "양막이 생긴 뒤 이층배반 분리",
+            "단일융모막 단일양막",
+            "약 1%"
+          ]
+        },
+        {
+          "ref": "ps",
+          "cells": [
+            "13일 이후",
+            "원시선 형성기",
+            "결합쌍둥이",
+            "매우 드묾"
+          ]
+        },
+        {
+          "ref": "zyg",
+          "cells": [
+            "이란성",
+            "난자 두 개가 각각 수정",
+            "항상 이융모막 이양막",
+            "-"
+          ]
+        }
+      ],
+      "note": "비율은 교재마다 차이가 있어 검수 때 확인한다."
+    },
+    {
+      "id": "week2",
+      "title": "2주는 \"둘의 주\"",
+      "columns": [
+        "항목",
+        "둘"
+      ],
+      "rows": [
+        {
+          "ref": "bil",
+          "cells": [
+            "배엽",
+            "배반엽상층 · 배반엽하층"
+          ]
+        },
+        {
+          "ref": "bil",
+          "cells": [
+            "공간",
+            "양막강 · 난황낭"
+          ]
+        },
+        {
+          "ref": "tro",
+          "cells": [
+            "영양막",
+            "세포영양막 · 합포체영양막"
+          ]
+        },
+        {
+          "ref": "exm",
+          "cells": [
+            "배외중배엽",
+            "벽측 (영양막·양막 쪽) · 장측 (난황낭 쪽)"
+          ]
+        }
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "ectopic-pregnancy",
+      "name": {
+        "ko": "자궁외 임신",
+        "en": "Ectopic pregnancy",
+        "alt": [
+          "자궁밖임신"
+        ]
+      },
+      "cause": [
+        "impl",
+        "bla"
+      ],
+      "period": {
+        "start": 6,
+        "end": 12
+      },
+      "mechanism": "포배가 자궁 안이 아닌 곳에 착상함.",
+      "findings": [
+        "난관(특히 팽대부)이 대부분",
+        "위험 요인: 골반염, 이전 난관 수술·자궁외임신, 보조생식술. 자궁내장치 사용 중 임신이 되면 자궁외 임신 비율이 높음",
+        "무월경 후 복통·질출혈, 파열 시 복강내출혈"
+      ],
+      "genes": [],
+      "public": "수정란이 자궁이 아닌 곳(주로 나팔관)에 자리 잡는 경우예요. 커지면 터질 수 있어 빠른 진단과 치료가 필요해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "gtd",
+      "name": {
+        "ko": "임신영양막질환",
+        "en": "Gestational trophoblastic disease",
+        "alt": [
+          "포상기태",
+          "융모막암종"
+        ]
+      },
+      "cause": [
+        "tro",
+        "cyt",
+        "syn"
+      ],
+      "period": {
+        "start": 7,
+        "end": 84
+      },
+      "mechanism": "영양막이 비정상적으로 증식함. 완전포상기태는 핵 없는 난자에 부계 염색체만(대부분 46,XX), 부분포상기태는 삼배체(69,XXY 등)로 배아 조직이 일부 있다.",
+      "findings": [
+        "hCG가 매우 높음",
+        "포도송이 모양 융모, 질출혈",
+        "임신오조, 이른 전자간증",
+        "완전형에서 융모막암종으로 진행 위험이 더 큼"
+      ],
+      "genes": [],
+      "public": "태반 세포가 비정상적으로 자라는 질환이에요. 제거 후 혈액 hCG를 추적하며 치료하고, 대부분 잘 치료돼요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "sacrococcygeal-teratoma",
+      "name": {
+        "ko": "천미부기형종",
+        "en": "Sacrococcygeal teratoma",
+        "alt": [
+          "엉치꼬리기형종"
+        ]
+      },
+      "cause": [
+        "ps",
+        "gas"
+      ],
+      "period": {
+        "start": 15,
+        "end": 28
+      },
+      "mechanism": "원시선의 다능성 세포가 남아 종양이 됨.",
+      "findings": [
+        "신생아 종양 중 가장 흔한 편",
+        "여아에 많음",
+        "세 배엽 조직을 모두 포함",
+        "대부분 양성, 늦게 절제하면 악성 위험 증가"
+      ],
+      "genes": [],
+      "public": "꼬리뼈 부근에 생기는 태아·신생아 종양이에요. 대부분 양성이고 수술로 제거해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "역학 서술"
+    },
+    {
+      "id": "caudal-regression",
+      "name": {
+        "ko": "꼬리퇴행증후군",
+        "en": "Caudal regression syndrome (caudal dysgenesis)",
+        "alt": [
+          "꼬리형성이상"
+        ]
+      },
+      "cause": [
+        "ps",
+        "gas"
+      ],
+      "period": {
+        "start": 15,
+        "end": 28
+      },
+      "mechanism": "원시선 꼬리 쪽에서 중배엽이 충분히 만들어지지 않음.",
+      "findings": [
+        "허리·엉치 척추 결손",
+        "다리 저형성, 심하면 다리 유합(인어체)",
+        "비뇨생식·항문 이상",
+        "산모 당뇨와 연관"
+      ],
+      "genes": [],
+      "public": "아기 몸 아래쪽(척추 끝, 다리)이 덜 자라는 드문 기형이에요. 임신 전 혈당 관리가 위험을 줄여요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ntd",
+      "name": {
+        "ko": "신경관결손",
+        "en": "Neural tube defects",
+        "alt": [
+          "무뇌증",
+          "이분척추",
+          "척수수막류"
+        ]
+      },
+      "cause": [
+        "nt"
+      ],
+      "period": {
+        "start": 22,
+        "end": 28
+      },
+      "mechanism": "앞신경구멍(25일) 폐쇄 실패 → 무뇌증, 뒤신경구멍(28일) 폐쇄 실패 → 척수수막류(척수갈림증). 수막류와 피부로 덮인 잠재이분척추는 신경관은 닫혔지만 척추고리(경절판)가 덜 합쳐진 것으로, 신경구멍 폐쇄 실패와는 기전이 다르다.",
+      "findings": [
+        "산모 혈청·양수 AFP 상승, 양수 아세틸콜린에스테라아제",
+        "척수수막류: 하지 마비, 배뇨·배변 장애, 키아리 2형·수두증 동반",
+        "임신 전부터 엽산 0.4 mg 복용으로 위험 감소 (이전 출산력 등 고위험군은 4 mg)",
+        "일부 항경련제, 산모 당뇨·비만이 위험 요인"
+      ],
+      "genes": [
+        "다인자"
+      ],
+      "public": "아기 뇌나 척추를 감싸는 관이 덜 닫힌 경우예요. 임신 전부터 엽산을 먹으면 크게 줄일 수 있어요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "엽산 용량(고위험 4 mg)",
+      "verify": true
+    },
+    {
+      "id": "amniotic-band",
+      "name": {
+        "ko": "양막띠 증후군",
+        "en": "Amniotic band syndrome",
+        "alt": [
+          "양막띠 연속증"
+        ]
+      },
+      "cause": [
+        "amn"
+      ],
+      "period": {
+        "start": 28,
+        "end": 266
+      },
+      "mechanism": "찢어진 양막의 띠가 태아 몸을 감아 조임.",
+      "findings": [
+        "손가락·팔다리의 고리 모양 협착, 절단",
+        "비대칭이고 배엽·분절과 무관한 분포",
+        "심하면 얼굴 갈림"
+      ],
+      "genes": [],
+      "public": "태아를 감싼 막의 일부가 띠처럼 손가락이나 팔다리를 조이는 경우예요. 유전되지 않아요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "extragonadal-gct",
+      "name": {
+        "ko": "성선외 생식세포종양",
+        "en": "Extragonadal germ cell tumor",
+        "alt": []
+      },
+      "cause": [
+        "pgc"
+      ],
+      "period": {
+        "start": 21,
+        "end": 42
+      },
+      "mechanism": "이주 경로를 벗어나 남은 원시생식세포에서 종양이 생김.",
+      "findings": [
+        "정중선 부위: 앞종격동, 송과체 부위, 후복막",
+        "고환·난소 종양과 같은 종류(종자세포종, 기형종 등)"
+      ],
+      "genes": [],
+      "public": "정자·난자가 될 세포가 이동 중 엉뚱한 곳에 남아 생기는 드문 종양이에요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "conjoined-twins",
+      "name": {
+        "ko": "결합쌍둥이",
+        "en": "Conjoined twins",
+        "alt": [
+          "샴쌍둥이"
+        ]
+      },
+      "cause": [
+        "ps",
+        "icm"
+      ],
+      "period": {
+        "start": 13,
+        "end": 16
+      },
+      "mechanism": "원시선이 생길 무렵 배아가 불완전하게 나뉨.",
+      "findings": [
+        "붙은 부위에 따라 가슴붙음, 배붙음, 머리붙음 등",
+        "항상 단일융모막 단일양막"
+      ],
+      "genes": [],
+      "public": "한 배아가 늦게 나뉘다 완전히 갈라지지 못해 몸 일부가 붙은 쌍둥이예요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ttts",
+      "name": {
+        "ko": "쌍태아 간 수혈증후군",
+        "en": "Twin–twin transfusion syndrome",
+        "alt": []
+      },
+      "cause": [
+        "chor"
+      ],
+      "period": {
+        "start": 56,
+        "end": 266
+      },
+      "mechanism": "단일융모막 태반의 혈관 연결로 한 태아에서 다른 태아로 피가 쏠림.",
+      "findings": [
+        "공여 태아: 양수과소, 빈혈, 성장 지연",
+        "수혜 태아: 양수과다, 다혈증, 심부전",
+        "태아내시경 레이저로 혈관 연결 차단"
+      ],
+      "genes": [],
+      "public": "태반을 함께 쓰는 일란성 쌍둥이에서 한 아기에게 피가 쏠리는 상태예요. 정기 초음파로 살피고 필요하면 태아 치료를 해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verifyNote": "단일융모막 쌍둥이 중 빈도"
+    }
+  ],
+  "events": [
+    {
+      "day": 0,
+      "label": "수정",
+      "refs": [
+        "zyg"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 3,
+      "label": "상실배",
+      "refs": [
+        "mor"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 5,
+      "label": "포배",
+      "refs": [
+        "bla"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 6,
+      "label": "착상 시작",
+      "refs": [
+        "impl"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 8,
+      "label": "이층배반",
+      "refs": [
+        "bil"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 12,
+      "label": "이차난황낭",
+      "refs": [
+        "ys2"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 13,
+      "label": "일차융모",
+      "refs": [
+        "chor"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 15,
+      "label": "원시선",
+      "refs": [
+        "ps"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 16,
+      "label": "원시결절, 척삭 형성 시작",
+      "refs": [
+        "pn"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 21,
+      "label": "삼차융모 (태반 혈관)",
+      "refs": [
+        "chor"
+      ],
+      "major": false,
+      "approx": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "langman",
+      "title": "Langman's Medical Embryology",
+      "chapter": null,
+      "edition": "15판 (한국어 번역서)",
+      "role": "기준",
+      "note": "쪽수는 번역서 15판 기준으로 검수 때 채운다"
+    },
+    {
+      "id": "moore",
+      "title": "The Developing Human (Moore)",
+      "chapter": null,
+      "edition": null,
+      "role": "보조"
+    }
+  ]
+}

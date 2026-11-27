@@ -1,0 +1,14 @@
+{
+  "name": "발생 지도",
+  "short_name": "발생 지도",
+  "description": "수정란에서 출생까지, 인체 발생의 계보·시기·기형을 한곳에서 보는 학습 앱",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F4F6F9",
+  "theme_color": "#F4F6F9",
+  "icons": [
+    { "src": "app/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,518 @@
+{
+  "module": "teratology",
+  "title": {
+    "ko": "기형학: 발생 시기와 염색체 이상",
+    "en": "Teratology: critical periods and chromosomal abnormalities"
+  },
+  "status": "draft",
+  "priority": "P1",
+  "updated": "2026-11-20",
+  "termNote": "모든 시기는 수정 후 일수다. 산부인과에서 쓰는 임신 주수(마지막 생리일 기준)는 약 14일을 더한 값이며, 화면에서 바꿔 보여준다.",
+  "structures": [],
+  "principles": [
+    {
+      "id": "all-or-none",
+      "name": {
+        "ko": "전부 아니면 전무 시기",
+        "en": "All-or-none period"
+      },
+      "days": {
+        "start": 0,
+        "end": 14,
+        "approx": true
+      },
+      "text": {
+        "public": "수정 후 첫 2주에는 해로운 것에 노출되어도 대개 두 가지 중 하나예요. 아주 이른 유산으로 끝나거나, 영향 없이 정상으로 자라요. 이 시기 노출로 특정 기형이 생기는 경우는 드뭅니다.",
+        "student": "착상 전후 2주는 세포가 아직 분화하지 않아, 손상된 세포가 많으면 배아가 죽고 적으면 남은 세포가 대신해 정상 발생한다. 구조 기형은 주로 3–8주 기관형성기에 생긴다.",
+        "clinical": "임신을 모르고 노출된 경우의 상담 근거. 다만 반감기가 긴 물질은 노출이 기관형성기까지 이어질 수 있어 이 원칙만으로 안심시킬 수 없다."
+      },
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "moore",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "wilson",
+      "name": {
+        "ko": "기형 발생의 원리",
+        "en": "Principles of teratology (Wilson)"
+      },
+      "days": {
+        "start": 0,
+        "end": 266,
+        "approx": true
+      },
+      "text": {
+        "public": "같은 물질이라도 언제, 얼마나, 누구에게 노출되었는지에 따라 영향이 크게 달라요.",
+        "student": "① 유전적 감수성 ② 노출 시기 (기관형성기 3–8주가 가장 민감) ③ 용량–반응 관계 ④ 물질마다 다른 작용 기전 ⑤ 물질이 배아에 닿는 정도는 물질의 성질(태반 통과 등)에 따라 다름 ⑥ 결과는 사망·기형·성장지연·기능장애 중 하나로 나타남.",
+        "clinical": "태아기(9주 이후) 노출은 구조 기형보다 성장지연과 기능 장애, 특히 중추신경계 장애로 나타난다."
+      },
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true
+    },
+    {
+      "id": "periods",
+      "name": {
+        "ko": "기관별 민감 시기",
+        "en": "Critical periods of organ development"
+      },
+      "days": {
+        "start": 0,
+        "end": 266,
+        "approx": true
+      },
+      "text": {
+        "public": "기관마다 '한창 만들어지는 때'가 달라서, 같은 시기의 노출이라도 영향을 받는 곳이 달라요.",
+        "student": "기관이 빠르게 형성되는 시기가 주요 기형 민감기이고, 그 뒤 다듬어지는 시기가 경미한 기형·기능 이상 시기다. 중추신경계는 민감기가 출생까지 이어진다.",
+        "clinical": "노출 시기를 수정 후 일수로 환산한 뒤 이 표에 맞춰 어떤 기관을 집중해서 볼지 정한다."
+      },
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "moore",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "critical-periods",
+      "title": "기관별 민감 시기 (수정 후 일수)",
+      "columns": [
+        "기관",
+        "주요 기형 민감기",
+        "경미한 기형·기능 이상 시기",
+        "대표 기형"
+      ],
+      "rows": [
+        {
+          "ref": "all-or-none",
+          "cells": [
+            "배아 전체 (착상 전후)",
+            "0–14일: 전부 아니면 전무",
+            "-",
+            "아주 이른 유산 또는 영향 없음"
+          ]
+        },
+        {
+          "ref": "periods",
+          "cells": [
+            "중추신경계",
+            "15–36일",
+            "36일–출생",
+            "신경관결손, 소두증, 지적장애"
+          ]
+        },
+        {
+          "ref": "periods",
+          "cells": [
+            "심장",
+            "20–56일 (유출로 중격은 35–56일)",
+            "56일 이후는 드묾",
+            "심실중격결손, 원추동맥간 기형"
+          ],
+          "verify": true
+        },
+        {
+          "ref": "periods",
+          "cells": [
+            "팔·다리",
+            "24–36일 (다리는 팔보다 약 2일 늦음)",
+            "36–56일",
+            "사지 결손, 다지증·합지증"
+          ]
+        },
+        {
+          "ref": "periods",
+          "cells": [
+            "눈",
+            "22–56일",
+            "56일–출생",
+            "백내장, 녹내장, 소안구증"
+          ]
+        },
+        {
+          "ref": "periods",
+          "cells": [
+            "귀",
+            "22–56일",
+            "56–112일",
+            "난청, 바깥귀 기형"
+          ]
+        },
+        {
+          "ref": "periods",
+          "cells": [
+            "입천장",
+            "42–70일",
+            "70–112일",
+            "구개열"
+          ],
+          "verify": true
+        },
+        {
+          "ref": "periods",
+          "cells": [
+            "치아",
+            "42–56일",
+            "56일–출생",
+            "법랑질 형성부전, 착색"
+          ],
+          "verify": true
+        },
+        {
+          "ref": "periods",
+          "cells": [
+            "외생식기",
+            "49–63일",
+            "63일–출생",
+            "요도밑열림, 외생식기 모호"
+          ],
+          "verify": true
+        }
+      ],
+      "note": "Moore의 민감기 막대 차트를 표로 옮긴 것이다. 심장의 주요기 끝은 Moore 막대(약 6.5주)보다 늘려 심혈관 모듈의 유출로 중격 형성(35–56일)과 맞췄다. 경계 일수는 교재마다 조금씩 달라 검수 표시한 행은 다시 확인한다. 앱에서는 타임라인 위 막대로 그리며, 주요 기형 민감기는 진하게, 경미한 기형·기능 이상 시기는 같은 색을 옅게 칠한다.",
+      "verify": true
+    },
+    {
+      "id": "chromosomal-table",
+      "title": "주요 염색체 이상 한눈에",
+      "columns": [
+        "질환",
+        "핵형",
+        "빈도",
+        "주요 소견",
+        "산전에 발견되는 방법"
+      ],
+      "rows": [
+        {
+          "ref": "trisomy21",
+          "cells": [
+            "다운증후군",
+            "47,XX(XY),+21 (약 95% 비분리)",
+            "약 1/700 출생",
+            "지적장애, 특징적 얼굴, 방실중격결손, 십이지장 폐쇄",
+            "NT 증가, 쿼드검사, NIPT"
+          ]
+        },
+        {
+          "ref": "trisomy18",
+          "cells": [
+            "에드워즈 증후군",
+            "47,+18",
+            "약 1/5000 출생",
+            "겹친 손가락, 흔들의자 바닥 발, 심장 기형, 성장지연",
+            "NIPT, 초음파"
+          ]
+        },
+        {
+          "ref": "trisomy13",
+          "cells": [
+            "파타우 증후군",
+            "47,+13",
+            "약 1/20000 출생",
+            "전뇌무분할증, 구순구개열, 다지증, 소안구증",
+            "NIPT, 초음파"
+          ]
+        },
+        {
+          "ref": "turner",
+          "cells": [
+            "터너 증후군",
+            "45,X (또는 모자이크)",
+            "여아 약 1/2500",
+            "저신장, 생식샘 형성장애, 대동맥축착, 말굽신장",
+            "낭성 림프관종, NIPT"
+          ]
+        },
+        {
+          "ref": "klinefelter",
+          "cells": [
+            "클라인펠터 증후군",
+            "47,XXY",
+            "남아 약 1/500",
+            "작은 고환, 무정자증, 큰 키, 여성형 유방",
+            "표적 선별 대상은 아니지만 NIPT·양수검사에서 우연히 발견되기도 함"
+          ]
+        }
+      ],
+      "note": "빈도는 교재마다 다르고 산모 연령·지역에 따라 달라진다. 검수 때 Langman 값으로 맞춘다. '산전에 발견되는 방법' 칸은 어떤 검사에서 보일 수 있는지만 적은 것이며, 검사를 받을지는 임신부가 의료진과 상의해 정하는 선택이다.",
+      "verify": true
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "trisomy21",
+      "name": {
+        "ko": "다운증후군",
+        "en": "Down syndrome (trisomy 21)",
+        "alt": [
+          "21 삼염색체"
+        ]
+      },
+      "cause": [],
+      "period": {
+        "start": 0,
+        "end": 1
+      },
+      "mechanism": "대부분 감수분열 비분리로 21번 염색체가 하나 더 들어옴. 약 4%는 로버트슨 전위, 약 1%는 모자이크.",
+      "findings": [
+        "지적장애",
+        "특징적 얼굴 (납작한 뒤통수, 눈구석주름, 올라간 눈꼬리)",
+        "방실중격결손",
+        "십이지장 폐쇄 (이중 기포 징후)",
+        "히르슈스프룽병, 백혈병 위험 증가",
+        "산모 나이에 따라 빈도 증가"
+      ],
+      "genes": [
+        "21번 삼염색체"
+      ],
+      "public": "21번 염색체가 하나 더 있는 경우예요. 발달 속도와 건강 문제의 폭이 넓고, 심장과 장을 함께 살펴봐요. 산전 선별검사로 가능성을 알아볼 수 있고, 확진은 융모막·양수 검사로 해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "trisomy18",
+      "name": {
+        "ko": "에드워즈 증후군",
+        "en": "Edwards syndrome (trisomy 18)",
+        "alt": [
+          "18 삼염색체"
+        ]
+      },
+      "cause": [],
+      "period": {
+        "start": 0,
+        "end": 1
+      },
+      "mechanism": "18번 염색체 비분리.",
+      "findings": [
+        "자궁 내 성장지연",
+        "겹친 손가락(둘째가 셋째 위로)",
+        "흔들의자 바닥 모양 발",
+        "작은 턱, 심장 기형",
+        "예후가 매우 나쁨"
+      ],
+      "genes": [
+        "18번 삼염색체"
+      ],
+      "public": "18번 염색체가 하나 더 있는 드문 경우로, 여러 장기에 영향을 줍니다. 진단을 받으면 전문 의료진과 충분히 상담하며 결정해 나가게 돼요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "trisomy13",
+      "name": {
+        "ko": "파타우 증후군",
+        "en": "Patau syndrome (trisomy 13)",
+        "alt": [
+          "13 삼염색체"
+        ]
+      },
+      "cause": [
+        "fnp"
+      ],
+      "period": {
+        "start": 0,
+        "end": 1
+      },
+      "mechanism": "13번 염색체 비분리. 얼굴 가운데 구조와 전뇌 분할에 큰 영향.",
+      "findings": [
+        "전뇌무분할증",
+        "구순구개열, 소안구증",
+        "다지증",
+        "심장 기형",
+        "예후가 매우 나쁨"
+      ],
+      "genes": [
+        "13번 삼염색체"
+      ],
+      "public": "13번 염색체가 하나 더 있는 드문 경우로, 뇌와 얼굴 형성에 큰 영향을 줍니다. 전문 의료진과의 상담이 필요해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "turner",
+      "name": {
+        "ko": "터너 증후군",
+        "en": "Turner syndrome (45,X)",
+        "alt": [
+          "모노소미 X"
+        ]
+      },
+      "cause": [
+        "gon",
+        "kasc",
+        "aaa"
+      ],
+      "period": {
+        "start": 0,
+        "end": 1
+      },
+      "mechanism": "X염색체 하나가 없거나 일부가 빠짐. 생식샘이 섬유성 줄기로 퇴화함.",
+      "findings": [
+        "저신장",
+        "생식샘 형성장애 → 원발 무월경, 불임",
+        "물갈퀴목 (태아기 낭성 림프관종의 흔적)",
+        "대동맥축착, 두판 대동맥판",
+        "말굽신장",
+        "지능은 대개 정상"
+      ],
+      "genes": [
+        "45,X 또는 모자이크"
+      ],
+      "public": "여자 아기에게 X염색체가 하나뿐인 경우예요. 키와 사춘기 발달에 영향을 주며, 성장호르몬과 호르몬 치료로 관리해요. 심장과 콩팥도 함께 살펴봐요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "klinefelter",
+      "name": {
+        "ko": "클라인펠터 증후군",
+        "en": "Klinefelter syndrome (47,XXY)",
+        "alt": []
+      },
+      "cause": [
+        "testis"
+      ],
+      "period": {
+        "start": 0,
+        "end": 1
+      },
+      "mechanism": "X염색체가 하나 더 있음. 사춘기 이후 정세관이 섬유화됨.",
+      "findings": [
+        "작은 단단한 고환, 무정자증 (남성 불임의 흔한 유전 원인)",
+        "큰 키, 긴 팔다리",
+        "여성형 유방",
+        "테스토스테론 낮고 FSH·LH 높음",
+        "성인기 불임 검사에서 처음 발견되는 경우가 많음"
+      ],
+      "genes": [
+        "47,XXY"
+      ],
+      "public": "남자 아기에게 X염색체가 하나 더 있는 경우예요. 사춘기 발달과 생식 능력에 영향을 주며, 호르몬 치료로 관리해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "events": [
+    {
+      "day": 0,
+      "label": "수정: 전부 아니면 전무 시기 시작",
+      "refs": [],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 15,
+      "label": "기관형성기 시작 (가장 민감한 시기)",
+      "refs": [],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 56,
+      "label": "기관형성기 끝",
+      "refs": [],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 266,
+      "label": "출생",
+      "refs": [],
+      "major": true,
+      "approx": true
+    }
+  ],
+  "epidemiology": [
+    {
+      "item": "다운증후군",
+      "value": "약 1/700 출생",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "에드워즈 증후군",
+      "value": "약 1/5000 출생",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "파타우 증후군",
+      "value": "약 1/20000 출생",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "터너 증후군",
+      "value": "여아 약 1/2500",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "클라인펠터 증후군",
+      "value": "남아 약 1/500",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "주요 선천 기형 전체",
+      "value": "출생아의 약 2–3%",
+      "ref": "langman",
+      "verify": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "langman",
+      "title": "Langman's Medical Embryology",
+      "chapter": "Birth Defects and Prenatal Diagnosis (선천 기형과 산전 진단)",
+      "edition": "15판 (한국어 번역서)",
+      "role": "기준",
+      "note": "쪽수는 번역서 15판 기준으로 검수 때 채운다"
+    },
+    {
+      "id": "moore",
+      "title": "The Developing Human (Moore)",
+      "chapter": "Human Birth Defects / critical periods chart",
+      "edition": null,
+      "role": "보조"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "note": "기존 '인체 발생 계보도' 페이지(DATA 트리)에 이미 있는 구조 id. 새 모듈이 이 id를 참조할 수 있다.",
+  "ids": [
+    "zyg", "mor", "bla", "tro", "cyt", "syn", "icm", "hyp", "exm", "epi", "amn", "pgc", "gas",
+    "ec", "sur", "epd", "stm", "eye", "plc", "rat", "nt", "pro", "tel", "die", "mes", "rho", "spc",
+    "nc", "ncc", "ncd", "nct", "ncv", "ncth",
+    "me", "ntc", "par", "scl", "myo", "der", "syd", "hdm", "int", "prn", "msn", "ub", "mtn", "pmd", "gon", "adc",
+    "lat", "som", "spl", "hrt", "bld", "spn", "lym",
+    "en", "fg", "pp", "pp1", "pp2", "pp3", "pp4", "thy", "rsp", "stm2", "liv", "pan", "mg", "hg", "ugs", "all"
+  ]
+}

@@ -1,0 +1,1607 @@
+{
+  "module": "cardiovascular",
+  "title": {
+    "ko": "심장과 혈관, 태아순환",
+    "en": "Cardiovascular system and fetal circulation"
+  },
+  "status": "draft",
+  "priority": "P1",
+  "updated": "2026-11-20",
+  "termNote": "심장 부위 이름은 신용어(심방사이막, 심실사이막, 방실관)를 기본으로 하고 구용어(심방중격, 심실중격)는 alt에 넣었다. 질환명은 임상 표기(심방중격결손, 심실중격결손)를 그대로 쓴다.",
+  "structures": [
+    {
+      "id": "chf",
+      "name": {
+        "ko": "심장발생구역",
+        "en": "Cardiogenic field (first and second heart fields)",
+        "alt": [
+          "심장장",
+          "일차·이차 심장장"
+        ]
+      },
+      "layer": "me",
+      "parent": "hrt",
+      "days": {
+        "start": 18,
+        "end": 21,
+        "approx": true
+      },
+      "carnegie": [
+        8,
+        9
+      ],
+      "derivatives": [
+        "일차심장장 → 심방, 좌심실, 우심실 일부",
+        "이차심장장 → 우심실 나머지, 유출로(원추·동맥간), 정맥 쪽 끝(정맥동·심방 일부)",
+        "심장바깥막전구기관(proepicardium) → 심외막, 관상혈관"
+      ],
+      "text": {
+        "public": "3주쯤 배아 머리 쪽에 심장이 될 세포들이 말발굽 모양으로 모여요.",
+        "student": "원시선 앞쪽에서 들어온 세포가 장측 중배엽에 말발굽 모양 구역을 만든다. 일차심장장은 심방, 좌심실, 우심실 일부를 만들고, 이차심장장(인두 중배엽)은 나중에 덧붙어 우심실 나머지와 유출로(원추·동맥간), 정맥 쪽 끝(정맥동·심방 일부)을 만든다.",
+        "clinical": "이차심장장 결함은 유출로 기형(원추동맥간 기형)과 연결된다. 22q11.2의 TBX1이 이차심장장에서 작동한다."
+      },
+      "anomalies": [
+        "tof",
+        "truncus"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true
+    },
+    {
+      "id": "htube",
+      "name": {
+        "ko": "심장관",
+        "en": "Primary heart tube",
+        "alt": [
+          "원시심장관"
+        ]
+      },
+      "layer": "me",
+      "parent": "hrt",
+      "days": {
+        "start": 21,
+        "end": 23,
+        "approx": true
+      },
+      "carnegie": [
+        9,
+        10
+      ],
+      "derivatives": [
+        "꼬리 → 머리 순서: 정맥동, 원시심방, 원시심실, 심장망울(심장구), 동맥간, 대동맥낭",
+        "바깥 심근층, 가운데 심장젤리, 안쪽 심내막"
+      ],
+      "text": {
+        "public": "좌우 두 관이 가운데서 합쳐져 하나의 관이 되고, 22일쯤 뛰기 시작해요. 배아에서 가장 먼저 일하는 기관이에요.",
+        "student": "배아 접힘으로 좌우 심내막관이 정중선에서 합쳐진다. 정맥 쪽(꼬리)에서 동맥 쪽(머리)으로 정맥동–원시심방–원시심실–심장망울–동맥간이 이어진다. 22일경 박동 시작.",
+        "clinical": "심장관 각 부분이 성인의 어디가 되는지(심장관 부분 표)가 자주 출제된다."
+      },
+      "anomalies": [],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "loop",
+      "name": {
+        "ko": "심장 고리 형성",
+        "en": "Cardiac looping",
+        "alt": [
+          "심장 고리짓기"
+        ]
+      },
+      "layer": "me",
+      "parent": "hrt",
+      "days": {
+        "start": 23,
+        "end": 28,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        12
+      ],
+      "derivatives": [
+        "심장관이 오른쪽으로 굽음(D-고리)",
+        "심방이 뒤·위로, 심실이 앞·아래로 자리 잡음",
+        "심장망울 근위부가 우심실, 원시심실이 좌심실"
+      ],
+      "text": {
+        "public": "곧은 관이 오른쪽으로 접히면서 심장의 기본 모양이 잡혀요.",
+        "student": "23–28일에 심장관이 오른쪽으로 접혀 S자 모양이 된다. 방향은 좌우축 신호(원시결절 섬모, NODAL·LEFTY·PITX2)가 정한다.",
+        "clinical": "왼쪽으로 접히면 우심증. 내장 전체가 거울상이면 내장역위(일차섬모운동이상증 환자의 약 절반에서 나타나며, 이때를 카르타게너 증후군이라 함)이고, 이때는 심장 기형이 드물다. 심장만 오른쪽이면 심장 기형 동반이 많다."
+      },
+      "anomalies": [
+        "dextrocardia"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "sv",
+      "name": {
+        "ko": "정맥동",
+        "en": "Sinus venosus",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "hrt",
+      "days": {
+        "start": 22,
+        "end": 56,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        23
+      ],
+      "derivatives": [
+        "오른뿔 → 우심방의 매끈한 부분 (대정맥굴)",
+        "왼뿔 → 관상정맥굴, 좌심방빗정맥",
+        "오른정맥판막 위 → 분계능선, 아래 → 아래대정맥판막·관상정맥굴판막"
+      ],
+      "text": {
+        "public": "온몸에서 돌아오는 피를 받는 심장 입구예요. 나중에 오른쪽 심방 벽의 일부가 돼요.",
+        "student": "좌우 뿔로 난황·배꼽·주정맥이 들어온다. 정맥 흐름이 오른쪽으로 쏠리며 왼뿔은 작아져 관상정맥굴이 되고, 오른뿔은 우심방에 흡수된다. 우심방의 거친 부분(빗살근)은 원시심방, 매끈한 부분은 정맥동 기원이며 경계가 분계능선이다.",
+        "clinical": "왼위대정맥이 남으면 관상정맥굴로 들어가 관상정맥굴이 커진다(심장 수술·도관 삽입 시 중요)."
+      },
+      "anomalies": [
+        "left-svc"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "asep",
+      "name": {
+        "ko": "심방사이막 형성",
+        "en": "Atrial septation",
+        "alt": [
+          "심방중격 형성"
+        ]
+      },
+      "layer": "me",
+      "parent": "hrt",
+      "days": {
+        "start": 28,
+        "end": 42,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        17
+      ],
+      "derivatives": [
+        "일차중격 → 난원공 판막",
+        "이차중격 → 난원공 둘레(난원오목 테두리)",
+        "난원공 → 출생 후 난원오목",
+        "폐정맥이 좌심방에 흡수 → 좌심방의 매끈한 벽"
+      ],
+      "text": {
+        "public": "심방 가운데에 벽 두 장이 차례로 자라요. 두 벽 사이에 비스듬한 구멍(난원공)이 남아, 태아 때는 피가 오른쪽에서 왼쪽으로 지나가요.",
+        "student": "일차중격이 내려오며 일차공이 생기고, 일차공이 닫히기 전에 일차중격 위쪽에 구멍(이차공)이 뚫린다. 그 오른쪽에서 이차중격이 자라 이차공을 덮되 난원공을 남긴다. 일차중격은 난원공의 판막(문짝) 역할을 한다.",
+        "clinical": "이차공형 결손이 가장 흔한 심방중격결손. 난원공 개존은 성인의 약 20–25%에 있고 대개 무증상이나 역설색전의 통로가 된다. 일차공형 결손은 심내막쿠션 결함 계열."
+      },
+      "anomalies": [
+        "asd-secundum",
+        "pfo",
+        "avsd"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "avc",
+      "name": {
+        "ko": "방실관과 심내막쿠션",
+        "en": "Atrioventricular canal and endocardial cushions",
+        "alt": [
+          "방실관 중격"
+        ]
+      },
+      "layer": "me",
+      "parent": "hrt",
+      "days": {
+        "start": 28,
+        "end": 42,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        17
+      ],
+      "derivatives": [
+        "등쪽·배쪽 심내막쿠션 융합 → 좌우 방실관 분리",
+        "삼첨판, 승모판 (판막잎은 쿠션 조직, 유두근·건삭은 심근에서)",
+        "심방사이막 아래 끝, 심실사이막 막부분 일부"
+      ],
+      "text": {
+        "public": "심방과 심실 사이 통로 가운데에 쿠션 같은 조직이 붙어, 통로를 좌우로 나누고 판막을 만들어요.",
+        "student": "4주 말 방실관 앞뒤 벽에 심내막쿠션이 솟아 5주에 합쳐진다. 쿠션은 심방사이막·심실사이막·판막 모두에 관여하는 ‘십자로’다.",
+        "clinical": "쿠션이 합쳐지지 못하면 방실중격결손(공통방실관). 다운증후군에서 가장 특징적인 심장 기형. 삼첨판 판막잎이 아래로 붙으면 엡스타인 기형(산모 리튬과 연관)."
+      },
+      "anomalies": [
+        "avsd",
+        "tricuspid-atresia",
+        "ebstein",
+        "hlhs"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "vsep",
+      "name": {
+        "ko": "심실사이막 형성",
+        "en": "Ventricular septation",
+        "alt": [
+          "심실중격 형성"
+        ]
+      },
+      "layer": "me",
+      "parent": "hrt",
+      "days": {
+        "start": 35,
+        "end": 49,
+        "approx": true
+      },
+      "carnegie": [
+        14,
+        19
+      ],
+      "derivatives": [
+        "근육부분: 두 심실이 커지면서 안쪽 벽이 맞붙어 생김 (능동적 성장의 몫은 작음)",
+        "막부분: 심내막쿠션 + 좌우 원추능선 조직이 심실사이구멍을 막음 (7주 말)"
+      ],
+      "text": {
+        "public": "두 심실이 커지면서 안쪽 벽이 맞붙어 가운데 벽이 생기고, 마지막 작은 구멍을 얇은 막이 막으면서 두 심실이 나뉘어요.",
+        "student": "두 심실이 커지면서 안쪽 벽이 맞붙어 근육성 심실사이막이 생긴다(능동적 성장의 몫은 작음). 남은 심실사이구멍은 7주 말 쿠션·원추능선에서 온 막부분이 닫는다. 막부분은 여러 조직이 만나는 자리라 결손이 가장 잘 생긴다.",
+        "clinical": "심실중격결손은 가장 흔한 선천 심장병이며 막부분 결손이 가장 흔하다. 작은 근육부분 결손은 저절로 닫히는 경우가 많다."
+      },
+      "anomalies": [
+        "vsd"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "oft",
+      "name": {
+        "ko": "유출로 중격 (원추동맥간 중격)",
+        "en": "Outflow tract septation (conotruncal / aorticopulmonary septum)",
+        "alt": [
+          "대동맥폐동맥 중격",
+          "나선중격"
+        ]
+      },
+      "layer": "mix",
+      "parent": "hrt",
+      "days": {
+        "start": 35,
+        "end": 56,
+        "approx": true
+      },
+      "carnegie": [
+        14,
+        23
+      ],
+      "composition": [
+        {
+          "layer": "me",
+          "part": "유출로 벽과 심근: 이차심장장",
+          "ref": "chf"
+        },
+        {
+          "layer": "ec",
+          "part": "원추동맥간 능선의 중간엽: 심장 신경능선",
+          "ref": "ncd"
+        }
+      ],
+      "derivatives": [
+        "동맥간 → 대동맥과 폐동맥줄기의 뿌리",
+        "원추 → 좌우 심실의 유출 부분 (우심실 깔때기, 대동맥 전정)",
+        "반달판막 (대동맥판, 폐동맥판, 각 3개 판막첨)"
+      ],
+      "text": {
+        "public": "심장에서 나가는 큰 관 하나가 나선 모양 벽으로 나뉘어 대동맥과 폐동맥이 돼요. 그래서 두 혈관이 서로 꼬여 있어요.",
+        "student": "동맥간능선과 원추능선이 마주 자라 180° 나선을 그리며 합쳐진다. 능선의 중간엽은 심장 신경능선에서 온다. 결과로 대동맥과 폐동맥이 서로 감기고, 원추중격은 심실사이막 막부분 형성에도 참여한다.",
+        "clinical": "신경능선 결함(디조지)이나 나선 이상이 원추동맥간 기형을 만든다: 중격이 앞으로 치우치면 팔로4징, 나선을 그리지 않으면 대혈관전위, 아예 나뉘지 않으면 동맥간개존."
+      },
+      "anomalies": [
+        "tof",
+        "tga",
+        "truncus",
+        "digeorge"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "cond",
+      "name": {
+        "ko": "전도계",
+        "en": "Conduction system",
+        "alt": [
+          "자극전도계"
+        ]
+      },
+      "layer": "me",
+      "parent": "hrt",
+      "days": {
+        "start": 22,
+        "end": 56,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        23
+      ],
+      "derivatives": [
+        "굴심방결절: 정맥동이 흡수된 우심방 벽 (위대정맥 입구 근처)",
+        "방실결절·방실다발: 방실관과 정맥동 주변 세포"
+      ],
+      "text": {
+        "public": "심장이 규칙적으로 뛰게 하는 박동기도 심장이 만들어지는 동안 자리를 옮겨요.",
+        "student": "처음에는 심장관 꼬리 쪽이 박동을 이끌다가, 정맥동이 그 역할을 넘겨받고, 5주쯤 우심방 벽에 굴심방결절이 자리 잡는다.",
+        "clinical": "산모 항Ro/SSA 항체(루푸스 등)가 태아 전도계를 손상시켜 선천성 완전방실차단을 일으킬 수 있다."
+      },
+      "anomalies": [],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "aaa",
+      "name": {
+        "ko": "대동맥궁 동맥",
+        "en": "Aortic arch (pharyngeal arch) arteries",
+        "alt": [
+          "인두궁 동맥",
+          "대동맥궁"
+        ]
+      },
+      "layer": "me",
+      "parent": "bld",
+      "attachTo": [
+        "pa"
+      ],
+      "days": {
+        "start": 26,
+        "end": 56,
+        "approx": true
+      },
+      "carnegie": [
+        11,
+        23
+      ],
+      "derivatives": [
+        "1 → 위턱동맥 일부",
+        "2 → 목뿔동맥·등자동맥",
+        "3 → 온목동맥, 속목동맥 처음 부분",
+        "4 → 왼쪽 대동맥활 일부, 오른빗장밑동맥 처음 부분",
+        "6 → 폐동맥 처음 부분, 왼쪽 동맥관",
+        "이 다섯 쌍이 한꺼번에 있는 시기는 없음"
+      ],
+      "text": {
+        "public": "목의 줄무늬(인두궁)마다 하나씩 생긴 혈관이 모양을 바꿔 목과 가슴의 큰 동맥이 돼요.",
+        "student": "대동맥낭에서 나온 동맥이 각 인두궁을 지나 좌우 등대동맥으로 간다. 동시에 모두 존재하지 않고 차례로 생기고 사라진다. 4궁은 좌우가 다르고(왼 대동맥활 / 오른 빗장밑동맥), 6궁 왼쪽은 동맥관이 된다.",
+        "clinical": "되돌이후두신경의 좌우 차이(오른쪽은 빗장밑동맥, 왼쪽은 동맥관인대 아래로 돎)와 혈관고리(이중대동맥궁)를 이 표로 설명한다."
+      },
+      "anomalies": [
+        "pda",
+        "coarctation",
+        "double-aortic-arch",
+        "iaa",
+        "aberrant-right-subclavian"
+      ],
+      "links": [
+        "pa1",
+        "pa2",
+        "pa3",
+        "pa4",
+        "pa6"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "dao",
+      "name": {
+        "ko": "등대동맥과 그 가지",
+        "en": "Dorsal aortae and their branches",
+        "alt": [
+          "배대동맥"
+        ]
+      },
+      "layer": "me",
+      "parent": "bld",
+      "days": {
+        "start": 22,
+        "end": 56,
+        "approx": true
+      },
+      "carnegie": [
+        10,
+        23
+      ],
+      "derivatives": [
+        "좌우 등대동맥이 인두궁 영역보다 꼬리 쪽(대략 T4–L4 높이)에서 합쳐져 하나의 대동맥이 됨",
+        "7번째 목 분절사이동맥 → 빗장밑동맥 (+척추동맥은 분절사이동맥끼리의 연결)",
+        "난황동맥 → 복강동맥, 위창자간막동맥, 아래창자간막동맥",
+        "배꼽동맥 → 가까운 쪽 속엉덩동맥·위방광동맥, 먼 쪽 안쪽배꼽인대"
+      ],
+      "text": {
+        "public": "몸 뒤쪽 큰 동맥 두 줄이 하나로 합쳐지고, 여기서 장과 팔, 탯줄로 가는 가지가 나와요.",
+        "student": "등대동맥 좌우가 합쳐져 하행대동맥이 된다. 배쪽 가지(난황동맥)는 장의 세 동맥으로 줄어들어 전장·중장·후장 영역을 나눈다.",
+        "clinical": "복강동맥·위창자간막동맥·아래창자간막동맥의 영역 구분은 장 발생 모듈(전장·중장·후장)과 짝을 이룬다."
+      },
+      "anomalies": [],
+      "links": [
+        "fg",
+        "mg",
+        "hg"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true
+    },
+    {
+      "id": "veins",
+      "name": {
+        "ko": "정맥계",
+        "en": "Venous system",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": "bld",
+      "days": {
+        "start": 28,
+        "end": 56,
+        "approx": true
+      },
+      "carnegie": [
+        12,
+        23
+      ],
+      "derivatives": [
+        "난황정맥 → 간 굴모세혈관, 문맥, 위창자간막정맥, 아래대정맥 간 부분",
+        "배꼽정맥 → 오른쪽 전체와 왼쪽의 간–정맥동 사이 부분이 사라지고 왼배꼽정맥만 남음 → 출생 후 간원인대",
+        "정맥관: 간 안에서 왼배꼽정맥과 오른간심장통로를 잇는 지름길 → 출생 후 정맥관인대",
+        "주정맥 → 위대정맥, 팔머리정맥, 홀정맥, 아래대정맥 대부분"
+      ],
+      "text": {
+        "public": "처음엔 좌우 대칭이던 정맥들이 대부분 오른쪽으로 모이면서, 위·아래 대정맥이 오른쪽에 생겨요.",
+        "student": "세 쌍의 정맥(난황, 배꼽, 주)이 정맥동으로 들어온다. 좌→우 문합이 생기며 왼쪽은 줄어들어, 큰 정맥이 오른쪽에 남는다 (왼팔머리정맥 = 앞주정맥 사이 문합).",
+        "clinical": "왼쪽이 남으면 왼위대정맥·중복아래대정맥 같은 변이가 생긴다. 대개 무증상이지만 중심정맥관·수술 때 중요하다."
+      },
+      "anomalies": [
+        "left-svc",
+        "double-ivc"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ivc",
+      "name": {
+        "ko": "아래대정맥",
+        "en": "Inferior vena cava",
+        "alt": [
+          "하대정맥"
+        ]
+      },
+      "layer": "me",
+      "parent": "veins",
+      "days": {
+        "start": 42,
+        "end": 63,
+        "approx": true
+      },
+      "carnegie": [
+        17,
+        23
+      ],
+      "derivatives": [
+        "간 부분 ← 오른난황정맥",
+        "콩팥앞 부분 ← 오른아래주정맥",
+        "콩팥 부분 ← 아래주정맥과 위주정맥의 문합",
+        "콩팥뒤 부분 ← 오른위주정맥"
+      ],
+      "text": {
+        "public": "아래대정맥은 서로 다른 네 정맥 조각이 이어 붙어 만들어져요.",
+        "student": "위에서 아래로 간–콩팥앞–콩팥–콩팥뒤의 네 분절이 각각 다른 정맥에서 온다.",
+        "clinical": "왼엉치주정맥이 왼아래주정맥과의 연결을 잃지 않으면 중복아래대정맥, 콩팥앞 부분이 생기지 않으면 홀정맥으로 이어지는 아래대정맥 결손."
+      },
+      "anomalies": [
+        "double-ivc"
+      ],
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true
+    },
+    {
+      "id": "fcirc",
+      "name": {
+        "ko": "태아순환과 출생 후 변화",
+        "en": "Fetal circulation and changes at birth",
+        "alt": []
+      },
+      "layer": "me",
+      "parent": null,
+      "attachTo": [
+        "hrt",
+        "bld"
+      ],
+      "days": {
+        "start": 56,
+        "end": 266,
+        "approx": true
+      },
+      "carnegie": [],
+      "derivatives": [
+        "지름길 세 개: 정맥관(간 우회), 난원공(폐 우회), 동맥관(폐 우회)",
+        "출생 후 각각 인대·오목으로 남음"
+      ],
+      "flow": [
+        "태반 → 배꼽정맥 (산소 가장 많음)",
+        "일부는 정맥관으로 간을 건너뛰어 아래대정맥으로",
+        "아래대정맥 피 대부분 → 우심방 → 난원공 → 좌심방 → 좌심실 → 대동맥 → 머리·팔",
+        "위대정맥 피 → 우심방 → 우심실 → 폐동맥줄기 → 동맥관 → 하행대동맥",
+        "하행대동맥 → 배꼽동맥 → 태반"
+      ],
+      "text": {
+        "public": "아기는 엄마 뱃속에서 폐로 숨을 쉬지 않아요. 그래서 폐를 건너뛰는 지름길 세 개가 있고, 태어나 첫 숨을 쉬면 이 길들이 닫혀요.",
+        "student": "산소가 많은 피는 정맥관 → 아래대정맥 → 난원공 경로로 좌심장을 거쳐 뇌로 먼저 간다. 출생 시 폐 혈관 저항이 떨어지고 좌심방 압력이 올라 난원공이 기능적으로 닫히고, 산소 증가와 프로스타글란딘 감소로 동맥관이 닫힌다.",
+        "clinical": "동맥관 의존 기형(대혈관전위, 왼심장형성저하 등)에서는 프로스타글란딘 E1으로 동맥관을 열어 둔다. 미숙아 동맥관 개존은 인도메타신·이부프로펜으로 닫는다."
+      },
+      "anomalies": [
+        "pda",
+        "pfo"
+      ],
+      "links": [
+        "all"
+      ],
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    }
+  ],
+  "tables": [
+    {
+      "id": "tube-segments",
+      "title": "심장관의 각 부분이 되는 성인 구조",
+      "columns": [
+        "심장관 부분",
+        "성인 구조"
+      ],
+      "rows": [
+        {
+          "ref": "htube",
+          "cells": [
+            "동맥간",
+            "대동맥과 폐동맥줄기의 뿌리"
+          ]
+        },
+        {
+          "ref": "htube",
+          "cells": [
+            "심장망울 원위부 (원추)",
+            "좌우 심실의 유출 부분 (우심실 깔때기, 대동맥 전정)"
+          ]
+        },
+        {
+          "ref": "htube",
+          "cells": [
+            "심장망울 근위부",
+            "우심실의 거친(잔기둥) 부분"
+          ]
+        },
+        {
+          "ref": "htube",
+          "cells": [
+            "원시심실",
+            "좌심실의 거친(잔기둥) 부분"
+          ]
+        },
+        {
+          "ref": "htube",
+          "cells": [
+            "원시심방",
+            "좌우 심방귀 (빗살근 부분)"
+          ]
+        },
+        {
+          "ref": "sv",
+          "cells": [
+            "정맥동 오른뿔",
+            "우심방의 매끈한 부분 (대정맥굴)"
+          ]
+        },
+        {
+          "ref": "sv",
+          "cells": [
+            "정맥동 왼뿔",
+            "관상정맥굴, 좌심방빗정맥"
+          ]
+        },
+        {
+          "ref": "asep",
+          "cells": [
+            "원시폐정맥",
+            "좌심방의 매끈한 부분"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "septation-summary",
+      "title": "중격 형성과 결손 한눈에",
+      "columns": [
+        "부위",
+        "만드는 것",
+        "시기",
+        "결손이 생기면",
+        "청색증"
+      ],
+      "rows": [
+        {
+          "ref": "asep",
+          "cells": [
+            "심방",
+            "일차중격 + 이차중격, 난원공",
+            "4–6주",
+            "심방중격결손 (이차공형이 가장 흔함), 난원공 개존",
+            "없음 (좌→우)"
+          ]
+        },
+        {
+          "ref": "avc",
+          "cells": [
+            "방실관",
+            "심내막쿠션 융합, 삼첨판·승모판",
+            "4–6주",
+            "방실중격결손 (다운증후군), 삼첨판폐쇄, 엡스타인",
+            "결손에 따라 다름"
+          ]
+        },
+        {
+          "ref": "vsep",
+          "cells": [
+            "심실",
+            "근육부분 + 막부분",
+            "5–7주",
+            "심실중격결손 (막부분이 가장 흔함)",
+            "없음 (좌→우), 오래되면 아이젠멩거"
+          ]
+        },
+        {
+          "ref": "oft",
+          "cells": [
+            "유출로",
+            "나선형 원추동맥간 중격, 반달판막",
+            "5–8주",
+            "팔로4징, 대혈관전위, 동맥간개존",
+            "있음"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arch-arteries",
+      "title": "대동맥궁 동맥의 운명",
+      "columns": [
+        "궁",
+        "왼쪽",
+        "오른쪽"
+      ],
+      "rows": [
+        {
+          "ref": "aaa",
+          "cells": [
+            "1",
+            "위턱동맥 일부",
+            "위턱동맥 일부"
+          ]
+        },
+        {
+          "ref": "aaa",
+          "cells": [
+            "2",
+            "목뿔동맥·등자동맥",
+            "목뿔동맥·등자동맥"
+          ]
+        },
+        {
+          "ref": "aaa",
+          "cells": [
+            "3",
+            "온목동맥, 속목동맥 처음 부분",
+            "온목동맥, 속목동맥 처음 부분"
+          ]
+        },
+        {
+          "ref": "aaa",
+          "cells": [
+            "4",
+            "대동맥활 일부 (왼온목동맥과 왼빗장밑동맥 사이)",
+            "오른빗장밑동맥 처음 부분"
+          ]
+        },
+        {
+          "ref": "aaa",
+          "cells": [
+            "6",
+            "왼폐동맥 처음 부분 + 동맥관",
+            "오른폐동맥 처음 부분 (먼 쪽은 사라짐)"
+          ]
+        }
+      ],
+      "note": "5궁 동맥은 생기지 않거나 곧 사라진다. 위팔머리동맥은 대동맥낭에서 온다."
+    },
+    {
+      "id": "fetal-remnants",
+      "title": "태아순환 구조가 출생 후 남는 것",
+      "columns": [
+        "태아 구조",
+        "출생 후",
+        "닫히는 시기"
+      ],
+      "rows": [
+        {
+          "ref": "fcirc",
+          "cells": [
+            "배꼽정맥",
+            "간원인대",
+            "출생 후 수 분–수 시간에 수축, 이후 섬유화"
+          ]
+        },
+        {
+          "ref": "fcirc",
+          "cells": [
+            "정맥관",
+            "정맥관인대",
+            "출생 후 수 일 안에 기능적 폐쇄"
+          ]
+        },
+        {
+          "ref": "asep",
+          "cells": [
+            "난원공",
+            "난원오목",
+            "첫 숨에 기능적 폐쇄, 해부학적 융합은 약 1년 (일부는 평생 열림)"
+          ]
+        },
+        {
+          "ref": "fcirc",
+          "cells": [
+            "동맥관",
+            "동맥관인대",
+            "출생 직후 근육 수축으로 기능적 폐쇄 (다른 교재는 10–15시간), 해부학적 폐쇄 1–3개월"
+          ],
+          "verify": true
+        },
+        {
+          "ref": "dao",
+          "cells": [
+            "배꼽동맥",
+            "먼 쪽: 안쪽배꼽인대 / 가까운 쪽: 위방광동맥",
+            "출생 직후 수축"
+          ]
+        },
+        {
+          "ref": "all",
+          "cells": [
+            "요막관 (혈관 아님, 함께 출제)",
+            "정중배꼽인대",
+            "태아기"
+          ]
+        }
+      ],
+      "note": "닫히는 시기는 교재마다 범위가 달라 검수 때 Langman 값으로 맞춘다."
+    },
+    {
+      "id": "ivc-segments",
+      "title": "아래대정맥의 네 조각",
+      "columns": [
+        "분절 (위에서 아래로)",
+        "기원"
+      ],
+      "rows": [
+        {
+          "ref": "ivc",
+          "cells": [
+            "간 부분",
+            "오른난황정맥"
+          ]
+        },
+        {
+          "ref": "ivc",
+          "cells": [
+            "콩팥앞 부분",
+            "오른아래주정맥"
+          ]
+        },
+        {
+          "ref": "ivc",
+          "cells": [
+            "콩팥 부분",
+            "아래주정맥–위주정맥 문합"
+          ]
+        },
+        {
+          "ref": "ivc",
+          "cells": [
+            "콩팥뒤 부분",
+            "오른위주정맥"
+          ]
+        }
+      ]
+    }
+  ],
+  "anomalies": [
+    {
+      "id": "dextrocardia",
+      "name": {
+        "ko": "우심증",
+        "en": "Dextrocardia",
+        "alt": []
+      },
+      "cause": [
+        "loop"
+      ],
+      "period": {
+        "start": 23,
+        "end": 28
+      },
+      "mechanism": "심장관이 오른쪽 대신 왼쪽으로 접힘. 좌우축 신호 이상.",
+      "findings": [
+        "심장이 가슴 오른쪽에 있음",
+        "내장역위 동반 시 심장 기형은 드묾",
+        "심장만 뒤집히면 심장 기형 동반이 흔함",
+        "카르타게너 증후군: 내장역위 + 기관지확장증 + 부비동염 + 남성 불임"
+      ],
+      "genes": [
+        "일차섬모운동이상증 (DNAH5 등)"
+      ],
+      "public": "심장이 몸 오른쪽에 있는 경우예요. 다른 장기도 함께 뒤바뀐 경우는 대개 건강하게 지내요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "asd-secundum",
+      "name": {
+        "ko": "이차공형 심방중격결손",
+        "en": "Secundum atrial septal defect",
+        "alt": [
+          "심방중격결손",
+          "ASD"
+        ]
+      },
+      "cause": [
+        "asep"
+      ],
+      "period": {
+        "start": 28,
+        "end": 42
+      },
+      "mechanism": "일차중격이 너무 많이 흡수되거나 이차중격이 작아 난원공을 덮지 못함.",
+      "findings": [
+        "좌→우 단락",
+        "고정된 S2 분열",
+        "어릴 때 무증상이 많고 성인에서 발견되기도 함"
+      ],
+      "genes": [
+        "NKX2-5, GATA4",
+        "TBX5 (홀트–오람 증후군: 팔 기형 동반)"
+      ],
+      "public": "심방 사이 벽에 구멍이 남은 경우예요. 작으면 저절로 닫히기도 하고, 크면 시술로 막아요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "pfo",
+      "name": {
+        "ko": "난원공 개존",
+        "en": "Patent foramen ovale",
+        "alt": [
+          "PFO"
+        ]
+      },
+      "cause": [
+        "asep",
+        "fcirc"
+      ],
+      "period": {
+        "start": 266,
+        "end": 365
+      },
+      "mechanism": "출생 후 일차중격과 이차중격이 붙지 않아 판막처럼 열릴 수 있는 틈이 남음.",
+      "findings": [
+        "성인의 약 20–25%",
+        "대개 무증상",
+        "역설색전 (정맥 혈전이 뇌로)",
+        "잠수병, 편두통과의 연관 연구"
+      ],
+      "genes": [],
+      "public": "태아 때 있던 심방 사이 통로가 완전히 붙지 않은 상태로, 어른 네다섯 명 중 한 명꼴로 있어요. 대부분 치료가 필요 없어요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "avsd",
+      "name": {
+        "ko": "방실중격결손",
+        "en": "Atrioventricular septal defect (AV canal defect)",
+        "alt": [
+          "심내막쿠션결손",
+          "공통방실관",
+          "부분형: 일차공형 심방중격결손"
+        ]
+      },
+      "cause": [
+        "avc",
+        "asep"
+      ],
+      "period": {
+        "start": 28,
+        "end": 42
+      },
+      "mechanism": "심내막쿠션이 합쳐지지 못함. 부분형은 일차공 결손 + 승모판 갈림, 완전형은 공통방실판막.",
+      "findings": [
+        "다운증후군에서 가장 특징적",
+        "심부전, 폐고혈압이 일찍 옴"
+      ],
+      "genes": [
+        "21번 삼염색체 (다운증후군)"
+      ],
+      "public": "심장 한가운데 벽과 판막이 덜 만들어진 상태예요. 다운증후군 아기에게 흔하고, 보통 영아기에 수술해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "tricuspid-atresia",
+      "name": {
+        "ko": "삼첨판폐쇄",
+        "en": "Tricuspid atresia",
+        "alt": []
+      },
+      "cause": [
+        "avc"
+      ],
+      "period": {
+        "start": 28,
+        "end": 42
+      },
+      "mechanism": "오른방실관이 막힘. 살려면 심방중격결손 + 심실중격결손(또는 동맥관)이 필요함.",
+      "findings": [
+        "청색증",
+        "작은 우심실, 큰 좌심실",
+        "단계적 단심실 수술 (폰탄)"
+      ],
+      "genes": [],
+      "public": "오른쪽 심방과 심실 사이 문이 막혀 태어나는 심장병으로, 여러 단계 수술이 필요해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "ebstein",
+      "name": {
+        "ko": "엡스타인 기형",
+        "en": "Ebstein anomaly",
+        "alt": []
+      },
+      "cause": [
+        "avc"
+      ],
+      "period": {
+        "start": 35,
+        "end": 56
+      },
+      "mechanism": "삼첨판 판막잎이 심실 벽에서 떨어지지 못해 아래쪽(우심실 안)에 붙음 → 우심실이 작아지고 심방화됨.",
+      "findings": [
+        "삼첨판 역류",
+        "큰 우심방",
+        "부전도로(WPW) 동반",
+        "산모 리튬 복용과 연관 (위험 증가 폭은 작음)"
+      ],
+      "genes": [],
+      "public": "오른쪽 판막이 제자리보다 아래에 붙은 심장병이에요. 정도에 따라 관찰만 하기도, 수술하기도 해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "vsd",
+      "name": {
+        "ko": "심실중격결손",
+        "en": "Ventricular septal defect",
+        "alt": [
+          "VSD"
+        ]
+      },
+      "cause": [
+        "vsep",
+        "oft",
+        "avc"
+      ],
+      "period": {
+        "start": 35,
+        "end": 49
+      },
+      "mechanism": "막부분이 닫히지 않거나(가장 흔함), 근육부분에 구멍이 남음.",
+      "findings": [
+        "가장 흔한 선천 심장병",
+        "범수축기 잡음",
+        "큰 결손은 심부전, 오래되면 폐고혈압 → 아이젠멩거 (우→좌 역전, 청색증)",
+        "작은 근육부분 결손은 저절로 닫히는 경우가 많음"
+      ],
+      "genes": [
+        "다인자, 여러 증후군에 동반"
+      ],
+      "public": "심실 사이 벽에 구멍이 있는 것으로, 가장 흔한 선천 심장병이에요. 작은 구멍은 자라면서 저절로 닫히는 경우가 많아요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "tof",
+      "name": {
+        "ko": "팔로4징",
+        "en": "Tetralogy of Fallot",
+        "alt": [
+          "활로4징후",
+          "TOF"
+        ]
+      },
+      "cause": [
+        "oft",
+        "chf"
+      ],
+      "period": {
+        "start": 35,
+        "end": 56
+      },
+      "mechanism": "원추중격이 앞쪽으로 치우쳐 유출로가 고르지 않게 나뉨.",
+      "findings": [
+        "폐동맥협착(우심실 유출로 좁아짐)",
+        "대동맥 걸침",
+        "심실중격결손",
+        "우심실 비대",
+        "청색증 발작(쪼그려 앉으면 좋아짐), 장화 모양 심장"
+      ],
+      "genes": [
+        "22q11.2 결실, 다운증후군 등과 연관"
+      ],
+      "public": "심장에서 폐로 가는 길이 좁고 벽에 구멍이 있는 심장병이에요. 영아기에 수술하면 대부분 어른이 될 때까지 잘 자라요. 자란 뒤에도 정기 검진을 받고, 다시 시술을 받기도 해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "tga",
+      "name": {
+        "ko": "대혈관전위",
+        "en": "Transposition of the great arteries",
+        "alt": [
+          "완전대혈관전위",
+          "TGA"
+        ]
+      },
+      "cause": [
+        "oft"
+      ],
+      "period": {
+        "start": 35,
+        "end": 56
+      },
+      "mechanism": "원추동맥간 중격이 나선을 그리지 않고 곧게 내려와 대동맥이 우심실, 폐동맥이 좌심실에서 나옴.",
+      "findings": [
+        "출생 직후 심한 청색증 (신생아 청색증 심장병 중 가장 흔함)",
+        "두 순환이 따로 돌아 섞이는 통로(난원공, 동맥관, VSD)가 있어야 생존",
+        "프로스타글란딘 E1, 풍선 심방중격절개, 동맥전환술",
+        "산모 당뇨와 연관"
+      ],
+      "genes": [],
+      "public": "심장에서 나가는 두 큰 혈관이 서로 바뀌어 붙은 심장병이에요. 태어나자마자 응급 처치와 수술이 필요해서, 산전 진단이 특히 중요해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "truncus",
+      "name": {
+        "ko": "동맥간개존",
+        "en": "Persistent truncus arteriosus",
+        "alt": [
+          "총동맥간"
+        ]
+      },
+      "cause": [
+        "oft",
+        "chf"
+      ],
+      "period": {
+        "start": 35,
+        "end": 56
+      },
+      "mechanism": "원추동맥간 능선이 합쳐지지 않아 대동맥과 폐동맥이 나뉘지 않음.",
+      "findings": [
+        "큰 혈관 하나가 두 심실 위에 걸침",
+        "항상 심실중격결손 동반",
+        "청색증, 심부전"
+      ],
+      "genes": [
+        "22q11.2 결실과 강하게 연관"
+      ],
+      "public": "심장에서 나가는 큰 혈관이 둘로 나뉘지 않은 심장병으로, 영아기에 수술해요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "hlhs",
+      "name": {
+        "ko": "왼심장형성저하증후군",
+        "en": "Hypoplastic left heart syndrome",
+        "alt": [
+          "좌심형성부전"
+        ]
+      },
+      "cause": [
+        "avc",
+        "asep"
+      ],
+      "period": {
+        "start": 35,
+        "end": 266
+      },
+      "mechanism": "대동맥판·승모판 협착이나 폐쇄로 좌심실로 가는 흐름이 줄어 좌심장이 자라지 못함. 난원공이 일찍 닫혀도 생길 수 있음.",
+      "findings": [
+        "좌심실·상행대동맥 저형성",
+        "동맥관 의존: 동맥관이 닫히면 쇼크",
+        "단계적 단심실 수술"
+      ],
+      "genes": [],
+      "public": "왼쪽 심장이 충분히 자라지 못한 심각한 심장병이에요. 태어나자마자 치료가 필요해서 산전 진단이 중요해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true
+    },
+    {
+      "id": "pda",
+      "name": {
+        "ko": "동맥관 개존",
+        "en": "Patent ductus arteriosus",
+        "alt": [
+          "동맥관열림증",
+          "PDA"
+        ]
+      },
+      "cause": [
+        "aaa",
+        "fcirc"
+      ],
+      "period": {
+        "start": 266,
+        "end": 365
+      },
+      "mechanism": "출생 후 동맥관이 닫히지 않음.",
+      "findings": [
+        "기계 소리 같은 연속성 잡음",
+        "미숙아에서 흔함",
+        "선천성 풍진과 연관",
+        "고지대 출생에서 더 흔함"
+      ],
+      "genes": [],
+      "public": "태아 때 쓰던 혈관이 태어난 뒤에도 닫히지 않은 상태예요. 미숙아에게 흔하고 약이나 시술로 닫아요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "coarctation",
+      "name": {
+        "ko": "대동맥축착",
+        "en": "Coarctation of the aorta",
+        "alt": [
+          "대동맥축착증"
+        ]
+      },
+      "cause": [
+        "aaa"
+      ],
+      "period": {
+        "start": 42,
+        "end": 266
+      },
+      "mechanism": "동맥관이 붙는 자리 근처 대동맥이 좁아짐. 동맥관 조직이 대동맥 벽으로 퍼져 닫힐 때 함께 수축한다는 설명이 있음.",
+      "findings": [
+        "팔 혈압이 다리보다 높음, 넙다리맥박 약함",
+        "갈비뼈 패임 (곁순환)",
+        "터너 증후군, 두판 대동맥판과 동반"
+      ],
+      "genes": [
+        "45,X (터너 증후군)"
+      ],
+      "public": "대동맥 한 곳이 좁아진 상태예요. 팔과 다리 혈압 차이로 발견되기도 하며, 시술이나 수술로 넓혀요.",
+      "examPoint": true,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "double-aortic-arch",
+      "name": {
+        "ko": "이중대동맥궁",
+        "en": "Double aortic arch",
+        "alt": []
+      },
+      "cause": [
+        "aaa"
+      ],
+      "period": {
+        "start": 42,
+        "end": 56
+      },
+      "mechanism": "오른등대동맥의 먼 쪽이 사라지지 않아 기관과 식도를 둘러싸는 고리가 생김. 혈관고리의 대표 유형.",
+      "findings": [
+        "숨소리 이상(협착음), 삼킴곤란",
+        "영아기 반복 호흡기 증상"
+      ],
+      "genes": [],
+      "public": "대동맥이 둘로 갈라져 기도와 식도를 감싸는 경우로, 숨소리나 삼킴 문제로 발견되고 수술로 풀어줘요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "iaa",
+      "name": {
+        "ko": "대동맥활 단절",
+        "en": "Interrupted aortic arch",
+        "alt": []
+      },
+      "cause": [
+        "aaa",
+        "oft"
+      ],
+      "period": {
+        "start": 42,
+        "end": 56
+      },
+      "mechanism": "4궁 동맥 등 대동맥활의 한 부분이 사라져 끊김. B형(왼온목동맥과 왼빗장밑동맥 사이)이 가장 흔함.",
+      "findings": [
+        "동맥관 의존",
+        "B형은 디조지 증후군과 강하게 연관"
+      ],
+      "genes": [
+        "22q11.2 결실"
+      ],
+      "public": "대동맥 일부가 끊겨 태어나는 드문 심장병으로, 신생아기에 수술이 필요해요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "left-svc",
+      "name": {
+        "ko": "왼위대정맥 잔존",
+        "en": "Persistent left superior vena cava",
+        "alt": [
+          "중복위대정맥"
+        ]
+      },
+      "cause": [
+        "veins",
+        "sv"
+      ],
+      "period": {
+        "start": 42,
+        "end": 63
+      },
+      "mechanism": "왼앞주정맥이 사라지지 않고 남아 관상정맥굴로 들어감.",
+      "findings": [
+        "대개 무증상",
+        "커진 관상정맥굴",
+        "중심정맥관·심박동기 삽입 때 문제"
+      ],
+      "genes": [],
+      "public": "위쪽 큰 정맥이 양쪽에 하나씩 있는 변이로, 대부분 아무 문제가 없어요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ]
+    },
+    {
+      "id": "double-ivc",
+      "name": {
+        "ko": "중복아래대정맥",
+        "en": "Double inferior vena cava",
+        "alt": []
+      },
+      "cause": [
+        "ivc",
+        "veins"
+      ],
+      "period": {
+        "start": 42,
+        "end": 63
+      },
+      "mechanism": "왼엉치주정맥이 왼아래주정맥과의 연결을 잃지 않아 콩팥 아래에서 정맥이 두 줄로 남음 (Moore는 왼위주정맥이 남는 것으로 설명).",
+      "findings": [
+        "대개 무증상",
+        "복부 수술·하대정맥 필터 시술 때 중요"
+      ],
+      "genes": [],
+      "public": "아래쪽 큰 정맥이 두 줄로 남은 변이로, 대부분 문제가 없어요.",
+      "examPoint": false,
+      "sources": [
+        {
+          "ref": "langman",
+          "p": null
+        }
+      ],
+      "verify": true
+    }
+  ],
+  "events": [
+    {
+      "day": 18,
+      "label": "심장발생구역",
+      "refs": [
+        "chf"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 21,
+      "label": "심장관 융합",
+      "refs": [
+        "htube"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 22,
+      "label": "심장 박동 시작",
+      "refs": [
+        "htube",
+        "cond"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 23,
+      "label": "심장 고리 형성",
+      "refs": [
+        "loop"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 28,
+      "label": "심방사이막·심내막쿠션 시작",
+      "refs": [
+        "asep",
+        "avc"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 35,
+      "label": "유출로 중격 시작",
+      "refs": [
+        "oft",
+        "vsep"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 49,
+      "label": "심실사이구멍 닫힘",
+      "refs": [
+        "vsep"
+      ],
+      "major": false,
+      "approx": true
+    },
+    {
+      "day": 56,
+      "label": "네 방 심장 완성",
+      "refs": [
+        "oft",
+        "vsep"
+      ],
+      "major": true,
+      "approx": true
+    },
+    {
+      "day": 266,
+      "label": "출생: 태아순환 전환",
+      "refs": [
+        "fcirc"
+      ],
+      "major": true,
+      "approx": true
+    }
+  ],
+  "epidemiology": [
+    {
+      "item": "선천 심장병 전체",
+      "value": "출생아의 약 1%",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "가장 흔한 선천 심장병",
+      "value": "심실중격결손",
+      "ref": "langman",
+      "verify": true
+    },
+    {
+      "item": "난원공 개존",
+      "value": "성인의 약 20–25%",
+      "ref": "langman",
+      "verify": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "langman",
+      "title": "Langman's Medical Embryology",
+      "chapter": "Cardiovascular System (심혈관계)",
+      "edition": "15판 (한국어 번역서)",
+      "role": "기준",
+      "note": "쪽수는 번역서 15판 기준으로 검수 때 채운다"
+    },
+    {
+      "id": "moore",
+      "title": "The Developing Human (Moore)",
+      "chapter": "Cardiovascular System",
+      "edition": null,
+      "role": "보조"
+    }
+  ]
+}
