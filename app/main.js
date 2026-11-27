@@ -331,10 +331,25 @@ function stageCard(st, i, day) {
 afterRender.time = () => {
   const r = $("#day"), strip = $("#stages");
   // 고른 단계 카드를 띠 안에서만 가운데로 옮긴다 (페이지 전체는 스크롤하지 않음).
+  // auto: 코드가 띠를 움직이는 중(슬라이더·버튼). 이때 생기는 스크롤로는 날짜를 바꾸지 않는다.
+  let auto = false, autoTimer = 0, swipeTimer = 0;
   const centerStage = (smooth = true) => {
     const card = strip.querySelector(".stage.on"); if (!card) return;
+    auto = true; clearTimeout(autoTimer); autoTimer = setTimeout(() => { auto = false; }, smooth ? 700 : 50);
     strip.scrollTo({ left: card.offsetLeft - strip.offsetLeft - (strip.clientWidth - card.clientWidth) / 2, behavior: smooth ? "smooth" : "auto" });
   };
+  // 손으로 띠를 넘기면 가운데 온 카드의 날짜로 슬라이더·날짜·사건 목록을 맞춘다.
+  const syncFromSwipe = () => {
+    if (auto) return;
+    const mid = strip.scrollLeft + strip.clientWidth / 2;
+    let best = 0, dist = Infinity;
+    strip.querySelectorAll(".stage").forEach(c => {
+      const d = Math.abs(c.offsetLeft - strip.offsetLeft + c.clientWidth / 2 - mid);
+      if (d < dist) { dist = d; best = +c.dataset.stage; }
+    });
+    if (best !== stageIndex(state.day)) setDay(STAGES[best].day, { fromStage: true });
+  };
+  strip.onscroll = () => { clearTimeout(swipeTimer); swipeTimer = setTimeout(syncFromSwipe, 120); };
   const setDay = (day, { fromStage = false } = {}) => {
     state.day = day; r.value = day;
     $("#dayLabel").textContent = fmtDay(day); $("#stageLabel").textContent = stageAt(day);
