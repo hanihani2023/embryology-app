@@ -205,3 +205,61 @@ th { font-family: var(--f-mono); font-size: 11px; letter-spacing: .05em; color: 
 .mode-opt:hover { border-color: var(--ink); }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* 발생 단계 그림 (시간 탭) */
+.stages { display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 2px 2px 10px; margin: 0 -2px; overscroll-behavior-x: contain; }
+.stage { flex: 0 0 min(78%, 300px); scroll-snap-align: center; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 10px 12px 12px; text-align: left; cursor: pointer; display: flex; flex-direction: column; gap: 4px; }
+.stage.on { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
+.stage .st-head { display: flex; align-items: baseline; gap: 8px; }
+.stage .st-head b { font-family: var(--f-display); font-size: 17px; }
+.stage .st-when { font-family: var(--f-mono); font-size: 11.5px; color: var(--muted); margin-left: auto; white-space: nowrap; }
+.stage .st-en { font-size: 12px; color: var(--faint); }
+.stage .st-note { font-size: 13px; line-height: 1.55; color: var(--muted); margin: 2px 0 0; }
+.stage .st-more { align-self: flex-start; margin-top: 4px; font-size: 12.5px; color: var(--focus); background: none; border: 0; padding: 0; cursor: pointer; }
+.st-nav { display: flex; gap: 8px; align-items: center; }
+.st-nav .muted { font-size: 12.5px; }
+.st-svg { width: 100%; height: auto; display: block; background: var(--surface-2); border-radius: 8px; }
+.st-svg .zp { fill: none; stroke: var(--faint); stroke-width: 5; opacity: .45; }
+.st-svg .zp.dash { stroke-dasharray: 6 7; }
+.st-svg .cell { fill: var(--surface); stroke: var(--root); stroke-width: 1.4; }
+.st-svg .nuc { fill: var(--root); fill-opacity: .25; stroke: var(--root); stroke-width: 1; }
+.st-svg .nuc.big { fill-opacity: .18; }
+.st-svg .cav { fill: var(--surface); }
+.st-svg .tro { fill: none; stroke: var(--extra); stroke-width: 7; }
+.st-svg .f-root { fill: var(--root); }
+.st-svg .f-ec { fill: var(--ecto); }
+.st-svg .f-me { fill: var(--meso); }
+.st-svg .f-en { fill: var(--endo); }
+.st-svg .f-ex { fill: var(--extra); }
+.st-svg .f-hyp { fill: var(--extra); fill-opacity: .7; }
+.st-svg .tint { fill-opacity: .22; }
+.st-svg .syn { fill-opacity: .4; }
+.st-svg .endo-wall { fill: var(--meso); fill-opacity: .1; }
+.st-svg .gland { fill: none; stroke: var(--meso); stroke-opacity: .35; stroke-width: 3; stroke-linecap: round; }
+.st-svg .lac { fill: var(--surface); fill-opacity: .8; }
+.st-svg .cyto { fill: var(--surface); stroke: var(--extra); stroke-width: 4; }
+.st-svg .amc { fill: var(--surface-2); stroke: var(--extra); stroke-width: 1.6; }
+.st-svg .ysc { fill: var(--endo); fill-opacity: .15; stroke: var(--extra); stroke-width: 1.6; }
+.st-svg .chorion { fill: var(--extra); fill-opacity: .3; }
+.st-svg .villi { stroke: var(--extra); stroke-width: 3; stroke-linecap: round; opacity: .55; }
+.st-svg .stalk { fill: var(--extra); fill-opacity: .45; }
+.st-svg .edge { fill: none; stroke: var(--ecto); stroke-width: 1.4; }
+.st-svg .mark { fill: var(--surface); stroke: var(--root); stroke-width: 1.2; }
+.st-svg .streak { stroke: var(--root); stroke-width: 4; stroke-linecap: round; }
+.st-svg .node { fill: var(--root); }
+.st-svg .groove { fill: var(--surface-2); stroke: var(--root); stroke-width: 1.2; }
+.st-svg .arrow { fill: none; stroke: var(--ink); stroke-width: 1.3; stroke-linecap: round; }
+.st-svg .seam { stroke: var(--surface); stroke-width: 1.5; stroke-dasharray: 3 2; }
+.st-svg .emb { fill: #F3D9CC; stroke: #B5806A; stroke-width: 1.5; }
+.st-svg .arch { fill: none; stroke: #B5806A; stroke-width: 1.6; stroke-linecap: round; }
+.st-svg .limb { fill: #F3D9CC; stroke: #B5806A; stroke-width: 1.5; stroke-linecap: round; }
+.st-svg path.limb:not([d$="Z"]) { fill: none; stroke: #E9C3B0; stroke-width: 9; }
+.st-svg .rays { fill: none; stroke: #B5806A; stroke-width: 1.3; stroke-linecap: round; }
+.st-svg .eye0 { fill: none; stroke: #B5806A; stroke-width: 1.4; }
+.st-svg .eye1 { fill: #5A3A30; }
+.st-svg .eyelid, .st-svg .ear { fill: none; stroke: #9A6450; stroke-width: 1.5; stroke-linecap: round; }
+.st-svg .duct, .st-svg .cord { fill: none; stroke: #D7A28C; stroke-width: 5; stroke-linecap: round; }
+.st-svg .sac { fill: var(--extra); fill-opacity: .08; stroke: var(--extra); stroke-opacity: .5; stroke-width: 1.5; }
+.st-svg .uterus { fill: var(--meso); fill-opacity: .1; stroke: var(--meso); stroke-opacity: .5; stroke-width: 6; }
+.st-svg .lbl { font-family: var(--f-body); font-size: 9.5px; fill: var(--muted); }
+.st-svg .lead { stroke: var(--faint); stroke-width: .8; }

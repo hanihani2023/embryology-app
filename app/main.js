@@ -1,6 +1,7 @@
 import { loadData, LAYERS, BIRTH_DAY, path, haystack } from "./data.js";
 import { bodySvg } from "./body.js";
 import { makeQuiz, recordAnswer, wrongList, srsStats } from "./study.js";
+import { STAGES, stageIndex, stageSvg } from "./stages.js";
 
 /* ---------- 상태 ---------- */
 const store = {
@@ -307,17 +308,48 @@ function renderTime() {
       <input type="range" id="day" min="0" max="${BIRTH_DAY}" value="${d}" aria-label="발생 시기">
       <p class="muted" style="font-size:12.5px;margin:4px 0 0">임신 주수 = 수정 후 나이 + 2주 (마지막 생리 시작일 기준)</p>
     </section>
+    <section><div class="toolbar st-nav"><p class="sec-title" style="margin:0">단계 그림</p><span class="muted">옆으로 넘기거나 눌러서 그 시기로</span>
+      <span style="margin-left:auto;display:flex;gap:6px"><button class="btn" id="stPrev" aria-label="이전 단계">‹</button><button class="btn" id="stNext" aria-label="다음 단계">›</button></span></div>
+      <div class="stages" id="stages">${STAGES.map((st, i) => stageCard(st, i, d)).join("")}</div></section>
     <section><p class="sec-title">이 무렵 (±10일)</p><div class="ev-list" id="nearEv">${near.map(e => evHtml(e, d)).join("") || `<p class="muted">이 무렵에 표시할 사건이 없어요.</p>`}</div></section>
     <section><div class="toolbar"><p class="sec-title" style="margin:0">구조별 시기 (${state.ganttAll ? "출생까지" : "12주까지 · 시험 포인트"})</p>
       <button class="chip" id="ganttAll" aria-pressed="${state.ganttAll}">전체 보기</button></div><div class="gantt">${gantt}</div></section>`;
 }
+function stageCard(st, i, day) {
+  const on = i === stageIndex(day);
+  const ref = st.ref && db.S.has(st.ref) ? st.ref : null;
+  return `<div class="stage ${on ? "on" : ""}" data-stage="${i}" role="button" tabindex="0" aria-current="${on}">
+    ${stageSvg(st)}
+    <div class="st-head"><b>${esc(st.ko)}</b><span class="st-when">${esc(fmtDay(st.day))}</span></div>
+    <span class="st-en">${esc(st.en)}</span>
+    <p class="st-note">${esc(st.note)}</p>
+    ${ref ? `<button class="st-more" data-open="s:${ref}">${esc(nameOf(ref))} 자세히 ›</button>` : ""}</div>`;
+}
 afterRender.time = () => {
-  const r = $("#day");
-  r.oninput = () => { state.day = +r.value; $("#dayLabel").textContent = fmtDay(state.day); $("#stageLabel").textContent = stageAt(state.day);
-    const near = db.events.filter(e => Math.abs(e.day - state.day) <= 10);
-    $("#nearEv").innerHTML = near.map(e => evHtml(e, state.day)).join("") || `<p class="muted">이 무렵에 표시할 사건이 없어요.</p>`;
+  const r = $("#day"), strip = $("#stages");
+  // 고른 단계 카드를 띠 안에서만 가운데로 옮긴다 (페이지 전체는 스크롤하지 않음).
+  const centerStage = (smooth = true) => {
+    const card = strip.querySelector(".stage.on"); if (!card) return;
+    strip.scrollTo({ left: card.offsetLeft - strip.offsetLeft - (strip.clientWidth - card.clientWidth) / 2, behavior: smooth ? "smooth" : "auto" });
+  };
+  const setDay = (day, { fromStage = false } = {}) => {
+    state.day = day; r.value = day;
+    $("#dayLabel").textContent = fmtDay(day); $("#stageLabel").textContent = stageAt(day);
+    const near = db.events.filter(e => Math.abs(e.day - day) <= 10);
+    $("#nearEv").innerHTML = near.map(e => evHtml(e, day)).join("") || `<p class="muted">이 무렵에 표시할 사건이 없어요.</p>`;
     const MAX = state.ganttAll ? BIRTH_DAY : 84;
-    document.querySelectorAll(".g-now").forEach(n => n.style.left = Math.min(100, state.day / MAX * 100) + "%"); };
+    document.querySelectorAll(".g-now").forEach(n => n.style.left = Math.min(100, day / MAX * 100) + "%");
+    const idx = stageIndex(day);
+    strip.querySelectorAll(".stage").forEach(c => { const on = +c.dataset.stage === idx; c.classList.toggle("on", on); c.setAttribute("aria-current", on); });
+    if (!fromStage) centerStage();
+  };
+  r.oninput = () => setDay(+r.value);
+  const pick = i => { i = Math.max(0, Math.min(STAGES.length - 1, i)); setDay(STAGES[i].day, { fromStage: true }); centerStage(); };
+  strip.onclick = e => { if (e.target.closest("[data-open]")) return; const c = e.target.closest(".stage"); if (c) pick(+c.dataset.stage); };
+  strip.onkeydown = e => { const c = e.target.closest(".stage"); if (c && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); pick(+c.dataset.stage); } };
+  $("#stPrev").onclick = () => pick(stageIndex(state.day) - 1);
+  $("#stNext").onclick = () => pick(stageIndex(state.day) + 1);
+  centerStage(false);
   $("#ganttAll").onclick = () => { state.ganttAll = !state.ganttAll; render(); };
 };
 
