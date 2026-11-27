@@ -263,3 +263,10 @@ th { font-family: var(--f-mono); font-size: 11px; letter-spacing: .05em; color: 
 .st-svg .uterus { fill: var(--meso); fill-opacity: .1; stroke: var(--meso); stroke-opacity: .5; stroke-width: 6; }
 .st-svg .lbl { font-family: var(--f-body); font-size: 9.5px; fill: var(--muted); }
 .st-svg .lead { stroke: var(--faint); stroke-width: .8; }
+
+/* 단계 그림: Canva 그림(art)과 이름표 도식(diagram) 전환 */
+.st-fig { position: relative; }
+.st-art { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; border-radius: 8px; background: var(--surface-2); }
+.stages.art .st-fig:has(.st-art) .st-svg { display: none; }
+.stages.diagram .st-art { display: none; }
+.st-nav .seg { margin-left: 8px; }
