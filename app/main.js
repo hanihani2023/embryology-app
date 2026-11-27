@@ -1,7 +1,7 @@
 import { loadData, LAYERS, BIRTH_DAY, path, haystack } from "./data.js";
 import { bodySvg } from "./body.js";
 import { makeQuiz, recordAnswer, wrongList, srsStats } from "./study.js";
-import { STAGES, stageIndex, stageSvg } from "./stages.js";
+import { STAGES, stageIndex, stageSvg, stageMarks } from "./stages.js";
 
 /* ---------- 상태 ---------- */
 const store = {
@@ -322,7 +322,7 @@ function stageCard(st, i, day) {
   const on = i === stageIndex(day);
   const ref = st.ref && db.S.has(st.ref) ? st.ref : null;
   return `<div class="stage ${on ? "on" : ""}" data-stage="${i}" role="button" tabindex="0" aria-current="${on}">
-    <div class="st-fig">${st.img ? `<img class="st-art" src="${st.img}" alt="${esc(st.ko)} 그림" loading="lazy" decoding="async">` : ""}${stageSvg(st)}</div>
+    <div class="st-fig">${st.img ? `<img class="st-art" src="${st.img}" alt="${esc(st.ko)} 그림" loading="lazy" decoding="async">${stageMarks(st)}` : ""}${stageSvg(st)}</div>
     <div class="st-head"><b>${esc(st.ko)}</b><span class="st-when">${esc(fmtDay(st.day))}</span></div>
     <span class="st-en">${esc(st.en)}</span>
     <p class="st-note">${esc(st.note)}</p>

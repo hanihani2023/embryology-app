@@ -1,6 +1,7 @@
 // 시간 탭의 발생 단계 그림. 모든 그림은 viewBox 0 0 200 150의 도식(실제 비율 아님).
 // 색은 배엽 색(styles.css 변수)을 class로 칠한다: f-ec 외배엽, f-me 중배엽, f-en 내배엽, f-ex 배외조직, f-root 초기 배아.
-// img는 Canva로 만든 그림(app/stages/<id>.jpg, 4:3). w8은 Canva 안전 검사에 막혀 그림이 없어 도식을 그대로 쓴다. svg는 구조 이름이 붙은 도식으로, 앱에서 "도식"을 고르면 보인다.
+// img는 Canva로 만든 그림(app/stages/<id>.jpg, 4:3). svg는 구조 이름이 붙은 도식으로, 앱에서 "도식"을 고르면 보인다.
+// marks는 그림 위 이름표: [점 x, 점 y, 글자 x, 글자 y, 이름, 정렬 s|e|m], 800×600 그림 좌표. 점 x가 null이면 글자만.
 // day는 수정 후 일수(대략값). 한 단계는 다음 단계의 day 전날까지 보여준다.
 
 const zona = (r = 56, dashed = false) =>
@@ -34,7 +35,7 @@ function somites(cx, cy, r, a0, a1, n, w = 6, h = 4) {
 
 export const STAGES = [
   {
-    id: "zyg", img: "app/stages/zyg.jpg", day: 0, ko: "접합자", en: "Zygote", ref: "zyg",
+    id: "zyg", img: "app/stages/zyg.jpg", marks: [[182,300,60,395,"투명대","m"],[455,300,640,250,"전핵 2개","s"],[277,140,130,70,"극체","e"],[516,415,640,500,"극체","s"]], day: 0, ko: "접합자", en: "Zygote", ref: "zyg",
     note: "정자와 난자가 만나 세포 하나가 됩니다. 아직 두 전핵(엄마·아빠 쪽 염색체)이 따로 보여요.",
     svg: `${zona()}<circle class="cell" cx="100" cy="77" r="47"/>
       <circle class="nuc big" cx="86" cy="77" r="10"/><circle class="nuc big" cx="114" cy="77" r="10"/>
@@ -42,29 +43,29 @@ export const STAGES = [
       ${lead(114, 77, 160, 118)}${lbl(162, 124, "전핵")}${lead(103, 24, 150, 14)}${lbl(152, 16, "극체")}${lbl(28, 18, "투명대")}${lead(40, 22, 52, 42)}`
   },
   {
-    id: "c2", img: "app/stages/c2.jpg", day: 1, ko: "2세포기", en: "2-cell stage", ref: "zyg",
+    id: "c2", img: "app/stages/c2.jpg", marks: [[215,250,150,130,"할구","e"],[530,300,690,190,"핵","s"],[650,440,600,575,"투명대","e"]], day: 1, ko: "2세포기", en: "2-cell stage", ref: "zyg",
     note: "수정 후 약 30시간에 첫 난할. 세포는 나뉘어도 전체 크기는 그대로입니다(투명대 안).",
     svg: `${zona()}${cell(77, 75, 26)}${cell(123, 75, 26)}${lbl(100, 142, "할구 2개", "middle")}`
   },
   {
-    id: "c4", img: "app/stages/c4.jpg", day: 2, ko: "4세포기", en: "4-cell stage", ref: "zyg",
+    id: "c4", img: "app/stages/c4.jpg", marks: [[255,230,170,110,"할구","e"],[480,375,690,470,"핵","s"],[160,470,150,575,"투명대","e"]], day: 2, ko: "4세포기", en: "4-cell stage", ref: "zyg",
     note: "약 40시간에 4세포. 난할이 계속되며 세포는 점점 작아집니다.",
     svg: `${zona()}${cell(80, 57, 21)}${cell(120, 57, 21)}${cell(80, 95, 21)}${cell(120, 95, 21)}${lbl(100, 142, "할구 4개", "middle")}`
   },
   {
-    id: "mor", img: "app/stages/mor.jpg", day: 3, ko: "상실배", en: "Morula", ref: "mor",
+    id: "mor", img: "app/stages/mor.jpg", marks: [[415,270,520,585,"할구 16개 안팎","s"],[40,200,75,45,"투명대","m"]], day: 3, ko: "상실배", en: "Morula", ref: "mor",
     note: "약 3일, 12–32개 세포가 뽕나무 열매처럼 뭉친 덩어리. 안쪽 세포는 내세포괴, 바깥 세포는 영양배엽이 됩니다.",
     svg: `${zona()}${morulaCells()}${lbl(100, 145, "세포 16개 안팎", "middle")}`
   },
   {
-    id: "bla", img: "app/stages/bla.jpg", day: 5, ko: "포배", en: "Blastocyst", ref: "bla",
+    id: "bla", img: "app/stages/bla.jpg", marks: [[330,150,135,55,"내세포괴","e"],[640,420,700,570,"영양배엽","m"],[null,null,400,390,"포배강","m"]], day: 5, ko: "포배", en: "Blastocyst", ref: "bla",
     note: "속에 빈 공간(포배강)이 생기고, 한쪽에 내세포괴(배아가 될 세포)가 모입니다. 투명대를 벗고 자궁에 도착해요.",
     svg: `${zona(60, true)}<circle class="cav" cx="100" cy="75" r="47"/><circle class="tro" cx="100" cy="75" r="47"/>
       <path class="f-root" d="M68 44 Q100 22 132 44 Q124 66 100 68 Q76 66 68 44 Z"/>
       ${lead(100, 52, 150, 16)}${lbl(152, 18, "내세포괴")}${lead(146, 82, 170, 112)}${lbl(160, 124, "영양배엽")}${lbl(100, 100, "포배강", "middle")}`
   },
   {
-    id: "impl", img: "app/stages/impl.jpg", day: 6, ko: "착상 시작", en: "Implantation", ref: "impl",
+    id: "impl", img: "app/stages/impl.jpg", marks: [[null,null,560,175,"자궁내막","m"],[400,110,520,60,"자궁샘","s"],[470,250,560,300,"합포체영양막","s"],[330,310,230,300,"내세포괴","e"],[530,420,560,480,"영양배엽","s"],[null,null,395,430,"포배강","m"]], day: 6, ko: "착상 시작", en: "Implantation", ref: "impl",
     note: "6일 무렵 내세포괴 쪽 영양배엽이 자궁내막에 붙고, 합포체영양막이 내막 속으로 파고듭니다.",
     svg: `<rect class="endo-wall" x="0" y="0" width="200" height="58"/>
       <path class="gland" d="M30 0 Q24 20 34 40 M78 0 Q72 18 82 34 M150 0 Q156 22 146 42 M182 0 Q176 16 186 30"/>
@@ -74,7 +75,7 @@ export const STAGES = [
       ${lbl(8, 14, "자궁내막")}${lead(116, 50, 160, 70)}${lbl(140, 82, "합포체영양막")}${lbl(100, 115, "포배강", "middle")}`
   },
   {
-    id: "bil", img: "app/stages/bil.jpg", day: 9, ko: "이층배반", en: "Bilaminar disc", ref: "bil",
+    id: "bil", img: "app/stages/bil.jpg", marks: [[null,null,15,40,"자궁내막","s"],[null,null,400,160,"양막강","m"],[570,262,635,215,"배반엽상층","s"],[230,300,165,300,"배반엽하층","e"],[null,null,410,400,"일차난황낭","m"],[160,380,195,470,"합포체영양막","e"],[640,420,700,560,"세포영양막","m"]], day: 9, ko: "이층배반", en: "Bilaminar disc", ref: "bil",
     note: "2주째. 배아는 배반엽상층과 배반엽하층 두 층의 원판입니다. 위로 양막강, 아래로 난황낭이 생겨요.",
     svg: `<rect class="endo-wall" x="0" y="0" width="200" height="150"/>
       <ellipse class="f-ex syn" cx="100" cy="76" rx="84" ry="66"/>
@@ -88,7 +89,7 @@ export const STAGES = [
       ${lead(136, 66, 176, 22)}${lbl(196, 18, "배반엽상층", "end")}${lead(136, 75, 178, 140)}${lbl(196, 146, "배반엽하층", "end")}`
   },
   {
-    id: "exm", img: "app/stages/exm.jpg", day: 13, ko: "2주 말: 융모막강", en: "Chorionic cavity", ref: "exm",
+    id: "exm", img: "app/stages/exm.jpg", marks: [[120,260,75,200,"융모","e"],[410,120,560,110,"연결줄기","s"],[400,225,250,170,"양막강","e"],[500,255,560,215,"배반엽상층","s"],[500,282,560,300,"배반엽하층","s"],[430,345,560,390,"이차난황낭","s"],[null,null,400,460,"융모막강","m"]], day: 13, ko: "2주 말: 융모막강", en: "Chorionic cavity", ref: "exm",
     note: "배외중배엽 사이에 융모막강이 넓게 열리고, 배아는 연결줄기 하나로 매달립니다(나중의 탯줄). 이차난황낭이 생겨요.",
     svg: `<circle class="chorion" cx="100" cy="76" r="66"/>
       <path class="villi" d="${Array.from({ length: 18 }, (_, i) => { const a = i / 18 * Math.PI * 2, x = 100 + 66 * Math.cos(a), y = 76 + 66 * Math.sin(a), x2 = 100 + 76 * Math.cos(a), y2 = 76 + 76 * Math.sin(a); return `M${x.toFixed(1)} ${y.toFixed(1)} L${x2.toFixed(1)} ${y2.toFixed(1)}`; }).join(" ")}"/>
@@ -101,7 +102,7 @@ export const STAGES = [
       ${lbl(100, 128, "융모막강", "middle")}${lead(112, 22, 150, 8)}${lbl(152, 10, "연결줄기")}${lead(122, 92, 168, 112)}${lbl(140, 124, "이차난황낭")}`
   },
   {
-    id: "gas", img: "app/stages/gas.jpg", day: 15, ko: "낭배형성", en: "Gastrulation", ref: "gas",
+    id: "gas", img: "app/stages/gas.jpg", marks: [[128,133,260,90,"원시결절","s"],[128,400,130,565,"원시선","m"],[null,null,130,65,"위에서 본 원판","m"],[null,null,530,170,"단면","m"],[700,230,700,165,"외배엽","m"],[700,345,700,480,"중배엽","m"],[330,400,330,480,"내배엽","m"]], day: 15, ko: "낭배형성", en: "Gastrulation", ref: "gas",
     note: "3주째. 원시선을 통해 상층 세포가 안으로 들어가 외배엽·중배엽·내배엽 세 층이 됩니다.",
     svg: `<ellipse class="f-ec tint" cx="42" cy="74" rx="30" ry="58"/><ellipse class="edge" cx="42" cy="74" rx="30" ry="58"/>
       <circle class="mark" cx="42" cy="26" r="5"/><path class="streak" d="M42 78 L42 122"/><circle class="node" cx="42" cy="76" r="5"/>
@@ -115,7 +116,7 @@ export const STAGES = [
       <circle class="f-ec" cx="132" cy="109" r="3"/><circle class="f-me" cx="132" cy="121" r="3"/><circle class="f-en" cx="132" cy="133" r="3"/>`
   },
   {
-    id: "np", img: "app/stages/np.jpg", day: 18, ko: "신경판과 척삭", en: "Neural plate", ref: "ntc",
+    id: "np", img: "app/stages/np.jpg", marks: [[200,135,330,70,"신경판","s"],[197,388,300,400,"원시결절","s"],[197,450,300,470,"원시선","s"],[null,null,580,170,"단면","m"],[578,277,578,425,"척삭","m"],[460,300,450,460,"중배엽","m"],[700,345,720,425,"내배엽","m"]], day: 18, ko: "신경판과 척삭", en: "Neural plate", ref: "ntc",
     note: "척삭이 위쪽 외배엽을 유도해 두꺼운 신경판이 생깁니다. 원시선은 꼬리 쪽으로 줄어들어요.",
     svg: `<path class="f-ec tint" d="M52 14 C88 14 92 60 82 96 C76 120 64 134 52 134 C40 134 28 120 22 96 C12 60 16 14 52 14 Z"/>
       <path class="f-ec" d="M52 22 C74 22 76 50 66 70 L60 96 L44 96 L38 70 C28 50 30 22 52 22 Z"/>
@@ -129,7 +130,7 @@ export const STAGES = [
       ${lbl(150, 46, "단면", "middle")}${lead(150, 86, 150, 118)}${lbl(150, 128, "척삭", "middle")}${lbl(108, 86, "중배엽")}${lbl(196, 142, "내배엽", "end")}`
   },
   {
-    id: "nt", img: "app/stages/nt.jpg", day: 22, ko: "신경관과 체절", en: "Neural tube, somites", ref: "nt",
+    id: "nt", img: "app/stages/nt.jpg", marks: [[312,60,470,50,"앞신경구멍","s"],[312,540,470,560,"뒤신경구멍","s"],[360,250,470,140,"체절","s"],[310,330,170,520,"신경관","e"],[null,null,595,150,"단면","m"],[630,225,660,180,"신경관","s"],[595,292,500,430,"척삭","e"],[620,345,700,450,"장관","s"],[682,275,700,335,"체절","s"]], day: 22, ko: "신경관과 체절", en: "Neural tube, somites", ref: "nt",
     note: "22일 무렵 신경주름이 가운데부터 붙어 신경관이 되고, 양옆에 체절이 쌍으로 생깁니다. 심장이 뛰기 시작해요.",
     svg: `<path class="f-ec tint" d="M50 8 C76 8 84 40 80 76 C78 110 66 142 50 142 C34 142 22 110 20 76 C16 40 24 8 50 8 Z"/>
       <path class="f-ec" d="M50 14 C66 14 70 34 62 50 L56 96 C60 112 58 128 50 132 C42 128 40 112 44 96 L38 50 C30 34 34 14 50 14 Z"/>
@@ -146,7 +147,7 @@ export const STAGES = [
       ${lbl(160, 18, "단면", "middle")}${lbl(160, 118, "신경관·척삭·장관", "middle")}`
   },
   {
-    id: "fold", img: "app/stages/fold.jpg", day: 26, ko: "배아 접힘", en: "Folding", ref: "fold",
+    id: "fold", img: "app/stages/fold.jpg", marks: [[380,180,200,190,"인두궁","e"],[390,245,250,300,"심장","e"],[540,250,620,200,"체절","s"],[455,420,560,440,"배꼽창자관","s"],[425,525,560,545,"난황낭","s"],[310,430,200,470,"꼬리","e"]], day: 26, ko: "배아 접힘", en: "Folding", ref: "fold",
     note: "4주째 원판이 머리–꼬리, 양옆으로 접혀 C자 몸통이 됩니다. 인두궁과 심장 돌출이 보이고, 난황낭은 가는 관으로 이어져요.",
     svg: `<path class="emb" d="${EMB4}"/>
       ${somites(115, 80, 40, -112, 40, 14)}
@@ -157,7 +158,7 @@ export const STAGES = [
       ${lbl(44, 140, "난황낭", "middle")}${lead(62, 64, 20, 54)}${lbl(4, 50, "인두궁")}${lead(66, 86, 22, 92)}${lbl(4, 98, "심장")}${lead(150, 56, 170, 44)}${lbl(172, 44, "체절")}`
   },
   {
-    id: "w5", img: "app/stages/w5.jpg", day: 32, ko: "5주: 팔다리싹", en: "Limb buds", ref: "pa1",
+    id: "w5", img: "app/stages/w5.jpg", marks: [[458,130,620,90,"눈","s"],[385,190,620,190,"인두궁","s"],[385,270,620,280,"심장 돌출","s"],[315,270,150,230,"팔싹","e"],[272,410,150,430,"다리싹","e"],[470,385,620,420,"탯줄","s"]], day: 32, ko: "5주: 팔다리싹", en: "Limb buds", ref: "pa1",
     note: "팔싹, 이어서 다리싹이 돋습니다. 인두궁 네 쌍과 수정체판(눈)이 보이고, 뇌가 빠르게 커져요.",
     svg: `<path class="emb" d="M64 20 C108 0 166 30 162 82 C160 116 132 138 106 130 C96 127 98 116 110 116 C122 112 128 98 122 86 C114 74 98 76 90 82 C74 94 50 90 44 72 C38 54 44 30 64 20 Z"/>
       ${somites(112, 80, 42, -100, 38, 16, 5, 3.5)}
@@ -170,7 +171,7 @@ export const STAGES = [
       ${lead(136, 66, 172, 56)}${lbl(198, 52, "팔싹", "end")}${lead(140, 112, 170, 120)}${lbl(198, 126, "다리싹", "end")}${lead(60, 36, 22, 22)}${lbl(4, 18, "눈")}`
   },
   {
-    id: "w6", img: "app/stages/w6.jpg", day: 42, ko: "6주: 손판", en: "Hand plates", ref: "face",
+    id: "w6", img: "app/stages/w6.jpg", marks: [[497,155,650,110,"눈","s"],[385,150,250,60,"귓바퀴 언덕","e"],[440,290,600,300,"손판","s"],[430,485,250,560,"발판","e"],[560,480,690,430,"탯줄","s"]], day: 42, ko: "6주: 손판", en: "Hand plates", ref: "face",
     note: "팔다리 끝이 납작한 손판·발판이 되고 손가락 줄기가 보입니다. 얼굴 융기가 합쳐지기 시작하고 귓바퀴 언덕이 생겨요.",
     svg: `<path class="emb" d="M70 14 C120 -2 170 36 162 88 C156 122 128 140 104 132 C96 128 100 120 108 118 C120 114 124 100 118 90 C110 80 96 84 90 90 C70 100 44 92 40 70 C36 44 46 22 70 14 Z"/>
       <circle class="eye1" cx="62" cy="48" r="5.5"/>
@@ -183,7 +184,7 @@ export const STAGES = [
       ${lead(134, 92, 176, 86)}${lbl(176, 82, "손판")}${lead(86, 64, 112, 12)}${lbl(114, 10, "귓바퀴 언덕")}${lbl(84, 146, "탯줄", "middle")}`
   },
   {
-    id: "w8", day: 56, ko: "8주: 배아기 끝", en: "End of embryonic period", ref: null,
+    id: "w8", img: "app/stages/w8.jpg", marks: [[262,172,120,120,"눈꺼풀","e"],[372,140,600,90,"귓바퀴","s"],[290,265,150,300,"손가락","e"],[290,430,180,420,"탯줄","e"],[350,490,200,520,"발가락","e"],[745,420,740,570,"양막","m"]], day: 56, ko: "8주: 배아기 끝", en: "End of embryonic period", ref: null,
     note: "손가락·발가락이 갈라지고 눈꺼풀, 귓바퀴가 생깁니다. 주요 기관의 기본 꼴이 갖춰져 9주부터 태아라 부릅니다.",
     svg: `<circle class="emb" cx="80" cy="56" r="36"/>
       <path class="emb" d="M100 84 C128 82 150 98 148 122 C146 140 120 146 100 138 C84 132 80 110 92 96 Z"/>
@@ -195,7 +196,7 @@ export const STAGES = [
       ${lead(64, 50, 30, 22)}${lbl(8, 18, "눈꺼풀")}${lead(98, 56, 130, 30)}${lbl(132, 28, "귓바퀴")}${lbl(176, 132, "탯줄", "end")}`
   },
   {
-    id: "w12", img: "app/stages/w12.jpg", day: 84, ko: "12주: 태아기", en: "Fetus, 12 weeks", ref: "extg",
+    id: "w12", img: "app/stages/w12.jpg", marks: [[140,420,90,560,"양막","m"],[390,165,560,110,"귓바퀴","s"],[280,300,150,250,"손가락","e"],[600,380,700,560,"탯줄","m"]], day: 84, ko: "12주: 태아기", en: "Fetus, 12 weeks", ref: "extg",
     note: "머리가 몸길이의 절반쯤. 탈장됐던 창자가 배 안으로 돌아오고, 바깥생식기로 성별을 구별할 수 있게 됩니다.",
     svg: `<ellipse class="sac" cx="100" cy="76" rx="92" ry="68"/>
       <circle class="emb" cx="70" cy="58" r="30"/>
@@ -207,7 +208,7 @@ export const STAGES = [
       ${lbl(100, 20, "양막", "middle")}`
   },
   {
-    id: "w20", img: "app/stages/w20.jpg", day: 140, ko: "20주 무렵", en: "Fetus, ~20 weeks", ref: null,
+    id: "w20", img: "app/stages/w20.jpg", marks: [[470,80,640,40,"태반","s"],[500,215,660,240,"탯줄","s"],[null,null,500,480,"양수","m"],[195,300,110,250,"자궁벽","e"],[400,570,560,580,"자궁경부","s"]], day: 140, ko: "20주 무렵", en: "Fetus, ~20 weeks", ref: null,
     note: "엄마가 태동을 느끼기 시작하는 무렵(임신 약 18–20주). 몸에 솜털이 나고, 머리와 몸의 비율이 아기에 가까워져요.",
     svg: `<ellipse class="sac" cx="100" cy="76" rx="92" ry="68"/>
       <path class="emb" d="M66 62 C80 40 132 34 160 58 C182 80 172 118 140 126 C112 132 82 120 70 100 Z"/>
@@ -219,7 +220,7 @@ export const STAGES = [
       ${lbl(100, 20, "솜털·태지", "middle")}`
   },
   {
-    id: "birth", img: "app/stages/birth.jpg", day: 259, ko: "출생 무렵", en: "Near term", ref: null,
+    id: "birth", img: "app/stages/birth.jpg", marks: [[null,null,520,40,"태반","m"],[390,120,250,110,"탯줄","e"],[330,470,230,420,"머리","e"],[395,570,560,585,"자궁경부","s"]], day: 259, ko: "출생 무렵", en: "Near term", ref: null,
     note: "수정 후 약 38주(임신 40주). 대부분 머리를 아래로 두고, 폐가 숨 쉴 준비를 마칩니다.",
     svg: `<path class="uterus" d="M100 6 C162 6 186 50 178 90 C170 126 136 146 100 146 C64 146 30 126 22 90 C14 50 38 6 100 6 Z"/>
       <path class="emb" d="M78 104 C58 84 60 34 98 22 C136 12 160 44 152 76 C146 100 128 112 112 108 Z"/>
@@ -237,4 +238,19 @@ export function stageIndex(day) {
 
 export function stageSvg(st) {
   return `<svg class="st-svg" viewBox="0 0 200 150" role="img" aria-label="${st.ko} 그림">${st.svg}</svg>`;
+}
+
+// Canva 그림 위에 구조 이름표(점 → 선 → 이름)를 겹쳐 그린다.
+export function stageMarks(st) {
+  if (!st.marks?.length) return "";
+  const A = { s: "start", e: "end", m: "middle" };
+  const body = st.marks.map(([px, py, lx, ly, text, a]) => {
+    let line = "";
+    if (px != null) {
+      const ax = a === "s" ? lx - 8 : a === "e" ? lx + 8 : lx, ay = a === "m" ? (ly > py ? ly - 30 : ly + 10) : ly - 10;
+      line = `<line x1="${px}" y1="${py}" x2="${ax}" y2="${ay}"/><circle cx="${px}" cy="${py}" r="7"/>`;
+    }
+    return `${line}<text x="${lx}" y="${ly}" text-anchor="${A[a]}">${text}</text>`;
+  }).join("");
+  return `<svg class="st-marks" viewBox="0 0 800 600" aria-hidden="true">${body}</svg>`;
 }

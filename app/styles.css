@@ -270,3 +270,10 @@ th { font-family: var(--f-mono); font-size: 11px; letter-spacing: .05em; color: 
 .stages.art .st-fig:has(.st-art) .st-svg { display: none; }
 .stages.diagram .st-art { display: none; }
 .st-nav .seg { margin-left: 8px; }
+
+/* Canva 그림 위 구조 이름표 */
+.st-marks { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.st-marks text { font-family: var(--f-body); font-size: 30px; font-weight: 600; fill: #16222E; stroke: #FFFFFF; stroke-width: 8px; stroke-linejoin: round; paint-order: stroke; }
+.st-marks line { stroke: #16222E; stroke-width: 2.5; }
+.st-marks circle { fill: #FFFFFF; stroke: #16222E; stroke-width: 3; }
+.stages.diagram .st-marks { display: none; }

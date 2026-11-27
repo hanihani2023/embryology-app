@@ -1,11 +1,11 @@
 // 오프라인 지원: 앱 파일과 데이터를 캐시해 두고, 온라인일 때는 새 버전을 받아 갱신한다.
 // 데이터나 앱 파일을 바꾸면 VERSION을 올린다.
-const VERSION = "v5-2026-11-27";
+const VERSION = "v6-2026-11-27";
 const CORE = [
   "./", "index.html", "manifest.webmanifest",
   "app/styles.css", "app/main.js", "app/data.js", "app/body.js", "app/study.js", "app/stages.js", "app/body.jpg", "app/icon.svg",
   ...["early", "lineage", "folding", "pharyngeal", "face", "cardiovascular", "cavities", "urogenital", "teratology"].map(m => `data/${m}.json`),
-  ...["zyg", "c2", "c4", "mor", "bla", "impl", "bil", "exm", "gas", "np", "nt", "fold", "w5", "w6", "w12", "w20", "birth"].map(s => `app/stages/${s}.jpg`)
+  ...["zyg", "c2", "c4", "mor", "bla", "impl", "bil", "exm", "gas", "np", "nt", "fold", "w5", "w6", "w8", "w12", "w20", "birth"].map(s => `app/stages/${s}.jpg`)
 ];
 
 self.addEventListener("install", e => {
