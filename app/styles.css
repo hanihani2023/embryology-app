@@ -218,62 +218,12 @@ th { font-family: var(--f-mono); font-size: 11px; letter-spacing: .05em; color: 
 .stage .st-more { align-self: flex-start; margin-top: 4px; font-size: 12.5px; color: var(--focus); background: none; border: 0; padding: 0; cursor: pointer; }
 .st-nav { display: flex; gap: 8px; align-items: center; }
 .st-nav .muted { font-size: 12.5px; }
-.st-svg { width: 100%; height: auto; display: block; background: var(--surface-2); border-radius: 8px; }
-.st-svg .zp { fill: none; stroke: var(--faint); stroke-width: 5; opacity: .45; }
-.st-svg .zp.dash { stroke-dasharray: 6 7; }
-.st-svg .cell { fill: var(--surface); stroke: var(--root); stroke-width: 1.4; }
-.st-svg .nuc { fill: var(--root); fill-opacity: .25; stroke: var(--root); stroke-width: 1; }
-.st-svg .nuc.big { fill-opacity: .18; }
-.st-svg .cav { fill: var(--surface); }
-.st-svg .tro { fill: none; stroke: var(--extra); stroke-width: 7; }
-.st-svg .f-root { fill: var(--root); }
-.st-svg .f-ec { fill: var(--ecto); }
-.st-svg .f-me { fill: var(--meso); }
-.st-svg .f-en { fill: var(--endo); }
-.st-svg .f-ex { fill: var(--extra); }
-.st-svg .f-hyp { fill: var(--extra); fill-opacity: .7; }
-.st-svg .tint { fill-opacity: .22; }
-.st-svg .syn { fill-opacity: .4; }
-.st-svg .endo-wall { fill: var(--meso); fill-opacity: .1; }
-.st-svg .gland { fill: none; stroke: var(--meso); stroke-opacity: .35; stroke-width: 3; stroke-linecap: round; }
-.st-svg .lac { fill: var(--surface); fill-opacity: .8; }
-.st-svg .cyto { fill: var(--surface); stroke: var(--extra); stroke-width: 4; }
-.st-svg .amc { fill: var(--surface-2); stroke: var(--extra); stroke-width: 1.6; }
-.st-svg .ysc { fill: var(--endo); fill-opacity: .15; stroke: var(--extra); stroke-width: 1.6; }
-.st-svg .chorion { fill: var(--extra); fill-opacity: .3; }
-.st-svg .villi { stroke: var(--extra); stroke-width: 3; stroke-linecap: round; opacity: .55; }
-.st-svg .stalk { fill: var(--extra); fill-opacity: .45; }
-.st-svg .edge { fill: none; stroke: var(--ecto); stroke-width: 1.4; }
-.st-svg .mark { fill: var(--surface); stroke: var(--root); stroke-width: 1.2; }
-.st-svg .streak { stroke: var(--root); stroke-width: 4; stroke-linecap: round; }
-.st-svg .node { fill: var(--root); }
-.st-svg .groove { fill: var(--surface-2); stroke: var(--root); stroke-width: 1.2; }
-.st-svg .arrow { fill: none; stroke: var(--ink); stroke-width: 1.3; stroke-linecap: round; }
-.st-svg .seam { stroke: var(--surface); stroke-width: 1.5; stroke-dasharray: 3 2; }
-.st-svg .emb { fill: #F3D9CC; stroke: #B5806A; stroke-width: 1.5; }
-.st-svg .arch { fill: none; stroke: #B5806A; stroke-width: 1.6; stroke-linecap: round; }
-.st-svg .limb { fill: #F3D9CC; stroke: #B5806A; stroke-width: 1.5; stroke-linecap: round; }
-.st-svg path.limb:not([d$="Z"]) { fill: none; stroke: #E9C3B0; stroke-width: 9; }
-.st-svg .rays { fill: none; stroke: #B5806A; stroke-width: 1.3; stroke-linecap: round; }
-.st-svg .eye0 { fill: none; stroke: #B5806A; stroke-width: 1.4; }
-.st-svg .eye1 { fill: #5A3A30; }
-.st-svg .eyelid, .st-svg .ear { fill: none; stroke: #9A6450; stroke-width: 1.5; stroke-linecap: round; }
-.st-svg .duct, .st-svg .cord { fill: none; stroke: #D7A28C; stroke-width: 5; stroke-linecap: round; }
-.st-svg .sac { fill: var(--extra); fill-opacity: .08; stroke: var(--extra); stroke-opacity: .5; stroke-width: 1.5; }
-.st-svg .uterus { fill: var(--meso); fill-opacity: .1; stroke: var(--meso); stroke-opacity: .5; stroke-width: 6; }
-.st-svg .lbl { font-family: var(--f-body); font-size: 9.5px; fill: var(--muted); }
-.st-svg .lead { stroke: var(--faint); stroke-width: .8; }
 
-/* 단계 그림: Canva 그림(art)과 이름표 도식(diagram) 전환 */
 .st-fig { position: relative; }
 .st-art { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; border-radius: 8px; background: var(--surface-2); }
-.stages.art .st-fig:has(.st-art) .st-svg { display: none; }
-.stages.diagram .st-art { display: none; }
-.st-nav .seg { margin-left: 8px; }
 
 /* Canva 그림 위 구조 이름표 */
 .st-marks { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
 .st-marks text { font-family: var(--f-body); font-size: 30px; font-weight: 600; fill: #16222E; stroke: #FFFFFF; stroke-width: 8px; stroke-linejoin: round; paint-order: stroke; }
 .st-marks line { stroke: #16222E; stroke-width: 2.5; }
 .st-marks circle { fill: #FFFFFF; stroke: #16222E; stroke-width: 3; }
-.stages.diagram .st-marks { display: none; }

@@ -1,7 +1,7 @@
 import { loadData, LAYERS, BIRTH_DAY, path, haystack } from "./data.js";
 import { bodySvg } from "./body.js";
 import { makeQuiz, recordAnswer, wrongList, srsStats } from "./study.js";
-import { STAGES, stageIndex, stageSvg, stageMarks } from "./stages.js";
+import { STAGES, stageIndex, stageMarks } from "./stages.js";
 
 /* ---------- 상태 ---------- */
 const store = {
@@ -14,8 +14,7 @@ const state = {
   theme: store.get("theme", "auto"),
   tab: "home", module: null,
   day: 56, layer: null, treeQ: "", ganttAll: false, organ: store.get("organ", "heart"),
-  week: store.get("week", 8), quiz: null, bookmarks: store.get("bookmarks", []),
-  stageView: store.get("stageView", "art")  // art(Canva 그림) | diagram(이름표 도식)
+  week: store.get("week", 8), quiz: null, bookmarks: store.get("bookmarks", [])
 };
 let db = null;
 const $ = s => document.querySelector(s);
@@ -310,10 +309,9 @@ function renderTime() {
       <p class="muted" style="font-size:12.5px;margin:4px 0 0">임신 주수 = 수정 후 나이 + 2주 (마지막 생리 시작일 기준)</p>
     </section>
     <section><div class="toolbar st-nav"><p class="sec-title" style="margin:0">단계 그림</p>
-      <span class="seg" id="stView"><button data-view="art" aria-pressed="${state.stageView === "art"}">그림</button><button data-view="diagram" aria-pressed="${state.stageView === "diagram"}">도식</button></span>
       <span style="margin-left:auto;display:flex;gap:6px"><button class="btn" id="stPrev" aria-label="이전 단계">‹</button><button class="btn" id="stNext" aria-label="다음 단계">›</button></span></div>
-      <p class="muted" style="font-size:12.5px;margin:0 0 6px">옆으로 넘기거나 눌러서 그 시기로 · 도식은 구조 이름이 붙은 그림</p>
-      <div class="stages ${state.stageView}" id="stages">${STAGES.map((st, i) => stageCard(st, i, d)).join("")}</div></section>
+      <p class="muted" style="font-size:12.5px;margin:0 0 6px">옆으로 넘기거나 눌러서 그 시기로</p>
+      <div class="stages" id="stages">${STAGES.map((st, i) => stageCard(st, i, d)).join("")}</div></section>
     <section><p class="sec-title">이 무렵 (±10일)</p><div class="ev-list" id="nearEv">${near.map(e => evHtml(e, d)).join("") || `<p class="muted">이 무렵에 표시할 사건이 없어요.</p>`}</div></section>
     <section><div class="toolbar"><p class="sec-title" style="margin:0">구조별 시기 (${state.ganttAll ? "출생까지" : "12주까지 · 시험 포인트"})</p>
       <button class="chip" id="ganttAll" aria-pressed="${state.ganttAll}">전체 보기</button></div><div class="gantt">${gantt}</div></section>`;
@@ -322,7 +320,7 @@ function stageCard(st, i, day) {
   const on = i === stageIndex(day);
   const ref = st.ref && db.S.has(st.ref) ? st.ref : null;
   return `<div class="stage ${on ? "on" : ""}" data-stage="${i}" role="button" tabindex="0" aria-current="${on}">
-    <div class="st-fig">${st.img ? `<img class="st-art" src="${st.img}" alt="${esc(st.ko)} 그림" loading="lazy" decoding="async">${stageMarks(st)}` : ""}${stageSvg(st)}</div>
+    <div class="st-fig"><img class="st-art" src="${st.img}" alt="${esc(st.ko)} 그림" loading="lazy" decoding="async">${stageMarks(st)}</div>
     <div class="st-head"><b>${esc(st.ko)}</b><span class="st-when">${esc(fmtDay(st.day))}</span></div>
     <span class="st-en">${esc(st.en)}</span>
     <p class="st-note">${esc(st.note)}</p>
@@ -365,10 +363,6 @@ afterRender.time = () => {
   const pick = i => { i = Math.max(0, Math.min(STAGES.length - 1, i)); setDay(STAGES[i].day, { fromStage: true }); centerStage(); };
   strip.onclick = e => { if (e.target.closest("[data-open]")) return; const c = e.target.closest(".stage"); if (c) pick(+c.dataset.stage); };
   strip.onkeydown = e => { const c = e.target.closest(".stage"); if (c && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); pick(+c.dataset.stage); } };
-  $("#stView").onclick = e => { const b = e.target.closest("[data-view]"); if (!b) return;
-    state.stageView = b.dataset.view; store.set("stageView", state.stageView);
-    strip.classList.toggle("art", state.stageView === "art"); strip.classList.toggle("diagram", state.stageView === "diagram");
-    $("#stView").querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x === b)); };
   $("#stPrev").onclick = () => pick(stageIndex(state.day) - 1);
   $("#stNext").onclick = () => pick(stageIndex(state.day) + 1);
   centerStage(false);
