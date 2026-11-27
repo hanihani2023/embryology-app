@@ -152,7 +152,7 @@ th { font-family: var(--f-mono); font-size: 11px; letter-spacing: .05em; color: 
 @media (min-width: 900px) { .body-grid { grid-template-columns: 380px minmax(0, 1fr); align-items: start; } }
 .body-fig { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r); padding: 8px; }
 .body-fig svg { width: 100%; height: auto; display: block; max-height: 72vh; }
-.silhouette { fill: color-mix(in srgb, var(--ecto) 6%, var(--surface-2)); stroke: color-mix(in srgb, var(--ecto) 35%, var(--line)); stroke-width: 4; }
+.body-fig svg { border-radius: 8px; background: #F4F8FB; }
 .hs { cursor: pointer; }
 .hs .halo { fill: var(--c); opacity: 0; transition: opacity .15s; }
 .hs .core { fill: var(--surface); stroke: var(--c); stroke-width: 6; }
